@@ -1,0 +1,46 @@
+.wh-spinner
+  height: 30px
+  width: 30px
+  margin: 0 auto
+  position: relative
+  +animation(rotation .6s infinite linear)
+  border: 8px solid lighten($link-color, 50%)
+  border-top: 8px solid $link-color
+  border-radius: 100%
+
+.wh-spinner.wh-spinner-margin
+  margin: $base-line-height auto
+
+.btn .wh-spinner
+  display: inline-block
+  height: 14px
+  width: 14px
+  border-width: 4px
+  border-color: rgba(0,0,0,.1)
+  border-top-color: $white
+  top: 1px
+
+.wh-logo .wh-spinner
+  border-color: rgba(0,0,0,.1)
+  border-top-color: $section-background-color
+  margin-bottom: $gutter / 2
+.wh-spinner.wh-spinner-inline
+  display: inline-block
+  margin: none
+
+.wh-spinner.wh-spinner-large
+  height: 45px
+  width: 45px
+  border-width: 12px
+
+.wh-spinner.wh-spinner-small
+  height: 16px
+  width: 16px
+  border-width: 4px
+
+
++keyframes(rotation)
+  from
+    +transform(rotate(0deg))
+  to
+    +transform(rotate(359deg))

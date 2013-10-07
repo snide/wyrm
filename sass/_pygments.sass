@@ -1,0 +1,62 @@
+.codeblock-example
+  border: 1px solid $table-border-color
+  border-bottom: none
+  padding: $base-line-height
+  padding-top: $base-line-height * 2
+  font-weight: 500
+  background: $white
+  position: relative
+  &:after
+    content: "Example"
+    position: absolute
+    top: 0px
+    left: 0px
+    background: $purple
+    color: lighten(purple, 80%)
+    padding: $base-line-height / 4 $base-line-height / 2
+  &.prettyprint-example-only
+    border: 1px solid $table-border-color
+    margin-bottom: $base-line-height
+
+.codeblock
+  border: 1px solid $table-border-color
+  padding: 0px
+  width: 100%
+  overflow-x: auto
+  background: $white
+  // 1px hack otherwise border won't show. lame
+  margin: 1px 0 $base-line-height 0
+
+.linenodiv pre
+  border-right: solid 1px lighten($table-border-color, 2%)
+  margin: 0
+  padding: $base-line-height / 2 $base-line-height / 2
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1","source-code-pro-2", monospace
+  font-size: 12px
+  line-height: 1.5
+  color: $text-light
+.highlight pre
+  white-space: pre
+  margin: 0
+  padding: $base-line-height / 2 $base-line-height / 2
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1","source-code-pro-2", monospace
+  font-size: 12px
+  line-height: 1.5
+pre.literal-block
+  @extends .codeblock
+  background: $menu-top-background-color
+  color: $text-invert
+  padding: $base-line-height * 1.75 $base-line-height / 2 $base-line-height / 2 $base-line-height / 2
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1","source-code-pro-2", monospace
+  font-size: 12px
+  line-height: 1.5
+  position: relative
+  &:after
+    position: absolute
+    content: "  Terminal"
+    background: $table-stripe-color
+    color: $text-color
+    top: 0
+    left: 0
+    width: 100%
+    padding: $base-line-height / 4 0

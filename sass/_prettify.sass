@@ -1,0 +1,128 @@
+/* GitHub Theme
+/* Pretty printing styles. Used with prettify.js.
+/* SPAN elements with the classes below are added by prettyprint.
+/* plain text
+
+.pln
+  color: #333333
+
+@media screen
+  /* string content
+  .str
+    color: #dd1144
+  /* a keyword
+  .kwd
+    color: #333333
+  /* a comment
+  .com
+    color: #999988
+  /* a type name
+  .typ, .lit
+    color: #445588
+  /* a literal value
+  /* punctuation
+  .pun, .opn, .clo
+    color: #333333
+  /* lisp open bracket
+  /* lisp close bracket
+  /* a markup tag name
+  .tag
+    color: navy
+  /* a markup attribute name
+  .atn
+    color: teal
+  /* a markup attribute value
+  .atv
+    color: #dd1144
+  /* a declaration
+  .dec
+    color: #333333
+  /* a variable name
+  .var
+    color: teal
+  /* a function name
+  .fun
+    color: #990000
+
+/* Use higher contrast and text-weight for printable form.
+@media print, projection
+  .str
+    color: #006600
+  .kwd
+    color: #006
+    font-weight: bold
+  .com
+    color: #600
+    font-style: italic
+  .typ
+    color: #404
+    font-weight: bold
+  .lit
+    color: #004444
+  .pun, .opn, .clo
+    color: #444400
+  .tag
+    color: #006
+    font-weight: bold
+  .atn
+    color: #440044
+  .atv
+    color: #006600
+
+/* Style
+
+.prettyprint-example
+  border: 1px solid $table-border-color
+  border-bottom: none
+  padding: $base-line-height
+  padding-top: $base-line-height * 2
+  font-weight: 500
+  background: $white
+  position: relative
+  &:after
+    content: "Example"
+    position: absolute
+    top: 0px
+    left: 0px
+    background: $purple
+    color: lighten(purple, 80%)
+    padding: $base-line-height / 4 $base-line-height / 2
+  &.prettyprint-example-only
+    border: 1px solid $table-border-color
+    margin-bottom: $base-line-height
+
+
+pre.prettyprint, xmp.prettyprint
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1","source-code-pro-2", monospace
+  font-size: 12px
+  line-height: 1.5
+  border: 1px solid $table-border-color
+  padding: 0px 0px 0px 10px
+  overflow-x: auto
+  background: $white
+  // 1px hack otherwise border won't show. lame
+  margin: 1px 0 $base-line-height 0
+
+/* Specify class=linenums on a pre to get line numbering
+
+ol.linenums
+  margin-top: 0
+  margin-bottom: 0
+  list-style-type: decimal
+  color: $text-light
+  li
+    list-style-type: decimal
+    margin-left: 30px
+    padding-left: 12px
+    border-left: solid 1px lighten($table-border-color, 2%)
+    &:first-child
+      padding-top: 10px
+    &:last-child
+      padding-bottom: 10px
+/* IE indents via margin-left
+
+li
+  &.L0, &.L1, &.L2, &.L3, &.L4, &.L5, &.L6, &.L7, &.L8, &.L9, &.L1, &.L3, &.L5, &.L7, &.L9
+    /*
+
+/* Alternate shading for lines

@@ -1,0 +1,26 @@
+.rst-content
+  .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
+    @extend .wh-alert
+    p.last
+      margin-bottom: 0
+  .admonition-title
+    font-weight: bold
+    @extend .icon
+    @extend .icon-exclamation-sign
+    &:before
+      margin-right: 4px
+  .note
+    @extend .wh-alert.wh-alert-neutral
+  .hint, .tip, .important
+    @extend .wh-alert.wh-alert-info
+  .error, .danger
+    @extend .wh-alert.wh-alert-danger
+  .warning, .caution, .attention
+    @extend .wh-alert.wh-alert-warning
+  ul.simple
+    @extend .wh-plain-list-disc
+  .topic-title
+    font-weight: bold
+    margin-bottom: $base-line-height / 2
+  .toc-backref
+    color: $text-color

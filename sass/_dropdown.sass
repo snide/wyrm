@@ -1,0 +1,79 @@
+.wh-dropdown
+  position: relative
+  display: inline-block
+  &:hover
+    .wh-dropdown-menu
+      display: block
+  .caret
+    &:after
+      font-family: fontawesome-webfont
+      content: "\f0d7"
+      font-size: 70%
+
+.wh-dropdown-menu
+  position: absolute
+  top: 100%
+  left: 0
+  display: none
+  float: left
+  min-width: 100%
+  background: $dropdown-color
+  z-index: $z-index-dropdown
+  border: solid 1px $dropdown-border-color
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.1)
+  padding: $base-line-height / 2
+  > dd > a
+    display: block
+    clear: both
+    color: $text-color
+    white-space: nowrap
+    font-size: 90%
+    padding: 0 $base-line-height / 2
+    &:hover
+      background: $link-color
+      color: $white
+  > dd.divider
+    border-top: solid 1px $dropdown-border-color
+    margin: $base-line-height / 4 0
+  > dd.search
+    padding-bottom: $base-line-height / 2
+    input[type="search"]
+      width: 100%
+  > dd.call-to-action
+    background: darken($dropdown-color, 10%)
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 80%
+    &:hover
+      background: darken($dropdown-color, 10%)
+    .btn
+      color: $white
+
+
+.wh-dropdown.wh-dropdown-bubble
+  .wh-dropdown-menu
+    background: $section-background-color
+    margin-top: 2px
+  .wh-dropdown-menu a
+    padding: $base-line-height / 4 $base-line-height / 2
+    &:hover
+      background: $link-color
+      color: $white
+
+.wh-dropdown.wh-dropdown-left .wh-dropdown-menu
+  right: 0
+  text-align: right
+
+.wh-dropdown-arrow
+  &:before
+    content: " "
+    border-bottom: 5px solid hsla(0,0%,96%,1)
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    position: absolute
+    display: block
+    top: -4px
+    left: 50%
+    margin-left: -3px
+  &.wh-dropdown-arrow-left:before
+    left: 11px

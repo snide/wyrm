@@ -1,0 +1,469 @@
+// Dirty file, need to strip colors and remove vendor prefixs.
+// Modification of purecss.io forms, will need to spend some time cleaning up.
+
+
+// Overall form styles
+
+.wh-form-stacked
+  select
+    display: block
+.wh-form-aligned
+  input, textarea, select, .wh-help-inline, label
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    vertical-align: middle
+
+.wh-form-aligned
+  .wh-control-group
+    > label
+      display: inline-block
+      vertical-align: middle
+      width: 10em
+      margin: .5em 1em 0 0
+      float: left
+  .wh-control
+    float: left
+    label
+      display: block
+    select
+      margin-top: .5em
+
+// Basic elements
+
+fieldset
+  border: 0
+  margin: 0
+  padding: 0
+legend
+  display: block
+  width: 100%
+  border: 0
+  padding: 0
+  white-space: normal
+  margin-bottom: $base-line-height
+  font-size: 150%
+  *margin-left: -7px
+label
+  display: block
+  margin: 0 0 em(5px) 0
+  color: $gray-light
+  font-size: 90%
+
+// Buttons
+
+button, input, select, textarea
+  font-size: 100%
+  margin: 0
+  vertical-align: baseline
+  *vertical-align: middle
+button, input
+  line-height: normal
+button
+  -webkit-appearance: button
+  cursor: pointer
+  *overflow: visible
+button::-moz-focus-inner, input::-moz-focus-inner
+  border: 0
+  padding: 0
+button[disabled]
+  cursor: default
+
+// Regular inputs
+
+input
+  &[type="button"], &[type="reset"], &[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+    *overflow: visible
+  &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+    -webkit-appearance: none
+    padding: $base-line-height / 4
+    display: inline-block
+    border: 1px solid $input-border-color
+    font-size: 80%
+    font-family: $base-font-family
+    box-shadow: inset 0 1px 3px $input-shadow-color
+    border-radius: 0
+    +transition(border .3s linear)
+    +font-smooth
+  &[type="datetime-local"]
+    padding: em(5.5px) em(10px)
+  &[disabled]
+    cursor: default
+  &[type="checkbox"], &[type="radio"]
+    +box-sizing(border-box)
+    padding: 0
+    margin-right: em(5px)
+    *height: 13px
+    *width: 13px
+  &[type="search"]
+    +box-sizing(border-box)
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+      -webkit-appearance: none
+  &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus
+    outline: 0
+    outline: thin dotted \9
+    border-color: $link-color
+  &.no-focus:focus
+    border-color: $input-border-color !important
+  &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus
+    outline: thin dotted $gray-dark
+    outline: 1px auto #129FEA
+  &[type="text"][disabled], &[type="password"][disabled], &[type="email"][disabled], &[type="url"][disabled], &[type="date"][disabled], &[type="month"][disabled], &[type="time"][disabled], &[type="datetime"][disabled], &[type="datetime-local"][disabled], &[type="week"][disabled], &[type="number"][disabled], &[type="search"][disabled], &[type="tel"][disabled], &[type="color"][disabled]
+    cursor: not-allowed
+    background-color: $table-stripe-color
+    color: $input-text-color
+
+input:focus:invalid, textarea:focus:invalid, select:focus:invalid
+  color: $red
+  border: 1px solid $red
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus
+  border-color: $input-focus-color
+input
+  &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus
+    outline-color: $input-focus-color
+
+input.wh-input-large
+  padding: $base-line-height / 2
+  font-size: 100%
+
+// Textareas and selects
+
+textarea
+  overflow: auto
+  vertical-align: top
+  width: 100%
+select, textarea
+  padding: em(8px) em(10px)
+  display: inline-block
+  border: 1px solid $input-border-color
+  font-size: 0.8em
+  box-shadow: inset 0 1px 3px $input-shadow-color
+  +transition(border .3s linear)
+  +font-smooth
+select
+  border: 1px solid $input-border-color
+  background-color: $input-background-color
+  &[multiple]
+    height: auto
+select:focus, textarea:focus
+  outline: 0
+select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]
+  cursor: not-allowed
+  background-color: $input-background-color
+  color: $input-text-color
+  border-color: transparent
+
+// Checkboxes and radios
+
+.wh-checkbox, .wh-radio
+  margin: 0.5em 0
+  // Important because we don't want it overwritten in the case of errors
+  color: $text-color !important
+  display: block
+
+// Messages and input context
+
+.wh-form-message-inline
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  vertical-align: middle
+
+.wh-input-prefix, .wh-input-suffix
+  white-space: nowrap
+  .wh-input-context
+    padding: $base-line-height / 4
+    display: inline-block
+    font-size: 80%
+    background-color: $table-stripe-color
+    border: solid 1px $input-border-color
+    color: $gray-light
+
+.wh-input-suffix .wh-input-context
+  border-left: 0
+.wh-input-prefix .wh-input-context
+  border-right: 0
+
+.wh-inline-validate
+  white-space: nowrap
+  .wh-input-context
+    padding: em(8px) em(10px)
+    display: inline-block
+    font-size: 80%
+.wh-inline-validate.wh-inline-validate-success .wh-input-context
+  color: $green
+  @extend .icon
+  @extend .icon-check-sign
+.wh-inline-validate.wh-inline-validate-danger .wh-input-context
+  color: $red
+  @extend .icon
+  @extend .icon-remove-sign
+.wh-inline-validate.wh-inline-validate-warning .wh-input-context
+  color: $orange
+  @extend .icon
+  @extend .icon-exclamation-sign
+.wh-inline-validate.wh-inline-validate-info .wh-input-context
+  color: $blue
+  @extend .icon
+  @extend .icon-exclamation-sign
+
+.wh-control-group
+  margin-bottom: $base-line-height
+  +clearfix
+
+.wh-control-group.wh-control-group-error
+  .wh-form-message, label
+    color: $red
+  input
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+      border: solid 2px $red
+  textarea
+    border: solid 2px $red
+
+// Fluid inputs when needed
+
+.wh-control-group.fluid-input
+  input
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+      width: 100%
+
+// Inline help for forms
+
+.wh-form-message-inline
+  display: inline-block
+  padding-left: 0.3em
+  color: #666
+  vertical-align: middle
+  font-size: 90%
+
+.wh-form-message
+  display: block
+  color: $gray-lighter
+  font-size: 70%
+  margin-top: em(5px)
+  font-style: italic
+
+// Tags
+
+.wh-tag-input-group
+  padding: 4px 4px 0px 4px
+  display: inline-block
+  border: 1px solid $input-border-color
+  font-size: 80%
+  font-family: $base-font-family
+  box-shadow: inset 0 1px 3px $input-shadow-color
+  +transition(border .3s linear)
+  +font-smooth
+  .wh-tag
+    display: inline-block
+    background-color: rgba(0,0,0,.1)
+    padding: em(8px) em(10px)
+    border-radius: 2px
+    position: relative
+    margin-bottom: 4px
+    .wh-tag-remove
+      @extend .icon
+      @extend .icon-remove
+      color: $gray-lighter
+      margin-left: 5px
+      &:hover
+        color: $red
+  // label is used here as an icon to the input, which is why normal label stuff is removed
+  label
+    margin-left: 5px
+    display: inline-block
+    margin-bottom: 0
+  input
+    border: none
+    font-size: 100%
+    margin-bottom: 4px
+    box-shadow: none
+
+// Uploads
+
+.wh-form-upload
+  border: solid 1px $input-border-color
+  border-bottom: solid 3px $input-border-color
+  background-color: $white
+  padding: $base-line-height
+  display: inline-block
+  text-align: center
+  cursor: pointer
+  color: $text-color
+  +transition(border-color .1s ease-in)
+  +clearfix
+  +media($mobile)
+    width: 100%
+  .image-drop
+    display: none
+  .image-desktop
+    display: none
+  .image-loading
+    display: none
+  .wh-form-upload-icon
+    display: block
+    font-size: $base-font-size * 2
+    color: $text-light
+  .image-drop .wh-form-upload-icon
+    color: $green
+  p
+    font-size: 90%
+  .wh-form-upload-image
+    float: left
+    margin-right: $base-line-height
+    +media($mobile)
+      width: 100%
+      margin-bottom: $base-line-height
+  img
+    max-width: 125px
+    max-height: 125px
+    opacity: .9
+    +transition(opacity .1s ease-in)
+  .wh-form-upload-content
+    float: left
+    +media($mobile)
+      width: 100%
+
+.wh-form-upload:hover
+  border-color: darken($input-border-color, 10%)
+  color: $text-color
+  .image-desktop
+    display: block
+  .image-drag
+    display: none
+  img
+    opacity: 1
+
+.wh-form-upload:active
+  border-top: solid 3px $input-border-color
+  border-bottom: solid 1px $input-border-color
+
+.wh-form-upload.wh-form-upload-big
+  width: 100%
+  text-align: center
+  padding: $base-line-height * 3
+  .wh-form-upload-content
+    float: none
+
+.wh-form-upload.wh-form-upload-file
+  p
+    margin-bottom: 0
+  .wh-form-upload-icon
+    display: inline-block
+    font-size: inherit
+
+.wh-form-upload.wh-form-upload-drop
+  background-color: lighten($green, 50%)
+  .image-drop
+    display: block
+  .image-desktop
+    display: none
+  .image-drag
+    display: none
+
+.wh-form-upload.wh-form-upload-loading
+  .image-drag
+    display: none
+  .image-desktop
+    display: none
+  .image-loading
+    display: block
+  .wh-input-prefix
+    display: none
+  p
+    margin-bottom: 0
+
+// Some generic rotation classes for reading user images
+
+.rotate-90
+  @include transform(rotate(90deg))
+.rotate-180
+  @include transform(rotate(180deg))
+.rotate-270
+  @include transform(rotate(270deg))
+.mirror
+  @include transform(scaleX(-1))
+  &.rotate-90
+    @include transform(scaleX(-1) rotate(90deg))
+  &.rotate-180
+    @include transform(scaleX(-1) rotate(180deg))
+  &.rotate-270
+    @include transform(scaleX(-1) rotate(270deg))
+
+// Gallery management
+
+.wh-form-gallery-manage
+  margin-left: -$base-line-height / 2
+  margin-right: -$base-line-height / 2
+  li
+    float: left
+    padding: $base-line-height / 2
+    width: 20%
+    cursor: pointer
+    +media($tablet)
+      width: 25%
+    +media($mobile)
+      width: 50%
+    &:active
+      cursor: move
+  li > a
+    padding: $base-line-height / 2
+    background-color: #FFF
+    border: solid 1px $table-border-color
+    border-bottom: solid 3px $table-border-color
+    display: inline-block
+    +transition(all .1s ease-in)
+    &:active
+      border: solid 1px $input-border-color
+      border-top: solid 3px $input-border-color
+  img
+    width: 100%
+    +transition(all .05s ease-in)
+
+li.wh-form-gallery-edit
+  position: relative
+  color: $text-invert
+  padding: $base-line-height
+  width: 100%
+  display: block
+  background-color: $menu-top-background-color
+  border-radius: 4px
+  .arrow
+    position: absolute
+    display: block
+    top: -50px
+    left: 50%
+    margin-left: -25px
+    z-index: 500
+    +triangle(50px, $menu-top-background-color, up)
+
+@media only screen and (max-width: 480px)
+  .wh-form
+    button[type="submit"]
+      margin: 0.7em 0 0
+    input
+      &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+        margin-bottom: 0.3em
+        display: block
+    label
+      margin-bottom: 0.3em
+      display: block
+  .wh-form input
+    &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+      margin-bottom: 0
+  .wh-form-aligned
+    .wh-control-group label
+      margin-bottom: 0.3em
+      text-align: left
+      display: block
+      width: 100%
+    .wh-controls
+      margin: 1.5em 0 0 0
+  /* NOTE: wh-help-inline is deprecated. Use .wh-form-message-inline instead.
+  .wh-form .wh-help-inline, .wh-form-message-inline, .wh-form-message
+    display: block
+    font-size: 80%
+    /* Increased bottom padding to make it group with its related input element.
+    padding: 0.2em 0 0.8em

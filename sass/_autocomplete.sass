@@ -1,0 +1,29 @@
+.wh-autocomplete-group
+  display: inline-block
+  position: relative
+
+.wh-autocomplete-dropdown
+  position: absolute
+  top: 100%
+  left: 0
+  float: left
+  min-width: 100%
+  background: $dropdown-color
+  z-index: $z-index-dropdown
+  border: solid 1px $dropdown-border-color
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.1)
+  li
+    line-height: $base-font-size * 2
+    padding: 0px $base-font-size / 2
+    cursor: pointer
+    &.on, &:hover
+      background: $link-color
+      color: $white
+  img
+    width: 16px
+    height: 16px
+    margin-right: $base-font-size / 2
+
+.wh-tag-input-group
+  .wh-autocomplete-dropdown
+    margin-top: -4px

@@ -1,0 +1,91 @@
+// Modification of purecss.io tables
+
+.wh-table
+  /* Remove spacing between table cells (from Normalize.css)
+  border-collapse: collapse
+  border-spacing: 0
+  empty-cells: show
+  margin-bottom: $base-line-height
+  caption
+    color: #000
+    font: italic 85%/1 arial, sans-serif
+    padding: 1em 0
+    text-align: center
+  td, th
+    font-size: 90%
+    margin: 0
+    overflow: visible
+    padding: $base-font-size / 2 $base-font-size
+  td:first-child, th:first-child
+    border-left-width: 0
+  thead
+    background: $table-head-background-color
+    color: #000
+    text-align: left
+    vertical-align: bottom
+    white-space: nowrap
+    th
+      font-weight: 500
+  td
+    background-color: transparent
+    vertical-align: middle
+
+.wh-table td p
+  line-height: $base-line-height * .75
+  margin-bottom: 0
+
+.wh-table .wh-table-cell-min
+  width: 1%
+  padding-right: 0
+  input[type=checkbox], input[type=checkbox]
+    margin: 0
+
+.wh-table-secondary
+  color: $text-medium
+  font-size: 90%
+.wh-table-tertiary
+  color: $text-medium
+  font-size: 80%
+
+/*
+ *striping:
+ *   even - #fff (white)
+ *   odd  - #f2f2f2 (light gray)
+
+.wh-table-odd td, .wh-table-striped tr:nth-child(2n-1) td
+  background-color: $table-stripe-color
+
+.wh-table-backed
+  background-color: $table-stripe-color
+
+/* nth-child selector for modern browsers
+
+/* BORDERED TABLES
+
+.wh-table-bordered-all
+  border: 1px solid $table-border-color
+  td
+    border-bottom: 1px solid $table-border-color
+    border-left: 1px solid $table-border-color
+  tbody > tr:last-child td
+    border-bottom-width: 0
+
+.wh-table-bordered
+  border: 1px solid $table-border-color
+
+.wh-table-bordered-rows
+  td
+    border-bottom: 1px solid $table-border-color
+  tbody > tr:last-child td
+    border-bottom-width: 0
+
+.wh-table-horizontal
+  tbody > tr:last-child td
+    border-bottom-width: 0
+  td, th
+    border-width: 0 0 1px 0
+    border-bottom: 1px solid $table-border-color
+  tbody > tr:last-child td
+    border-bottom-width: 0
+
+/* HORIZONTAL BORDERED TABLES

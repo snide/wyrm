@@ -1,0 +1,123 @@
+// Dirty file, need to strip colors and remove vendor prefixs.
+// Modification of purecss.io buttons, will need to spend some time cleaning up.
+
+.btn
+  /* Structure
+  display: inline-block
+  *display: inline
+  /*IE 6/7
+  zoom: 1
+  line-height: normal
+  white-space: nowrap
+  vertical-align: baseline
+  text-align: center
+  cursor: pointer
+  -webkit-user-drag: none
+  +user-select(none)
+  font-size: 100%
+  padding: $base-line-height / 4 $base-line-height / 2
+  color: $white
+  border: 1px solid rgba(0,0,0,0.1)
+  border-bottom: solid 3px rgba(0,0,0,0.1)
+  background-color: $link-color
+  text-decoration: none
+  font-weight: 500
+  box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, .5) inset
+  +font-smooth
+  +transition(all 0.1s linear)
+  outline-none: false
+
+.btn-hover
+  background: lighten($link-color, 5%)
+  color: $white
+
+.btn
+  &:hover
+    background: lighten($link-color, 5%)
+    color: $white
+  &:focus
+    background: lighten($link-color, 5%)
+    color: $white
+    outline: 0
+  &:active
+    border-top: solid 3px rgba(0,0,0,0.1)
+    border-bottom: solid 1px rgba(0,0,0,0.1)
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, .5) inset
+  &[disabled]
+    background-image: none
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+    filter: alpha(opacity = 40)
+    opacity: 0.4
+    cursor: not-allowed
+    box-shadow: none
+
+.btn-disabled
+  background-image: none
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+  filter: alpha(opacity = 40)
+  opacity: 0.4
+  cursor: not-allowed
+  box-shadow: none
+  &:hover, &:focus, &:active
+    background-image: none
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+    filter: alpha(opacity = 40)
+    opacity: 0.40
+    cursor: not-allowed
+    box-shadow: none
+
+/* Firefox: Get rid of the inner focus border
+
+.btn::-moz-focus-inner
+  padding: 0
+  border: 0
+
+.btn-small
+  font-size: 80%
+
+.btn-info
+  background-color: $blue !important
+  &:hover
+    background-color: lighten($blue, 5%) !important
+
+.btn-neutral
+  background-color: $table-stripe-color !important
+  color: $text-color !important
+  &:hover
+    background-color: darken($table-stripe-color, 5%) !important
+    color: $text-color
+
+.btn-danger
+  background-color: $red !important
+  &:hover
+    background-color: lighten($red, 5%) !important
+
+.btn-warning
+  background-color: $orange !important
+  &:hover
+    background-color: lighten($orange, 5%) !important
+.btn-invert
+  background-color: $menu-top-background-color
+  &:hover
+    background-color: lighten($menu-top-background-color, 5%) !important
+
+.btn-link
+  background-color: transparent !important
+  color: $link-color
+  border-color: transparent
+  &:hover
+    background-color: transparent !important
+    color: lighten($link-color, 10%)
+    border-color: transparent
+  &:active
+    background-color: transparent !important
+    border-color: transparent
+    border-top: solid 1px transparent
+    border-bottom: solid 3px transparent
+
+.wh-btn-group .btn, .wh-control .btn
+  vertical-align: middle
+
+.wh-btn-group
+  margin-bottom: $base-line-height
+  +clearfix

@@ -1,0 +1,126 @@
+html
+  height: 100%
+  overflow-x: hidden
+
+body
+  font-family: $base-font-family
+  font-weight: 300
+  color: $text_color
+  min-height: 100%
+  overflow-x: hidden
+  background: $background_color
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover
+    color: $link-color-hover
+
+.link-danger
+  color: $red
+  &:hover
+    color: darken($red, 10%)
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+h1,h2,h3,h4,h5,h6, legend
+  margin-top: 0
+  font-weight: bold
+  font-family: $custom-font-family
+
+p
+  line-height: $base-line-height
+  margin: 0
+  font-size: $base-font-size
+  margin-bottom: $base-line-height
+
+h1
+  font-size: 150%
+
+h2
+  font-size: 140%
+
+h3
+  font-size: 130%
+
+h4
+  font-size: 120%
+
+h5
+  font-size: 110%
+
+h6
+  font-size: 100%
+
+small
+  font-size: 80%
+
+code, tt
+  white-space: nowrap
+  background: $white
+  border: solid 1px $table-border-color
+  font-size: 80%
+  padding: 0 5px
+  font-family: $code-font-family
+  color: $blue
+  &.code-large
+    font-size: 90%
+
+.full-width
+  width: 100%
+
+.wh-plain-list-disc
+  list-style: disc
+  line-height: $base-line-height
+  margin-bottom: $base-line-height
+.wh-plain-list-disc li
+  list-style: disc
+  margin-left: $base-line-height
+
+.wh-plain-list-decimal
+  list-style: decimal
+  line-height: $base-line-height
+  margin-bottom: $base-line-height
+.wh-plain-list-decimal li
+  list-style: decimal
+  margin-left: $base-line-height
+
+.wh-type-large
+  font-size: 120%
+
+.wh-type-normal
+  font-size: 100%
+
+.wh-type-small
+  font-size: 100%
+
+.wh-type-strike
+  text-decoration: line-through
+
+.wh-text-warning
+  color: $orange !important
+a.wh-text-warning:hover
+  color: lighten($orange, 10%) !important
+.wh-text-info
+  color: $blue !important
+a.wh-text-info:hover
+  color: lighten($blue, 10%) !important
+.wh-text-success
+  color: $green !important
+a.wh-text-success:hover
+  color: lighten($green, 10%) !important
+.wh-text-danger
+  color: $red !important
+a.wh-text-danger:hover
+  color: lighten($red, 10%) !important
+.wh-text-neutral
+  color: $text-color !important
+a.wh-text-neutral:hover
+  color: lighten($text-color, 10%) !important

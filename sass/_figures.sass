@@ -1,0 +1,194 @@
+figure
+  position: relative
+
+figcaption
+  text-align: center
+  line-height: $base-line-height
+  font-size: $base-font-size
+  &:empty:before
+    opacity: 0.4
+    content: "Type to add caption (optional)"
+
+figure[data-type=table]
+  clear: both
+figure[data-type=video]
+  position: relative
+  margin-bottom: $base-line-height
+  text-align: center
+  clear: both
+  p
+    margin: 0
+
+  &.wh-figure-full
+    p
+      position: relative
+      padding-bottom: 51%
+      width: 100%
+      height: 0
+    iframe
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+
+figure[data-type=image]
+  position: relative
+  margin-bottom: $base-line-height
+  .wh-figure-controls
+    top: 0px
+  img
+    background: $menu-top-background-color
+    width: 100%
+  &:hover
+    img
+      opacity: .8
+  &.wh-figure-large
+    width: 100%
+    clear: both
+  &.wh-figure-medium
+    width: 50%
+  &.wh-figure-small
+    width: 33%
+
+figure[data-type=quote]
+  font-family: $custom-font-family
+  margin-bottom: $base-line-height
+  margin-left: $base-line-height
+  font-style: italic
+  position: relative
+  border-left: solid 5px $text-color
+  padding-left: $base-line-height
+  figcaption
+    font-weight: bold
+    text-align: left
+  .wh-figure-controls
+    margin-left: -5px
+  &.wh-figure-medium
+    +adjust-font-size-to(20px)
+  &.wh-figure-large
+    +adjust-font-size-to(24px)
+  &.wh-figure-right
+    width: 33%
+  &.wh-figure-left
+    width: 33%
+    border-left: none
+    border-right: solid 5px $text-color
+    padding-left: 0
+    padding-right: $base-line-height
+    margin-left: 0
+    margin-right: $base-line-height
+    .wh-figure-controls
+      margin-left: 0
+      margin-right: -5px
+  cite
+    display: block
+    text-align: left
+    font-weight: bold
+    &:before
+      content: "\2014\00a0"
+    &:empty:before
+      opacity: 0.4
+      content: "\2014 Type to add citation (optional)"
+
+figure:hover .wh-figure-controls
+  display: block
+
+.wh-figure-controls
+  background: $green
+  padding: $base-line-height / 4
+  position: absolute
+  display: none
+  min-width: 100%
+  white-space: nowrap
+  left: 0
+  top: -37px
+  margin: auto
+  font-family: $base-font-family
+  border-bottom: solid 3px darken($green, 10%)
+  line-height: $base-line-height
+  font-style: normal
+  z-index: 5
+  text-align: center
+.wh-figure-controls span
+  display: inline-block
+  border: none
+  background: none
+  color: $text-invert
+  vertical-align: bottom
+  font-size: 14px
+  width: 24px
+  height: 24px
+  line-height: 24px
+  text-align: center
+  cursor: pointer
+  &:hover
+    background: rgba(255,255,255,.3)
+    color: $white
+  &.on
+    background: $white
+    color: $green
+
+.wh-figure-controls span
+  &.wh-figure-controls-divider
+    width: 1px
+    background: lighten($green, 10%)
+    padding: 0
+    margin: 0 2px
+    cursor: normal
+  &.wh-figure-controls-small
+    font-size: 50%
+  &.wh-figure-controls-medium
+    font-size: 75%
+  &.wh-figure-controls-arrow-left
+    @extend .icon
+    @extend .icon-arrow-left
+  &.wh-figure-controls-arrow-right
+    @extend .icon
+    @extend .icon-arrow-right
+  &.wh-figure-controls-arrow-up
+    @extend .icon
+    @extend .icon-arrow-up
+  &.wh-figure-controls-arrow-down
+    @extend .icon
+    @extend .icon-arrow-down
+  &.wh-figure-controls-resize-full
+    @extend .icon
+    @extend .icon-resize-full
+  &.wh-figure-controls-resize-small
+    @extend .icon
+    @extend .icon-resize-small
+  &.wh-figure-controls-delete
+    @extend .icon
+    @extend .icon-trash
+    margin-left: $base-line-height
+    &:hover
+      background: $red
+  &.wh-figure-controls-table
+    @extend .icon
+    @extend .icon-table
+    width: auto
+    padding-left: $base-line-height / 4
+    text-align: left
+
+.wh-figure-right
+  float: right
+  margin-left: $base-line-height
+  .wh-figure-controls
+    right: 0
+
+.wh-figure-left
+  float: left
+  margin-right: $base-line-height
+
+
+// On mobile, images should be full width
++media($mobile)
+  figure[data-type=image]
+    width: 100% !important
+    float: none !important
+    margin-left: 0
+    margin-right: 0
+  figure[data-type=video] iframe
+    width: 100% !important
+    height: auto !important
