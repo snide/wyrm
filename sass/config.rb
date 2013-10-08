@@ -5,7 +5,7 @@
 #path = File.dirname(__FILE__)
 
 http_path = "/"
-css_dir = "../docs/source/_static"
+css_dir = "../theme/wyrm/static"
 sass_dir = ""
 images_dir = "../static/img"
 font_dir = "../theme/wyrm/static/font"
@@ -15,7 +15,7 @@ preferred_syntax = :sass
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
-# add_import_path "sass"
+add_import_path "../bower_components"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
