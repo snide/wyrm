@@ -9,6 +9,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           config: 'sass/config.rb',
+          basePath: 'sass',
           force: true
         }
       }
