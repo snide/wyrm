@@ -1,19 +1,24 @@
 @import wh_variables
 
-// Outside libs
-@import bourbon/app/assets/bourbon
+// bourbon framework installed from bower
+@import bourbon
+
+// Bourbon neat installed from bower, edit grid settings for media queries
 @import grid_settings
-@import neat/app/assets/neat
+@import neat
+
+// Custom reset
 @import reset
+
+// I use a couple compass libs on top of Bourbon
 @import compass/typography/vertical_rhythm
 @import compass/typography/text/ellipsis
-// @import compass/css3/images
 
 // Basic defaults and mixins
 @import mixin
 @import font_awesome
 
-// Webhook specific
+// Wyrm specific
 @import generic
 @import type
 @import nav
@@ -31,7 +36,6 @@
 @import rst
 @import pygments
 @import pygments_light
-
 @import grid_layout
 @import layout
 @import dashboard

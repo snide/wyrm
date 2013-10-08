@@ -1930,7 +1930,7 @@ body {
   color: #404040;
   min-height: 100%;
   overflow-x: hidden;
-  background: #eef1ec;
+  background: #edf0f2;
 }
 
 a {
@@ -2386,7 +2386,7 @@ a.wh-text-neutral:hover {
   min-width: 100%;
   background: #fcfcfc;
   z-index: 100;
-  border: solid 1px #d4dbcf;
+  border: solid 1px #cfd7dd;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   padding: 12px;
 }
@@ -2403,7 +2403,7 @@ a.wh-text-neutral:hover {
   color: white;
 }
 .wh-dropdown-menu > dd.divider {
-  border-top: solid 1px #d4dbcf;
+  border-top: solid 1px #cfd7dd;
   margin: 6px 0;
 }
 .wh-dropdown-menu > dd.search {
@@ -2602,7 +2602,7 @@ a.wh-text-neutral:hover {
   display: block;
   width: 50px;
   height: 50px;
-  border: solid 2px #eef1ec;
+  border: solid 2px #edf0f2;
   border-radius: 100px;
   position: absolute;
   right: 0;
@@ -2611,7 +2611,7 @@ a.wh-text-neutral:hover {
 .wh-list-like-table .wh-list-like-table-views .view-fill {
   position: absolute;
   border: solid 10px #fcfcfc;
-  background: #eef1ec;
+  background: #edf0f2;
   top: 0;
   left: 0;
   width: 46px;
@@ -2619,7 +2619,7 @@ a.wh-text-neutral:hover {
   border-radius: 100px;
 }
 .wh-list-like-table .wh-list-like-table-views .view-total {
-  color: #b9c6b1;
+  color: #b2bfc7;
   position: absolute;
   font-size: 70%;
   line-height: 46px;
@@ -3580,7 +3580,7 @@ li.wh-form-gallery-edit .arrow {
   margin: 0;
 }
 .wh-modal footer {
-  background: #eef1ec;
+  background: #edf0f2;
   padding: 1.618em;
   text-align: right;
 }
@@ -3601,7 +3601,7 @@ li.wh-form-gallery-edit .arrow {
   min-width: 100%;
   background: #fcfcfc;
   z-index: 100;
-  border: solid 1px #d4dbcf;
+  border: solid 1px #cfd7dd;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 .wh-autocomplete-dropdown li {
@@ -4479,7 +4479,7 @@ pre.literal-block:after {
 
 .wh-object-list li {
   padding: 10px;
-  border-bottom: solid 1px #e9ede6;
+  border-bottom: solid 1px #e7ebee;
   *zoom: 1;
   position: relative;
   background: rgba(255, 255, 255, 0.9);
@@ -4539,7 +4539,7 @@ pre.literal-block:after {
 }
 
 .wh-object-list-header {
-  background: #d4dbcf;
+  background: #cfd7dd;
   height: 32px;
 }
 
