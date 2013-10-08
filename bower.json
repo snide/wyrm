@@ -1,0 +1,22 @@
+{
+  "name": "wyrm",
+  "version": "1.0",
+  "homepage": "https://github.com/snide/wyrm",
+  "authors": [
+    "Dave Snider <dave.snider@gmail.com>"
+  ],
+  "description": "Wyrm is a modern theme for Sphinx documentation.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.4.0",
+    "bourbon": "~3.1.8"
+  }
+}
