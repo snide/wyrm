@@ -342,7 +342,7 @@ td {
     page-break-after: avoid;
   }
 }
-.font-smooth, .icon:before, .wh-inline-validate.wh-inline-validate-success .wh-input-context:before, .wh-inline-validate.wh-inline-validate-danger .wh-input-context:before, .wh-inline-validate.wh-inline-validate-warning .wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .wh-input-context:before, .wh-tag-input-group .wh-tag .wh-tag-remove:before, .wh-modal-close:before, .wh-figure-controls span.wh-figure-controls-arrow-left:before, .wh-figure-controls span.wh-figure-controls-arrow-right:before, .wh-figure-controls span.wh-figure-controls-arrow-up:before, .wh-figure-controls span.wh-figure-controls-arrow-down:before, .wh-figure-controls span.wh-figure-controls-resize-full:before, .wh-figure-controls span.wh-figure-controls-resize-small:before, .wh-figure-controls span.wh-figure-controls-delete:before, .wh-figure-controls span.wh-figure-controls-table:before, .rst-content .admonition-title:before, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .wh-tag-input-group, .btn, .wh-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
+.font-smooth, .icon:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls span.wy-figure-controls-table:before, .rst-content .admonition-title:before, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .wy-tag-input-group, .btn, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -365,7 +365,7 @@ td {
   src: url("/_static/font/fontawesome_webfont.eot?#iefix") format("embedded-opentype"), url("/_static/font/fontawesome_webfont.woff") format("woff"), url("/_static/font/fontawesome_webfont.ttf") format("truetype"), url("/_static/font/fontawesome_webfont.svg#fontawesome-webfont") format("svg");
 }
 
-.icon:before, .wh-inline-validate.wh-inline-validate-success .wh-input-context:before, .wh-inline-validate.wh-inline-validate-danger .wh-input-context:before, .wh-inline-validate.wh-inline-validate-warning .wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .wh-input-context:before, .wh-tag-input-group .wh-tag .wh-tag-remove:before, .wh-modal-close:before, .wh-figure-controls span.wh-figure-controls-arrow-left:before, .wh-figure-controls span.wh-figure-controls-arrow-right:before, .wh-figure-controls span.wh-figure-controls-arrow-up:before, .wh-figure-controls span.wh-figure-controls-arrow-down:before, .wh-figure-controls span.wh-figure-controls-resize-full:before, .wh-figure-controls span.wh-figure-controls-resize-small:before, .wh-figure-controls span.wh-figure-controls-delete:before, .wh-figure-controls span.wh-figure-controls-table:before, .rst-content .admonition-title:before {
+.icon:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls span.wy-figure-controls-table:before, .rst-content .admonition-title:before {
   display: inline-block;
   font-family: fontawesome-webfont;
   font-style: normal;
@@ -374,7 +374,7 @@ td {
   text-decoration: inherit;
 }
 
-a .icon, a .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh-inline-validate.wh-inline-validate-success a .wh-input-context, a .wh-inline-validate.wh-inline-validate-danger .wh-input-context, .wh-inline-validate.wh-inline-validate-danger a .wh-input-context, a .wh-inline-validate.wh-inline-validate-warning .wh-input-context, .wh-inline-validate.wh-inline-validate-warning a .wh-input-context, a .wh-inline-validate.wh-inline-validate-info .wh-input-context, .wh-inline-validate.wh-inline-validate-info a .wh-input-context, a .wh-tag-input-group .wh-tag .wh-tag-remove, .wh-tag-input-group .wh-tag a .wh-tag-remove, a .wh-modal-close, a .wh-figure-controls span.wh-figure-controls-arrow-left, .wh-figure-controls a span.wh-figure-controls-arrow-left, a .wh-figure-controls span.wh-figure-controls-arrow-right, .wh-figure-controls a span.wh-figure-controls-arrow-right, a .wh-figure-controls span.wh-figure-controls-arrow-up, .wh-figure-controls a span.wh-figure-controls-arrow-up, a .wh-figure-controls span.wh-figure-controls-arrow-down, .wh-figure-controls a span.wh-figure-controls-arrow-down, a .wh-figure-controls span.wh-figure-controls-resize-full, .wh-figure-controls a span.wh-figure-controls-resize-full, a .wh-figure-controls span.wh-figure-controls-resize-small, .wh-figure-controls a span.wh-figure-controls-resize-small, a .wh-figure-controls span.wh-figure-controls-delete, .wh-figure-controls a span.wh-figure-controls-delete, a .wh-figure-controls span.wh-figure-controls-table, .wh-figure-controls a span.wh-figure-controls-table, a .rst-content .admonition-title, .rst-content a .admonition-title {
+a .icon, a .wy-inline-validate.wy-inline-validate-success .wy-input-context, .wy-inline-validate.wy-inline-validate-success a .wy-input-context, a .wy-inline-validate.wy-inline-validate-danger .wy-input-context, .wy-inline-validate.wy-inline-validate-danger a .wy-input-context, a .wy-inline-validate.wy-inline-validate-warning .wy-input-context, .wy-inline-validate.wy-inline-validate-warning a .wy-input-context, a .wy-inline-validate.wy-inline-validate-info .wy-input-context, .wy-inline-validate.wy-inline-validate-info a .wy-input-context, a .wy-tag-input-group .wy-tag .wy-tag-remove, .wy-tag-input-group .wy-tag a .wy-tag-remove, a .wy-modal-close, a .wy-figure-controls span.wy-figure-controls-arrow-left, .wy-figure-controls a span.wy-figure-controls-arrow-left, a .wy-figure-controls span.wy-figure-controls-arrow-right, .wy-figure-controls a span.wy-figure-controls-arrow-right, a .wy-figure-controls span.wy-figure-controls-arrow-up, .wy-figure-controls a span.wy-figure-controls-arrow-up, a .wy-figure-controls span.wy-figure-controls-arrow-down, .wy-figure-controls a span.wy-figure-controls-arrow-down, a .wy-figure-controls span.wy-figure-controls-resize-full, .wy-figure-controls a span.wy-figure-controls-resize-full, a .wy-figure-controls span.wy-figure-controls-resize-small, .wy-figure-controls a span.wy-figure-controls-resize-small, a .wy-figure-controls span.wy-figure-controls-delete, .wy-figure-controls a span.wy-figure-controls-delete, a .wy-figure-controls span.wy-figure-controls-table, .wy-figure-controls a span.wy-figure-controls-table, a .rst-content .admonition-title, .rst-content a .admonition-title {
   display: inline-block;
   text-decoration: inherit;
 }
@@ -385,33 +385,33 @@ a .icon, a .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh
   font-size: 1.33333em;
 }
 
-.btn .icon, .btn .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh-inline-validate.wh-inline-validate-success .btn .wh-input-context, .btn .wh-inline-validate.wh-inline-validate-danger .wh-input-context, .wh-inline-validate.wh-inline-validate-danger .btn .wh-input-context, .btn .wh-inline-validate.wh-inline-validate-warning .wh-input-context, .wh-inline-validate.wh-inline-validate-warning .btn .wh-input-context, .btn .wh-inline-validate.wh-inline-validate-info .wh-input-context, .wh-inline-validate.wh-inline-validate-info .btn .wh-input-context, .btn .wh-tag-input-group .wh-tag .wh-tag-remove, .wh-tag-input-group .wh-tag .btn .wh-tag-remove, .btn .wh-modal-close, .btn .wh-figure-controls span.wh-figure-controls-arrow-left, .wh-figure-controls .btn span.wh-figure-controls-arrow-left, .btn .wh-figure-controls span.wh-figure-controls-arrow-right, .wh-figure-controls .btn span.wh-figure-controls-arrow-right, .btn .wh-figure-controls span.wh-figure-controls-arrow-up, .wh-figure-controls .btn span.wh-figure-controls-arrow-up, .btn .wh-figure-controls span.wh-figure-controls-arrow-down, .wh-figure-controls .btn span.wh-figure-controls-arrow-down, .btn .wh-figure-controls span.wh-figure-controls-resize-full, .wh-figure-controls .btn span.wh-figure-controls-resize-full, .btn .wh-figure-controls span.wh-figure-controls-resize-small, .wh-figure-controls .btn span.wh-figure-controls-resize-small, .btn .wh-figure-controls span.wh-figure-controls-delete, .wh-figure-controls .btn span.wh-figure-controls-delete, .btn .wh-figure-controls span.wh-figure-controls-table, .wh-figure-controls .btn span.wh-figure-controls-table, .btn .rst-content .admonition-title, .rst-content .btn .admonition-title, .nav .icon, .nav .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh-inline-validate.wh-inline-validate-success .nav .wh-input-context, .nav .wh-inline-validate.wh-inline-validate-danger .wh-input-context, .wh-inline-validate.wh-inline-validate-danger .nav .wh-input-context, .nav .wh-inline-validate.wh-inline-validate-warning .wh-input-context, .wh-inline-validate.wh-inline-validate-warning .nav .wh-input-context, .nav .wh-inline-validate.wh-inline-validate-info .wh-input-context, .wh-inline-validate.wh-inline-validate-info .nav .wh-input-context, .nav .wh-tag-input-group .wh-tag .wh-tag-remove, .wh-tag-input-group .wh-tag .nav .wh-tag-remove, .nav .wh-modal-close, .nav .wh-figure-controls span.wh-figure-controls-arrow-left, .wh-figure-controls .nav span.wh-figure-controls-arrow-left, .nav .wh-figure-controls span.wh-figure-controls-arrow-right, .wh-figure-controls .nav span.wh-figure-controls-arrow-right, .nav .wh-figure-controls span.wh-figure-controls-arrow-up, .wh-figure-controls .nav span.wh-figure-controls-arrow-up, .nav .wh-figure-controls span.wh-figure-controls-arrow-down, .wh-figure-controls .nav span.wh-figure-controls-arrow-down, .nav .wh-figure-controls span.wh-figure-controls-resize-full, .wh-figure-controls .nav span.wh-figure-controls-resize-full, .nav .wh-figure-controls span.wh-figure-controls-resize-small, .wh-figure-controls .nav span.wh-figure-controls-resize-small, .nav .wh-figure-controls span.wh-figure-controls-delete, .wh-figure-controls .nav span.wh-figure-controls-delete, .nav .wh-figure-controls span.wh-figure-controls-table, .wh-figure-controls .nav span.wh-figure-controls-table, .nav .rst-content .admonition-title, .rst-content .nav .admonition-title {
+.btn .icon, .btn .wy-inline-validate.wy-inline-validate-success .wy-input-context, .wy-inline-validate.wy-inline-validate-success .btn .wy-input-context, .btn .wy-inline-validate.wy-inline-validate-danger .wy-input-context, .wy-inline-validate.wy-inline-validate-danger .btn .wy-input-context, .btn .wy-inline-validate.wy-inline-validate-warning .wy-input-context, .wy-inline-validate.wy-inline-validate-warning .btn .wy-input-context, .btn .wy-inline-validate.wy-inline-validate-info .wy-input-context, .wy-inline-validate.wy-inline-validate-info .btn .wy-input-context, .btn .wy-tag-input-group .wy-tag .wy-tag-remove, .wy-tag-input-group .wy-tag .btn .wy-tag-remove, .btn .wy-modal-close, .btn .wy-figure-controls span.wy-figure-controls-arrow-left, .wy-figure-controls .btn span.wy-figure-controls-arrow-left, .btn .wy-figure-controls span.wy-figure-controls-arrow-right, .wy-figure-controls .btn span.wy-figure-controls-arrow-right, .btn .wy-figure-controls span.wy-figure-controls-arrow-up, .wy-figure-controls .btn span.wy-figure-controls-arrow-up, .btn .wy-figure-controls span.wy-figure-controls-arrow-down, .wy-figure-controls .btn span.wy-figure-controls-arrow-down, .btn .wy-figure-controls span.wy-figure-controls-resize-full, .wy-figure-controls .btn span.wy-figure-controls-resize-full, .btn .wy-figure-controls span.wy-figure-controls-resize-small, .wy-figure-controls .btn span.wy-figure-controls-resize-small, .btn .wy-figure-controls span.wy-figure-controls-delete, .wy-figure-controls .btn span.wy-figure-controls-delete, .btn .wy-figure-controls span.wy-figure-controls-table, .wy-figure-controls .btn span.wy-figure-controls-table, .btn .rst-content .admonition-title, .rst-content .btn .admonition-title, .nav .icon, .nav .wy-inline-validate.wy-inline-validate-success .wy-input-context, .wy-inline-validate.wy-inline-validate-success .nav .wy-input-context, .nav .wy-inline-validate.wy-inline-validate-danger .wy-input-context, .wy-inline-validate.wy-inline-validate-danger .nav .wy-input-context, .nav .wy-inline-validate.wy-inline-validate-warning .wy-input-context, .wy-inline-validate.wy-inline-validate-warning .nav .wy-input-context, .nav .wy-inline-validate.wy-inline-validate-info .wy-input-context, .wy-inline-validate.wy-inline-validate-info .nav .wy-input-context, .nav .wy-tag-input-group .wy-tag .wy-tag-remove, .wy-tag-input-group .wy-tag .nav .wy-tag-remove, .nav .wy-modal-close, .nav .wy-figure-controls span.wy-figure-controls-arrow-left, .wy-figure-controls .nav span.wy-figure-controls-arrow-left, .nav .wy-figure-controls span.wy-figure-controls-arrow-right, .wy-figure-controls .nav span.wy-figure-controls-arrow-right, .nav .wy-figure-controls span.wy-figure-controls-arrow-up, .wy-figure-controls .nav span.wy-figure-controls-arrow-up, .nav .wy-figure-controls span.wy-figure-controls-arrow-down, .wy-figure-controls .nav span.wy-figure-controls-arrow-down, .nav .wy-figure-controls span.wy-figure-controls-resize-full, .wy-figure-controls .nav span.wy-figure-controls-resize-full, .nav .wy-figure-controls span.wy-figure-controls-resize-small, .wy-figure-controls .nav span.wy-figure-controls-resize-small, .nav .wy-figure-controls span.wy-figure-controls-delete, .wy-figure-controls .nav span.wy-figure-controls-delete, .nav .wy-figure-controls span.wy-figure-controls-table, .wy-figure-controls .nav span.wy-figure-controls-table, .nav .rst-content .admonition-title, .rst-content .nav .admonition-title {
   display: inline;
 }
-.btn .icon.icon-large, .btn .wh-inline-validate.wh-inline-validate-success .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-success .btn .icon-large.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-danger .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-danger .btn .icon-large.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-warning .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-warning .btn .icon-large.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-info .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-info .btn .icon-large.wh-input-context, .btn .wh-tag-input-group .wh-tag .icon-large.wh-tag-remove, .wh-tag-input-group .wh-tag .btn .icon-large.wh-tag-remove, .btn .icon-large.wh-modal-close, .btn .wh-figure-controls span.icon-large.wh-figure-controls-arrow-left, .wh-figure-controls .btn span.icon-large.wh-figure-controls-arrow-left, .btn .wh-figure-controls span.icon-large.wh-figure-controls-arrow-right, .wh-figure-controls .btn span.icon-large.wh-figure-controls-arrow-right, .btn .wh-figure-controls span.icon-large.wh-figure-controls-arrow-up, .wh-figure-controls .btn span.icon-large.wh-figure-controls-arrow-up, .btn .wh-figure-controls span.icon-large.wh-figure-controls-arrow-down, .wh-figure-controls .btn span.icon-large.wh-figure-controls-arrow-down, .btn .wh-figure-controls span.icon-large.wh-figure-controls-resize-full, .wh-figure-controls .btn span.icon-large.wh-figure-controls-resize-full, .btn .wh-figure-controls span.icon-large.wh-figure-controls-resize-small, .wh-figure-controls .btn span.icon-large.wh-figure-controls-resize-small, .btn .wh-figure-controls span.icon-large.wh-figure-controls-delete, .wh-figure-controls .btn span.icon-large.wh-figure-controls-delete, .btn .wh-figure-controls span.icon-large.wh-figure-controls-table, .wh-figure-controls .btn span.icon-large.wh-figure-controls-table, .btn .rst-content .icon-large.admonition-title, .rst-content .btn .icon-large.admonition-title, .nav .icon.icon-large, .nav .wh-inline-validate.wh-inline-validate-success .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-success .nav .icon-large.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-danger .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-danger .nav .icon-large.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-warning .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-warning .nav .icon-large.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-info .icon-large.wh-input-context, .wh-inline-validate.wh-inline-validate-info .nav .icon-large.wh-input-context, .nav .wh-tag-input-group .wh-tag .icon-large.wh-tag-remove, .wh-tag-input-group .wh-tag .nav .icon-large.wh-tag-remove, .nav .icon-large.wh-modal-close, .nav .wh-figure-controls span.icon-large.wh-figure-controls-arrow-left, .wh-figure-controls .nav span.icon-large.wh-figure-controls-arrow-left, .nav .wh-figure-controls span.icon-large.wh-figure-controls-arrow-right, .wh-figure-controls .nav span.icon-large.wh-figure-controls-arrow-right, .nav .wh-figure-controls span.icon-large.wh-figure-controls-arrow-up, .wh-figure-controls .nav span.icon-large.wh-figure-controls-arrow-up, .nav .wh-figure-controls span.icon-large.wh-figure-controls-arrow-down, .wh-figure-controls .nav span.icon-large.wh-figure-controls-arrow-down, .nav .wh-figure-controls span.icon-large.wh-figure-controls-resize-full, .wh-figure-controls .nav span.icon-large.wh-figure-controls-resize-full, .nav .wh-figure-controls span.icon-large.wh-figure-controls-resize-small, .wh-figure-controls .nav span.icon-large.wh-figure-controls-resize-small, .nav .wh-figure-controls span.icon-large.wh-figure-controls-delete, .wh-figure-controls .nav span.icon-large.wh-figure-controls-delete, .nav .wh-figure-controls span.icon-large.wh-figure-controls-table, .wh-figure-controls .nav span.icon-large.wh-figure-controls-table, .nav .rst-content .icon-large.admonition-title, .rst-content .nav .icon-large.admonition-title {
+.btn .icon.icon-large, .btn .wy-inline-validate.wy-inline-validate-success .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-success .btn .icon-large.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-danger .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-danger .btn .icon-large.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-warning .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-warning .btn .icon-large.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-info .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-info .btn .icon-large.wy-input-context, .btn .wy-tag-input-group .wy-tag .icon-large.wy-tag-remove, .wy-tag-input-group .wy-tag .btn .icon-large.wy-tag-remove, .btn .icon-large.wy-modal-close, .btn .wy-figure-controls span.icon-large.wy-figure-controls-arrow-left, .wy-figure-controls .btn span.icon-large.wy-figure-controls-arrow-left, .btn .wy-figure-controls span.icon-large.wy-figure-controls-arrow-right, .wy-figure-controls .btn span.icon-large.wy-figure-controls-arrow-right, .btn .wy-figure-controls span.icon-large.wy-figure-controls-arrow-up, .wy-figure-controls .btn span.icon-large.wy-figure-controls-arrow-up, .btn .wy-figure-controls span.icon-large.wy-figure-controls-arrow-down, .wy-figure-controls .btn span.icon-large.wy-figure-controls-arrow-down, .btn .wy-figure-controls span.icon-large.wy-figure-controls-resize-full, .wy-figure-controls .btn span.icon-large.wy-figure-controls-resize-full, .btn .wy-figure-controls span.icon-large.wy-figure-controls-resize-small, .wy-figure-controls .btn span.icon-large.wy-figure-controls-resize-small, .btn .wy-figure-controls span.icon-large.wy-figure-controls-delete, .wy-figure-controls .btn span.icon-large.wy-figure-controls-delete, .btn .wy-figure-controls span.icon-large.wy-figure-controls-table, .wy-figure-controls .btn span.icon-large.wy-figure-controls-table, .btn .rst-content .icon-large.admonition-title, .rst-content .btn .icon-large.admonition-title, .nav .icon.icon-large, .nav .wy-inline-validate.wy-inline-validate-success .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-success .nav .icon-large.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-danger .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-danger .nav .icon-large.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-warning .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-warning .nav .icon-large.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-info .icon-large.wy-input-context, .wy-inline-validate.wy-inline-validate-info .nav .icon-large.wy-input-context, .nav .wy-tag-input-group .wy-tag .icon-large.wy-tag-remove, .wy-tag-input-group .wy-tag .nav .icon-large.wy-tag-remove, .nav .icon-large.wy-modal-close, .nav .wy-figure-controls span.icon-large.wy-figure-controls-arrow-left, .wy-figure-controls .nav span.icon-large.wy-figure-controls-arrow-left, .nav .wy-figure-controls span.icon-large.wy-figure-controls-arrow-right, .wy-figure-controls .nav span.icon-large.wy-figure-controls-arrow-right, .nav .wy-figure-controls span.icon-large.wy-figure-controls-arrow-up, .wy-figure-controls .nav span.icon-large.wy-figure-controls-arrow-up, .nav .wy-figure-controls span.icon-large.wy-figure-controls-arrow-down, .wy-figure-controls .nav span.icon-large.wy-figure-controls-arrow-down, .nav .wy-figure-controls span.icon-large.wy-figure-controls-resize-full, .wy-figure-controls .nav span.icon-large.wy-figure-controls-resize-full, .nav .wy-figure-controls span.icon-large.wy-figure-controls-resize-small, .wy-figure-controls .nav span.icon-large.wy-figure-controls-resize-small, .nav .wy-figure-controls span.icon-large.wy-figure-controls-delete, .wy-figure-controls .nav span.icon-large.wy-figure-controls-delete, .nav .wy-figure-controls span.icon-large.wy-figure-controls-table, .wy-figure-controls .nav span.icon-large.wy-figure-controls-table, .nav .rst-content .icon-large.admonition-title, .rst-content .nav .icon-large.admonition-title {
   line-height: 0.9em;
 }
-.btn .icon.icon-spin, .btn .wh-inline-validate.wh-inline-validate-success .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-success .btn .icon-spin.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-danger .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-danger .btn .icon-spin.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-warning .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-warning .btn .icon-spin.wh-input-context, .btn .wh-inline-validate.wh-inline-validate-info .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-info .btn .icon-spin.wh-input-context, .btn .wh-tag-input-group .wh-tag .icon-spin.wh-tag-remove, .wh-tag-input-group .wh-tag .btn .icon-spin.wh-tag-remove, .btn .icon-spin.wh-modal-close, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-left, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-arrow-left, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-right, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-arrow-right, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-up, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-arrow-up, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-down, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-arrow-down, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-resize-full, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-resize-full, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-resize-small, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-resize-small, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-delete, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-delete, .btn .wh-figure-controls span.icon-spin.wh-figure-controls-table, .wh-figure-controls .btn span.icon-spin.wh-figure-controls-table, .btn .rst-content .icon-spin.admonition-title, .rst-content .btn .icon-spin.admonition-title, .nav .icon.icon-spin, .nav .wh-inline-validate.wh-inline-validate-success .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-success .nav .icon-spin.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-danger .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-danger .nav .icon-spin.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-warning .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-warning .nav .icon-spin.wh-input-context, .nav .wh-inline-validate.wh-inline-validate-info .icon-spin.wh-input-context, .wh-inline-validate.wh-inline-validate-info .nav .icon-spin.wh-input-context, .nav .wh-tag-input-group .wh-tag .icon-spin.wh-tag-remove, .wh-tag-input-group .wh-tag .nav .icon-spin.wh-tag-remove, .nav .icon-spin.wh-modal-close, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-left, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-arrow-left, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-right, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-arrow-right, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-up, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-arrow-up, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-arrow-down, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-arrow-down, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-resize-full, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-resize-full, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-resize-small, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-resize-small, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-delete, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-delete, .nav .wh-figure-controls span.icon-spin.wh-figure-controls-table, .wh-figure-controls .nav span.icon-spin.wh-figure-controls-table, .nav .rst-content .icon-spin.admonition-title, .rst-content .nav .icon-spin.admonition-title {
+.btn .icon.icon-spin, .btn .wy-inline-validate.wy-inline-validate-success .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-success .btn .icon-spin.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-danger .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-danger .btn .icon-spin.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-warning .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-warning .btn .icon-spin.wy-input-context, .btn .wy-inline-validate.wy-inline-validate-info .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-info .btn .icon-spin.wy-input-context, .btn .wy-tag-input-group .wy-tag .icon-spin.wy-tag-remove, .wy-tag-input-group .wy-tag .btn .icon-spin.wy-tag-remove, .btn .icon-spin.wy-modal-close, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-left, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-arrow-left, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-right, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-arrow-right, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-up, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-arrow-up, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-down, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-arrow-down, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-resize-full, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-resize-full, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-resize-small, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-resize-small, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-delete, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-delete, .btn .wy-figure-controls span.icon-spin.wy-figure-controls-table, .wy-figure-controls .btn span.icon-spin.wy-figure-controls-table, .btn .rst-content .icon-spin.admonition-title, .rst-content .btn .icon-spin.admonition-title, .nav .icon.icon-spin, .nav .wy-inline-validate.wy-inline-validate-success .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-success .nav .icon-spin.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-danger .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-danger .nav .icon-spin.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-warning .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-warning .nav .icon-spin.wy-input-context, .nav .wy-inline-validate.wy-inline-validate-info .icon-spin.wy-input-context, .wy-inline-validate.wy-inline-validate-info .nav .icon-spin.wy-input-context, .nav .wy-tag-input-group .wy-tag .icon-spin.wy-tag-remove, .wy-tag-input-group .wy-tag .nav .icon-spin.wy-tag-remove, .nav .icon-spin.wy-modal-close, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-left, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-arrow-left, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-right, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-arrow-right, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-up, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-arrow-up, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-arrow-down, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-arrow-down, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-resize-full, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-resize-full, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-resize-small, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-resize-small, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-delete, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-delete, .nav .wy-figure-controls span.icon-spin.wy-figure-controls-table, .wy-figure-controls .nav span.icon-spin.wy-figure-controls-table, .nav .rst-content .icon-spin.admonition-title, .rst-content .nav .icon-spin.admonition-title {
   display: inline-block;
 }
 
-.btn.icon:before, .wh-inline-validate.wh-inline-validate-success .btn.wh-input-context:before, .wh-inline-validate.wh-inline-validate-danger .btn.wh-input-context:before, .wh-inline-validate.wh-inline-validate-warning .btn.wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .btn.wh-input-context:before, .wh-tag-input-group .wh-tag .btn.wh-tag-remove:before, .btn.wh-modal-close:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-left:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-right:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-up:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-down:before, .wh-figure-controls span.btn.wh-figure-controls-resize-full:before, .wh-figure-controls span.btn.wh-figure-controls-resize-small:before, .wh-figure-controls span.btn.wh-figure-controls-delete:before, .wh-figure-controls span.btn.wh-figure-controls-table:before, .rst-content .btn.admonition-title:before {
+.btn.icon:before, .wy-inline-validate.wy-inline-validate-success .btn.wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .btn.wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .btn.wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .btn.wy-input-context:before, .wy-tag-input-group .wy-tag .btn.wy-tag-remove:before, .btn.wy-modal-close:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-left:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-right:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-up:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-down:before, .wy-figure-controls span.btn.wy-figure-controls-resize-full:before, .wy-figure-controls span.btn.wy-figure-controls-resize-small:before, .wy-figure-controls span.btn.wy-figure-controls-delete:before, .wy-figure-controls span.btn.wy-figure-controls-table:before, .rst-content .btn.admonition-title:before {
   opacity: 0.5;
   -webkit-transition: opacity 0.05s ease-in;
   -moz-transition: opacity 0.05s ease-in;
   transition: opacity 0.05s ease-in;
 }
 
-.btn.icon:hover:before, .wh-inline-validate.wh-inline-validate-success .btn.wh-input-context:hover:before, .wh-inline-validate.wh-inline-validate-danger .btn.wh-input-context:hover:before, .wh-inline-validate.wh-inline-validate-warning .btn.wh-input-context:hover:before, .wh-inline-validate.wh-inline-validate-info .btn.wh-input-context:hover:before, .wh-tag-input-group .wh-tag .btn.wh-tag-remove:hover:before, .btn.wh-modal-close:hover:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-left:hover:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-right:hover:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-up:hover:before, .wh-figure-controls span.btn.wh-figure-controls-arrow-down:hover:before, .wh-figure-controls span.btn.wh-figure-controls-resize-full:hover:before, .wh-figure-controls span.btn.wh-figure-controls-resize-small:hover:before, .wh-figure-controls span.btn.wh-figure-controls-delete:hover:before, .wh-figure-controls span.btn.wh-figure-controls-table:hover:before, .rst-content .btn.admonition-title:hover:before {
+.btn.icon:hover:before, .wy-inline-validate.wy-inline-validate-success .btn.wy-input-context:hover:before, .wy-inline-validate.wy-inline-validate-danger .btn.wy-input-context:hover:before, .wy-inline-validate.wy-inline-validate-warning .btn.wy-input-context:hover:before, .wy-inline-validate.wy-inline-validate-info .btn.wy-input-context:hover:before, .wy-tag-input-group .wy-tag .btn.wy-tag-remove:hover:before, .btn.wy-modal-close:hover:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-left:hover:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-right:hover:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-up:hover:before, .wy-figure-controls span.btn.wy-figure-controls-arrow-down:hover:before, .wy-figure-controls span.btn.wy-figure-controls-resize-full:hover:before, .wy-figure-controls span.btn.wy-figure-controls-resize-small:hover:before, .wy-figure-controls span.btn.wy-figure-controls-delete:hover:before, .wy-figure-controls span.btn.wy-figure-controls-table:hover:before, .rst-content .btn.admonition-title:hover:before {
   opacity: 1;
 }
 
-.btn-mini .icon:before, .btn-mini .wh-inline-validate.wh-inline-validate-success .wh-input-context:before, .wh-inline-validate.wh-inline-validate-success .btn-mini .wh-input-context:before, .btn-mini .wh-inline-validate.wh-inline-validate-danger .wh-input-context:before, .wh-inline-validate.wh-inline-validate-danger .btn-mini .wh-input-context:before, .btn-mini .wh-inline-validate.wh-inline-validate-warning .wh-input-context:before, .wh-inline-validate.wh-inline-validate-warning .btn-mini .wh-input-context:before, .btn-mini .wh-inline-validate.wh-inline-validate-info .wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .btn-mini .wh-input-context:before, .btn-mini .wh-tag-input-group .wh-tag .wh-tag-remove:before, .wh-tag-input-group .wh-tag .btn-mini .wh-tag-remove:before, .btn-mini .wh-modal-close:before, .btn-mini .wh-figure-controls span.wh-figure-controls-arrow-left:before, .wh-figure-controls .btn-mini span.wh-figure-controls-arrow-left:before, .btn-mini .wh-figure-controls span.wh-figure-controls-arrow-right:before, .wh-figure-controls .btn-mini span.wh-figure-controls-arrow-right:before, .btn-mini .wh-figure-controls span.wh-figure-controls-arrow-up:before, .wh-figure-controls .btn-mini span.wh-figure-controls-arrow-up:before, .btn-mini .wh-figure-controls span.wh-figure-controls-arrow-down:before, .wh-figure-controls .btn-mini span.wh-figure-controls-arrow-down:before, .btn-mini .wh-figure-controls span.wh-figure-controls-resize-full:before, .wh-figure-controls .btn-mini span.wh-figure-controls-resize-full:before, .btn-mini .wh-figure-controls span.wh-figure-controls-resize-small:before, .wh-figure-controls .btn-mini span.wh-figure-controls-resize-small:before, .btn-mini .wh-figure-controls span.wh-figure-controls-delete:before, .wh-figure-controls .btn-mini span.wh-figure-controls-delete:before, .btn-mini .wh-figure-controls span.wh-figure-controls-table:before, .wh-figure-controls .btn-mini span.wh-figure-controls-table:before, .btn-mini .rst-content .admonition-title:before, .rst-content .btn-mini .admonition-title:before {
+.btn-mini .icon:before, .btn-mini .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-success .btn-mini .wy-input-context:before, .btn-mini .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .btn-mini .wy-input-context:before, .btn-mini .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .btn-mini .wy-input-context:before, .btn-mini .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .btn-mini .wy-input-context:before, .btn-mini .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-tag-input-group .wy-tag .btn-mini .wy-tag-remove:before, .btn-mini .wy-modal-close:before, .btn-mini .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls .btn-mini span.wy-figure-controls-arrow-left:before, .btn-mini .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls .btn-mini span.wy-figure-controls-arrow-right:before, .btn-mini .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls .btn-mini span.wy-figure-controls-arrow-up:before, .btn-mini .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls .btn-mini span.wy-figure-controls-arrow-down:before, .btn-mini .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls .btn-mini span.wy-figure-controls-resize-full:before, .btn-mini .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls .btn-mini span.wy-figure-controls-resize-small:before, .btn-mini .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls .btn-mini span.wy-figure-controls-delete:before, .btn-mini .wy-figure-controls span.wy-figure-controls-table:before, .wy-figure-controls .btn-mini span.wy-figure-controls-table:before, .btn-mini .rst-content .admonition-title:before, .rst-content .btn-mini .admonition-title:before {
   font-size: 14px;
   vertical-align: -15%;
 }
 
-li .icon, li .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh-inline-validate.wh-inline-validate-success li .wh-input-context, li .wh-inline-validate.wh-inline-validate-danger .wh-input-context, .wh-inline-validate.wh-inline-validate-danger li .wh-input-context, li .wh-inline-validate.wh-inline-validate-warning .wh-input-context, .wh-inline-validate.wh-inline-validate-warning li .wh-input-context, li .wh-inline-validate.wh-inline-validate-info .wh-input-context, .wh-inline-validate.wh-inline-validate-info li .wh-input-context, li .wh-tag-input-group .wh-tag .wh-tag-remove, .wh-tag-input-group .wh-tag li .wh-tag-remove, li .wh-modal-close, li .wh-figure-controls span.wh-figure-controls-arrow-left, .wh-figure-controls li span.wh-figure-controls-arrow-left, li .wh-figure-controls span.wh-figure-controls-arrow-right, .wh-figure-controls li span.wh-figure-controls-arrow-right, li .wh-figure-controls span.wh-figure-controls-arrow-up, .wh-figure-controls li span.wh-figure-controls-arrow-up, li .wh-figure-controls span.wh-figure-controls-arrow-down, .wh-figure-controls li span.wh-figure-controls-arrow-down, li .wh-figure-controls span.wh-figure-controls-resize-full, .wh-figure-controls li span.wh-figure-controls-resize-full, li .wh-figure-controls span.wh-figure-controls-resize-small, .wh-figure-controls li span.wh-figure-controls-resize-small, li .wh-figure-controls span.wh-figure-controls-delete, .wh-figure-controls li span.wh-figure-controls-delete, li .wh-figure-controls span.wh-figure-controls-table, .wh-figure-controls li span.wh-figure-controls-table, li .rst-content .admonition-title, .rst-content li .admonition-title {
+li .icon, li .wy-inline-validate.wy-inline-validate-success .wy-input-context, .wy-inline-validate.wy-inline-validate-success li .wy-input-context, li .wy-inline-validate.wy-inline-validate-danger .wy-input-context, .wy-inline-validate.wy-inline-validate-danger li .wy-input-context, li .wy-inline-validate.wy-inline-validate-warning .wy-input-context, .wy-inline-validate.wy-inline-validate-warning li .wy-input-context, li .wy-inline-validate.wy-inline-validate-info .wy-input-context, .wy-inline-validate.wy-inline-validate-info li .wy-input-context, li .wy-tag-input-group .wy-tag .wy-tag-remove, .wy-tag-input-group .wy-tag li .wy-tag-remove, li .wy-modal-close, li .wy-figure-controls span.wy-figure-controls-arrow-left, .wy-figure-controls li span.wy-figure-controls-arrow-left, li .wy-figure-controls span.wy-figure-controls-arrow-right, .wy-figure-controls li span.wy-figure-controls-arrow-right, li .wy-figure-controls span.wy-figure-controls-arrow-up, .wy-figure-controls li span.wy-figure-controls-arrow-up, li .wy-figure-controls span.wy-figure-controls-arrow-down, .wy-figure-controls li span.wy-figure-controls-arrow-down, li .wy-figure-controls span.wy-figure-controls-resize-full, .wy-figure-controls li span.wy-figure-controls-resize-full, li .wy-figure-controls span.wy-figure-controls-resize-small, .wy-figure-controls li span.wy-figure-controls-resize-small, li .wy-figure-controls span.wy-figure-controls-delete, .wy-figure-controls li span.wy-figure-controls-delete, li .wy-figure-controls span.wy-figure-controls-table, .wy-figure-controls li span.wy-figure-controls-table, li .rst-content .admonition-title, .rst-content li .admonition-title {
   display: inline-block;
 }
 li .icon-large:before,
@@ -425,7 +425,7 @@ ul.icons {
   margin-left: 2em;
   text-indent: -0.8em;
 }
-ul.icons li .icon, ul.icons li .wh-inline-validate.wh-inline-validate-success .wh-input-context, .wh-inline-validate.wh-inline-validate-success ul.icons li .wh-input-context, ul.icons li .wh-inline-validate.wh-inline-validate-danger .wh-input-context, .wh-inline-validate.wh-inline-validate-danger ul.icons li .wh-input-context, ul.icons li .wh-inline-validate.wh-inline-validate-warning .wh-input-context, .wh-inline-validate.wh-inline-validate-warning ul.icons li .wh-input-context, ul.icons li .wh-inline-validate.wh-inline-validate-info .wh-input-context, .wh-inline-validate.wh-inline-validate-info ul.icons li .wh-input-context, ul.icons li .wh-tag-input-group .wh-tag .wh-tag-remove, .wh-tag-input-group .wh-tag ul.icons li .wh-tag-remove, ul.icons li .wh-modal-close, ul.icons li .wh-figure-controls span.wh-figure-controls-arrow-left, .wh-figure-controls ul.icons li span.wh-figure-controls-arrow-left, ul.icons li .wh-figure-controls span.wh-figure-controls-arrow-right, .wh-figure-controls ul.icons li span.wh-figure-controls-arrow-right, ul.icons li .wh-figure-controls span.wh-figure-controls-arrow-up, .wh-figure-controls ul.icons li span.wh-figure-controls-arrow-up, ul.icons li .wh-figure-controls span.wh-figure-controls-arrow-down, .wh-figure-controls ul.icons li span.wh-figure-controls-arrow-down, ul.icons li .wh-figure-controls span.wh-figure-controls-resize-full, .wh-figure-controls ul.icons li span.wh-figure-controls-resize-full, ul.icons li .wh-figure-controls span.wh-figure-controls-resize-small, .wh-figure-controls ul.icons li span.wh-figure-controls-resize-small, ul.icons li .wh-figure-controls span.wh-figure-controls-delete, .wh-figure-controls ul.icons li span.wh-figure-controls-delete, ul.icons li .wh-figure-controls span.wh-figure-controls-table, .wh-figure-controls ul.icons li span.wh-figure-controls-table, ul.icons li .rst-content .admonition-title, .rst-content ul.icons li .admonition-title {
+ul.icons li .icon, ul.icons li .wy-inline-validate.wy-inline-validate-success .wy-input-context, .wy-inline-validate.wy-inline-validate-success ul.icons li .wy-input-context, ul.icons li .wy-inline-validate.wy-inline-validate-danger .wy-input-context, .wy-inline-validate.wy-inline-validate-danger ul.icons li .wy-input-context, ul.icons li .wy-inline-validate.wy-inline-validate-warning .wy-input-context, .wy-inline-validate.wy-inline-validate-warning ul.icons li .wy-input-context, ul.icons li .wy-inline-validate.wy-inline-validate-info .wy-input-context, .wy-inline-validate.wy-inline-validate-info ul.icons li .wy-input-context, ul.icons li .wy-tag-input-group .wy-tag .wy-tag-remove, .wy-tag-input-group .wy-tag ul.icons li .wy-tag-remove, ul.icons li .wy-modal-close, ul.icons li .wy-figure-controls span.wy-figure-controls-arrow-left, .wy-figure-controls ul.icons li span.wy-figure-controls-arrow-left, ul.icons li .wy-figure-controls span.wy-figure-controls-arrow-right, .wy-figure-controls ul.icons li span.wy-figure-controls-arrow-right, ul.icons li .wy-figure-controls span.wy-figure-controls-arrow-up, .wy-figure-controls ul.icons li span.wy-figure-controls-arrow-up, ul.icons li .wy-figure-controls span.wy-figure-controls-arrow-down, .wy-figure-controls ul.icons li span.wy-figure-controls-arrow-down, ul.icons li .wy-figure-controls span.wy-figure-controls-resize-full, .wy-figure-controls ul.icons li span.wy-figure-controls-resize-full, ul.icons li .wy-figure-controls span.wy-figure-controls-resize-small, .wy-figure-controls ul.icons li span.wy-figure-controls-resize-small, ul.icons li .wy-figure-controls span.wy-figure-controls-delete, .wy-figure-controls ul.icons li span.wy-figure-controls-delete, ul.icons li .wy-figure-controls span.wy-figure-controls-table, .wy-figure-controls ul.icons li span.wy-figure-controls-table, ul.icons li .rst-content .admonition-title, .rst-content ul.icons li .admonition-title {
   width: 0.8em;
 }
 ul.icons li .icon-large:before,
@@ -486,7 +486,7 @@ ul.icons li .icon-large:before {
   content: "\f00c";
 }
 
-.icon-remove:before, .wh-tag-input-group .wh-tag .wh-tag-remove:before, .wh-modal-close:before {
+.icon-remove:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before {
   content: "\f00d";
 }
 
@@ -512,7 +512,7 @@ ul.icons li .icon-large:before {
   content: "\f013";
 }
 
-.icon-trash:before, .wh-figure-controls span.wh-figure-controls-delete:before {
+.icon-trash:before, .wy-figure-controls span.wy-figure-controls-delete:before {
   content: "\f014";
 }
 
@@ -765,7 +765,7 @@ ul.icons li .icon-large:before {
   content: "\f056";
 }
 
-.icon-remove-sign:before, .wh-inline-validate.wh-inline-validate-danger .wh-input-context:before {
+.icon-remove-sign:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before {
   content: "\f057";
 }
 
@@ -797,19 +797,19 @@ ul.icons li .icon-large:before {
   content: "\f05e";
 }
 
-.icon-arrow-left:before, .wh-figure-controls span.wh-figure-controls-arrow-left:before {
+.icon-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before {
   content: "\f060";
 }
 
-.icon-arrow-right:before, .wh-figure-controls span.wh-figure-controls-arrow-right:before {
+.icon-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before {
   content: "\f061";
 }
 
-.icon-arrow-up:before, .wh-figure-controls span.wh-figure-controls-arrow-up:before {
+.icon-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before {
   content: "\f062";
 }
 
-.icon-arrow-down:before, .wh-figure-controls span.wh-figure-controls-arrow-down:before {
+.icon-arrow-down:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before {
   content: "\f063";
 }
 
@@ -818,11 +818,11 @@ ul.icons li .icon-large:before {
   content: "\f064";
 }
 
-.icon-resize-full:before, .wh-figure-controls span.wh-figure-controls-resize-full:before {
+.icon-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-full:before {
   content: "\f065";
 }
 
-.icon-resize-small:before, .wh-figure-controls span.wh-figure-controls-resize-small:before {
+.icon-resize-small:before, .wy-figure-controls span.wy-figure-controls-resize-small:before {
   content: "\f066";
 }
 
@@ -838,7 +838,7 @@ ul.icons li .icon-large:before {
   content: "\f069";
 }
 
-.icon-exclamation-sign:before, .wh-inline-validate.wh-inline-validate-warning .wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .wh-input-context:before, .rst-content .admonition-title:before {
+.icon-exclamation-sign:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .rst-content .admonition-title:before {
   content: "\f06a";
 }
 
@@ -1169,7 +1169,7 @@ ul.icons li .icon-large:before {
   content: "\f0cd";
 }
 
-.icon-table:before, .wh-figure-controls span.wh-figure-controls-table:before {
+.icon-table:before, .wy-figure-controls span.wy-figure-controls-table:before {
   content: "\f0ce";
 }
 
@@ -1640,7 +1640,7 @@ ul.icons li .icon-large:before {
   content: "\f149";
 }
 
-.icon-check-sign:before, .wh-inline-validate.wh-inline-validate-success .wh-input-context:before {
+.icon-check-sign:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before {
   content: "\f14a";
 }
 
@@ -2018,118 +2018,118 @@ code.code-large, tt.code-large {
   width: 100%;
 }
 
-.wh-plain-list-disc, .rst-content ul.simple {
+.wy-plain-list-disc, .rst-content ul.simple {
   list-style: disc;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
-.wh-plain-list-disc li, .rst-content ul.simple li {
+.wy-plain-list-disc li, .rst-content ul.simple li {
   list-style: disc;
   margin-left: 24px;
 }
 
-.wh-plain-list-decimal {
+.wy-plain-list-decimal {
   list-style: decimal;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
-.wh-plain-list-decimal li {
+.wy-plain-list-decimal li {
   list-style: decimal;
   margin-left: 24px;
 }
 
-.wh-type-large {
+.wy-type-large {
   font-size: 120%;
 }
 
-.wh-type-normal {
+.wy-type-normal {
   font-size: 100%;
 }
 
-.wh-type-small {
+.wy-type-small {
   font-size: 100%;
 }
 
-.wh-type-strike {
+.wy-type-strike {
   text-decoration: line-through;
 }
 
-.wh-text-warning {
+.wy-text-warning {
   color: #e67e22 !important;
 }
 
-a.wh-text-warning:hover {
+a.wy-text-warning:hover {
   color: #eb9950 !important;
 }
 
-.wh-text-info {
+.wy-text-info {
   color: #2980b9 !important;
 }
 
-a.wh-text-info:hover {
+a.wy-text-info:hover {
   color: #409ad5 !important;
 }
 
-.wh-text-success {
+.wy-text-success {
   color: #27ae60 !important;
 }
 
-a.wh-text-success:hover {
+a.wy-text-success:hover {
   color: #36d278 !important;
 }
 
-.wh-text-danger {
+.wy-text-danger {
   color: #e74c3c !important;
 }
 
-a.wh-text-danger:hover {
+a.wy-text-danger:hover {
   color: #ed7669 !important;
 }
 
-.wh-text-neutral {
+.wy-text-neutral {
   color: #404040 !important;
 }
 
-a.wh-text-neutral:hover {
+a.wy-text-neutral:hover {
   color: #595959 !important;
 }
 
-.wh-menu a:hover {
+.wy-menu a:hover {
   text-decoration: none;
 }
 
-.wh-menu-horiz {
+.wy-menu-horiz {
   *zoom: 1;
 }
-.wh-menu-horiz:before, .wh-menu-horiz:after {
+.wy-menu-horiz:before, .wy-menu-horiz:after {
   display: table;
   content: "";
 }
-.wh-menu-horiz:after {
+.wy-menu-horiz:after {
   clear: both;
 }
-.wh-menu-horiz ul, .wh-menu-horiz li {
+.wy-menu-horiz ul, .wy-menu-horiz li {
   display: inline-block;
 }
-.wh-menu-horiz li:hover {
+.wy-menu-horiz li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-.wh-menu-horiz li.divide-left {
+.wy-menu-horiz li.divide-left {
   border-left: solid 1px #404040;
 }
-.wh-menu-horiz li.divide-right {
+.wy-menu-horiz li.divide-right {
   border-right: solid 1px #404040;
 }
-.wh-menu-horiz a {
+.wy-menu-horiz a {
   height: 32px;
   display: inline-block;
   line-height: 32px;
   padding: 0 16px;
 }
 
-.wh-menu-vertical header {
+.wy-menu-vertical header {
   height: 32px;
   display: inline-block;
   line-height: 32px;
@@ -2141,16 +2141,16 @@ a.wh-text-neutral:hover {
   color: #2980b9;
   white-space: nowrap;
 }
-.wh-menu-vertical ul {
+.wy-menu-vertical ul {
   margin-bottom: 1.618em;
 }
-.wh-menu-vertical li.divide-top {
+.wy-menu-vertical li.divide-top {
   border-top: solid 1px #404040;
 }
-.wh-menu-vertical li.divide-bottom {
+.wy-menu-vertical li.divide-bottom {
   border-bottom: solid 1px #404040;
 }
-.wh-menu-vertical li.on a {
+.wy-menu-vertical li.on a {
   color: #2980b9;
   font-weight: 500;
   position: relative;
@@ -2158,7 +2158,7 @@ a.wh-text-neutral:hover {
   border-left: solid 4px #2980b9;
   padding-left: 1.368em;
 }
-.wh-menu-vertical a {
+.wy-menu-vertical a {
   height: 32px;
   display: inline-block;
   line-height: 32px;
@@ -2172,17 +2172,17 @@ a.wh-text-neutral:hover {
   -moz-transition: background-color 0.05s ease-in;
   transition: background-color 0.05s ease-in;
 }
-.wh-menu-vertical a:hover {
+.wy-menu-vertical a:hover {
   background-color: #4e4a4a;
   cursor: pointer;
 }
-.wh-menu-vertical a:active {
+.wy-menu-vertical a:active {
   background-color: #2980b9;
   cursor: pointer;
   color: white;
 }
 
-.wh-logo {
+.wy-logo {
   z-index: 200;
   margin-bottom: 1.618em;
   background-color: #272525;
@@ -2190,13 +2190,13 @@ a.wh-text-neutral:hover {
   padding: 0.809em 0;
   display: block;
 }
-.wh-logo .wh-logo-img {
+.wy-logo .wy-logo-img {
   display: block;
 }
-.wh-logo .wh-logo-img:hover {
+.wy-logo .wy-logo-img:hover {
   background: none;
 }
-.wh-logo img {
+.wy-logo img {
   display: block;
   margin: auto auto 0.809em auto;
   height: 45px;
@@ -2205,23 +2205,23 @@ a.wh-text-neutral:hover {
   padding: 5px;
   border-radius: 100%;
 }
-.wh-logo a {
+.wy-logo a {
   color: #b3b3b3;
   font-size: 80%;
   display: inline-block;
   padding: 4px 6px;
 }
-.wh-logo a:hover {
+.wy-logo a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.wh-nav .wh-menu-vertical header {
+.wy-nav .wy-menu-vertical header {
   color: #2980b9;
 }
-.wh-nav .wh-menu-vertical a {
+.wy-nav .wy-menu-vertical a {
   color: #b3b3b3;
 }
-.wh-nav .wh-menu-vertical a:hover {
+.wy-nav .wy-menu-vertical a:hover {
   background-color: #2980b9;
   color: white;
 }
@@ -2251,19 +2251,19 @@ a.wh-text-neutral:hover {
   opacity: 0;
 }
 
-.wh-body-for-nav {
+.wy-body-for-nav {
   background: left repeat-y #fcfcfc;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxOERBMTRGRDBFMUUxMUUzODUwMkJCOThDMEVFNURFMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxOERBMTRGRTBFMUUxMUUzODUwMkJCOThDMEVFNURFMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE4REExNEZCMEUxRTExRTM4NTAyQkI5OEMwRUU1REUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE4REExNEZDMEUxRTExRTM4NTAyQkI5OEMwRUU1REUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+EwrlwAAAAA5JREFUeNpiMDU0BAgwAAE2AJgB9BnaAAAAAElFTkSuQmCC);
   background-size: 250px 1px;
 }
 
-.wh-grid-for-nav {
+.wy-grid-for-nav {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.wh-nav-side {
+.wy-nav-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -2274,7 +2274,7 @@ a.wh-text-neutral:hover {
   z-index: 200;
 }
 
-.wh-nav-top {
+.wy-nav-top {
   display: none;
   background: #343131;
   color: #b3b3b3;
@@ -2284,14 +2284,14 @@ a.wh-text-neutral:hover {
   text-align: center;
   *zoom: 1;
 }
-.wh-nav-top:before, .wh-nav-top:after {
+.wy-nav-top:before, .wy-nav-top:after {
   display: table;
   content: "";
 }
-.wh-nav-top:after {
+.wy-nav-top:after {
   clear: both;
 }
-.wh-nav-top img {
+.wy-nav-top img {
   margin-right: 12px;
   height: 45px;
   width: 45px;
@@ -2299,24 +2299,24 @@ a.wh-text-neutral:hover {
   padding: 5px;
   border-radius: 100%;
 }
-.wh-nav-top i {
+.wy-nav-top i {
   font-size: 30px;
   float: left;
   cursor: pointer;
 }
 
-.wh-nav-content-wrap {
+.wy-nav-content-wrap {
   margin-left: 250px;
   background: #fcfcfc;
   min-height: 100%;
 }
 
-.wh-nav-content {
+.wy-nav-content {
   padding: 1.618em 3.236em;
   height: 100%;
 }
 
-.wh-body-mask {
+.wy-body-mask {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -2324,38 +2324,38 @@ a.wh-text-neutral:hover {
   display: none;
   z-index: 499;
 }
-.wh-body-mask.on {
+.wy-body-mask.on {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .wh-body-for-nav {
+  .wy-body-for-nav {
     background: #fcfcfc;
   }
 
-  .wh-nav-top {
+  .wy-nav-top {
     display: block;
   }
 
-  .wh-nav-side {
+  .wy-nav-side {
     padding-top: 1.618em;
     left: -250px;
   }
-  .wh-nav-side .wh-logo {
+  .wy-nav-side .wy-logo {
     display: none;
   }
-  .wh-nav-side.shift {
+  .wy-nav-side.shift {
     width: 85%;
     left: 0;
   }
 
-  .wh-nav-content-wrap {
+  .wy-nav-content-wrap {
     margin-left: 0;
   }
-  .wh-nav-content-wrap .wh-nav-content {
+  .wy-nav-content-wrap .wy-nav-content {
     padding: 1.618em;
   }
-  .wh-nav-content-wrap.shift {
+  .wy-nav-content-wrap.shift {
     position: fixed;
     min-width: 100%;
     left: 85%;
@@ -2364,20 +2364,20 @@ a.wh-text-neutral:hover {
     overflow: hidden;
   }
 }
-.wh-dropdown {
+.wy-dropdown {
   position: relative;
   display: inline-block;
 }
-.wh-dropdown:hover .wh-dropdown-menu {
+.wy-dropdown:hover .wy-dropdown-menu {
   display: block;
 }
-.wh-dropdown .caret:after {
+.wy-dropdown .caret:after {
   font-family: fontawesome-webfont;
   content: "\f0d7";
   font-size: 70%;
 }
 
-.wh-dropdown-menu {
+.wy-dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -2390,7 +2390,7 @@ a.wh-text-neutral:hover {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   padding: 12px;
 }
-.wh-dropdown-menu > dd > a {
+.wy-dropdown-menu > dd > a {
   display: block;
   clear: both;
   color: #404040;
@@ -2398,51 +2398,51 @@ a.wh-text-neutral:hover {
   font-size: 90%;
   padding: 0 12px;
 }
-.wh-dropdown-menu > dd > a:hover {
+.wy-dropdown-menu > dd > a:hover {
   background: #2980b9;
   color: white;
 }
-.wh-dropdown-menu > dd.divider {
+.wy-dropdown-menu > dd.divider {
   border-top: solid 1px #cfd7dd;
   margin: 6px 0;
 }
-.wh-dropdown-menu > dd.search {
+.wy-dropdown-menu > dd.search {
   padding-bottom: 12px;
 }
-.wh-dropdown-menu > dd.search input[type="search"] {
+.wy-dropdown-menu > dd.search input[type="search"] {
   width: 100%;
 }
-.wh-dropdown-menu > dd.call-to-action {
+.wy-dropdown-menu > dd.call-to-action {
   background: #e3e3e3;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 80%;
 }
-.wh-dropdown-menu > dd.call-to-action:hover {
+.wy-dropdown-menu > dd.call-to-action:hover {
   background: #e3e3e3;
 }
-.wh-dropdown-menu > dd.call-to-action .btn {
+.wy-dropdown-menu > dd.call-to-action .btn {
   color: white;
 }
 
-.wh-dropdown.wh-dropdown-bubble .wh-dropdown-menu {
+.wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu {
   background: #fcfcfc;
   margin-top: 2px;
 }
-.wh-dropdown.wh-dropdown-bubble .wh-dropdown-menu a {
+.wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a {
   padding: 6px 12px;
 }
-.wh-dropdown.wh-dropdown-bubble .wh-dropdown-menu a:hover {
+.wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a:hover {
   background: #2980b9;
   color: white;
 }
 
-.wh-dropdown.wh-dropdown-left .wh-dropdown-menu {
+.wy-dropdown.wy-dropdown-left .wy-dropdown-menu {
   right: 0;
   text-align: right;
 }
 
-.wh-dropdown-arrow:before {
+.wy-dropdown-arrow:before {
   content: " ";
   border-bottom: 5px solid whitesmoke;
   border-left: 5px solid transparent;
@@ -2453,66 +2453,66 @@ a.wh-text-neutral:hover {
   left: 50%;
   margin-left: -3px;
 }
-.wh-dropdown-arrow.wh-dropdown-arrow-left:before {
+.wy-dropdown-arrow.wy-dropdown-arrow-left:before {
   left: 11px;
 }
 
-.wh-table {
+.wy-table {
   /* Remove spacing between table cells (from Normalize.css) */
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
   margin-bottom: 24px;
 }
-.wh-table caption {
+.wy-table caption {
   color: black;
   font: italic 85%/1 arial, sans-serif;
   padding: 1em 0;
   text-align: center;
 }
-.wh-table td, .wh-table th {
+.wy-table td, .wy-table th {
   font-size: 90%;
   margin: 0;
   overflow: visible;
   padding: 8px 16px;
 }
-.wh-table td:first-child, .wh-table th:first-child {
+.wy-table td:first-child, .wy-table th:first-child {
   border-left-width: 0;
 }
-.wh-table thead {
+.wy-table thead {
   background: #e2e5e1;
   color: black;
   text-align: left;
   vertical-align: bottom;
   white-space: nowrap;
 }
-.wh-table thead th {
+.wy-table thead th {
   font-weight: 500;
 }
-.wh-table td {
+.wy-table td {
   background-color: transparent;
   vertical-align: middle;
 }
 
-.wh-table td p {
+.wy-table td p {
   line-height: 18px;
   margin-bottom: 0;
 }
 
-.wh-table .wh-table-cell-min {
+.wy-table .wy-table-cell-min {
   width: 1%;
   padding-right: 0;
 }
-.wh-table .wh-table-cell-min input[type=checkbox], .wh-table .wh-table-cell-min input[type=checkbox] {
+.wy-table .wy-table-cell-min input[type=checkbox], .wy-table .wy-table-cell-min input[type=checkbox] {
   margin: 0;
 }
 
-.wh-table-secondary {
+.wy-table-secondary {
   color: gray;
   font-size: 90%;
 }
 
-.wh-table-tertiary {
+.wy-table-tertiary {
   color: gray;
   font-size: 80%;
 }
@@ -2520,85 +2520,85 @@ a.wh-text-neutral:hover {
 /*striping:
  *   even - #fff (white)
  *   odd  - #f2f2f2 (light gray) */
-.wh-table-odd td, .wh-table-striped tr:nth-child(2n-1) td {
+.wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
   background-color: #f4f6f3;
 }
 
-.wh-table-backed {
+.wy-table-backed {
   background-color: #f4f6f3;
 }
 
 /* nth-child selector for modern browsers */
 /* BORDERED TABLES */
-.wh-table-bordered-all {
+.wy-table-bordered-all {
   border: 1px solid #e2e5e1;
 }
-.wh-table-bordered-all td {
+.wy-table-bordered-all td {
   border-bottom: 1px solid #e2e5e1;
   border-left: 1px solid #e2e5e1;
 }
-.wh-table-bordered-all tbody > tr:last-child td {
+.wy-table-bordered-all tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
-.wh-table-bordered {
+.wy-table-bordered {
   border: 1px solid #e2e5e1;
 }
 
-.wh-table-bordered-rows td {
+.wy-table-bordered-rows td {
   border-bottom: 1px solid #e2e5e1;
 }
-.wh-table-bordered-rows tbody > tr:last-child td {
+.wy-table-bordered-rows tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
-.wh-table-horizontal tbody > tr:last-child td {
+.wy-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
-.wh-table-horizontal td, .wh-table-horizontal th {
+.wy-table-horizontal td, .wy-table-horizontal th {
   border-width: 0 0 1px 0;
   border-bottom: 1px solid #e2e5e1;
 }
-.wh-table-horizontal tbody > tr:last-child td {
+.wy-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
 /* HORIZONTAL BORDERED TABLES */
-.wh-list-like-table-header {
+.wy-list-like-table-header {
   margin-bottom: 24px;
   *zoom: 1;
 }
-.wh-list-like-table-header:before, .wh-list-like-table-header:after {
+.wy-list-like-table-header:before, .wy-list-like-table-header:after {
   display: table;
   content: "";
 }
-.wh-list-like-table-header:after {
+.wy-list-like-table-header:after {
   clear: both;
 }
 
-.wh-list-like-table li {
+.wy-list-like-table li {
   border-bottom: solid 1px #e2e5e1;
   position: relative;
 }
-.wh-list-like-table li > a {
+.wy-list-like-table li > a {
   display: block;
   padding: 12px;
   padding-left: 0;
 }
-.wh-list-like-table li:first-child {
+.wy-list-like-table li:first-child {
   border-top: solid 1px #e2e5e1;
 }
-.wh-list-like-table img {
+.wy-list-like-table img {
   width: 50px;
   height: 50px;
 }
-.wh-list-like-table li a img {
+.wy-list-like-table li a img {
   opacity: 0.2;
 }
-.wh-list-like-table li a:hover img {
+.wy-list-like-table li a:hover img {
   opacity: 1;
 }
-.wh-list-like-table .wh-list-like-table-views {
+.wy-list-like-table .wy-list-like-table-views {
   display: block;
   width: 50px;
   height: 50px;
@@ -2608,7 +2608,7 @@ a.wh-text-neutral:hover {
   right: 0;
   top: 12px;
 }
-.wh-list-like-table .wh-list-like-table-views .view-fill {
+.wy-list-like-table .wy-list-like-table-views .view-fill {
   position: absolute;
   border: solid 10px #fcfcfc;
   background: #edf0f2;
@@ -2618,7 +2618,7 @@ a.wh-text-neutral:hover {
   height: 46px;
   border-radius: 100px;
 }
-.wh-list-like-table .wh-list-like-table-views .view-total {
+.wy-list-like-table .wy-list-like-table-views .view-total {
   color: #b2bfc7;
   position: absolute;
   font-size: 70%;
@@ -2629,7 +2629,7 @@ a.wh-text-neutral:hover {
   z-index: 20;
   display: block;
 }
-.wh-list-like-table .wh-list-like-table-title {
+.wy-list-like-table .wy-list-like-table-title {
   position: absolute;
   top: 12px;
   left: 62px;
@@ -2640,21 +2640,21 @@ a.wh-text-neutral:hover {
   display: block;
   width: 50%;
 }
-.wh-list-like-table .wh-list-like-table-subtitle {
+.wy-list-like-table .wy-list-like-table-subtitle {
   position: absolute;
   bottom: 12px;
   left: 62px;
   color: #b3b3b3;
   font-size: 70%;
 }
-.wh-list-like-table .wh-list-like-table-side-primary {
+.wy-list-like-table .wy-list-like-table-side-primary {
   display: block;
   position: absolute;
   right: 0;
   top: 12px;
   font-size: 90%;
 }
-.wh-list-like-table .wh-list-like-table-type {
+.wy-list-like-table .wy-list-like-table-type {
   position: absolute;
   right: 74px;
   line-height: 50px;
@@ -2664,44 +2664,44 @@ a.wh-text-neutral:hover {
   text-transform: uppercase;
 }
 
-.wh-list-like-table.multiple-links li {
+.wy-list-like-table.multiple-links li {
   padding: 12px;
   padding-left: 0;
 }
 
-.wh-list-like-table.wh-list-like-table-no-img li > a {
+.wy-list-like-table.wy-list-like-table-no-img li > a {
   height: 74px;
   padding-left: 12px;
 }
-.wh-list-like-table.wh-list-like-table-no-img .wh-list-like-table-title, .wh-list-like-table.wh-list-like-table-no-img .wh-list-like-table-subtitle {
+.wy-list-like-table.wy-list-like-table-no-img .wy-list-like-table-title, .wy-list-like-table.wy-list-like-table-no-img .wy-list-like-table-subtitle {
   left: 12px;
 }
 
-.wh-form-stacked select {
+.wy-form-stacked select {
   display: block;
 }
 
-.wh-form-aligned input, .wh-form-aligned textarea, .wh-form-aligned select, .wh-form-aligned .wh-help-inline, .wh-form-aligned label {
+.wy-form-aligned input, .wy-form-aligned textarea, .wy-form-aligned select, .wy-form-aligned .wy-help-inline, .wy-form-aligned label {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   vertical-align: middle;
 }
 
-.wh-form-aligned .wh-control-group > label {
+.wy-form-aligned .wy-control-group > label {
   display: inline-block;
   vertical-align: middle;
   width: 10em;
   margin: 0.5em 1em 0 0;
   float: left;
 }
-.wh-form-aligned .wh-control {
+.wy-form-aligned .wy-control {
   float: left;
 }
-.wh-form-aligned .wh-control label {
+.wy-form-aligned .wy-control label {
   display: block;
 }
-.wh-form-aligned .wh-control select {
+.wy-form-aligned .wy-control select {
   margin-top: 0.5em;
 }
 
@@ -2827,7 +2827,7 @@ input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus,
   outline-color: #e9322d;
 }
 
-input.wh-input-large {
+input.wy-input-large {
   padding: 12px;
   font-size: 100%;
 }
@@ -2868,23 +2868,23 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   border-color: transparent;
 }
 
-.wh-checkbox, .wh-radio {
+.wy-checkbox, .wy-radio {
   margin: 0.5em 0;
   color: #404040 !important;
   display: block;
 }
 
-.wh-form-message-inline {
+.wy-form-message-inline {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   vertical-align: middle;
 }
 
-.wh-input-prefix, .wh-input-suffix {
+.wy-input-prefix, .wy-input-suffix {
   white-space: nowrap;
 }
-.wh-input-prefix .wh-input-context, .wh-input-suffix .wh-input-context {
+.wy-input-prefix .wy-input-context, .wy-input-suffix .wy-input-context {
   padding: 6px;
   display: inline-block;
   font-size: 80%;
@@ -2893,66 +2893,66 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   color: #999999;
 }
 
-.wh-input-suffix .wh-input-context {
+.wy-input-suffix .wy-input-context {
   border-left: 0;
 }
 
-.wh-input-prefix .wh-input-context {
+.wy-input-prefix .wy-input-context {
   border-right: 0;
 }
 
-.wh-inline-validate {
+.wy-inline-validate {
   white-space: nowrap;
 }
-.wh-inline-validate .wh-input-context {
+.wy-inline-validate .wy-input-context {
   padding: 0.5em 0.625em;
   display: inline-block;
   font-size: 80%;
 }
 
-.wh-inline-validate.wh-inline-validate-success .wh-input-context {
+.wy-inline-validate.wy-inline-validate-success .wy-input-context {
   color: #27ae60;
 }
 
-.wh-inline-validate.wh-inline-validate-danger .wh-input-context {
+.wy-inline-validate.wy-inline-validate-danger .wy-input-context {
   color: #e74c3c;
 }
 
-.wh-inline-validate.wh-inline-validate-warning .wh-input-context {
+.wy-inline-validate.wy-inline-validate-warning .wy-input-context {
   color: #e67e22;
 }
 
-.wh-inline-validate.wh-inline-validate-info .wh-input-context {
+.wy-inline-validate.wy-inline-validate-info .wy-input-context {
   color: #2980b9;
 }
 
-.wh-control-group {
+.wy-control-group {
   margin-bottom: 24px;
   *zoom: 1;
 }
-.wh-control-group:before, .wh-control-group:after {
+.wy-control-group:before, .wy-control-group:after {
   display: table;
   content: "";
 }
-.wh-control-group:after {
+.wy-control-group:after {
   clear: both;
 }
 
-.wh-control-group.wh-control-group-error .wh-form-message, .wh-control-group.wh-control-group-error label {
+.wy-control-group.wy-control-group-error .wy-form-message, .wy-control-group.wy-control-group-error label {
   color: #e74c3c;
 }
-.wh-control-group.wh-control-group-error input[type="text"], .wh-control-group.wh-control-group-error input[type="password"], .wh-control-group.wh-control-group-error input[type="email"], .wh-control-group.wh-control-group-error input[type="url"], .wh-control-group.wh-control-group-error input[type="date"], .wh-control-group.wh-control-group-error input[type="month"], .wh-control-group.wh-control-group-error input[type="time"], .wh-control-group.wh-control-group-error input[type="datetime"], .wh-control-group.wh-control-group-error input[type="datetime-local"], .wh-control-group.wh-control-group-error input[type="week"], .wh-control-group.wh-control-group-error input[type="number"], .wh-control-group.wh-control-group-error input[type="search"], .wh-control-group.wh-control-group-error input[type="tel"], .wh-control-group.wh-control-group-error input[type="color"] {
+.wy-control-group.wy-control-group-error input[type="text"], .wy-control-group.wy-control-group-error input[type="password"], .wy-control-group.wy-control-group-error input[type="email"], .wy-control-group.wy-control-group-error input[type="url"], .wy-control-group.wy-control-group-error input[type="date"], .wy-control-group.wy-control-group-error input[type="month"], .wy-control-group.wy-control-group-error input[type="time"], .wy-control-group.wy-control-group-error input[type="datetime"], .wy-control-group.wy-control-group-error input[type="datetime-local"], .wy-control-group.wy-control-group-error input[type="week"], .wy-control-group.wy-control-group-error input[type="number"], .wy-control-group.wy-control-group-error input[type="search"], .wy-control-group.wy-control-group-error input[type="tel"], .wy-control-group.wy-control-group-error input[type="color"] {
   border: solid 2px #e74c3c;
 }
-.wh-control-group.wh-control-group-error textarea {
+.wy-control-group.wy-control-group-error textarea {
   border: solid 2px #e74c3c;
 }
 
-.wh-control-group.fluid-input input[type="text"], .wh-control-group.fluid-input input[type="password"], .wh-control-group.fluid-input input[type="email"], .wh-control-group.fluid-input input[type="url"], .wh-control-group.fluid-input input[type="date"], .wh-control-group.fluid-input input[type="month"], .wh-control-group.fluid-input input[type="time"], .wh-control-group.fluid-input input[type="datetime"], .wh-control-group.fluid-input input[type="datetime-local"], .wh-control-group.fluid-input input[type="week"], .wh-control-group.fluid-input input[type="number"], .wh-control-group.fluid-input input[type="search"], .wh-control-group.fluid-input input[type="tel"], .wh-control-group.fluid-input input[type="color"] {
+.wy-control-group.fluid-input input[type="text"], .wy-control-group.fluid-input input[type="password"], .wy-control-group.fluid-input input[type="email"], .wy-control-group.fluid-input input[type="url"], .wy-control-group.fluid-input input[type="date"], .wy-control-group.fluid-input input[type="month"], .wy-control-group.fluid-input input[type="time"], .wy-control-group.fluid-input input[type="datetime"], .wy-control-group.fluid-input input[type="datetime-local"], .wy-control-group.fluid-input input[type="week"], .wy-control-group.fluid-input input[type="number"], .wy-control-group.fluid-input input[type="search"], .wy-control-group.fluid-input input[type="tel"], .wy-control-group.fluid-input input[type="color"] {
   width: 100%;
 }
 
-.wh-form-message-inline {
+.wy-form-message-inline {
   display: inline-block;
   padding-left: 0.3em;
   color: #666666;
@@ -2960,7 +2960,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   font-size: 90%;
 }
 
-.wh-form-message {
+.wy-form-message {
   display: block;
   color: #cccccc;
   font-size: 70%;
@@ -2968,7 +2968,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   font-style: italic;
 }
 
-.wh-tag-input-group {
+.wy-tag-input-group {
   padding: 4px 4px 0px 4px;
   display: inline-block;
   border: 1px solid #cccccc;
@@ -2979,7 +2979,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   -moz-transition: border 0.3s linear;
   transition: border 0.3s linear;
 }
-.wh-tag-input-group .wh-tag {
+.wy-tag-input-group .wy-tag {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0.5em 0.625em;
@@ -2987,26 +2987,26 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   position: relative;
   margin-bottom: 4px;
 }
-.wh-tag-input-group .wh-tag .wh-tag-remove {
+.wy-tag-input-group .wy-tag .wy-tag-remove {
   color: #cccccc;
   margin-left: 5px;
 }
-.wh-tag-input-group .wh-tag .wh-tag-remove:hover {
+.wy-tag-input-group .wy-tag .wy-tag-remove:hover {
   color: #e74c3c;
 }
-.wh-tag-input-group label {
+.wy-tag-input-group label {
   margin-left: 5px;
   display: inline-block;
   margin-bottom: 0;
 }
-.wh-tag-input-group input {
+.wy-tag-input-group input {
   border: none;
   font-size: 100%;
   margin-bottom: 4px;
   box-shadow: none;
 }
 
-.wh-form-upload {
+.wy-form-upload {
   border: solid 1px #cccccc;
   border-bottom: solid 3px #cccccc;
   background-color: white;
@@ -3020,49 +3020,49 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   transition: border-color 0.1s ease-in;
   *zoom: 1;
 }
-.wh-form-upload:before, .wh-form-upload:after {
+.wy-form-upload:before, .wy-form-upload:after {
   display: table;
   content: "";
 }
-.wh-form-upload:after {
+.wy-form-upload:after {
   clear: both;
 }
 @media screen and (max-width: 480px) {
-  .wh-form-upload {
+  .wy-form-upload {
     width: 100%;
   }
 }
-.wh-form-upload .image-drop {
+.wy-form-upload .image-drop {
   display: none;
 }
-.wh-form-upload .image-desktop {
+.wy-form-upload .image-desktop {
   display: none;
 }
-.wh-form-upload .image-loading {
+.wy-form-upload .image-loading {
   display: none;
 }
-.wh-form-upload .wh-form-upload-icon {
+.wy-form-upload .wy-form-upload-icon {
   display: block;
   font-size: 32px;
   color: #b3b3b3;
 }
-.wh-form-upload .image-drop .wh-form-upload-icon {
+.wy-form-upload .image-drop .wy-form-upload-icon {
   color: #27ae60;
 }
-.wh-form-upload p {
+.wy-form-upload p {
   font-size: 90%;
 }
-.wh-form-upload .wh-form-upload-image {
+.wy-form-upload .wy-form-upload-image {
   float: left;
   margin-right: 24px;
 }
 @media screen and (max-width: 480px) {
-  .wh-form-upload .wh-form-upload-image {
+  .wy-form-upload .wy-form-upload-image {
     width: 100%;
     margin-bottom: 24px;
   }
 }
-.wh-form-upload img {
+.wy-form-upload img {
   max-width: 125px;
   max-height: 125px;
   opacity: 0.9;
@@ -3070,77 +3070,77 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   -moz-transition: opacity 0.1s ease-in;
   transition: opacity 0.1s ease-in;
 }
-.wh-form-upload .wh-form-upload-content {
+.wy-form-upload .wy-form-upload-content {
   float: left;
 }
 @media screen and (max-width: 480px) {
-  .wh-form-upload .wh-form-upload-content {
+  .wy-form-upload .wy-form-upload-content {
     width: 100%;
   }
 }
 
-.wh-form-upload:hover {
+.wy-form-upload:hover {
   border-color: #b3b3b3;
   color: #404040;
 }
-.wh-form-upload:hover .image-desktop {
+.wy-form-upload:hover .image-desktop {
   display: block;
 }
-.wh-form-upload:hover .image-drag {
+.wy-form-upload:hover .image-drag {
   display: none;
 }
-.wh-form-upload:hover img {
+.wy-form-upload:hover img {
   opacity: 1;
 }
 
-.wh-form-upload:active {
+.wy-form-upload:active {
   border-top: solid 3px #cccccc;
   border-bottom: solid 1px #cccccc;
 }
 
-.wh-form-upload.wh-form-upload-big {
+.wy-form-upload.wy-form-upload-big {
   width: 100%;
   text-align: center;
   padding: 72px;
 }
-.wh-form-upload.wh-form-upload-big .wh-form-upload-content {
+.wy-form-upload.wy-form-upload-big .wy-form-upload-content {
   float: none;
 }
 
-.wh-form-upload.wh-form-upload-file p {
+.wy-form-upload.wy-form-upload-file p {
   margin-bottom: 0;
 }
-.wh-form-upload.wh-form-upload-file .wh-form-upload-icon {
+.wy-form-upload.wy-form-upload-file .wy-form-upload-icon {
   display: inline-block;
   font-size: inherit;
 }
 
-.wh-form-upload.wh-form-upload-drop {
+.wy-form-upload.wy-form-upload-drop {
   background-color: #ddf7e8;
 }
-.wh-form-upload.wh-form-upload-drop .image-drop {
+.wy-form-upload.wy-form-upload-drop .image-drop {
   display: block;
 }
-.wh-form-upload.wh-form-upload-drop .image-desktop {
+.wy-form-upload.wy-form-upload-drop .image-desktop {
   display: none;
 }
-.wh-form-upload.wh-form-upload-drop .image-drag {
+.wy-form-upload.wy-form-upload-drop .image-drag {
   display: none;
 }
 
-.wh-form-upload.wh-form-upload-loading .image-drag {
+.wy-form-upload.wy-form-upload-loading .image-drag {
   display: none;
 }
-.wh-form-upload.wh-form-upload-loading .image-desktop {
+.wy-form-upload.wy-form-upload-loading .image-desktop {
   display: none;
 }
-.wh-form-upload.wh-form-upload-loading .image-loading {
+.wy-form-upload.wy-form-upload-loading .image-loading {
   display: block;
 }
-.wh-form-upload.wh-form-upload-loading .wh-input-prefix {
+.wy-form-upload.wy-form-upload-loading .wy-input-prefix {
   display: none;
 }
-.wh-form-upload.wh-form-upload-loading p {
+.wy-form-upload.wy-form-upload-loading p {
   margin-bottom: 0;
 }
 
@@ -3197,30 +3197,30 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   transform: scaleX(-1) rotate(270deg);
 }
 
-.wh-form-gallery-manage {
+.wy-form-gallery-manage {
   margin-left: -12px;
   margin-right: -12px;
 }
-.wh-form-gallery-manage li {
+.wy-form-gallery-manage li {
   float: left;
   padding: 12px;
   width: 20%;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .wh-form-gallery-manage li {
+  .wy-form-gallery-manage li {
     width: 25%;
   }
 }
 @media screen and (max-width: 480px) {
-  .wh-form-gallery-manage li {
+  .wy-form-gallery-manage li {
     width: 50%;
   }
 }
-.wh-form-gallery-manage li:active {
+.wy-form-gallery-manage li:active {
   cursor: move;
 }
-.wh-form-gallery-manage li > a {
+.wy-form-gallery-manage li > a {
   padding: 12px;
   background-color: white;
   border: solid 1px #e2e5e1;
@@ -3230,18 +3230,18 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   -moz-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
-.wh-form-gallery-manage li > a:active {
+.wy-form-gallery-manage li > a:active {
   border: solid 1px #cccccc;
   border-top: solid 3px #cccccc;
 }
-.wh-form-gallery-manage img {
+.wy-form-gallery-manage img {
   width: 100%;
   -webkit-transition: all 0.05s ease-in;
   -moz-transition: all 0.05s ease-in;
   transition: all 0.05s ease-in;
 }
 
-li.wh-form-gallery-edit {
+li.wy-form-gallery-edit {
   position: relative;
   color: white;
   padding: 24px;
@@ -3250,7 +3250,7 @@ li.wh-form-gallery-edit {
   background-color: #343131;
   border-radius: 4px;
 }
-li.wh-form-gallery-edit .arrow {
+li.wy-form-gallery-edit .arrow {
   position: absolute;
   display: block;
   top: -50px;
@@ -3266,34 +3266,34 @@ li.wh-form-gallery-edit .arrow {
 }
 
 @media only screen and (max-width: 480px) {
-  .wh-form button[type="submit"] {
+  .wy-form button[type="submit"] {
     margin: 0.7em 0 0;
   }
-  .wh-form input[type="text"], .wh-form input[type="password"], .wh-form input[type="email"], .wh-form input[type="url"], .wh-form input[type="date"], .wh-form input[type="month"], .wh-form input[type="time"], .wh-form input[type="datetime"], .wh-form input[type="datetime-local"], .wh-form input[type="week"], .wh-form input[type="number"], .wh-form input[type="search"], .wh-form input[type="tel"], .wh-form input[type="color"] {
+  .wy-form input[type="text"], .wy-form input[type="password"], .wy-form input[type="email"], .wy-form input[type="url"], .wy-form input[type="date"], .wy-form input[type="month"], .wy-form input[type="time"], .wy-form input[type="datetime"], .wy-form input[type="datetime-local"], .wy-form input[type="week"], .wy-form input[type="number"], .wy-form input[type="search"], .wy-form input[type="tel"], .wy-form input[type="color"] {
     margin-bottom: 0.3em;
     display: block;
   }
-  .wh-form label {
+  .wy-form label {
     margin-bottom: 0.3em;
     display: block;
   }
 
-  .wh-form input[type="password"], .wh-form input[type="email"], .wh-form input[type="url"], .wh-form input[type="date"], .wh-form input[type="month"], .wh-form input[type="time"], .wh-form input[type="datetime"], .wh-form input[type="datetime-local"], .wh-form input[type="week"], .wh-form input[type="number"], .wh-form input[type="search"], .wh-form input[type="tel"], .wh-form input[type="color"] {
+  .wy-form input[type="password"], .wy-form input[type="email"], .wy-form input[type="url"], .wy-form input[type="date"], .wy-form input[type="month"], .wy-form input[type="time"], .wy-form input[type="datetime"], .wy-form input[type="datetime-local"], .wy-form input[type="week"], .wy-form input[type="number"], .wy-form input[type="search"], .wy-form input[type="tel"], .wy-form input[type="color"] {
     margin-bottom: 0;
   }
 
-  .wh-form-aligned .wh-control-group label {
+  .wy-form-aligned .wy-control-group label {
     margin-bottom: 0.3em;
     text-align: left;
     display: block;
     width: 100%;
   }
-  .wh-form-aligned .wh-controls {
+  .wy-form-aligned .wy-controls {
     margin: 1.5em 0 0 0;
   }
 
-  /* NOTE: wh-help-inline is deprecated. Use .wh-form-message-inline instead. */
-  .wh-form .wh-help-inline, .wh-form-message-inline, .wh-form-message {
+  /* NOTE: wy-help-inline is deprecated. Use .wy-form-message-inline instead. */
+  .wy-form .wy-help-inline, .wy-form-message-inline, .wy-form-message {
     display: block;
     font-size: 80%;
     /* Increased bottom padding to make it group with its related input element. */
@@ -3440,23 +3440,23 @@ li.wh-form-gallery-edit .arrow {
   border-bottom: solid 3px transparent;
 }
 
-.wh-btn-group .btn, .wh-control .btn {
+.wy-btn-group .btn, .wy-control .btn {
   vertical-align: middle;
 }
 
-.wh-btn-group {
+.wy-btn-group {
   margin-bottom: 24px;
   *zoom: 1;
 }
-.wh-btn-group:before, .wh-btn-group:after {
+.wy-btn-group:before, .wy-btn-group:after {
   display: table;
   content: "";
 }
-.wh-btn-group:after {
+.wy-btn-group:after {
   clear: both;
 }
 
-.wh-tooltip {
+.wy-tooltip {
   position: absolute;
   z-index: 300;
   display: block;
@@ -3468,22 +3468,22 @@ li.wh-form-gallery-edit .arrow {
   -moz-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in;
 }
-.wh-tooltip.on {
+.wy-tooltip.on {
   opacity: 0.8;
 }
-.wh-tooltip.top {
+.wy-tooltip.top {
   margin-top: -2px;
 }
-.wh-tooltip.right {
+.wy-tooltip.right {
   margin-left: 2px;
 }
-.wh-tooltip.bottom {
+.wy-tooltip.bottom {
   margin-top: 2px;
 }
-.wh-tooltip.left {
+.wy-tooltip.left {
   margin-left: -2px;
 }
-.wh-tooltip.top .wh-tooltip-arrow {
+.wy-tooltip.top .wy-tooltip-arrow {
   bottom: 0;
   left: 50%;
   margin-left: -5px;
@@ -3491,7 +3491,7 @@ li.wh-form-gallery-edit .arrow {
   border-right: 5px solid transparent;
   border-top: 5px solid black;
 }
-.wh-tooltip.left .wh-tooltip-arrow {
+.wy-tooltip.left .wy-tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
@@ -3499,7 +3499,7 @@ li.wh-form-gallery-edit .arrow {
   border-bottom: 5px solid transparent;
   border-left: 5px solid black;
 }
-.wh-tooltip.bottom .wh-tooltip-arrow {
+.wy-tooltip.bottom .wy-tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
@@ -3507,7 +3507,7 @@ li.wh-form-gallery-edit .arrow {
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
 }
-.wh-tooltip.right .wh-tooltip-arrow {
+.wy-tooltip.right .wy-tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
@@ -3516,7 +3516,7 @@ li.wh-form-gallery-edit .arrow {
   border-right: 5px solid black;
 }
 
-.wh-tooltip-inner {
+.wy-tooltip-inner {
   max-width: 200px;
   padding: 8px;
   color: white;
@@ -3526,13 +3526,13 @@ li.wh-form-gallery-edit .arrow {
   border-radius: 4px;
 }
 
-.wh-tooltip-arrow {
+.wy-tooltip-arrow {
   position: absolute;
   width: 0;
   height: 0;
 }
 
-.wh-modal-screen {
+.wy-modal-screen {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -3542,7 +3542,7 @@ li.wh-form-gallery-edit .arrow {
   z-index: 500;
 }
 
-.wh-modal-close {
+.wy-modal-close {
   color: #404040;
   cursor: pointer;
   position: absolute;
@@ -3550,14 +3550,14 @@ li.wh-form-gallery-edit .arrow {
   top: 12px;
   font-size: 0;
 }
-.wh-modal-close:before {
+.wy-modal-close:before {
   font-size: 20px;
 }
-.wh-modal-close:hover {
+.wy-modal-close:hover {
   color: #e74c3c;
 }
 
-.wh-modal {
+.wy-modal {
   position: fixed;
   width: 50%;
   top: 50%;
@@ -3567,33 +3567,33 @@ li.wh-form-gallery-edit .arrow {
   background: #fcfcfc;
   z-index: 501;
 }
-.wh-modal section {
+.wy-modal section {
   padding: 0 1.618em 1.618em 1.618em;
 }
-.wh-modal header {
+.wy-modal header {
   font-weight: 500;
   padding: 1.618em;
 }
-.wh-modal header h3 {
+.wy-modal header h3 {
   font-weight: 500;
   font-size: 150%;
   margin: 0;
 }
-.wh-modal footer {
+.wy-modal footer {
   background: #edf0f2;
   padding: 1.618em;
   text-align: right;
 }
-.wh-modal footer .btn {
+.wy-modal footer .btn {
   margin-left: 5px;
 }
 
-.wh-autocomplete-group {
+.wy-autocomplete-group {
   display: inline-block;
   position: relative;
 }
 
-.wh-autocomplete-dropdown {
+.wy-autocomplete-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3604,71 +3604,71 @@ li.wh-form-gallery-edit .arrow {
   border: solid 1px #cfd7dd;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
-.wh-autocomplete-dropdown li {
+.wy-autocomplete-dropdown li {
   line-height: 32px;
   padding: 0px 8px;
   cursor: pointer;
 }
-.wh-autocomplete-dropdown li.on, .wh-autocomplete-dropdown li:hover {
+.wy-autocomplete-dropdown li.on, .wy-autocomplete-dropdown li:hover {
   background: #2980b9;
   color: white;
 }
-.wh-autocomplete-dropdown img {
+.wy-autocomplete-dropdown img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
 }
 
-.wh-tag-input-group .wh-autocomplete-dropdown {
+.wy-tag-input-group .wy-autocomplete-dropdown {
   margin-top: -4px;
 }
 
-.wh-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
+.wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
   padding: 24px;
   line-height: 24px;
   margin-bottom: 24px;
   border-left: solid 3px transparent;
 }
-.wh-alert strong, .rst-content .note strong, .rst-content .attention strong, .rst-content .caution strong, .rst-content .danger strong, .rst-content .error strong, .rst-content .hint strong, .rst-content .important strong, .rst-content .tip strong, .rst-content .warning strong, .wh-alert a, .rst-content .note a, .rst-content .attention a, .rst-content .caution a, .rst-content .danger a, .rst-content .error a, .rst-content .hint a, .rst-content .important a, .rst-content .tip a, .rst-content .warning a {
+.wy-alert strong, .rst-content .note strong, .rst-content .attention strong, .rst-content .caution strong, .rst-content .danger strong, .rst-content .error strong, .rst-content .hint strong, .rst-content .important strong, .rst-content .tip strong, .rst-content .warning strong, .wy-alert a, .rst-content .note a, .rst-content .attention a, .rst-content .caution a, .rst-content .danger a, .rst-content .error a, .rst-content .hint a, .rst-content .important a, .rst-content .tip a, .rst-content .warning a {
   color: white;
 }
 
-.wh-alert.wh-alert-danger, .rst-content .wh-alert-danger.note, .rst-content .wh-alert-danger.attention, .rst-content .wh-alert-danger.caution, .rst-content .danger, .rst-content .error, .rst-content .wh-alert-danger.hint, .rst-content .wh-alert-danger.important, .rst-content .wh-alert-danger.tip, .rst-content .wh-alert-danger.warning {
+.wy-alert.wy-alert-danger, .rst-content .wy-alert-danger.note, .rst-content .wy-alert-danger.attention, .rst-content .wy-alert-danger.caution, .rst-content .danger, .rst-content .error, .rst-content .wy-alert-danger.hint, .rst-content .wy-alert-danger.important, .rst-content .wy-alert-danger.tip, .rst-content .wy-alert-danger.warning {
   background: #e74c3c;
   color: #fdf3f2;
   border-color: #d62c1a;
 }
 
-.wh-alert.wh-alert-warning, .rst-content .wh-alert-warning.note, .rst-content .attention, .rst-content .caution, .rst-content .wh-alert-warning.danger, .rst-content .wh-alert-warning.error, .rst-content .wh-alert-warning.hint, .rst-content .wh-alert-warning.important, .rst-content .wh-alert-warning.tip, .rst-content .warning {
+.wy-alert.wy-alert-warning, .rst-content .wy-alert-warning.note, .rst-content .attention, .rst-content .caution, .rst-content .wy-alert-warning.danger, .rst-content .wy-alert-warning.error, .rst-content .wy-alert-warning.hint, .rst-content .wy-alert-warning.important, .rst-content .wy-alert-warning.tip, .rst-content .warning {
   background: #e67e22;
   color: #fbe9d9;
   border-color: #bf6516;
 }
 
-.wh-alert.wh-alert-info, .rst-content .wh-alert-info.note, .rst-content .wh-alert-info.attention, .rst-content .wh-alert-info.caution, .rst-content .wh-alert-info.danger, .rst-content .wh-alert-info.error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .wh-alert-info.warning {
+.wy-alert.wy-alert-info, .rst-content .wy-alert-info.note, .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution, .rst-content .wy-alert-info.danger, .rst-content .wy-alert-info.error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .wy-alert-info.warning {
   background: #2980b9;
   color: #bedcf0;
   border-color: #20638f;
 }
 
-.wh-alert.wh-alert-success, .rst-content .wh-alert-success.note, .rst-content .wh-alert-success.attention, .rst-content .wh-alert-success.caution, .rst-content .wh-alert-success.danger, .rst-content .wh-alert-success.error, .rst-content .wh-alert-success.hint, .rst-content .wh-alert-success.important, .rst-content .wh-alert-success.tip, .rst-content .wh-alert-success.warning {
+.wy-alert.wy-alert-success, .rst-content .wy-alert-success.note, .rst-content .wy-alert-success.attention, .rst-content .wy-alert-success.caution, .rst-content .wy-alert-success.danger, .rst-content .wy-alert-success.error, .rst-content .wy-alert-success.hint, .rst-content .wy-alert-success.important, .rst-content .wy-alert-success.tip, .rst-content .wy-alert-success.warning {
   background: #27ae60;
   color: #b3eecc;
   border-color: #1e8449;
 }
 
-.wh-alert.wh-alert-neutral, .rst-content .note, .rst-content .wh-alert-neutral.attention, .rst-content .wh-alert-neutral.caution, .rst-content .wh-alert-neutral.danger, .rst-content .wh-alert-neutral.error, .rst-content .wh-alert-neutral.hint, .rst-content .wh-alert-neutral.important, .rst-content .wh-alert-neutral.tip, .rst-content .wh-alert-neutral.warning {
+.wy-alert.wy-alert-neutral, .rst-content .note, .rst-content .wy-alert-neutral.attention, .rst-content .wy-alert-neutral.caution, .rst-content .wy-alert-neutral.danger, .rst-content .wy-alert-neutral.error, .rst-content .wy-alert-neutral.hint, .rst-content .wy-alert-neutral.important, .rst-content .wy-alert-neutral.tip, .rst-content .wy-alert-neutral.warning {
   background: #f4f6f3;
   border-color: #e2e5e1;
 }
-.wh-alert.wh-alert-neutral strong, .rst-content .note strong, .rst-content .wh-alert-neutral.attention strong, .rst-content .wh-alert-neutral.caution strong, .rst-content .wh-alert-neutral.danger strong, .rst-content .wh-alert-neutral.error strong, .rst-content .wh-alert-neutral.hint strong, .rst-content .wh-alert-neutral.important strong, .rst-content .wh-alert-neutral.tip strong, .rst-content .wh-alert-neutral.warning strong {
+.wy-alert.wy-alert-neutral strong, .rst-content .note strong, .rst-content .wy-alert-neutral.attention strong, .rst-content .wy-alert-neutral.caution strong, .rst-content .wy-alert-neutral.danger strong, .rst-content .wy-alert-neutral.error strong, .rst-content .wy-alert-neutral.hint strong, .rst-content .wy-alert-neutral.important strong, .rst-content .wy-alert-neutral.tip strong, .rst-content .wy-alert-neutral.warning strong {
   color: #404040;
 }
-.wh-alert.wh-alert-neutral a, .rst-content .note a, .rst-content .wh-alert-neutral.attention a, .rst-content .wh-alert-neutral.caution a, .rst-content .wh-alert-neutral.danger a, .rst-content .wh-alert-neutral.error a, .rst-content .wh-alert-neutral.hint a, .rst-content .wh-alert-neutral.important a, .rst-content .wh-alert-neutral.tip a, .rst-content .wh-alert-neutral.warning a {
+.wy-alert.wy-alert-neutral a, .rst-content .note a, .rst-content .wy-alert-neutral.attention a, .rst-content .wy-alert-neutral.caution a, .rst-content .wy-alert-neutral.danger a, .rst-content .wy-alert-neutral.error a, .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a, .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a {
   color: #2980b9;
 }
 
-.wh-tray-container {
+.wy-tray-container {
   position: fixed;
   top: -50px;
   left: 0;
@@ -3677,10 +3677,10 @@ li.wh-form-gallery-edit .arrow {
   -moz-transition: top 0.2s ease-in;
   transition: top 0.2s ease-in;
 }
-.wh-tray-container.on {
+.wy-tray-container.on {
   top: 0;
 }
-.wh-tray-container li {
+.wy-tray-container li {
   display: none;
   width: 100%;
   background: #343131;
@@ -3690,20 +3690,20 @@ li.wh-form-gallery-edit .arrow {
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0px -1px 2px -1px rgba(255, 255, 255, 0.5) inset;
 }
-.wh-tray-container li.wh-tray-item-success {
+.wy-tray-container li.wy-tray-item-success {
   background: #27ae60;
 }
-.wh-tray-container li.wh-tray-item-info {
+.wy-tray-container li.wy-tray-item-info {
   background: #2980b9;
 }
-.wh-tray-container li.wh-tray-item-warning {
+.wy-tray-container li.wy-tray-item-warning {
   background: #e67e22;
 }
-.wh-tray-container li.wh-tray-item-danger {
+.wy-tray-container li.wy-tray-item-danger {
   background: #e74c3c;
 }
 
-.wh-spinner {
+.wy-spinner {
   height: 30px;
   width: 30px;
   margin: 0 auto;
@@ -3716,11 +3716,11 @@ li.wh-form-gallery-edit .arrow {
   border-radius: 100%;
 }
 
-.wh-spinner.wh-spinner-margin {
+.wy-spinner.wy-spinner-margin {
   margin: 24px auto;
 }
 
-.btn .wh-spinner {
+.btn .wy-spinner {
   display: inline-block;
   height: 14px;
   width: 14px;
@@ -3730,24 +3730,24 @@ li.wh-form-gallery-edit .arrow {
   top: 1px;
 }
 
-.wh-logo .wh-spinner {
+.wy-logo .wy-spinner {
   border-color: rgba(0, 0, 0, 0.1);
   border-top-color: #fcfcfc;
   margin-bottom: 0.809em;
 }
 
-.wh-spinner.wh-spinner-inline {
+.wy-spinner.wy-spinner-inline {
   display: inline-block;
   margin: none;
 }
 
-.wh-spinner.wh-spinner-large {
+.wy-spinner.wy-spinner-large {
   height: 45px;
   width: 45px;
   border-width: 12px;
 }
 
-.wh-spinner.wh-spinner-small {
+.wy-spinner.wy-spinner-small {
   height: 16px;
   width: 16px;
   border-width: 4px;
@@ -3820,13 +3820,13 @@ figure[data-type=video] {
 figure[data-type=video] p {
   margin: 0;
 }
-figure[data-type=video].wh-figure-full p {
+figure[data-type=video].wy-figure-full p {
   position: relative;
   padding-bottom: 51%;
   width: 100%;
   height: 0;
 }
-figure[data-type=video].wh-figure-full iframe {
+figure[data-type=video].wy-figure-full iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3838,7 +3838,7 @@ figure[data-type=image] {
   position: relative;
   margin-bottom: 24px;
 }
-figure[data-type=image] .wh-figure-controls {
+figure[data-type=image] .wy-figure-controls {
   top: 0px;
 }
 figure[data-type=image] img {
@@ -3848,14 +3848,14 @@ figure[data-type=image] img {
 figure[data-type=image]:hover img {
   opacity: 0.8;
 }
-figure[data-type=image].wh-figure-large {
+figure[data-type=image].wy-figure-large {
   width: 100%;
   clear: both;
 }
-figure[data-type=image].wh-figure-medium {
+figure[data-type=image].wy-figure-medium {
   width: 50%;
 }
-figure[data-type=image].wh-figure-small {
+figure[data-type=image].wy-figure-small {
   width: 33%;
 }
 
@@ -3872,21 +3872,21 @@ figure[data-type=quote] figcaption {
   font-weight: bold;
   text-align: left;
 }
-figure[data-type=quote] .wh-figure-controls {
+figure[data-type=quote] .wy-figure-controls {
   margin-left: -5px;
 }
-figure[data-type=quote].wh-figure-medium {
+figure[data-type=quote].wy-figure-medium {
   font-size: 1.25em;
   line-height: 1.2em;
 }
-figure[data-type=quote].wh-figure-large {
+figure[data-type=quote].wy-figure-large {
   font-size: 1.5em;
   line-height: 2em;
 }
-figure[data-type=quote].wh-figure-right {
+figure[data-type=quote].wy-figure-right {
   width: 33%;
 }
-figure[data-type=quote].wh-figure-left {
+figure[data-type=quote].wy-figure-left {
   width: 33%;
   border-left: none;
   border-right: solid 5px #404040;
@@ -3895,7 +3895,7 @@ figure[data-type=quote].wh-figure-left {
   margin-left: 0;
   margin-right: 24px;
 }
-figure[data-type=quote].wh-figure-left .wh-figure-controls {
+figure[data-type=quote].wy-figure-left .wy-figure-controls {
   margin-left: 0;
   margin-right: -5px;
 }
@@ -3912,11 +3912,11 @@ figure[data-type=quote] cite:empty:before {
   content: "\2014 Type to add citation (optional)";
 }
 
-figure:hover .wh-figure-controls {
+figure:hover .wy-figure-controls {
   display: block;
 }
 
-.wh-figure-controls {
+.wy-figure-controls {
   background: #27ae60;
   padding: 6px;
   position: absolute;
@@ -3934,7 +3934,7 @@ figure:hover .wh-figure-controls {
   text-align: center;
 }
 
-.wh-figure-controls span {
+.wy-figure-controls span {
   display: inline-block;
   border: none;
   background: none;
@@ -3947,49 +3947,49 @@ figure:hover .wh-figure-controls {
   text-align: center;
   cursor: pointer;
 }
-.wh-figure-controls span:hover {
+.wy-figure-controls span:hover {
   background: rgba(255, 255, 255, 0.3);
   color: white;
 }
-.wh-figure-controls span.on {
+.wy-figure-controls span.on {
   background: white;
   color: #27ae60;
 }
 
-.wh-figure-controls span.wh-figure-controls-divider {
+.wy-figure-controls span.wy-figure-controls-divider {
   width: 1px;
   background: #36d278;
   padding: 0;
   margin: 0 2px;
   cursor: normal;
 }
-.wh-figure-controls span.wh-figure-controls-small {
+.wy-figure-controls span.wy-figure-controls-small {
   font-size: 50%;
 }
-.wh-figure-controls span.wh-figure-controls-medium {
+.wy-figure-controls span.wy-figure-controls-medium {
   font-size: 75%;
 }
-.wh-figure-controls span.wh-figure-controls-delete {
+.wy-figure-controls span.wy-figure-controls-delete {
   margin-left: 24px;
 }
-.wh-figure-controls span.wh-figure-controls-delete:hover {
+.wy-figure-controls span.wy-figure-controls-delete:hover {
   background: #e74c3c;
 }
-.wh-figure-controls span.wh-figure-controls-table {
+.wy-figure-controls span.wy-figure-controls-table {
   width: auto;
   padding-left: 6px;
   text-align: left;
 }
 
-.wh-figure-right {
+.wy-figure-right {
   float: right;
   margin-left: 24px;
 }
-.wh-figure-right .wh-figure-controls {
+.wy-figure-right .wy-figure-controls {
   right: 0;
 }
 
-.wh-figure-left {
+.wy-figure-left {
   float: left;
   margin-right: 24px;
 }
@@ -4368,7 +4368,7 @@ pre.literal-block:after {
   background-color: #eaf2f5;
 }
 
-.wh-grid-one-col {
+.wy-grid-one-col {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
@@ -4376,14 +4376,14 @@ pre.literal-block:after {
   max-width: 1066px;
   margin-top: 1.618em;
 }
-.wh-grid-one-col:before, .wh-grid-one-col:after {
+.wy-grid-one-col:before, .wy-grid-one-col:after {
   display: table;
   content: "";
 }
-.wh-grid-one-col:after {
+.wy-grid-one-col:after {
   clear: both;
 }
-.wh-grid-one-col section {
+.wy-grid-one-col section {
   display: block;
   float: left;
   margin-right: 2.35765%;
@@ -4392,11 +4392,11 @@ pre.literal-block:after {
   padding: 1.618em;
   margin-right: 0;
 }
-.wh-grid-one-col section:last-child {
+.wy-grid-one-col section:last-child {
   margin-right: 0;
 }
 
-.wh-grid-index-card {
+.wy-grid-index-card {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
@@ -4406,78 +4406,78 @@ pre.literal-block:after {
   background: #fcfcfc;
   padding: 1.618em;
 }
-.wh-grid-index-card:before, .wh-grid-index-card:after {
+.wy-grid-index-card:before, .wy-grid-index-card:after {
   display: table;
   content: "";
 }
-.wh-grid-index-card:after {
+.wy-grid-index-card:after {
   clear: both;
 }
-.wh-grid-index-card header, .wh-grid-index-card section, .wh-grid-index-card aside {
+.wy-grid-index-card header, .wy-grid-index-card section, .wy-grid-index-card aside {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 100%;
 }
-.wh-grid-index-card header:last-child, .wh-grid-index-card section:last-child, .wh-grid-index-card aside:last-child {
+.wy-grid-index-card header:last-child, .wy-grid-index-card section:last-child, .wy-grid-index-card aside:last-child {
   margin-right: 0;
 }
-.wh-grid-index-card.twocol {
+.wy-grid-index-card.twocol {
   max-width: 768px;
 }
-.wh-grid-index-card.twocol section {
+.wy-grid-index-card.twocol section {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%;
 }
-.wh-grid-index-card.twocol section:last-child {
+.wy-grid-index-card.twocol section:last-child {
   margin-right: 0;
 }
-.wh-grid-index-card.twocol aside {
+.wy-grid-index-card.twocol aside {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%;
 }
-.wh-grid-index-card.twocol aside:last-child {
+.wy-grid-index-card.twocol aside:last-child {
   margin-right: 0;
 }
 
-.wh-grid-search-filter {
+.wy-grid-search-filter {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
 }
-.wh-grid-search-filter:before, .wh-grid-search-filter:after {
+.wy-grid-search-filter:before, .wy-grid-search-filter:after {
   display: table;
   content: "";
 }
-.wh-grid-search-filter:after {
+.wy-grid-search-filter:after {
   clear: both;
 }
-.wh-grid-search-filter .wh-grid-search-filter-input {
+.wy-grid-search-filter .wy-grid-search-filter-input {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 74.41059%;
 }
-.wh-grid-search-filter .wh-grid-search-filter-input:last-child {
+.wy-grid-search-filter .wy-grid-search-filter-input:last-child {
   margin-right: 0;
 }
-.wh-grid-search-filter .wh-grid-search-filter-btn {
+.wy-grid-search-filter .wy-grid-search-filter-btn {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 23.23176%;
 }
-.wh-grid-search-filter .wh-grid-search-filter-btn:last-child {
+.wy-grid-search-filter .wy-grid-search-filter-btn:last-child {
   margin-right: 0;
 }
 
-.wh-object-list li {
+.wy-object-list li {
   padding: 10px;
   border-bottom: solid 1px #e7ebee;
   *zoom: 1;
@@ -4485,14 +4485,14 @@ pre.literal-block:after {
   background: rgba(255, 255, 255, 0.9);
   position: relative;
 }
-.wh-object-list li:before, .wh-object-list li:after {
+.wy-object-list li:before, .wy-object-list li:after {
   display: table;
   content: "";
 }
-.wh-object-list li:after {
+.wy-object-list li:after {
   clear: both;
 }
-.wh-object-list li.active:before {
+.wy-object-list li.active:before {
   content: " ";
   height: 0;
   width: 0;
@@ -4506,27 +4506,27 @@ pre.literal-block:after {
   right: -20px;
   margin-top: -10px;
 }
-.wh-object-list a {
+.wy-object-list a {
   display: block;
   *zoom: 1;
 }
-.wh-object-list a:before, .wh-object-list a:after {
+.wy-object-list a:before, .wy-object-list a:after {
   display: table;
   content: "";
 }
-.wh-object-list a:after {
+.wy-object-list a:after {
   clear: both;
 }
-.wh-object-list img {
+.wy-object-list img {
   width: 50px;
   height: 50px;
   float: left;
   opacity: 0.2;
 }
-.wh-object-list .wh-object-list-title {
+.wy-object-list .wy-object-list-title {
   margin: 0 0 12px 60px;
 }
-.wh-object-list .title {
+.wy-object-list .title {
   margin-left: 60px;
   display: block;
   color: #404040;
@@ -4534,16 +4534,16 @@ pre.literal-block:after {
   font-weight: 500;
   opacity: 0.8;
 }
-.wh-object-list a:hover img, .wh-object-list a:hover .title, .wh-object-list li.active img, .wh-object-list li.active .title {
+.wy-object-list a:hover img, .wy-object-list a:hover .title, .wy-object-list li.active img, .wy-object-list li.active .title {
   opacity: 1;
 }
 
-.wh-object-list-header {
+.wy-object-list-header {
   background: #cfd7dd;
   height: 32px;
 }
 
-.wh-affix {
+.wy-affix {
   position: fixed;
   top: 1.618em;
 }
@@ -4560,11 +4560,11 @@ pre.literal-block:after {
   font-size: 90%;
 }
 
-.wh-title-setting {
+.wy-title-setting {
   font-size: 50%;
 }
 
-.wh-package-select {
+.wy-package-select {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
@@ -4572,28 +4572,28 @@ pre.literal-block:after {
   margin-bottom: 24px;
   border-bottom: solid 1px #e2e5e1;
 }
-.wh-package-select:before, .wh-package-select:after {
+.wy-package-select:before, .wy-package-select:after {
   display: table;
   content: "";
 }
-.wh-package-select:after {
+.wy-package-select:after {
   clear: both;
 }
-.wh-package-select li {
+.wy-package-select li {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 31.76157%;
 }
-.wh-package-select li:last-child {
+.wy-package-select li:last-child {
   margin-right: 0;
 }
-.wh-package-select li.wh-package-custom {
+.wy-package-select li.wy-package-custom {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 100%;
 }
-.wh-package-select li.wh-package-custom:last-child {
+.wy-package-select li.wy-package-custom:last-child {
   margin-right: 0;
 }

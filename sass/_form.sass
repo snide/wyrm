@@ -4,25 +4,25 @@
 
 // Overall form styles
 
-.wh-form-stacked
+.wy-form-stacked
   select
     display: block
-.wh-form-aligned
-  input, textarea, select, .wh-help-inline, label
+.wy-form-aligned
+  input, textarea, select, .wy-help-inline, label
     display: inline-block
     *display: inline
     *zoom: 1
     vertical-align: middle
 
-.wh-form-aligned
-  .wh-control-group
+.wy-form-aligned
+  .wy-control-group
     > label
       display: inline-block
       vertical-align: middle
       width: 10em
       margin: .5em 1em 0 0
       float: left
-  .wh-control
+  .wy-control
     float: left
     label
       display: block
@@ -124,7 +124,7 @@ input
   &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus
     outline-color: $input-focus-color
 
-input.wh-input-large
+input.wy-input-large
   padding: $base-line-height / 2
   font-size: 100%
 
@@ -157,7 +157,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Checkboxes and radios
 
-.wh-checkbox, .wh-radio
+.wy-checkbox, .wy-radio
   margin: 0.5em 0
   // Important because we don't want it overwritten in the case of errors
   color: $text-color !important
@@ -165,15 +165,15 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Messages and input context
 
-.wh-form-message-inline
+.wy-form-message-inline
   display: inline-block
   *display: inline
   *zoom: 1
   vertical-align: middle
 
-.wh-input-prefix, .wh-input-suffix
+.wy-input-prefix, .wy-input-suffix
   white-space: nowrap
-  .wh-input-context
+  .wy-input-context
     padding: $base-line-height / 4
     display: inline-block
     font-size: 80%
@@ -181,40 +181,40 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     border: solid 1px $input-border-color
     color: $gray-light
 
-.wh-input-suffix .wh-input-context
+.wy-input-suffix .wy-input-context
   border-left: 0
-.wh-input-prefix .wh-input-context
+.wy-input-prefix .wy-input-context
   border-right: 0
 
-.wh-inline-validate
+.wy-inline-validate
   white-space: nowrap
-  .wh-input-context
+  .wy-input-context
     padding: em(8px) em(10px)
     display: inline-block
     font-size: 80%
-.wh-inline-validate.wh-inline-validate-success .wh-input-context
+.wy-inline-validate.wy-inline-validate-success .wy-input-context
   color: $green
   @extend .icon
   @extend .icon-check-sign
-.wh-inline-validate.wh-inline-validate-danger .wh-input-context
+.wy-inline-validate.wy-inline-validate-danger .wy-input-context
   color: $red
   @extend .icon
   @extend .icon-remove-sign
-.wh-inline-validate.wh-inline-validate-warning .wh-input-context
+.wy-inline-validate.wy-inline-validate-warning .wy-input-context
   color: $orange
   @extend .icon
   @extend .icon-exclamation-sign
-.wh-inline-validate.wh-inline-validate-info .wh-input-context
+.wy-inline-validate.wy-inline-validate-info .wy-input-context
   color: $blue
   @extend .icon
   @extend .icon-exclamation-sign
 
-.wh-control-group
+.wy-control-group
   margin-bottom: $base-line-height
   +clearfix
 
-.wh-control-group.wh-control-group-error
-  .wh-form-message, label
+.wy-control-group.wy-control-group-error
+  .wy-form-message, label
     color: $red
   input
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
@@ -224,21 +224,21 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Fluid inputs when needed
 
-.wh-control-group.fluid-input
+.wy-control-group.fluid-input
   input
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
       width: 100%
 
 // Inline help for forms
 
-.wh-form-message-inline
+.wy-form-message-inline
   display: inline-block
   padding-left: 0.3em
   color: #666
   vertical-align: middle
   font-size: 90%
 
-.wh-form-message
+.wy-form-message
   display: block
   color: $gray-lighter
   font-size: 70%
@@ -247,7 +247,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Tags
 
-.wh-tag-input-group
+.wy-tag-input-group
   padding: 4px 4px 0px 4px
   display: inline-block
   border: 1px solid $input-border-color
@@ -256,14 +256,14 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   box-shadow: inset 0 1px 3px $input-shadow-color
   +transition(border .3s linear)
   +font-smooth
-  .wh-tag
+  .wy-tag
     display: inline-block
     background-color: rgba(0,0,0,.1)
     padding: em(8px) em(10px)
     border-radius: 2px
     position: relative
     margin-bottom: 4px
-    .wh-tag-remove
+    .wy-tag-remove
       @extend .icon
       @extend .icon-remove
       color: $gray-lighter
@@ -283,7 +283,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Uploads
 
-.wh-form-upload
+.wy-form-upload
   border: solid 1px $input-border-color
   border-bottom: solid 3px $input-border-color
   background-color: $white
@@ -302,15 +302,15 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     display: none
   .image-loading
     display: none
-  .wh-form-upload-icon
+  .wy-form-upload-icon
     display: block
     font-size: $base-font-size * 2
     color: $text-light
-  .image-drop .wh-form-upload-icon
+  .image-drop .wy-form-upload-icon
     color: $green
   p
     font-size: 90%
-  .wh-form-upload-image
+  .wy-form-upload-image
     float: left
     margin-right: $base-line-height
     +media($mobile)
@@ -321,12 +321,12 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     max-height: 125px
     opacity: .9
     +transition(opacity .1s ease-in)
-  .wh-form-upload-content
+  .wy-form-upload-content
     float: left
     +media($mobile)
       width: 100%
 
-.wh-form-upload:hover
+.wy-form-upload:hover
   border-color: darken($input-border-color, 10%)
   color: $text-color
   .image-desktop
@@ -336,25 +336,25 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   img
     opacity: 1
 
-.wh-form-upload:active
+.wy-form-upload:active
   border-top: solid 3px $input-border-color
   border-bottom: solid 1px $input-border-color
 
-.wh-form-upload.wh-form-upload-big
+.wy-form-upload.wy-form-upload-big
   width: 100%
   text-align: center
   padding: $base-line-height * 3
-  .wh-form-upload-content
+  .wy-form-upload-content
     float: none
 
-.wh-form-upload.wh-form-upload-file
+.wy-form-upload.wy-form-upload-file
   p
     margin-bottom: 0
-  .wh-form-upload-icon
+  .wy-form-upload-icon
     display: inline-block
     font-size: inherit
 
-.wh-form-upload.wh-form-upload-drop
+.wy-form-upload.wy-form-upload-drop
   background-color: lighten($green, 50%)
   .image-drop
     display: block
@@ -363,14 +363,14 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   .image-drag
     display: none
 
-.wh-form-upload.wh-form-upload-loading
+.wy-form-upload.wy-form-upload-loading
   .image-drag
     display: none
   .image-desktop
     display: none
   .image-loading
     display: block
-  .wh-input-prefix
+  .wy-input-prefix
     display: none
   p
     margin-bottom: 0
@@ -394,7 +394,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Gallery management
 
-.wh-form-gallery-manage
+.wy-form-gallery-manage
   margin-left: -$base-line-height / 2
   margin-right: -$base-line-height / 2
   li
@@ -422,7 +422,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     width: 100%
     +transition(all .05s ease-in)
 
-li.wh-form-gallery-edit
+li.wy-form-gallery-edit
   position: relative
   color: $text-invert
   padding: $base-line-height
@@ -440,7 +440,7 @@ li.wh-form-gallery-edit
     +triangle(50px, $menu-top-background-color, up)
 
 @media only screen and (max-width: 480px)
-  .wh-form
+  .wy-form
     button[type="submit"]
       margin: 0.7em 0 0
     input
@@ -450,19 +450,19 @@ li.wh-form-gallery-edit
     label
       margin-bottom: 0.3em
       display: block
-  .wh-form input
+  .wy-form input
     &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
       margin-bottom: 0
-  .wh-form-aligned
-    .wh-control-group label
+  .wy-form-aligned
+    .wy-control-group label
       margin-bottom: 0.3em
       text-align: left
       display: block
       width: 100%
-    .wh-controls
+    .wy-controls
       margin: 1.5em 0 0 0
-  /* NOTE: wh-help-inline is deprecated. Use .wh-form-message-inline instead.
-  .wh-form .wh-help-inline, .wh-form-message-inline, .wh-form-message
+  /* NOTE: wy-help-inline is deprecated. Use .wy-form-message-inline instead.
+  .wy-form .wy-help-inline, .wy-form-message-inline, .wy-form-message
     display: block
     font-size: 80%
     /* Increased bottom padding to make it group with its related input element.

@@ -5,7 +5,7 @@
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 
   {# CSS #}
-  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />   
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
   {% for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
@@ -15,19 +15,19 @@
 
 </head>
 
-<body class="wh-body-for-nav">
+<body class="wy-body-for-nav">
 
   {% block header %}
     {% include "header.html" %}
   {% endblock %}
 
-  <div class="wh-grid-for-nav">
-    <nav data-toggle="wh-nav-shift" class="wh-nav-side">
-      <div class="wh-logo">
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-logo">
       <a href="/">Webhook docs</a>
       </div>
 
-      <div class="wh-menu wh-menu-vertical" data-spy="affix">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
         <header>Getting started</header>
         <ul>
           <li><a href="/">Webhook at a glance</a></li>
@@ -39,12 +39,12 @@
       </div>
       &nbsp;
     </nav>
-      <section data-toggle="wh-nav-shift" class="wh-nav-content-wrap">
-      <nav class="wh-nav-top">
-        <i data-toggle="wh-nav-top" class="icon icon-reorder"></i>
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
         <img width="40" height="40" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/1pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY5MDYzRTNBRjQ1NDExRTJCOEE1Q0YyMkMxQjQ5MEJEIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5MDYzRTM5RjQ1NDExRTJCOEE1Q0YyMkMxQjQ5MEJEIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MDU0OUNFNTU2MjA2ODExOEE2REVDMEM4QTE0MTVFMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNTcxMEZCQjE4MjA2ODExODA4M0U2QjcwQkMyRTlGNCIvPiA8ZGM6dGl0bGU+IDxyZGY6QWx0PiA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPnJvdW5kX3N0aWNrZXJfdGVtcGxhdGVfdXM8L3JkZjpsaT4gPC9yZGY6QWx0PiA8L2RjOnRpdGxlPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvBps1sAAAMLSURBVHja7JhNSFRRFMffjObgFFSWJqlDZR8GprkKsinb1GLScGE0UArSpkUthKDZuDKpTV8bDWSgqGA20UbaSAbRx0LIJCrMwCGthBBrQCzL6X/gP/R4vfveG3sDE7wLP7jvnPM/98zcO+8e9aXTaS2fh1/L8+EV6BXoFegV+J8UGAYPwSL4wfm+fCnwKBgG8+AEOMn5I/pyUuAekATfwC1QqIgLgH4QB8dBFQhxHqcvoNBKzptcI8k1/x5yF5swnf4z5kGHIq6JMeXgrk5zhzYZBxXaDubOjE9mcapvcLVuXgxqFXElPHczoE5n302b+NYqtLXMbbam7RY/5WGXsQASirg3YAXYyRhpjZbANbCXvrcKbYK5Na71JJstDoLzYAx8BH5FnNAMikCc8RtAFXgNhix0fuYe41pBszjNIoFQDZZAxCauhOfpFDUyfwUqLDQR5q62ym1XoPAADNrEdIE5fgtBzrtsNIPMrf1rgS38pFsUfh94B67qbDKfoM9Ms5k5W9woUM7KJLik8B/ia2KHzradtsMKjeRK2pxtxwUKMfAFBEx89xU/hiH6jPYAc8WcrO20wDLwHbQb7CHwC7SaaFrpCxns7cxV5maBwm3w3GDrAVOg0CRebB/ABYP9GW8aze0CG3muGvgs774Z0G2h6WZMEZ8bmKMxFwUKo2CA8yhY5J2rii9nTJTPA8zheM1s260+EAVr2LVIRxKziP8M7oHTfN4IatjtOBsOP0kp2A9Wgq+gFxSDNvATdJpo6sA2cIDbGuFWXwELYKubW3wRjPDgT3HBab5wb9Bn1IzwfbcJpKgZZpHjzOnaFsu2vAT1oEK3XW3spmsUmhfgGFhFWxPYBR6zA3Kt5Z8FlWASpHT2UZ7FWYUmxJjMSDFHpUKz7DOYuY/DoJ7vv2aeTdnq6yaay/SVMraH2rDTezibMyiXfoJtlPxAjoAzvE8n2G6ZtWDjjDlLTS9zJCwaiWW/BwvAORaU+RuiH6y30KwDfbx7ZbxnjgKn6/q8f2B6BXoFegXmdvwWYABOhypGrAFWhAAAAABJRU5ErkJggg==">
       </nav>
-      <div class="wh-nav-content rst-content">
+      <div class="wy-nav-content rst-content">
         {% block body %}{% endblock %}
       </div>
     </section>

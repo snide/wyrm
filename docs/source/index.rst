@@ -22,26 +22,26 @@ Generic Elements
 Spinner
 =======
 
-Spinner used for loading animations. I need to do a fallback gif for IE8. By default it centers itself. Add ``wh-spinner-margin`` for spacing.
+Spinner used for loading animations. I need to do a fallback gif for IE8. By default it centers itself. Add ``wy-spinner-margin`` for spacing.
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <div class="wh-spinner  wh-spinner-large"></div>
-      <div class="wh-spinner"></div>
-      <div class="wh-spinner wh-spinner-small wh-spinner-margin"></div>
-      <p><div class="wh-spinner wh-spinner-small wh-spinner-inline"></div> An inline spinner in some text.</p>
-      <a href="" class="btn icon icon-check-sign"> In a button <div class="wh-spinner wh-spinner-small"></div></a>
+      <div class="wy-spinner  wy-spinner-large"></div>
+      <div class="wy-spinner"></div>
+      <div class="wy-spinner wy-spinner-small wy-spinner-margin"></div>
+      <p><div class="wy-spinner wy-spinner-small wy-spinner-inline"></div> An inline spinner in some text.</p>
+      <a href="" class="btn icon icon-check-sign"> In a button <div class="wy-spinner wy-spinner-small"></div></a>
     </div>
 
 .. code-block:: html
     :linenos:
 
-    <div class="wh-spinner wh-spinner-large"></div>
-    <div class="wh-spinner"></div>
-    <div class="wh-spinner wh-spinner-small wh-spinner-margin"></div>
-    <p><div class="wh-spinner wh-spinner-small wh-spinner-inline"></div> An inline spinner in some text.</p>
-    <a href="" class="btn icon icon-check-sign"> In a button <div class="wh-spinner"></div></a>
+    <div class="wy-spinner wy-spinner-large"></div>
+    <div class="wy-spinner"></div>
+    <div class="wy-spinner wy-spinner-small wy-spinner-margin"></div>
+    <p><div class="wy-spinner wy-spinner-small wy-spinner-inline"></div> An inline spinner in some text.</p>
+    <a href="" class="btn icon icon-check-sign"> In a button <div class="wy-spinner"></div></a>
 
 ..
 ..
@@ -56,32 +56,32 @@ Spinner used for loading animations. I need to do a fallback gif for IE8. By def
 Buttons
 =======
 
-You can use the ``btn`` class on any element such as a ``href``, ``button`` or ``span``. Stack on the ``icon`` class along with a `font awesome <http://fortawesome.github.io/Font-Awesome/icons/>`_ icon for iconage. It can also be used within ``wh-dropdown`` for dropdown buttons.
+You can use the ``btn`` class on any element such as a ``href``, ``button`` or ``span``. Stack on the ``icon`` class along with a `font awesome <http://fortawesome.github.io/Font-Awesome/icons/>`_ icon for iconage. It can also be used within ``wy-dropdown`` for dropdown buttons.
 
 .. note::
-    If you plan on using buttons in a row, use the ``wh-btn-group`` class as show below. It forces buttons to have a ``vertical-align: text-top`` so that the the ``.btn:active`` border animation doesn't misalign the text.
+    If you plan on using buttons in a row, use the ``wy-btn-group`` class as show below. It forces buttons to have a ``vertical-align: text-top`` so that the the ``.btn:active`` border animation doesn't misalign the text.
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <div class="wh-btn-group">
+      <div class="wy-btn-group">
         <a href="" class="btn">.btn</a>
         <button class="btn btn-info">.btn-info</button>
         <span href="" class="btn btn-neutral">.btn-neutral</span>
       </div>
-      <div class="wh-btn-group">
+      <div class="wy-btn-group">
         <a href="" class="btn btn-warning">.btn-warning</a>
         <a href="" class="btn btn-danger">.btn-danger</a>
         <a href="" class="btn btn-link">.btn-link</a>
       </div>
-      <div class="wh-btn-group">
-        <a href="" class="btn"><div class="wh-spinner"></div> Spinner</a>
+      <div class="wy-btn-group">
+        <a href="" class="btn"><div class="wy-spinner"></div> Spinner</a>
         <a href="" class="btn icon icon-check-sign"> With icon</a>
         <a href="" class="btn btn-disabled">.btn-disabled</a>
       </div>
-      <div class="wh-dropdown wh-dropdown-bubble">
+      <div class="wy-dropdown wy-dropdown-bubble">
         <a href="" class="btn btn-neutral caret">As a dropdown </a>
-        <dl class="wh-dropdown-menu">
+        <dl class="wy-dropdown-menu">
           <dd><a href="">Choice one</a></dd>
           <dd><a href="">Choice two</a></dd>
           <dd><a href="">Choice three</a></dd>
@@ -92,24 +92,24 @@ You can use the ``btn`` class on any element such as a ``href``, ``button`` or `
 .. code-block:: html
     :linenos:
 
-    <div class="wh-btn-group">
+    <div class="wy-btn-group">
       <a href="" class="btn">.btn</a>
       <button class="btn btn-info">.btn-info</button>
       <span href="" class="btn btn-neutral">.btn-neutral</span>
     </div>
-    <div class="wh-btn-group">
+    <div class="wy-btn-group">
       <a href="" class="btn btn-warning">.btn-warning</a>
       <a href="" class="btn btn-danger">.btn-danger</a>
       <a href="" class="btn btn-link">.btn-link</a>
     </div>
-    <div class="wh-btn-group">
-      <a href="" class="btn"><div class="wh-spinner"></div> Spinner</a>
+    <div class="wy-btn-group">
+      <a href="" class="btn"><div class="wy-spinner"></div> Spinner</a>
       <a href="" class="btn icon icon-check-sign"> With icon</a>
       <a href="" class="btn btn-disabled">.btn-disabled</a>
     </div>
-    <div class="wh-dropdown wh-dropdown-bubble">
+    <div class="wy-dropdown wy-dropdown-bubble">
       <a href="" class="btn btn-neutral caret">As a dropdown </a>
-      <dl class="wh-dropdown-menu">
+      <dl class="wy-dropdown-menu">
         <dd><a href="">Choice one</a></dd>
         <dd><a href="">Choice two</a></dd>
         <dd><a href="">Choice three</a></dd>
@@ -133,46 +133,46 @@ Form elements
 Stacked form
 ============
 
-Forms can be stacked using ``wh-form-stacked``.
+Forms can be stacked using ``wy-form-stacked``.
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
+      <form class="wy-form-stacked">
         <fieldset>
           <legend>Stacked form</legend>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="title">Title</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <input type="text" id="title" placeholder="title" />
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="description">Description</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <textarea id="description" placeholder="something"></textarea>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="option-radio-example1">Choose one</label>
-            <div class="wh-control">
-              <label for="option-radiox" class="wh-radio">
+            <div class="wy-control">
+              <label for="option-radiox" class="wy-radio">
                 <input id="option-radiox" name="option-radio-example1" type="radio" value="">
                 Option 1
               </label>
-              <label for="option-radioy" class="wh-radio">
+              <label for="option-radioy" class="wy-radio">
                 <input id="option-radioy" name="option-radio-example1" type="radio" value="">
                 Option 2
               </label>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
@@ -183,7 +183,7 @@ Forms can be stacked using ``wh-form-stacked``.
 .. code-block:: html
     :linenos:
 
-    <form class="wh-form-stacked">
+    <form class="wy-form-stacked">
       <!-- form contents here -->
     </form>
 
@@ -200,46 +200,46 @@ Forms can be stacked using ``wh-form-stacked``.
 Aligned form
 ============
 
-Forms can be aligned using ``wh-form-aligned``. At lower breakpoints, they fall back to stacked.
+Forms can be aligned using ``wy-form-aligned``. At lower breakpoints, they fall back to stacked.
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-aligned">
+      <form class="wy-form-aligned">
         <fieldset>
           <legend>Aligned form</legend>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="title">Title</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <input type="text" id="title" placeholder="title" />
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="description">Description</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <textarea id="description" placeholder="something"></textarea>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="option-radio-example1">Choose one</label>
-            <div class="wh-control">
-              <label for="option-radio1" class="wh-radio">
+            <div class="wy-control">
+              <label for="option-radio1" class="wy-radio">
                 <input id="option-radio1" name="option-radio-example1" type="radio" value="">
                 Option 1
               </label>
-              <label for="option-radio2" class="wh-radio">
+              <label for="option-radio2" class="wy-radio">
                 <input id="option-radio2" name="option-radio-example" type="radio" value="">
                 Option 2
               </label>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
         </fieldset>
@@ -249,7 +249,7 @@ Forms can be aligned using ``wh-form-aligned``. At lower breakpoints, they fall 
 .. code-block:: html
     :linenos:
 
-    <form class="wh-form-aligned">
+    <form class="wy-form-aligned">
       <!-- form contents here -->
     </form>
 ..
@@ -265,30 +265,30 @@ Forms can be aligned using ``wh-form-aligned``. At lower breakpoints, they fall 
 Inputs, selects, and textareas
 ==============================
 
-The form element itself always has four parts. The ``wh-control-group``, the ``wh-control`` and then the ``label`` and ``input`` within it. Optionally it can include a ``wh-form-message`` for any helper text.
+The form element itself always has four parts. The ``wy-control-group``, the ``wy-control`` and then the ``label`` and ``input`` within it. Optionally it can include a ``wy-form-message`` for any helper text.
 
-Textareas by default are given a width of 100%, all other text inputs can go fluid with the ``fluid-input`` class attached to the ``wh-control-group``
+Textareas by default are given a width of 100%, all other text inputs can go fluid with the ``fluid-input`` class attached to the ``wy-control-group``
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-        <div class="wh-control-group">
+      <form class="wy-form-stacked">
+        <div class="wy-control-group">
           <label for="some-textfield">Some textfield</label>
-          <div class="wh-control">
+          <div class="wy-control">
             <!-- Can be replaced with any kind of text based input, textarea, or select. -->
             <input type="text" id="some-textfield" placeholder="Enter your textfield" />
             <!-- optional help message -->
-            <span class="wh-form-message">Help goes here</span>
+            <span class="wy-form-message">Help goes here</span>
           </div>
         </div>
-        <div class="wh-control-group fluid-input">
+        <div class="wy-control-group fluid-input">
           <label for="some-fluid-textfield">Some fluid textfield</label>
-          <div class="wh-control">
+          <div class="wy-control">
             <!-- Can be replaced with any kind of text based input, textarea, select or button -->
             <input type="text" id="some-fluid-textfield" placeholder="Enter your textfield" />
             <!-- optional help message -->
-            <span class="wh-form-message">Help goes here</span>
+            <span class="wy-form-message">Help goes here</span>
           </div>
         </div>
       </form>
@@ -297,22 +297,22 @@ Textareas by default are given a width of 100%, all other text inputs can go flu
 .. code-block:: html
     :linenos:
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="some-textfield">Some textfield</label>
-      <div class="wh-control">
+      <div class="wy-control">
         <!-- Can be replaced with any kind of text based input, textarea, or select. -->
         <input type="text" id="some-textfield" placeholder="Enter your textfield" />
         <!-- optional help message -->
-        <span class="wh-form-message">Help goes here</span>
+        <span class="wy-form-message">Help goes here</span>
       </div>
     </div>
-    <div class="wh-control-group fluid-input">
+    <div class="wy-control-group fluid-input">
       <label for="some-fluid-textfield">Some fluid textfield</label>
-      <div class="wh-control">
+      <div class="wy-control">
         <!-- Can be replaced with any kind of text based input, textarea, select or button -->
         <input type="text" id="some-fluid-textfield" placeholder="Enter your textfield" />
         <!-- optional help message -->
-        <span class="wh-form-message">Help goes here</span>
+        <span class="wy-form-message">Help goes here</span>
       </div>
     </div>
 
@@ -334,34 +334,34 @@ Radios and checkboxes need individual labels for each option and come with some 
 .. raw:: html
 
     <div class="codeblock-example">
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="choose">Choose one</label>
-        <div class="wh-control">
-          <label for="option-one" class="wh-radio">
+        <div class="wy-control">
+          <label for="option-one" class="wy-radio">
             <input id="option-one" name="option-radio-example" type="radio" value="">
             Option 1
           </label>
-          <label for="option-two" class="wh-radio">
+          <label for="option-two" class="wy-radio">
             <input id="option-two" name="option-radio-example" type="radio" value="">
             Option 2
           </label>
           <!-- optional help message -->
-          <span class="wh-form-message">Help goes here</span>
+          <span class="wy-form-message">Help goes here</span>
         </div>
       </div>
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="choose-again">Choose another</label>
-        <div class="wh-control">
-          <label for="option-x" class="wh-checkbox">
+        <div class="wy-control">
+          <label for="option-x" class="wy-checkbox">
             <input id="option-x" name="option-radio-example" type="checkbox" value="">
             Option 1
           </label>
-          <label for="option-y" class="wh-checkbox">
+          <label for="option-y" class="wy-checkbox">
             <input id="option-y" name="option-radio-example" type="checkbox" value="">
             Option 2
           </label>
           <!-- optional help message -->
-          <span class="wh-form-message">Help goes here</span>
+          <span class="wy-form-message">Help goes here</span>
         </div>
       </div>
     </div>
@@ -369,34 +369,34 @@ Radios and checkboxes need individual labels for each option and come with some 
 .. code-block:: html
     :linenos:
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="choose">Choose one</label>
-      <div class="wh-control">
-        <label for="option-one" class="wh-radio">
+      <div class="wy-control">
+        <label for="option-one" class="wy-radio">
           <input id="option-one" name="option-radio-example" type="radio" value="">
           Option 1
         </label>
-        <label for="option-two" class="wh-radio">
+        <label for="option-two" class="wy-radio">
           <input id="option-two" name="option-radio-example" type="radio" value="">
           Option 2
         </label>
         <!-- optional help message -->
-        <span class="wh-form-message">Help goes here</span>
+        <span class="wy-form-message">Help goes here</span>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="choose-again">Choose another</label>
-      <div class="wh-control">
-        <label for="option-x" class="wh-checkbox">
+      <div class="wy-control">
+        <label for="option-x" class="wy-checkbox">
           <input id="option-x" name="option-radio-example" type="checkbox" value="">
           Option 1
         </label>
-        <label for="option-y" class="wh-checkbox">
+        <label for="option-y" class="wy-checkbox">
           <input id="option-y" name="option-radio-example" type="checkbox" value="">
           Option 2
         </label>
         <!-- optional help message -->
-        <span class="wh-form-message">Help goes here</span>
+        <span class="wy-form-message">Help goes here</span>
       </div>
     </div>
 
@@ -419,20 +419,20 @@ You can give text inputs extra context if needed.
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-        <div class="wh-control-group">
+      <form class="wy-form-stacked">
+        <div class="wy-control-group">
           <label>Prefix</label>
-          <div class="wh-control">
-            <div class="wh-input-prefix">
-              <span class="wh-input-context">http://www.sitename.com/</span><input type="text" id="right-label" placeholder="vanity-name-here">
+          <div class="wy-control">
+            <div class="wy-input-prefix">
+              <span class="wy-input-context">http://www.sitename.com/</span><input type="text" id="right-label" placeholder="vanity-name-here">
             </div>
           </div>
         </div>
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Suffix</label>
-          <div class="wh-control">
-            <div class="wh-input-suffix">
-              <input type="text" id="right-label" placeholder="username"><span class="wh-input-context">@gmail.com</span>
+          <div class="wy-control">
+            <div class="wy-input-suffix">
+              <input type="text" id="right-label" placeholder="username"><span class="wy-input-context">@gmail.com</span>
             </div>
           </div>
         </div>
@@ -442,19 +442,19 @@ You can give text inputs extra context if needed.
 .. code-block:: html
     :linenos:
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Prefix</label>
-      <div class="wh-control">
-        <div class="wh-input-prefix">
-          <span class="wh-input-context">http://www.sitename.com/</span><input type="text" id="right-label" placeholder="vanity-name-here">
+      <div class="wy-control">
+        <div class="wy-input-prefix">
+          <span class="wy-input-context">http://www.sitename.com/</span><input type="text" id="right-label" placeholder="vanity-name-here">
         </div>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Suffix</label>
-      <div class="wh-control">
-        <div class="wh-input-suffix">
-          <input type="text" id="right-label" placeholder="username"><span class="wh-input-context">@gmail.com</span>
+      <div class="wy-control">
+        <div class="wy-input-suffix">
+          <input type="text" id="right-label" placeholder="username"><span class="wy-input-context">@gmail.com</span>
         </div>
       </div>
     </div>
@@ -490,10 +490,10 @@ By default, the bottom of any content form should look like this.
       <fieldset>
         <legend>Save your article</legend>
 
-        <div class="wh-btn-group">
-          <div class="wh-dropdown wh-dropdown-bubble">
+        <div class="wy-btn-group">
+          <div class="wy-dropdown wy-dropdown-bubble">
             <span class="btn btn-info icon icon-question-sign caret"> Save... </span>
-            <dl class="wh-dropdown-menu">
+            <dl class="wy-dropdown-menu">
               <dd><a href="">Save it as a draft</a></dd>
               <dd><a href="">Publish now </a></dd>
               <dd><a href="">Publish at a specific time</a></dd>
@@ -513,10 +513,10 @@ By default, the bottom of any content form should look like this.
     <fieldset>
       <legend>Save your article</legend>
 
-      <div class="wh-btn-group">
-        <div class="wh-dropdown wh-dropdown-bubble">
+      <div class="wy-btn-group">
+        <div class="wy-dropdown wy-dropdown-bubble">
           <span class="btn btn-info icon icon-question-sign caret"> Save... </span>
-          <dl class="wh-dropdown-menu">
+          <dl class="wy-dropdown-menu">
             <dd><a href="">Save it as a draft</a></dd>
             <dd><a href="">Publish now </a></dd>
             <dd><a href="">Publish at a specific time</a></dd>
@@ -532,26 +532,26 @@ If they select publish at a specific time, this part of the form should switch t
 
     <div class="codeblock-example">
 
-      <form class="wh-form-stacked">
+      <form class="wy-form-stacked">
         <hr />
         <fieldset>
           <legend>Schedule your article</legend>
 
           <p>Don't let anyone other than staff view this content until the scheduled date passes.</p>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="right-label" >Publish date</label>
-            <div class="wh-control">
-              <div class="wh-input-prefix">
-                <span class="wh-input-context"><i class="icon icon-calendar"></i></span><input type="datetime-local" value="2012-07-23T15:04">
+            <div class="wy-control">
+              <div class="wy-input-prefix">
+                <span class="wy-input-context"><i class="icon icon-calendar"></i></span><input type="datetime-local" value="2012-07-23T15:04">
               </div>
             </div>
           </div>
 
-          <div class="wh-btn-group">
+          <div class="wy-btn-group">
             <a href="" class="btn icon icon-ok-sign caret"> Publish on 07/23/2012 03:04PM</a>
             <a href="" class="btn btn-link">Save as a draft</a>
-            <a href="" class="btn btn-link wh-text-danger">Delete</a>
+            <a href="" class="btn btn-link wy-text-danger">Delete</a>
           </div>
         </fieldset>
       </form>
@@ -568,16 +568,16 @@ If they select publish at a specific time, this part of the form should switch t
 
       <p>Don't let anyone other than staff view this content until the scheduled date passes.</p>
 
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="right-label" >Publish date</label>
-        <div class="wh-control">
-          <div class="wh-input-prefix">
-            <span class="wh-input-context"><i class="icon icon-calendar"></i></span><input type="datetime-local" value="2012-07-23T15:04">
+        <div class="wy-control">
+          <div class="wy-input-prefix">
+            <span class="wy-input-context"><i class="icon icon-calendar"></i></span><input type="datetime-local" value="2012-07-23T15:04">
           </div>
         </div>
       </div>
 
-      <div class="wh-btn-group">
+      <div class="wy-btn-group">
         <a href="" class="btn icon icon-ok-sign caret"> Publish on 07/23/2012 03:04PM</a>
         <a href="" class="btn btn-link">Save as a draft</a>
       </div>
@@ -597,9 +597,9 @@ Once the content is live show the following. Clicking the change publish date li
 
         <p>This article went live on your site on 07/23/2012  at 03:04PM. <a href="">Change publish date?</a></p>
 
-        <div class="wh-btn-group">
+        <div class="wy-btn-group">
           <a href="" class="btn icon icon-ok-sign caret"> Save</a>
-          <a href="" class="btn btn-link wh-text-danger">Delete article</a>
+          <a href="" class="btn btn-link wy-text-danger">Delete article</a>
         </div>
       </fieldset>
 
@@ -615,9 +615,9 @@ Once the content is live show the following. Clicking the change publish date li
 
       <p>This article went live on your site on 07/23/2012  at 03:04PM. <a href="">Change publish date?</a></p>
 
-      <div class="wh-btn-group">
+      <div class="wy-btn-group">
         <a href="" class="btn icon icon-ok-sign caret"> Save</a>
-        <a href="" class="btn btn-link wh-text-danger">Delete article</a>
+        <a href="" class="btn btn-link wy-text-danger">Delete article</a>
       </div>
     </fieldset>
 
@@ -638,18 +638,18 @@ Error Handling
 Field errors
 ============
 
-To display an error, simply add the ``wh-control-group-error`` class to the to your ``wh-control group``. This will give everything red warning coloring.
+To display an error, simply add the ``wy-control-group-error`` class to the to your ``wy-control group``. This will give everything red warning coloring.
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-        <div class="wh-control-group wh-control-group-error">
+      <form class="wy-form-stacked">
+        <div class="wy-control-group wy-control-group-error">
           <label for="some-textfield">Some textfield</label>
-          <div class="wh-control">
+          <div class="wy-control">
             <input type="text" id="some-textfield" placeholder="Enter your textfield" />
-            <!-- The same wh-form-message field should be used for the error -->
-            <span class="wh-form-message">You idiot, you should have done X.</span>
+            <!-- The same wy-form-message field should be used for the error -->
+            <span class="wy-form-message">You idiot, you should have done X.</span>
           </div>
         </div>
       </form>
@@ -658,12 +658,12 @@ To display an error, simply add the ``wh-control-group-error`` class to the to y
 .. code-block:: html
     :linenos:
 
-    <div class="wh-control-group wh-control-group-error">
+    <div class="wy-control-group wy-control-group-error">
       <label for="some-textfield">Some textfield</label>
-      <div class="wh-control">
+      <div class="wy-control">
         <input type="text" id="some-textfield" placeholder="Enter your textfield" />
-        <!-- The same wh-form-message field should be used for the error -->
-        <span class="wh-form-message">You idiot, you should have done X.</span>
+        <!-- The same wy-form-message field should be used for the error -->
+        <span class="wy-form-message">You idiot, you should have done X.</span>
       </div>
     </div>
 
@@ -684,36 +684,36 @@ Sometimes you don't need the user to hit actual save buttons and can just make s
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-        <div class="wh-control-group">
+      <form class="wy-form-stacked">
+        <div class="wy-control-group">
           <label>Success</label>
-          <div class="wh-control">
-            <div class="wh-inline-validate wh-inline-validate-success">
-              <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Success</span>
+          <div class="wy-control">
+            <div class="wy-inline-validate wy-inline-validate-success">
+              <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Success</span>
             </div>
           </div>
         </div>
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Info</label>
-          <div class="wh-control">
-            <div class="wh-inline-validate wh-inline-validate-info">
-              <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Info</span>
+          <div class="wy-control">
+            <div class="wy-inline-validate wy-inline-validate-info">
+              <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Info</span>
             </div>
           </div>
         </div>
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Warning</label>
-          <div class="wh-control">
-            <div class="wh-inline-validate wh-inline-validate-warning">
-              <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Warning</span>
+          <div class="wy-control">
+            <div class="wy-inline-validate wy-inline-validate-warning">
+              <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Warning</span>
             </div>
           </div>
         </div>
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Danger</label>
-          <div class="wh-control">
-            <div class="wh-inline-validate wh-inline-validate-danger">
-              <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Danger</span>
+          <div class="wy-control">
+            <div class="wy-inline-validate wy-inline-validate-danger">
+              <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Danger</span>
             </div>
           </div>
         </div>
@@ -723,35 +723,35 @@ Sometimes you don't need the user to hit actual save buttons and can just make s
 .. code-block:: html
     :linenos:
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Success</label>
-      <div class="wh-control">
-        <div class="wh-inline-validate wh-inline-validate-success">
-          <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Success</span>
+      <div class="wy-control">
+        <div class="wy-inline-validate wy-inline-validate-success">
+          <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Success</span>
         </div>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Info</label>
-      <div class="wh-control">
-        <div class="wh-inline-validate wh-inline-validate-info">
-          <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Info</span>
+      <div class="wy-control">
+        <div class="wy-inline-validate wy-inline-validate-info">
+          <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Info</span>
         </div>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Warning</label>
-      <div class="wh-control">
-        <div class="wh-inline-validate wh-inline-validate-warning">
-          <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Warning</span>
+      <div class="wy-control">
+        <div class="wy-inline-validate wy-inline-validate-warning">
+          <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Warning</span>
         </div>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Danger</label>
-      <div class="wh-control">
-        <div class="wh-inline-validate wh-inline-validate-danger">
-          <input type="text" id="right-label" placeholder="username"><span class="wh-input-context"> Danger</span>
+      <div class="wy-control">
+        <div class="wy-inline-validate wy-inline-validate-danger">
+          <input type="text" id="right-label" placeholder="username"><span class="wy-input-context"> Danger</span>
         </div>
       </div>
     </div>
@@ -774,7 +774,7 @@ We often use alert trays after an action like a save takes place. Not that this 
 .. raw:: html
 
     <div class="codeblock-example">
-      <div class="wh-btn-group">
+      <div class="wy-btn-group">
         <button class="btn" data-toggle="btn-tray-item-success">Click to toggle a success tray</button>
       </div>
     </div>
@@ -782,12 +782,12 @@ We often use alert trays after an action like a save takes place. Not that this 
 .. code-block:: html
     :linenos:
 
-    <ul class="wh-tray-container">
-      <li class="wh-tray-item-neutral"> Here is a neutral tray message</li>
-      <li class="wh-tray-item-success"> Here is a success tray message</li>
-      <li class="wh-tray-item-info"> Here is an info tray message</li>
-      <li class="wh-tray-item-warning"> Here is a warning tray message</li>
-      <li class="wh-tray-item-danger"> Here is a danger tray message</li>
+    <ul class="wy-tray-container">
+      <li class="wy-tray-item-neutral"> Here is a neutral tray message</li>
+      <li class="wy-tray-item-success"> Here is a success tray message</li>
+      <li class="wy-tray-item-info"> Here is an info tray message</li>
+      <li class="wy-tray-item-warning"> Here is a warning tray message</li>
+      <li class="wy-tray-item-danger"> Here is a danger tray message</li>
     </ul>
 
 ..
@@ -807,40 +807,40 @@ Sometimes field errors are not enough. In page alerts alerts can be displayed un
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
+      <form class="wy-form-stacked">
         <fieldset>
           <legend>Alert, alert!</legend>
           <!-- Here is the global error message -->
-          <div class="wh-alert wh-alert-neutral">
-            <p>.wh-alert.wh-alert-neutral for little notes you need sometimes.</p>
-            <ul class="wh-plain-list-disc">
+          <div class="wy-alert wy-alert-neutral">
+            <p>.wy-alert.wy-alert-neutral for little notes you need sometimes.</p>
+            <ul class="wy-plain-list-disc">
               <li>Sometimes you need a list here.</li>
               <li>Over here is the second.</li>
               <li>This be the third.</li>
             </ul>
           </div>
 
-          <div class="wh-alert wh-alert-danger">
-            <p>.wh-alert.wh-alert-danger for bad things that already happened.</p>
-            <ul class="wh-plain-list-disc">
+          <div class="wy-alert wy-alert-danger">
+            <p>.wy-alert.wy-alert-danger for bad things that already happened.</p>
+            <ul class="wy-plain-list-disc">
               <li>Sometimes you need a list here.</li>
               <li>Over here is the second.</li>
               <li>This be the third.</li>
             </ul>
           </div>
 
-          <div class="wh-alert wh-alert-warning">
-            <p>.wh-alert.wh-alert-warning for bad things that might happen if you continue.</p>
-            <ul class="wh-plain-list-disc">
+          <div class="wy-alert wy-alert-warning">
+            <p>.wy-alert.wy-alert-warning for bad things that might happen if you continue.</p>
+            <ul class="wy-plain-list-disc">
               <li>Sometimes you need a list here.</li>
               <li>Over here is the second.</li>
               <li>This be the third.</li>
             </ul>
           </div>
 
-          <div class="wh-alert wh-alert-info">
-            <p>.wh-alert.wh-alert-info for friendly advice.</p>
-            <ul class="wh-plain-list-disc">
+          <div class="wy-alert wy-alert-info">
+            <p>.wy-alert.wy-alert-info for friendly advice.</p>
+            <ul class="wy-plain-list-disc">
               <li>Sometimes you need a list here.</li>
               <li>Over here is the second.</li>
               <li>This be the third.</li>
@@ -854,40 +854,40 @@ Sometimes field errors are not enough. In page alerts alerts can be displayed un
 .. code-block:: html
     :linenos:
 
-    <form class="wh-form-stacked">
+    <form class="wy-form-stacked">
       <fieldset>
         <legend>Alert, alert!</legend>
         <!-- Here is the global error message -->
-        <div class="wh-alert wh-alert-neutral">
-          <p>.wh-alert.wh-alert-neutral for little notes you need sometimes.</p>
-          <ul class="wh-plain-list-disc">
+        <div class="wy-alert wy-alert-neutral">
+          <p>.wy-alert.wy-alert-neutral for little notes you need sometimes.</p>
+          <ul class="wy-plain-list-disc">
             <li>Sometimes you need a list here.</li>
             <li>Over here is the second.</li>
             <li>This be the third.</li>
           </ul>
         </div>
 
-        <div class="wh-alert wh-alert-danger">
-          <p>.wh-alert.wh-alert-danger for bad things that already happened.</p>
-          <ul class="wh-plain-list-disc">
+        <div class="wy-alert wy-alert-danger">
+          <p>.wy-alert.wy-alert-danger for bad things that already happened.</p>
+          <ul class="wy-plain-list-disc">
             <li>Sometimes you need a list here.</li>
             <li>Over here is the second.</li>
             <li>This be the third.</li>
           </ul>
         </div>
 
-        <div class="wh-alert wh-alert-warning">
-          <p>.wh-alert.wh-alert-warning for bad things that might happen if you continue.</p>
-          <ul class="wh-plain-list-disc">
+        <div class="wy-alert wy-alert-warning">
+          <p>.wy-alert.wy-alert-warning for bad things that might happen if you continue.</p>
+          <ul class="wy-plain-list-disc">
             <li>Sometimes you need a list here.</li>
             <li>Over here is the second.</li>
             <li>This be the third.</li>
           </ul>
         </div>
 
-        <div class="wh-alert wh-alert-info">
-          <p>.wh-alert.wh-alert-info for friendly advice.</p>
-          <ul class="wh-plain-list-disc">
+        <div class="wy-alert wy-alert-info">
+          <p>.wy-alert.wy-alert-info for friendly advice.</p>
+          <ul class="wy-plain-list-disc">
             <li>Sometimes you need a list here.</li>
             <li>Over here is the second.</li>
             <li>This be the third.</li>
@@ -910,30 +910,30 @@ Sometimes field errors are not enough. In page alerts alerts can be displayed un
 Full form example
 *****************
 
-Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fieldset`` with a ``legend`` inside of it should be used for additional add ons to the base form (how plugins should work).
+Forms come in two types. ``wy-form-stacked`` and ``wy-form-aligned``. A new ``fieldset`` with a ``legend`` inside of it should be used for additional add ons to the base form (how plugins should work).
 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked"> <!-- Can substitute wh-form-aligned if you wish-->
+      <form class="wy-form-stacked"> <!-- Can substitute wy-form-aligned if you wish-->
         <fieldset>
           <legend>Stacked form</legend>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="title">Title</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <input type="text" id="title" placeholder="title" />
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="description">Description</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <textarea id="description" placeholder="something"></textarea>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
@@ -945,19 +945,19 @@ Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fi
         <fieldset>
           <legend>Additional fieldset</legend>
 
-          <div class="wh-control-group">
+          <div class="wy-control-group">
             <label for="choose">Choose one</label>
-            <div class="wh-control">
-              <label for="option-a" class="wh-radio">
+            <div class="wy-control">
+              <label for="option-a" class="wy-radio">
                 <input id="option-a" name="option-radio-example" type="radio" value="">
                 Option 1
               </label>
-              <label for="option-b" class="wh-radio">
+              <label for="option-b" class="wy-radio">
                 <input id="option-b" name="option-radio-example" type="radio" value="">
                 Option 2
               </label>
               <!-- optional help message -->
-              <span class="wh-form-message">Help goes here</span>
+              <span class="wy-form-message">Help goes here</span>
             </div>
           </div>
 
@@ -968,10 +968,10 @@ Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fi
         <fieldset>
           <legend>Save your article</legend>
 
-          <div class="wh-btn-group">
-            <div class="wh-dropdown wh-dropdown-bubble">
+          <div class="wy-btn-group">
+            <div class="wy-dropdown wy-dropdown-bubble">
               <span class="btn btn-info icon icon-question-sign caret"> Save... </span>
-              <dl class="wh-dropdown-menu">
+              <dl class="wy-dropdown-menu">
                 <dd><a href="">Save it as a draft</a></dd>
                 <dd><a href="">Publish now </a></dd>
                 <dd><a href="">Publish at a specific time</a></dd>
@@ -986,25 +986,25 @@ Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fi
 .. code-block:: html
     :linenos:
 
-    <form class="wh-form-stacked"> <!-- Can substitute wh-form-aligned if you wish-->
+    <form class="wy-form-stacked"> <!-- Can substitute wy-form-aligned if you wish-->
       <fieldset>
         <legend>Create an article</legend>
 
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label for="title">Title</label>
-          <div class="wh-control">
+          <div class="wy-control">
             <input type="text" id="title" placeholder="title" />
             <!-- optional help message -->
-            <span class="wh-form-message">Help goes here</span>
+            <span class="wy-form-message">Help goes here</span>
           </div>
         </div>
 
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label for="description">Description</label>
-          <div class="wh-control">
+          <div class="wy-control">
             <textarea id="description" placeholder="something"></textarea>
             <!-- optional help message -->
-            <span class="wh-form-message">Help goes here</span>
+            <span class="wy-form-message">Help goes here</span>
           </div>
         </div>
 
@@ -1016,19 +1016,19 @@ Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fi
       <fieldset>
         <legend>Additional fieldset</legend>
 
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label for="choose">Choose one</label>
-          <div class="wh-control">
-            <label for="option-a" class="wh-radio">
+          <div class="wy-control">
+            <label for="option-a" class="wy-radio">
               <input id="option-a" name="option-radio-example" type="radio" value="">
               Option 1
             </label>
-            <label for="option-b" class="wh-radio">
+            <label for="option-b" class="wy-radio">
               <input id="option-b" name="option-radio-example" type="radio" value="">
               Option 2
             </label>
             <!-- optional help message -->
-            <span class="wh-form-message">Help goes here</span>
+            <span class="wy-form-message">Help goes here</span>
           </div>
         </div>
 
@@ -1040,10 +1040,10 @@ Forms come in two types. ``wh-form-stacked`` and ``wh-form-aligned``. A new ``fi
       <fieldset>
         <legend>Save your article</legend>
 
-        <div class="wh-btn-group">
-          <div class="wh-dropdown wh-dropdown-bubble">
+        <div class="wy-btn-group">
+          <div class="wy-dropdown wy-dropdown-bubble">
             <span class="btn btn-info icon icon-question-sign caret"> Save... </span>
-            <dl class="wh-dropdown-menu">
+            <dl class="wy-dropdown-menu">
               <dd><a href="">Save it as a draft</a></dd>
               <dd><a href="">Publish now </a></dd>
               <dd><a href="">Publish at a specific time</a></dd>
@@ -1079,76 +1079,76 @@ This widget is for the uploading of a single image file. It exists in 3 separate
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-        <div class="wh-control-group">
+      <form class="wy-form-stacked">
+        <div class="wy-control-group">
           <label>Blank state</label>
 
-          <div class="wh-form-control">
-            <a class="wh-form-upload">
-              <div class="wh-form-upload-content">
+          <div class="wy-form-control">
+            <a class="wy-form-upload">
+              <div class="wy-form-upload-content">
               <div class="image-drag">
-                <i class="icon icon-picture wh-form-upload-icon"></i>
+                <i class="icon icon-picture wy-form-upload-icon"></i>
                 <p>Drag or select image</p>
               </div>
               <div class="image-desktop">
-                <i class="icon icon-desktop wh-form-upload-icon"></i>
+                <i class="icon icon-desktop wy-form-upload-icon"></i>
                 <p>Select from desktop</p>
               </div>
-              <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+              <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
               </div>
             </a>
           </div>
         </div>
-        
-        <div class="wh-control-group">
+
+        <div class="wy-control-group">
           <label>Drag state</label>
 
-          <div class="wh-form-control">
-            <a class="wh-form-upload wh-form-upload-drop">
-              <div class="wh-form-upload-content">
+          <div class="wy-form-control">
+            <a class="wy-form-upload wy-form-upload-drop">
+              <div class="wy-form-upload-content">
               <div class="image-drop">
-                <i class="icon icon-arrow-down wh-form-upload-icon"></i>
+                <i class="icon icon-arrow-down wy-form-upload-icon"></i>
                 <p>Drop files here</p>
               </div>
-              <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" disabled="true" placeholder=" Or paste URL" /></div>
+              <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" disabled="true" placeholder=" Or paste URL" /></div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Loading state</label>
 
-          <div class="wh-form-control">
-            <a class="wh-form-upload">
-              <div class="wh-form-upload-image">
+          <div class="wy-form-control">
+            <a class="wy-form-upload">
+              <div class="wy-form-upload-image">
                 <img src="/static/img/trash/hm03.jpg" />
               </div>
-              <div class="wh-form-upload-content">
-                <div class="wh-spinner wh-spinner-margin"></div>
+              <div class="wy-form-upload-content">
+                <div class="wy-spinner wy-spinner-margin"></div>
                 <p>Uploading <span>92%</span></p>
               </div>
             </a>
           </div>
         </div>
-        <div class="wh-control-group">
+        <div class="wy-control-group">
           <label>Replace state</label>
 
-          <div class="wh-form-control">
-            <a class="wh-form-upload">
-              <div class="wh-form-upload-image">
+          <div class="wy-form-control">
+            <a class="wy-form-upload">
+              <div class="wy-form-upload-image">
                 <img src="/static/img/trash/hm03.jpg" />
               </div>
-              <div class="wh-form-upload-content">
+              <div class="wy-form-upload-content">
               <div class="image-drag">
-                <i class="icon icon-picture wh-form-upload-icon"></i>
+                <i class="icon icon-picture wy-form-upload-icon"></i>
                 <p>Drag or select image</p>
               </div>
               <div class="image-desktop">
-                <i class="icon icon-desktop wh-form-upload-icon"></i>
+                <i class="icon icon-desktop wy-form-upload-icon"></i>
                 <p>Select from desktop</p>
               </div>
-              <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+              <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
               </div>
             </a>
           </div>
@@ -1160,73 +1160,73 @@ This widget is for the uploading of a single image file. It exists in 3 separate
     :linenos:
 
     <!--Note, this is just an example of the HTML. This needs JS to work.-->
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Blank state</label>
-      <div class="wh-form-control">
-        <a class="wh-form-upload">
-          <div class="wh-form-upload-content">
+      <div class="wy-form-control">
+        <a class="wy-form-upload">
+          <div class="wy-form-upload-content">
           <div class="image-drag">
-            <i class="icon icon-picture wh-form-upload-icon"></i>
+            <i class="icon icon-picture wy-form-upload-icon"></i>
             <p>Drag or select image</p>
           </div>
           <div class="image-desktop">
-            <i class="icon icon-desktop wh-form-upload-icon"></i>
+            <i class="icon icon-desktop wy-form-upload-icon"></i>
             <p>Select from desktop</p>
           </div>
-          <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+          <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
           </div>
         </a>
       </div>
     </div>
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Drag state</label>
 
-      <div class="wh-form-control">
-        <a class="wh-form-upload wh-form-upload-drop">
-          <div class="wh-form-upload-content">
+      <div class="wy-form-control">
+        <a class="wy-form-upload wy-form-upload-drop">
+          <div class="wy-form-upload-content">
           <div class="image-drop">
-            <i class="icon icon-arrow-down wh-form-upload-icon"></i>
+            <i class="icon icon-arrow-down wy-form-upload-icon"></i>
             <p>Drop files here</p>
           </div>
-          <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" disabled="true" placeholder=" Or paste URL" /></div>
+          <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" disabled="true" placeholder=" Or paste URL" /></div>
           </div>
         </a>
       </div>
     </div>
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Loading state</label>
-      <div class="wh-form-control">
-        <a class="wh-form-upload">
-          <div class="wh-form-upload-image">
+      <div class="wy-form-control">
+        <a class="wy-form-upload">
+          <div class="wy-form-upload-image">
             <img src="/static/img/trash/hm03.jpg" />
           </div>
-          <div class="wh-form-upload-content">
-            <div class="wh-spinner wh-spinner-margin"></div>
+          <div class="wy-form-upload-content">
+            <div class="wy-spinner wy-spinner-margin"></div>
             <p>Uploading <span>92%</span></p>
           </div>
         </a>
       </div>
     </div>
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Replace state</label>
-      <div class="wh-form-control">
-        <a class="wh-form-upload">
-          <div class="wh-form-upload-image">
+      <div class="wy-form-control">
+        <a class="wy-form-upload">
+          <div class="wy-form-upload-image">
             <img src="/static/img/trash/hm03.jpg" />
           </div>
-          <div class="wh-form-upload-content">
+          <div class="wy-form-upload-content">
           <div class="image-drag">
-            <i class="icon icon-picture wh-form-upload-icon"></i>
+            <i class="icon icon-picture wy-form-upload-icon"></i>
             <p>Drag or select image</p>
           </div>
           <div class="image-desktop">
-            <i class="icon icon-desktop wh-form-upload-icon"></i>
+            <i class="icon icon-desktop wy-form-upload-icon"></i>
             <p>Select from desktop</p>
           </div>
-          <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+          <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
           </div>
         </a>
       </div>
@@ -1253,23 +1253,23 @@ This widget is for the uploading of a single file. It exists in 3 separate state
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-      <div class="wh-control-group">
+      <form class="wy-form-stacked">
+      <div class="wy-control-group">
         <label for="some-textfield">Podcast mp3 file</label>
-        <div class="wh-control">
+        <div class="wy-control">
           <button class="btn btn-neutral icon icon-file"> Drag or select file to upload</button>
         </div>
       </div>
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="some-textfield">Podcast mp3 file</label>
-        <div class="wh-control">
-          <button class="btn btn-neutral"><div class="wh-spinner"></div> Uploading 92%</button> <button class="btn btn-link wh-text-neutral">filename.mp3</button>
+        <div class="wy-control">
+          <button class="btn btn-neutral"><div class="wy-spinner"></div> Uploading 92%</button> <button class="btn btn-link wy-text-neutral">filename.mp3</button>
         </div>
       </div>
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="some-textfield">Podcast mp3 file</label>
-        <div class="wh-control">
-          <button class="btn btn-neutral icon icon-file"> Drag or select file to replace</button> <button class="btn btn-link wh-text-neutral">filename.mp3 (5.2 MB)</button>
+        <div class="wy-control">
+          <button class="btn btn-neutral icon icon-file"> Drag or select file to replace</button> <button class="btn btn-link wy-text-neutral">filename.mp3 (5.2 MB)</button>
         </div>
       </div>
       </form>
@@ -1279,22 +1279,22 @@ This widget is for the uploading of a single file. It exists in 3 separate state
     :linenos:
 
     <!--Note, this is just an example of the HTML. This needs JS to work.-->
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="some-textfield">Podcast mp3 file</label>
-      <div class="wh-control">
+      <div class="wy-control">
         <button class="btn btn-neutral icon icon-file"> Drag or select file to upload</button>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="some-textfield">Podcast mp3 file</label>
-      <div class="wh-control">
-        <button class="btn btn-neutral"><div class="wh-spinner"></div> Uploading 92%</button> <button class="btn btn-link wh-text-neutral">filename.mp3</button>
+      <div class="wy-control">
+        <button class="btn btn-neutral"><div class="wy-spinner"></div> Uploading 92%</button> <button class="btn btn-link wy-text-neutral">filename.mp3</button>
       </div>
     </div>
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="some-textfield">Podcast mp3 file</label>
-      <div class="wh-control">
-        <button class="btn btn-neutral icon icon-file"> Drag or select file to replace</button> <button class="btn btn-link wh-text-neutral">filename.mp3 (5.2 MB)</button>
+      <div class="wy-control">
+        <button class="btn btn-neutral icon icon-file"> Drag or select file to replace</button> <button class="btn btn-link wy-text-neutral">filename.mp3 (5.2 MB)</button>
       </div>
     </div>
 
@@ -1316,39 +1316,39 @@ Autocomplete allows only one item or multiple items, this should be set as part 
 .. raw:: html
 
     <div class="codeblock-example">
-      <form class="wh-form-stacked">
-      <div class="wh-control-group">
+      <form class="wy-form-stacked">
+      <div class="wy-control-group">
         <label for="right-label" >Empty state</label>
-        <div class="wh-control">
-          <div class="wh-tag-input-group">
-            <div class="wh-autocomplete-group">
+        <div class="wy-control">
+          <div class="wy-tag-input-group">
+            <div class="wy-autocomplete-group">
               <label class="icon icon-search" for="search-example-1"></label> <input type="text" id="search-example-1" placeholder="Search users">
             </div>
           </div>
-          <span class="wh-form-message">Example help text</span>
+          <span class="wy-form-message">Example help text</span>
         </div>
       </div>
 
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="right-label" >One item allowed</label>
-        <div class="wh-control">
-          <div class="wh-tag-input-group">
-            <span class="wh-tag">Dave Snider<a href="" class="wh-tag-remove"></a></span>
+        <div class="wy-control">
+          <div class="wy-tag-input-group">
+            <span class="wy-tag">Dave Snider<a href="" class="wy-tag-remove"></a></span>
           </div>
-          <span class="wh-form-message">User needs to close the above item before choosing a replacement.</span>
+          <span class="wy-form-message">User needs to close the above item before choosing a replacement.</span>
         </div>
       </div>
 
-      <div class="wh-control-group">
+      <div class="wy-control-group">
         <label for="right-label" >Multiple items allowed</label>
-        <div class="wh-control">
-          <div class="wh-tag-input-group">
-            <span class="wh-tag">Dave Snider<a href="" class="wh-tag-remove"></a></span>
-            <span class="wh-tag">Andy McCurdy<a href="" class="wh-tag-remove"></a></span>
-            <span class="wh-tag">Mike Horn<a href="" class="wh-tag-remove"></a></span>
-            <div class="wh-autocomplete-group">
+        <div class="wy-control">
+          <div class="wy-tag-input-group">
+            <span class="wy-tag">Dave Snider<a href="" class="wy-tag-remove"></a></span>
+            <span class="wy-tag">Andy McCurdy<a href="" class="wy-tag-remove"></a></span>
+            <span class="wy-tag">Mike Horn<a href="" class="wy-tag-remove"></a></span>
+            <div class="wy-autocomplete-group">
               <label class="icon icon-search" for="search-example-2"></label> <input type="text" id="search-example-2" placeholder="Search users">
-              <div class="wh-autocomplete-dropdown">
+              <div class="wy-autocomplete-dropdown">
                 <ul>
                   <li class="on">
                     <img src="/static/img/trash/user1.jpg" />
@@ -1366,7 +1366,7 @@ Autocomplete allows only one item or multiple items, this should be set as part 
               </div>
             </div>
           </div>
-          <span class="wh-form-message">Autocomplete for authors. Adds yourself by default on new form.</span>
+          <span class="wy-form-message">Autocomplete for authors. Adds yourself by default on new form.</span>
         </div>
       </div>
       </form>
@@ -1376,40 +1376,40 @@ Autocomplete allows only one item or multiple items, this should be set as part 
     :linenos:
 
     <!--Initial, default, empty state-->
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="right-label" >Empty state</label>
-      <div class="wh-control">
-        <div class="wh-tag-input-group">
-          <div class="wh-autocomplete-group">
+      <div class="wy-control">
+        <div class="wy-tag-input-group">
+          <div class="wy-autocomplete-group">
             <label class="icon icon-search" for="search-example-1"></label> <input type="text" id="search-example-1" placeholder="Search users">
           </div>
         </div>
-        <span class="wh-form-message">Example help text</span>
+        <span class="wy-form-message">Example help text</span>
       </div>
     </div>
 
     <!--When only one item is allowed-->
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="right-label" >One item allowed</label>
-      <div class="wh-control">
-        <div class="wh-tag-input-group">
-          <span class="wh-tag">Dave Snider<a href="" class="wh-tag-remove"></a></span>
+      <div class="wy-control">
+        <div class="wy-tag-input-group">
+          <span class="wy-tag">Dave Snider<a href="" class="wy-tag-remove"></a></span>
         </div>
-        <span class="wh-form-message">User needs to close the above item before choosing a replacement.</span>
+        <span class="wy-form-message">User needs to close the above item before choosing a replacement.</span>
       </div>
     </div>
 
     <!--When multiple items are allowed-->
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label for="right-label" >Multiple items allowed</label>
-      <div class="wh-control">
-        <div class="wh-tag-input-group">
-          <span class="wh-tag">Dave Snider<a href="" class="wh-tag-remove"></a></span>
-          <span class="wh-tag">Andy McCurdy<a href="" class="wh-tag-remove"></a></span>
-          <span class="wh-tag">Mike Horn<a href="" class="wh-tag-remove"></a></span>
-          <div class="wh-autocomplete-group">
+      <div class="wy-control">
+        <div class="wy-tag-input-group">
+          <span class="wy-tag">Dave Snider<a href="" class="wy-tag-remove"></a></span>
+          <span class="wy-tag">Andy McCurdy<a href="" class="wy-tag-remove"></a></span>
+          <span class="wy-tag">Mike Horn<a href="" class="wy-tag-remove"></a></span>
+          <div class="wy-autocomplete-group">
             <label class="icon icon-search" for="search-example-2"></label> <input type="text" id="search-example-2" placeholder="Search users">
-            <div class="wh-autocomplete-dropdown">
+            <div class="wy-autocomplete-dropdown">
               <ul>
                 <li class="on">
                   <img src="/static/img/trash/user1.jpg" />
@@ -1427,7 +1427,7 @@ Autocomplete allows only one item or multiple items, this should be set as part 
             </div>
           </div>
         </div>
-        <span class="wh-form-message">Autocomplete for authors. Adds yourself by default on new form.</span>
+        <span class="wy-form-message">Autocomplete for authors. Adds yourself by default on new form.</span>
       </div>
     </div>
 
@@ -1443,38 +1443,38 @@ Autocomplete allows only one item or multiple items, this should be set as part 
 Gallery management
 ==================
 
-Note, the JS in this needs to be reworked completely. If you look at ``li.wh-form-gallery-edit``, that's the form that should open on
+Note, the JS in this needs to be reworked completely. If you look at ``li.wy-form-gallery-edit``, that's the form that should open on
 click of a gallery image. Images should be draggable for sorting.
 
 .. raw:: html
-   
+
     <div class="codeblock-example">
-    <form class="wh-form-stacked">
+    <form class="wy-form-stacked">
     <legend>Gallery images</legend>
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Add images</label>
-      <div class="wh-control">
-        <div class="wh-form-upload  wh-form-upload-big">
-          <div class="wh-form-upload-content">
+      <div class="wy-control">
+        <div class="wy-form-upload  wy-form-upload-big">
+          <div class="wy-form-upload-content">
           <div class="image-drag">
-            <i class="icon icon-picture wh-form-upload-icon"></i>
+            <i class="icon icon-picture wy-form-upload-icon"></i>
             <p>Drag images from your computer to here. Select as many as you want.</p>
           </div>
           <div class="image-desktop">
-            <i class="icon icon-desktop wh-form-upload-icon"></i>
+            <i class="icon icon-desktop wy-form-upload-icon"></i>
             <p>Select images from your computer. Select as many as you want.</p>
           </div>
-          <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URLs" /></div>
+          <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URLs" /></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="wh-form-control">
+    <div class="wy-form-control">
       <label>Click to edit, drag to sort</label>
-      <div class="wh-control">
-        <ul class="wh-form-gallery-manage">
+      <div class="wy-control">
+        <ul class="wy-form-gallery-manage">
           <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
@@ -1485,47 +1485,47 @@ click of a gallery image. Images should be draggable for sorting.
           <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li class="wh-form-gallery-edit">
+          <li class="wy-form-gallery-edit">
             <div class="arrow"><a name="edit-image"></a></div>
             <legend>Edit image</legend>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
               <label>Blank state</label>
 
-              <div class="wh-form-control">
-                <a class="wh-form-upload">
-                  <div class="wh-form-upload-content">
+              <div class="wy-form-control">
+                <a class="wy-form-upload">
+                  <div class="wy-form-upload-content">
                   <div class="image-drag">
-                    <i class="icon icon-picture wh-form-upload-icon"></i>
+                    <i class="icon icon-picture wy-form-upload-icon"></i>
                     <p>Drag or select image</p>
                   </div>
                   <div class="image-desktop">
-                    <i class="icon icon-desktop wh-form-upload-icon"></i>
+                    <i class="icon icon-desktop wy-form-upload-icon"></i>
                     <p>Select from desktop</p>
                   </div>
-                  <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+                  <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
               <label for="right-label" >
                 Title
               </label>
-              <div class="wh-control">
+              <div class="wy-control">
                 <input type="text" id="right-label" placeholder="Title">
               </div>
             </div>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
             <label for="right-label" >Short description</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <textarea></textarea>
             </div>
             </div>
 
-            <div class="wh-btn-group">
+            <div class="wy-btn-group">
             <button class="btn btn-info icon icon-ok-circle"> OK</button>
             </div>
 
@@ -1554,29 +1554,29 @@ click of a gallery image. Images should be draggable for sorting.
 
     <legend>Gallery images</legend>
 
-    <div class="wh-control-group">
+    <div class="wy-control-group">
       <label>Add images</label>
-      <div class="wh-control">
-        <div class="wh-form-upload  wh-form-upload-big">
-          <div class="wh-form-upload-content">
+      <div class="wy-control">
+        <div class="wy-form-upload  wy-form-upload-big">
+          <div class="wy-form-upload-content">
           <div class="image-drag">
-            <i class="icon icon-picture wh-form-upload-icon"></i>
+            <i class="icon icon-picture wy-form-upload-icon"></i>
             <p>Drag images from your computer to here. Select as many as you want.</p>
           </div>
           <div class="image-desktop">
-            <i class="icon icon-desktop wh-form-upload-icon"></i>
+            <i class="icon icon-desktop wy-form-upload-icon"></i>
             <p>Select images from your computer. Select as many as you want.</p>
           </div>
-          <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URLs" /></div>
+          <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URLs" /></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="wh-form-control">
+    <div class="wy-form-control">
       <label>Click to edit, drag to sort</label>
-      <div class="wh-control">
-        <ul class="wh-form-gallery-manage">
+      <div class="wy-control">
+        <ul class="wy-form-gallery-manage">
           <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
@@ -1587,47 +1587,47 @@ click of a gallery image. Images should be draggable for sorting.
           <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li class="wh-form-gallery-edit">
+          <li class="wy-form-gallery-edit">
             <div class="arrow"><a name="edit-image"></a></div>
             <legend>Edit image</legend>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
               <label>Blank state</label>
 
-              <div class="wh-form-control">
-                <a class="wh-form-upload">
-                  <div class="wh-form-upload-content">
+              <div class="wy-form-control">
+                <a class="wy-form-upload">
+                  <div class="wy-form-upload-content">
                   <div class="image-drag">
-                    <i class="icon icon-picture wh-form-upload-icon"></i>
+                    <i class="icon icon-picture wy-form-upload-icon"></i>
                     <p>Drag or select image</p>
                   </div>
                   <div class="image-desktop">
-                    <i class="icon icon-desktop wh-form-upload-icon"></i>
+                    <i class="icon icon-desktop wy-form-upload-icon"></i>
                     <p>Select from desktop</p>
                   </div>
-                  <div class="wh-input-prefix"><span class="wh-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
+                  <div class="wy-input-prefix"><span class="wy-input-context"><i class="icon icon-globe"></i></span><input type="text" placeholder=" Or paste URL" /></div>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
               <label for="right-label" >
                 Title
               </label>
-              <div class="wh-control">
+              <div class="wy-control">
                 <input type="text" id="right-label" placeholder="Title">
               </div>
             </div>
 
-            <div class="wh-control-group">
+            <div class="wy-control-group">
             <label for="right-label" >Short description</label>
-            <div class="wh-control">
+            <div class="wy-control">
               <textarea></textarea>
             </div>
             </div>
 
-            <div class="wh-btn-group">
+            <div class="wy-btn-group">
             <button class="btn btn-info icon icon-ok-circle"> OK</button>
             </div>
 

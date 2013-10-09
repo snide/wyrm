@@ -19,7 +19,7 @@ figure[data-type=video]
   p
     margin: 0
 
-  &.wh-figure-full
+  &.wy-figure-full
     p
       position: relative
       padding-bottom: 51%
@@ -35,7 +35,7 @@ figure[data-type=video]
 figure[data-type=image]
   position: relative
   margin-bottom: $base-line-height
-  .wh-figure-controls
+  .wy-figure-controls
     top: 0px
   img
     background: $menu-top-background-color
@@ -43,12 +43,12 @@ figure[data-type=image]
   &:hover
     img
       opacity: .8
-  &.wh-figure-large
+  &.wy-figure-large
     width: 100%
     clear: both
-  &.wh-figure-medium
+  &.wy-figure-medium
     width: 50%
-  &.wh-figure-small
+  &.wy-figure-small
     width: 33%
 
 figure[data-type=quote]
@@ -62,15 +62,15 @@ figure[data-type=quote]
   figcaption
     font-weight: bold
     text-align: left
-  .wh-figure-controls
+  .wy-figure-controls
     margin-left: -5px
-  &.wh-figure-medium
+  &.wy-figure-medium
     +adjust-font-size-to(20px)
-  &.wh-figure-large
+  &.wy-figure-large
     +adjust-font-size-to(24px)
-  &.wh-figure-right
+  &.wy-figure-right
     width: 33%
-  &.wh-figure-left
+  &.wy-figure-left
     width: 33%
     border-left: none
     border-right: solid 5px $text-color
@@ -78,7 +78,7 @@ figure[data-type=quote]
     padding-right: $base-line-height
     margin-left: 0
     margin-right: $base-line-height
-    .wh-figure-controls
+    .wy-figure-controls
       margin-left: 0
       margin-right: -5px
   cite
@@ -91,10 +91,10 @@ figure[data-type=quote]
       opacity: 0.4
       content: "\2014 Type to add citation (optional)"
 
-figure:hover .wh-figure-controls
+figure:hover .wy-figure-controls
   display: block
 
-.wh-figure-controls
+.wy-figure-controls
   background: $green
   padding: $base-line-height / 4
   position: absolute
@@ -110,7 +110,7 @@ figure:hover .wh-figure-controls
   font-style: normal
   z-index: 5
   text-align: center
-.wh-figure-controls span
+.wy-figure-controls span
   display: inline-block
   border: none
   background: none
@@ -129,55 +129,55 @@ figure:hover .wh-figure-controls
     background: $white
     color: $green
 
-.wh-figure-controls span
-  &.wh-figure-controls-divider
+.wy-figure-controls span
+  &.wy-figure-controls-divider
     width: 1px
     background: lighten($green, 10%)
     padding: 0
     margin: 0 2px
     cursor: normal
-  &.wh-figure-controls-small
+  &.wy-figure-controls-small
     font-size: 50%
-  &.wh-figure-controls-medium
+  &.wy-figure-controls-medium
     font-size: 75%
-  &.wh-figure-controls-arrow-left
+  &.wy-figure-controls-arrow-left
     @extend .icon
     @extend .icon-arrow-left
-  &.wh-figure-controls-arrow-right
+  &.wy-figure-controls-arrow-right
     @extend .icon
     @extend .icon-arrow-right
-  &.wh-figure-controls-arrow-up
+  &.wy-figure-controls-arrow-up
     @extend .icon
     @extend .icon-arrow-up
-  &.wh-figure-controls-arrow-down
+  &.wy-figure-controls-arrow-down
     @extend .icon
     @extend .icon-arrow-down
-  &.wh-figure-controls-resize-full
+  &.wy-figure-controls-resize-full
     @extend .icon
     @extend .icon-resize-full
-  &.wh-figure-controls-resize-small
+  &.wy-figure-controls-resize-small
     @extend .icon
     @extend .icon-resize-small
-  &.wh-figure-controls-delete
+  &.wy-figure-controls-delete
     @extend .icon
     @extend .icon-trash
     margin-left: $base-line-height
     &:hover
       background: $red
-  &.wh-figure-controls-table
+  &.wy-figure-controls-table
     @extend .icon
     @extend .icon-table
     width: auto
     padding-left: $base-line-height / 4
     text-align: left
 
-.wh-figure-right
+.wy-figure-right
   float: right
   margin-left: $base-line-height
-  .wh-figure-controls
+  .wy-figure-controls
     right: 0
 
-.wh-figure-left
+.wy-figure-left
   float: left
   margin-right: $base-line-height
 

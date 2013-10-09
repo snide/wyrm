@@ -1,8 +1,8 @@
-.wh-dropdown
+.wy-dropdown
   position: relative
   display: inline-block
   &:hover
-    .wh-dropdown-menu
+    .wy-dropdown-menu
       display: block
   .caret
     &:after
@@ -10,7 +10,7 @@
       content: "\f0d7"
       font-size: 70%
 
-.wh-dropdown-menu
+.wy-dropdown-menu
   position: absolute
   top: 100%
   left: 0
@@ -50,21 +50,21 @@
       color: $white
 
 
-.wh-dropdown.wh-dropdown-bubble
-  .wh-dropdown-menu
+.wy-dropdown.wy-dropdown-bubble
+  .wy-dropdown-menu
     background: $section-background-color
     margin-top: 2px
-  .wh-dropdown-menu a
+  .wy-dropdown-menu a
     padding: $base-line-height / 4 $base-line-height / 2
     &:hover
       background: $link-color
       color: $white
 
-.wh-dropdown.wh-dropdown-left .wh-dropdown-menu
+.wy-dropdown.wy-dropdown-left .wy-dropdown-menu
   right: 0
   text-align: right
 
-.wh-dropdown-arrow
+.wy-dropdown-arrow
   &:before
     content: " "
     border-bottom: 5px solid hsla(0,0%,96%,1)
@@ -75,5 +75,5 @@
     top: -4px
     left: 50%
     margin-left: -3px
-  &.wh-dropdown-arrow-left:before
+  &.wy-dropdown-arrow-left:before
     left: 11px

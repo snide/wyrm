@@ -1,7 +1,7 @@
 // Tooltips
 // --------
 
-.wh-tooltip
+.wy-tooltip
   position: absolute
   z-index: $z_index_tooltip
   display: block
@@ -20,16 +20,16 @@
     margin-top: 2px
   &.left
     margin-left: -2px
-  &.top .wh-tooltip-arrow
+  &.top .wy-tooltip-arrow
     +arrow-top
-  &.left .wh-tooltip-arrow
+  &.left .wy-tooltip-arrow
     +arrow-left
-  &.bottom .wh-tooltip-arrow
+  &.bottom .wy-tooltip-arrow
     +arrow-bot
-  &.right .wh-tooltip-arrow
+  &.right .wy-tooltip-arrow
     +arrow-right
 
-.wh-tooltip-inner
+.wy-tooltip-inner
   max-width: 200px
   padding: $base-font-size / 2
   color: $white
@@ -38,7 +38,7 @@
   background-color: $black
   border-radius: 4px
 
-.wh-tooltip-arrow
+.wy-tooltip-arrow
   position: absolute
   width: 0
   height: 0

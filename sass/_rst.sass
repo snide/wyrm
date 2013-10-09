@@ -1,6 +1,6 @@
 .rst-content
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
-    @extend .wh-alert
+    @extend .wy-alert
     p.last
       margin-bottom: 0
   .admonition-title
@@ -10,15 +10,15 @@
     &:before
       margin-right: 4px
   .note
-    @extend .wh-alert.wh-alert-neutral
+    @extend .wy-alert.wy-alert-neutral
   .hint, .tip, .important
-    @extend .wh-alert.wh-alert-info
+    @extend .wy-alert.wy-alert-info
   .error, .danger
-    @extend .wh-alert.wh-alert-danger
+    @extend .wy-alert.wy-alert-danger
   .warning, .caution, .attention
-    @extend .wh-alert.wh-alert-warning
+    @extend .wy-alert.wy-alert-warning
   ul.simple
-    @extend .wh-plain-list-disc
+    @extend .wy-plain-list-disc
   .topic-title
     font-weight: bold
     margin-bottom: $base-line-height / 2
