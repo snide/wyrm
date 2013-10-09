@@ -5,6 +5,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          base: 'docs/build/html'
+        }
+      }
+    },
+    
     compass: {
       dev: {
         options: {
@@ -17,7 +26,7 @@ module.exports = function(grunt) {
     
     exec: {
       build_sphinx: {
-        cmd: 'cd docs && make html'
+        cmd: 'cd docs && rm -rf build && make html'
       }
     },
 
@@ -43,9 +52,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
-  grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', ['connect', 'watch']);
 
 }

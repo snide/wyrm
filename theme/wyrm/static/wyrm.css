@@ -361,8 +361,8 @@ td {
   font-family: fontawesome-webfont;
   font-weight: normal;
   font-style: normal;
-  src: url("/static/font/fontawesome_webfont.eot");
-  src: url("/static/font/fontawesome_webfont.eot?#iefix") format("embedded-opentype"), url("/static/font/fontawesome_webfont.woff") format("woff"), url("/static/font/fontawesome_webfont.ttf") format("truetype"), url("/static/font/fontawesome_webfont.svg#fontawesome-webfont") format("svg");
+  src: url("/_static/font/fontawesome_webfont.eot");
+  src: url("/_static/font/fontawesome_webfont.eot?#iefix") format("embedded-opentype"), url("/_static/font/fontawesome_webfont.woff") format("woff"), url("/_static/font/fontawesome_webfont.ttf") format("truetype"), url("/_static/font/fontawesome_webfont.svg#fontawesome-webfont") format("svg");
 }
 
 .icon:before, .wh-inline-validate.wh-inline-validate-success .wh-input-context:before, .wh-inline-validate.wh-inline-validate-danger .wh-input-context:before, .wh-inline-validate.wh-inline-validate-warning .wh-input-context:before, .wh-inline-validate.wh-inline-validate-info .wh-input-context:before, .wh-tag-input-group .wh-tag .wh-tag-remove:before, .wh-modal-close:before, .wh-figure-controls span.wh-figure-controls-arrow-left:before, .wh-figure-controls span.wh-figure-controls-arrow-right:before, .wh-figure-controls span.wh-figure-controls-arrow-up:before, .wh-figure-controls span.wh-figure-controls-arrow-down:before, .wh-figure-controls span.wh-figure-controls-resize-full:before, .wh-figure-controls span.wh-figure-controls-resize-small:before, .wh-figure-controls span.wh-figure-controls-delete:before, .wh-figure-controls span.wh-figure-controls-table:before, .rst-content .admonition-title:before {
@@ -3321,7 +3321,7 @@ li.wh-form-gallery-edit .arrow {
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: solid 3px rgba(0, 0, 0, 0.1);
-  background-color: #2980b9;
+  background-color: #27ae60;
   text-decoration: none;
   font-weight: 500;
   box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset;
@@ -4047,7 +4047,7 @@ figure:hover .wh-figure-controls {
   margin-bottom: 24px;
 }
 
-.codeblock {
+.codeblock, .highlight-html {
   border: 1px solid #e2e5e1;
   padding: 0px;
   width: 100%;
