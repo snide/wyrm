@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       },
       /* watch and see if our javascript files change, or new packages are installed */
       build: {
-        files: ['**/*.css', '**/*.js', '**/*.rst'],
+        files: ['theme/**/*.css', 'theme/**/*.js', 'docs/source/**/*.rst', 'theme/**/*.html'],
         tasks: ['exec:build_sphinx']
       },
       /* watch our files for change, reload */

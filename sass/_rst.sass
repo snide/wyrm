@@ -17,10 +17,25 @@
     @extend .wy-alert.wy-alert-danger
   .warning, .caution, .attention
     @extend .wy-alert.wy-alert-warning
-  ul.simple
+  ul
     @extend .wy-plain-list-disc
   .topic-title
     font-weight: bold
     margin-bottom: $base-line-height / 2
   .toc-backref
     color: $text-color
+
+h1, h2, h3, h4, h5, h6
+  .headerlink
+    display: none
+    visibility: hidden
+    font-size: 14px
+    @extend .icon
+    &:after
+      visibility: visible
+      content: "\f0c1"
+      font-family: fontawesome-webfont
+      display: inline-block
+  &:hover .headerlink
+    display: inline-block
+      
