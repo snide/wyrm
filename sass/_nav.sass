@@ -26,39 +26,53 @@
     line-height: $base-font-size * 2
     padding: 0 $gutter
     display: block
-    font-weight: 500
+    font-weight: bold
     text-transform: uppercase
     font-size: 80%
     color: $menu-logo-color
     white-space: nowrap
 
   ul
-    margin-bottom: $gutter
+    margin-bottom: 0
   li
     &.divide-top
       border-top: solid 1px hsl(0, 0%, 25%)
     &.divide-bottom
       border-bottom: solid 1px hsl(0, 0%, 25%)
-  li.on a
+    &.current
+      background: darken($section-background-color, 10%)
+      a
+        color: $text-medium
+        border-left: solid 4px $section-background-color
+        border-bottom: solid 1px $section-background-color
+        &:hover
+          background: darken($section-background-color, 20%)
+  li.on a, li.current > a
     color: $link-color
-    font-weight: 500
+    font-weight: bold
     position: relative
     background: $section-background-color
-    border-left: solid 4px $link-color
+    border: none
     padding-left: $gutter -(em(4px))
-  li ul li a
-    padding-left: $gutter * 2
+    &:hover
+      background: $section-background-color
+  li.current ul
+    display: block
+  li ul
     margin-bottom: 0
+    display: none
+  li ul li a
+    margin-bottom: 0
+    color: $text-light
+    font-weight: normal
   a
-    height: $base-font-size * 2
     display: inline-block
-    line-height: $base-font-size * 2
-    padding: 0 $gutter
+    line-height: 18px
+    padding: 5px $gutter
     display: block
     position: relative
     font-size: 80%
     color: $text-light
-    white-space: nowrap
     +transition(background-color .05s ease-in)
     &:hover
       background-color: lighten($menu-top-background-color, 10%)

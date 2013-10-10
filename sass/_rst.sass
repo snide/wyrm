@@ -1,7 +1,7 @@
 .rst-content
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
     @extend .wy-alert
-    p.last
+    p.last, p.first
       margin-bottom: 0
   .admonition-title
     font-weight: bold
@@ -25,17 +25,20 @@
   .toc-backref
     color: $text-color
 
-h1, h2, h3, h4, h5, h6
-  .headerlink
-    display: none
-    visibility: hidden
-    font-size: 14px
-    @extend .icon
-    &:after
-      visibility: visible
-      content: "\f0c1"
-      font-family: fontawesome-webfont
+  h1, h2, h3, h4, h5, h6
+    .headerlink
+      display: none
+      visibility: hidden
+      font-size: 14px
+      @extend .icon
+      &:after
+        visibility: visible
+        content: "\f0c1"
+        font-family: fontawesome-webfont
+        display: inline-block
+    &:hover .headerlink
       display: inline-block
-  &:hover .headerlink
-    display: inline-block
-      
+
+  table.docutils
+    @extend .wy-table
+    @extend .wy-table-bordered-all
