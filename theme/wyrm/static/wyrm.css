@@ -4432,6 +4432,16 @@ pre.literal-block:after {
   display: inline-block;
   padding: 5px;
 }
+.wy-breadcrumbs li a:first-child {
+  padding-left: 0;
+}
+
+.wy-breadcrumbs-extra {
+  margin-bottom: 0;
+  color: #b3b3b3;
+  font-size: 80%;
+  display: inline-block;
+}
 
 .wy-grid-one-col {
   *zoom: 1;
