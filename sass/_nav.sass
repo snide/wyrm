@@ -46,7 +46,7 @@
         border-left: solid 4px $section-background-color
         border-bottom: solid 1px $section-background-color
         &:hover
-          background: darken($section-background-color, 20%)
+          background: darken($section-background-color, 15%)
   li.on a, li.current > a
     color: $link-color
     font-weight: bold
@@ -73,7 +73,6 @@
     position: relative
     font-size: 80%
     color: $text-light
-    +transition(background-color .05s ease-in)
     &:hover
       background-color: lighten($menu-top-background-color, 10%)
       cursor: pointer
@@ -84,11 +83,16 @@
 
 .wy-logo
   z-index: $z-index-popover
-  margin-bottom: $gutter
-  background-color: darken($menu-top-background-color, 5%)
+  background-color: $link-color
   text-align: center
-  padding: $gutter / 2 0
+  padding: $gutter / 2
   display: block
+  color: $section-background-color
+  input[type=text]
+    width: 100%
+    border-radius: 50px
+    padding: 6px 12px
+    border-color: darken($link-color, 5%)
   .wy-logo-img
     display: block
   .wy-logo-img:hover
@@ -102,10 +106,11 @@
     padding: 5px
     border-radius: 100%
   a
-    color: $text-light
-    font-size: 80%
+    color: $section-background-color
+    font-size: 90%
     display: inline-block
     padding: $base-line-height / 6 $base-line-height / 4
+    margin-bottom: $gutter / 2
     &:hover
       background: rgba(255,255,255,.1)
 

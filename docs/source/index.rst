@@ -40,7 +40,7 @@ Designer Documentation
 .. toctree::
     :maxdepth: 2
 
-    design
+    style_guide
 
 Developer Documentation
 -----------------------
