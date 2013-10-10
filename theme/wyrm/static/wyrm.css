@@ -2006,7 +2006,7 @@ code, tt {
   font-size: 80%;
   padding: 0 5px;
   font-family: "source-code-pro-1", "source-code-pro-2", Incosolata, Consolata, Monaco, monospace;
-  color: #2980b9;
+  color: #e74c3c;
 }
 code.code-large, tt.code-large {
   font-size: 90%;
@@ -2162,7 +2162,7 @@ a.wy-text-neutral:hover {
 }
 .wy-menu-vertical li.current a {
   color: gray;
-  border-left: solid 4px #fcfcfc;
+  border-left: solid 5px #fcfcfc;
   border-bottom: solid 1px #fcfcfc;
 }
 .wy-menu-vertical li.current a:hover {
@@ -2174,7 +2174,7 @@ a.wy-text-neutral:hover {
   position: relative;
   background: #fcfcfc;
   border: none;
-  padding-left: 1.368em;
+  padding-left: 1.618em -4px;
 }
 .wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current > a:hover {
   background: #fcfcfc;
@@ -2217,6 +2217,7 @@ a.wy-text-neutral:hover {
   padding: 0.809em;
   display: block;
   color: #fcfcfc;
+  margin-bottom: 0.809em;
 }
 .wy-logo input[type=text] {
   width: 100%;
@@ -3680,7 +3681,7 @@ li.wy-form-gallery-edit .arrow {
   border-color: #bf6516;
 }
 
-.wy-alert.wy-alert-info, .rst-content .wy-alert-info.note, .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution, .rst-content .wy-alert-info.danger, .rst-content .wy-alert-info.error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .wy-alert-info.warning {
+.wy-alert.wy-alert-info, .rst-content .note, .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution, .rst-content .wy-alert-info.danger, .rst-content .wy-alert-info.error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .wy-alert-info.warning {
   background: #2980b9;
   color: #bedcf0;
   border-color: #20638f;
@@ -3692,14 +3693,14 @@ li.wy-form-gallery-edit .arrow {
   border-color: #1e8449;
 }
 
-.wy-alert.wy-alert-neutral, .rst-content .note, .rst-content .wy-alert-neutral.attention, .rst-content .wy-alert-neutral.caution, .rst-content .wy-alert-neutral.danger, .rst-content .wy-alert-neutral.error, .rst-content .wy-alert-neutral.hint, .rst-content .wy-alert-neutral.important, .rst-content .wy-alert-neutral.tip, .rst-content .wy-alert-neutral.warning {
+.wy-alert.wy-alert-neutral, .rst-content .wy-alert-neutral.note, .rst-content .wy-alert-neutral.attention, .rst-content .wy-alert-neutral.caution, .rst-content .wy-alert-neutral.danger, .rst-content .wy-alert-neutral.error, .rst-content .wy-alert-neutral.hint, .rst-content .wy-alert-neutral.important, .rst-content .wy-alert-neutral.tip, .rst-content .wy-alert-neutral.warning {
   background: #f4f6f3;
   border-color: #e2e5e1;
 }
-.wy-alert.wy-alert-neutral strong, .rst-content .note strong, .rst-content .wy-alert-neutral.attention strong, .rst-content .wy-alert-neutral.caution strong, .rst-content .wy-alert-neutral.danger strong, .rst-content .wy-alert-neutral.error strong, .rst-content .wy-alert-neutral.hint strong, .rst-content .wy-alert-neutral.important strong, .rst-content .wy-alert-neutral.tip strong, .rst-content .wy-alert-neutral.warning strong {
+.wy-alert.wy-alert-neutral strong, .rst-content .wy-alert-neutral.note strong, .rst-content .wy-alert-neutral.attention strong, .rst-content .wy-alert-neutral.caution strong, .rst-content .wy-alert-neutral.danger strong, .rst-content .wy-alert-neutral.error strong, .rst-content .wy-alert-neutral.hint strong, .rst-content .wy-alert-neutral.important strong, .rst-content .wy-alert-neutral.tip strong, .rst-content .wy-alert-neutral.warning strong {
   color: #404040;
 }
-.wy-alert.wy-alert-neutral a, .rst-content .note a, .rst-content .wy-alert-neutral.attention a, .rst-content .wy-alert-neutral.caution a, .rst-content .wy-alert-neutral.danger a, .rst-content .wy-alert-neutral.error a, .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a, .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a {
+.wy-alert.wy-alert-neutral a, .rst-content .wy-alert-neutral.note a, .rst-content .wy-alert-neutral.attention a, .rst-content .wy-alert-neutral.caution a, .rst-content .wy-alert-neutral.danger a, .rst-content .wy-alert-neutral.error a, .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a, .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a {
   color: #2980b9;
 }
 
@@ -4422,6 +4423,14 @@ pre.literal-block:after {
 .gc {
   color: #999999;
   background-color: #eaf2f5;
+}
+
+.wy-breadcrumbs li {
+  display: inline-block;
+}
+.wy-breadcrumbs li a {
+  display: inline-block;
+  padding: 5px;
 }
 
 .wy-grid-one-col {

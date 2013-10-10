@@ -43,7 +43,7 @@
       background: darken($section-background-color, 10%)
       a
         color: $text-medium
-        border-left: solid 4px $section-background-color
+        border-left: solid 5px $section-background-color
         border-bottom: solid 1px $section-background-color
         &:hover
           background: darken($section-background-color, 15%)
@@ -53,7 +53,7 @@
     position: relative
     background: $section-background-color
     border: none
-    padding-left: $gutter -(em(4px))
+    padding-left: $gutter -4px
     &:hover
       background: $section-background-color
   li.current ul
@@ -88,6 +88,7 @@
   padding: $gutter / 2
   display: block
   color: $section-background-color
+  margin-bottom: $gutter / 2
   input[type=text]
     width: 100%
     border-radius: 50px
