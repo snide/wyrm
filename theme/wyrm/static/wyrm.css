@@ -340,7 +340,7 @@ td {
     page-break-after: avoid;
   }
 }
-.font-smooth, .icon:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls span.wy-figure-controls-table:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .wy-tag-input-group, .btn, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
+.font-smooth, .icon:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls span.wy-figure-controls-table:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-logo a, .wy-nav-top a, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .wy-tag-input-group, .btn, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2162,8 +2162,9 @@ a.wy-text-neutral:hover {
 }
 .wy-menu-vertical li.current a {
   color: gray;
-  border-left: solid 5px #fcfcfc;
-  border-bottom: solid 1px #fcfcfc;
+  border-left: solid 5px #c9c9c9;
+  border-right: solid 1px #c9c9c9;
+  border-bottom: solid 1px #c9c9c9;
 }
 .wy-menu-vertical li.current a:hover {
   background: #d6d6d6;
@@ -2171,9 +2172,11 @@ a.wy-text-neutral:hover {
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
   color: #2980b9;
   font-weight: bold;
+  font-size: 100%;
   position: relative;
   background: #fcfcfc;
   border: none;
+  border-bottom: solid 1px #c9c9c9;
   padding-left: 1.618em -4px;
 }
 .wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current > a:hover {
@@ -2194,10 +2197,10 @@ a.wy-text-neutral:hover {
 .wy-menu-vertical a {
   display: inline-block;
   line-height: 18px;
-  padding: 5px 1.618em;
+  padding: 0.4045em 1.618em;
   display: block;
   position: relative;
-  font-size: 80%;
+  font-size: 90%;
   color: #b3b3b3;
 }
 .wy-menu-vertical a:hover {
@@ -2242,7 +2245,8 @@ a.wy-text-neutral:hover {
 }
 .wy-logo a {
   color: #fcfcfc;
-  font-size: 90%;
+  font-size: 100%;
+  font-weight: bold;
   display: inline-block;
   padding: 4px 6px;
   margin-bottom: 0.809em;
@@ -2312,12 +2316,13 @@ a.wy-text-neutral:hover {
 
 .wy-nav-top {
   display: none;
-  background: #343131;
-  color: #b3b3b3;
+  background: #2980b9;
+  color: white;
   padding: 0.4045em 0.809em;
   position: relative;
   line-height: 50px;
   text-align: center;
+  font-size: 100%;
   *zoom: 1;
 }
 .wy-nav-top:before, .wy-nav-top:after {
@@ -2326,6 +2331,10 @@ a.wy-text-neutral:hover {
 }
 .wy-nav-top:after {
   clear: both;
+}
+.wy-nav-top a {
+  color: white;
+  font-weight: bold;
 }
 .wy-nav-top img {
   margin-right: 12px;
@@ -2374,11 +2383,7 @@ a.wy-text-neutral:hover {
   }
 
   .wy-nav-side {
-    padding-top: 1.618em;
     left: -300px;
-  }
-  .wy-nav-side .wy-logo {
-    display: none;
   }
   .wy-nav-side.shift {
     width: 85%;
@@ -4428,6 +4433,9 @@ pre.literal-block:after {
 .wy-breadcrumbs li {
   display: inline-block;
 }
+.wy-breadcrumbs li.wy-breadcrumbs-aside {
+  float: right;
+}
 .wy-breadcrumbs li a {
   display: inline-block;
   padding: 5px;
@@ -4443,6 +4451,15 @@ pre.literal-block:after {
   display: inline-block;
 }
 
+@media screen and (max-width: 480px) {
+  .wy-breadcrumbs-extra {
+    display: none;
+  }
+
+  .wy-breadcrumbs li.wy-breadcrumbs-aside {
+    display: none;
+  }
+}
 .wy-grid-one-col {
   *zoom: 1;
   max-width: 100%;

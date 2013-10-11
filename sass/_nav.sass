@@ -43,17 +43,21 @@
       background: darken($section-background-color, 10%)
       a
         color: $text-medium
-        border-left: solid 5px $section-background-color
-        border-bottom: solid 1px $section-background-color
+        border-left: solid 5px darken($section-background-color, 20%)
+        border-right: solid 1px darken($section-background-color, 20%)
+        border-bottom: solid 1px darken($section-background-color, 20%)
         &:hover
           background: darken($section-background-color, 15%)
   li.on a, li.current > a
     color: $link-color
     font-weight: bold
+    font-size: 100%
     position: relative
     background: $section-background-color
     border: none
+    border-bottom: solid 1px darken($section-background-color, 20%)
     padding-left: $gutter -4px
+    +font-smooth
     &:hover
       background: $section-background-color
   li.current ul
@@ -68,10 +72,10 @@
   a
     display: inline-block
     line-height: 18px
-    padding: 5px $gutter
+    padding: $gutter / 4 $gutter
     display: block
     position: relative
-    font-size: 80%
+    font-size: 90%
     color: $text-light
     &:hover
       background-color: lighten($menu-top-background-color, 10%)
@@ -108,10 +112,12 @@
     border-radius: 100%
   a
     color: $section-background-color
-    font-size: 90%
+    font-size: 100%
+    font-weight: bold
     display: inline-block
     padding: $base-line-height / 6 $base-line-height / 4
     margin-bottom: $gutter / 2
+    +font-smooth
     &:hover
       background: rgba(255,255,255,.1)
 
@@ -166,13 +172,18 @@
 
 .wy-nav-top
   display: none
-  background: $menu-top-background-color
-  color: $text-light
+  background: $link-color
+  color: $white
   padding: $gutter / 4 $gutter / 2
   position: relative
   line-height: 50px
   text-align: center
+  font-size: 100%
   +clearfix
+  a
+    color: $white
+    font-weight: bold
+    +font-smooth
   img
     margin-right: $base-line-height / 2
     height: 45px
@@ -210,13 +221,10 @@
   .wy-nav-top
     display: block
   .wy-nav-side
-    padding-top: $gutter
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
     @else
       right: -$nav-desktop-width
-    .wy-logo
-      display: none
     &.shift
       width: 85%
       left: 0

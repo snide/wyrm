@@ -10,10 +10,9 @@
 {%- if pagename != "search" %}
 <div id="searchbox" style="display: none">
   <form class="wy-form" action="{{ pathto('search') }}" method="get">
-    <input type="text" name="q" placeholder="Search docs" class="icon icon-search" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
 {%- endif %}
