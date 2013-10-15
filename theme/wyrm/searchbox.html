@@ -1,18 +1,5 @@
-{#
-    basic/searchbox.html
-    ~~~~~~~~~~~~~~~~~~~~
-
-    Sphinx sidebar template: quick search box.
-
-    :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
-#}
-{%- if pagename != "search" %}
-<div id="searchbox" style="display: none">
-  <form class="wy-form" action="{{ pathto('search') }}" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-{%- endif %}
+<form class="wy-form" action="{{ pathto('search') }}" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>

@@ -1923,7 +1923,7 @@ html {
 }
 
 body {
-  font-family: "proxima-nova", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   color: #404040;
   min-height: 100%;
@@ -1961,7 +1961,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6, legend {
   margin-top: 0;
   font-weight: bold;
-  font-family: "ff-tisa-web-pro", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 p {
@@ -2807,7 +2807,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   display: inline-block;
   border: 1px solid #cccccc;
   font-size: 80%;
-  font-family: "proxima-nova", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: inset 0 1px 3px #dddddd;
   border-radius: 0;
   -webkit-transition: border 0.3s linear;
@@ -3014,7 +3014,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   display: inline-block;
   border: 1px solid #cccccc;
   font-size: 80%;
-  font-family: "proxima-nova", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: inset 0 1px 3px #dddddd;
   -webkit-transition: border 0.3s linear;
   -moz-transition: border 0.3s linear;
@@ -3901,7 +3901,7 @@ figure[data-type=image].wy-figure-small {
 }
 
 figure[data-type=quote] {
-  font-family: "ff-tisa-web-pro", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
   margin-bottom: 24px;
   margin-left: 24px;
   font-style: italic;
@@ -3967,7 +3967,7 @@ figure:hover .wy-figure-controls {
   left: 0;
   top: -37px;
   margin: auto;
-  font-family: "proxima-nova", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   border-bottom: solid 3px #1e8449;
   line-height: 24px;
   font-style: normal;
