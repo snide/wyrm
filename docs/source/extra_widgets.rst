@@ -67,7 +67,7 @@ This widget is for the uploading of a single image file. It exists in 3 separate
           <div class="wy-form-control">
             <a class="wy-form-upload">
               <div class="wy-form-upload-image">
-                <img src="/static/img/trash/hm03.jpg" />
+                <img src="/_static/hm03.jpg" />
               </div>
               <div class="wy-form-upload-content">
                 <div class="wy-spinner wy-spinner-margin"></div>
@@ -82,7 +82,7 @@ This widget is for the uploading of a single image file. It exists in 3 separate
           <div class="wy-form-control">
             <a class="wy-form-upload">
               <div class="wy-form-upload-image">
-                <img src="/static/img/trash/hm03.jpg" />
+                <img src="/_static/hm03.jpg" />
               </div>
               <div class="wy-form-upload-content">
               <div class="image-drag">
@@ -145,7 +145,7 @@ This widget is for the uploading of a single image file. It exists in 3 separate
       <div class="wy-form-control">
         <a class="wy-form-upload">
           <div class="wy-form-upload-image">
-            <img src="/static/img/trash/hm03.jpg" />
+            <img src="/_static/hm03.jpg" />
           </div>
           <div class="wy-form-upload-content">
             <div class="wy-spinner wy-spinner-margin"></div>
@@ -160,7 +160,7 @@ This widget is for the uploading of a single image file. It exists in 3 separate
       <div class="wy-form-control">
         <a class="wy-form-upload">
           <div class="wy-form-upload-image">
-            <img src="/static/img/trash/hm03.jpg" />
+            <img src="/_static/hm03.jpg" />
           </div>
           <div class="wy-form-upload-content">
           <div class="image-drag">
@@ -296,15 +296,15 @@ Autocomplete allows only one item or multiple items, this should be set as part 
               <div class="wy-autocomplete-dropdown">
                 <ul>
                   <li class="on">
-                    <img src="/static/img/trash/user1.jpg" />
+                    <img src="/_static/user1.jpg" />
                     Dave snider
                   </li>
                   <li>
-                    <img src="/static/img/trash/user2.jpg" />
+                    <img src="/_static/user2.jpg" />
                     Andy McCurdy
                   </li>
                   <li>
-                    <img src="/static/img/trash/user3.jpg" />
+                    <img src="/_static/user3.jpg" />
                     Mike Horn
                   </li>
                 </ul>
@@ -357,15 +357,15 @@ Autocomplete allows only one item or multiple items, this should be set as part 
             <div class="wy-autocomplete-dropdown">
               <ul>
                 <li class="on">
-                  <img src="/static/img/trash/user1.jpg" />
+                  <img src="/_static/user1.jpg" />
                   Dave snider
                 </li>
                 <li>
-                  <img src="/static/img/trash/user2.jpg" />
+                  <img src="/_static/user2.jpg" />
                   Andy McCurdy
                 </li>
                 <li>
-                  <img src="/static/img/trash/user3.jpg" />
+                  <img src="/_static/user3.jpg" />
                   Mike Horn
                 </li>
               </ul>
@@ -420,16 +420,16 @@ click of a gallery image. Images should be draggable for sorting.
       <label>Click to edit, drag to sort</label>
       <div class="wy-control">
         <ul class="wy-form-gallery-manage">
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li class="wy-form-gallery-edit">
             <div class="arrow"><a name="edit-image"></a></div>
             <legend>Edit image</legend>
@@ -475,20 +475,20 @@ click of a gallery image. Images should be draggable for sorting.
             </div>
 
           </li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
         </ul>
       </div>
       </form>
@@ -522,16 +522,16 @@ click of a gallery image. Images should be draggable for sorting.
       <label>Click to edit, drag to sort</label>
       <div class="wy-control">
         <ul class="wy-form-gallery-manage">
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
           <li class="wy-form-gallery-edit">
             <div class="arrow"><a name="edit-image"></a></div>
             <legend>Edit image</legend>
@@ -577,20 +577,20 @@ click of a gallery image. Images should be draggable for sorting.
             </div>
 
           </li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
-          <li><a href="#edit-image"><img src="/static/img/trash/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm01.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm02.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm03.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
+          <li><a href="#edit-image"><img src="/_static/hm04.jpg" data-toggle="tooltip" data-placement="top" title="Click to edit, drag to sort." /></a></li>
         </ul>
       </div>
 

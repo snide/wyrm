@@ -2,7 +2,9 @@
 <ul class="wy-breadcrumbs">
   <li><a href="/">Docs</a> &raquo;</li>
   <li><a href="">{{ title }}</a></li>
-  <li class="wy-breadcrumbs-aside"><a href="" class="icon icon-github"> Edit on github</a></li>
+  {% if theme_github_url %}
+    <li class="wy-breadcrumbs-aside"><a href="{{ theme_github_url }}" class="icon icon-github"> Edit on github</a></li>
+  {% endif %}
 </ul>
 <hr/>
 
