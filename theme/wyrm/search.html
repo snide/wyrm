@@ -39,8 +39,9 @@
   {% if search_results %}
     <ul>
     {% for href, caption, context in search_results %}
-      <li><a href="{{ pathto(item.href) }}">{{ caption }}</a>
-        <div class="context">{{ context|e }}</div>
+      <li>
+        <a href="{{ pathto(item.href) }}">{{ caption }}</a>
+        <p class="context">{{ context|e }}</p>
       </li>
     {% endfor %}
     </ul>
