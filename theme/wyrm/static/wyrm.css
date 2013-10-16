@@ -359,8 +359,8 @@ td {
   font-family: fontawesome-webfont;
   font-weight: normal;
   font-style: normal;
-  src: url("/_static/font/fontawesome_webfont.eot");
-  src: url("/_static/font/fontawesome_webfont.eot?#iefix") format("embedded-opentype"), url("/_static/font/fontawesome_webfont.woff") format("woff"), url("/_static/font/fontawesome_webfont.ttf") format("truetype"), url("/_static/font/fontawesome_webfont.svg#fontawesome-webfont") format("svg");
+  src: url("font/fontawesome_webfont.eot");
+  src: url("font/fontawesome_webfont.eot?#iefix") format("embedded-opentype"), url("font/fontawesome_webfont.woff") format("woff"), url("font/fontawesome_webfont.ttf") format("truetype"), url("font/fontawesome_webfont.svg#fontawesome-webfont") format("svg");
 }
 
 .icon:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-tag-input-group .wy-tag .wy-tag-remove:before, .wy-modal-close:before, .wy-figure-controls span.wy-figure-controls-arrow-left:before, .wy-figure-controls span.wy-figure-controls-arrow-right:before, .wy-figure-controls span.wy-figure-controls-arrow-up:before, .wy-figure-controls span.wy-figure-controls-arrow-down:before, .wy-figure-controls span.wy-figure-controls-resize-full:before, .wy-figure-controls span.wy-figure-controls-resize-small:before, .wy-figure-controls span.wy-figure-controls-delete:before, .wy-figure-controls span.wy-figure-controls-table:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before {
