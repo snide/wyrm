@@ -1,3 +1,7 @@
+.wy-affix
+  position: fixed
+  top: $gutter
+
 .wy-menu
   a:hover
     text-decoration: none
@@ -78,7 +82,7 @@
     font-size: 90%
     color: $text-light
     &:hover
-      background-color: lighten($menu-top-background-color, 10%)
+      background-color: lighten($menu-background-color, 10%)
       cursor: pointer
     &:active
       background-color: $menu-logo-color
@@ -167,7 +171,7 @@
   width: $nav-desktop-width
   overflow: hidden
   min-height: 100%
-  background: $menu-top-background-color
+  background: $menu-background-color
   z-index: $z-index-popover
 
 .wy-nav-top

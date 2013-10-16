@@ -1924,7 +1924,7 @@ html {
 
 body {
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   color: #404040;
   min-height: 100%;
   overflow-x: hidden;
@@ -1972,19 +1972,19 @@ p {
 }
 
 h1 {
-  font-size: 150%;
+  font-size: 175%;
 }
 
 h2 {
-  font-size: 140%;
+  font-size: 150%;
 }
 
 h3 {
-  font-size: 130%;
+  font-size: 125%;
 }
 
 h4 {
-  font-size: 120%;
+  font-size: 115%;
 }
 
 h5 {
@@ -2101,6 +2101,11 @@ a.wy-text-danger:hover {
 
 a.wy-text-neutral:hover {
   color: #595959 !important;
+}
+
+.wy-affix {
+  position: fixed;
+  top: 1.618em;
 }
 
 .wy-menu a:hover {
@@ -4064,6 +4069,14 @@ figure:hover .wy-figure-controls {
 .rst-content .toc-backref {
   color: #404040;
 }
+.rst-content .align-right {
+  float: right;
+  margin: 0px 0px 24px 24px;
+}
+.rst-content .align-left {
+  float: left;
+  margin: 0px 24px 24px 0px;
+}
 .rst-content h1 .headerlink, .rst-content h2 .headerlink, .rst-content h3 .headerlink, .rst-content h4 .headerlink, .rst-content h5 .headerlink, .rst-content h6 .headerlink {
   display: none;
   visibility: hidden;
@@ -4633,11 +4646,6 @@ pre.literal-block:after {
 .wy-object-list-header {
   background: #cfd7dd;
   height: 32px;
-}
-
-.wy-affix {
-  position: fixed;
-  top: 1.618em;
 }
 
 .dave-note {

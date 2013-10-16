@@ -20,25 +20,15 @@
   {{ super() }}
 {% endblock %}
 {% block body %}
-  <h1 id="search-documentation">{{ _('Search') }}</h1>
+  <noscript>
   <div id="fallback" class="admonition warning">
-  <script type="text/javascript">$('#fallback').hide();</script>
-  <p>
-    {% trans %}Please activate JavaScript to enable the search
-    functionality.{% endtrans %}
-  </p>
+    <p class="last">
+      {% trans %}Please activate JavaScript to enable the search
+      functionality.{% endtrans %}
+    </p>
   </div>
-  <p>
-    {% trans %}From here you can search these documents. Enter your search
-    words into the box below and click "search". Note that the search
-    function will automatically search for all of the words. Pages
-    containing fewer words won't appear in the result list.{% endtrans %}
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" value="" />
-    <input type="submit" value="{{ _('search') }}" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
+  </noscript>
+
   {% if search_performed %}
     <h2>{{ _('Search Results') }}</h2>
     {% if not search_results %}

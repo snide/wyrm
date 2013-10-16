@@ -11,9 +11,6 @@ Form Example
 ..
 ..
 
-Full form example
-=================
-
 Forms come in two types. ``wy-form-stacked`` and ``wy-form-aligned``. A new ``fieldset`` with a ``legend`` inside of it should be used for additional add ons to the base form (how plugins should work).
 
 .. raw:: html
