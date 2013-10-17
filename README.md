@@ -1,4 +1,11 @@
 #### wyrm
 
-Wyrm is a modern theme for Sphinx documentation. It uses a mobile friendly navigation system
-that makes it easier to move around large documents.
+The wyrm frontend is a collection of responsive, static assets that work well with form or document heavy sites.
+
+#### install
+
+With bower.
+
+```
+bower install wyrm
+```
