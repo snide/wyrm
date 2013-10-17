@@ -1,15 +1,25 @@
 {
   "name": "wyrm",
-  "version": "1.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
     "Dave Snider <dave.snider@gmail.com>"
   ],
-  "description": "Wyrm is a modern theme for Sphinx documentation.",
+  "description": "The wyrm frontend is a collection of responsive, static assets that work well with form or document heavy sites.",
   "license": "MIT",
   "private": true,
+  "main": [
+    "sass/*.sass",
+  ], 
   "ignore": [
-    "**/.*",
+    "docs",
+    ".gitignore",
+    ".DS_Store",
+    ".sass-cache*",
+    ".bowerrc",
+    "bower.json",
+    "package.json",
+    "Gruntfile.js",
     "node_modules",
     "bower_components",
     "test",
