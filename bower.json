@@ -7,9 +7,8 @@
   ],
   "description": "The wyrm frontend is a collection of responsive, static assets that work well with form or document heavy sites.",
   "license": "MIT",
-  "private": true,
   "main": [
-    "sass/*.sass",
+    "sass/*.sass"
   ], 
   "ignore": [
     "docs",
