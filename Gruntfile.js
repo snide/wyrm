@@ -17,8 +17,8 @@ module.exports = function(grunt) {
     compass: {
       dev: {
         options: {
-          config: 'sass/config.rb',
-          basePath: 'sass',
+          config: 'docs/source/_themes/wyrm_theme/sass/config.rb',
+          basePath: 'docs/source/_themes/wyrm_theme/sass',
           force: true
         }
       }
@@ -32,12 +32,12 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ['sass/*.sass'],
+        files: ['docs/source/_themes/wyrm_theme/sass/*.sass'],
         tasks: ['compass:dev']
       },
       /* watch and see if our javascript files change, or new packages are installed */
       build: {
-        files: ['theme/**/*.css', 'theme/**/*.js', 'docs/source/**/*.rst', 'theme/**/*.html'],
+        files: ['docs/source/_themes/**/static/*.css', 'docs/source/_themes/**/static/*.js', 'docs/source/**/*.rst', 'docs/source/_themes/**/*.html'],
         tasks: ['exec:build_sphinx']
       },
       /* watch our files for change, reload */
