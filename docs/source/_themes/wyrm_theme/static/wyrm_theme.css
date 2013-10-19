@@ -4318,6 +4318,85 @@ body .redactor_toolbar li a.redactor_btn_pre {
   font-size: 90%;
 }
 
+.codeblock-example {
+  border: 1px solid #e2e5e1;
+  border-bottom: none;
+  padding: 24px;
+  padding-top: 48px;
+  font-weight: 500;
+  background: white;
+  position: relative;
+}
+.codeblock-example:after {
+  content: "Example";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #9b59b6;
+  color: white;
+  padding: 6px 12px;
+}
+.codeblock-example.prettyprint-example-only {
+  border: 1px solid #e2e5e1;
+  margin-bottom: 24px;
+}
+
+.codeblock, div[class^='highlight'] {
+  border: 1px solid #e2e5e1;
+  padding: 0px;
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  margin: 1px 0 24px 0;
+}
+.codeblock div[class^='highlight'], div[class^='highlight'] div[class^='highlight'] {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+.linenodiv pre, .linenodiv .redactor_format_pre {
+  border-right: solid 1px #e7eae6;
+  margin: 0;
+  padding: 12px 12px;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1", "source-code-pro-2", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #d9d9d9;
+}
+
+div[class^='highlight'] pre, div[class^='highlight'] .redactor_format_pre {
+  white-space: pre;
+  margin: 0;
+  padding: 12px 12px;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1", "source-code-pro-2", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  display: block;
+  overflow: auto;
+}
+
+pre.literal-block, .literal-block.redactor_format_pre {
+  @extends .codeblock;
+  background: #343131;
+  color: white;
+  padding: 42px 12px 12px 12px;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1", "source-code-pro-2", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+}
+pre.literal-block:after, .literal-block.redactor_format_pre:after {
+  position: absolute;
+  content: "  Terminal";
+  background: #f4f6f3;
+  color: #404040;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 0;
+}
+
 .hll {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
