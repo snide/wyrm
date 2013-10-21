@@ -4268,6 +4268,7 @@ body .redactor_toolbar li a.redactor_btn_pre {
   width: 300px;
   color: #fcfcfc;
   background: #1f1d1d;
+  border-top: solid 10px #343131;
 }
 .rst-versions .rst-current-version {
   padding: 12px;
