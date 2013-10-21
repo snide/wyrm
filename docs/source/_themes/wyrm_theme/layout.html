@@ -94,25 +94,14 @@
     {# SIDE NAV, TOGGLES ON MOBILE #}
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        {% if versions %}
-          <div class="wy-dropdown">
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home caret"> {{ docstitle }} </a> 
-            <dl class="wy-dropdown-menu">
-              {% for slug, url in versions %}
-                <dd><a href="{{ url }}">{{ slug }}</a></dd>
-              {% endfor %}
-            </dl>
-          </div>
-        {% else %}
-          <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ docstitle }}</a>
-        {% endif %}
-
+        <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}</a>
         {% include "searchbox.html" %}
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix">
         {{ toctree(maxdepth=2, collapse=False) }}
       </div>
+      {% include "versions.html" %}
       &nbsp;
     </nav>
 
@@ -121,9 +110,10 @@
       {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
       <nav class="wy-nav-top">
         <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
-        <a href="/">{{ docstitle }}</a>        
+        <a href="/">{{ project }}</a>        
       </nav>
       
+
       {# PAGE CONTENT #}
       <div class="wy-nav-content">
         <div class="rst-content">

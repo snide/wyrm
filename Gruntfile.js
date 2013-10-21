@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ['docs/source/_themes/wyrm_theme/sass/*.sass'],
+        files: ['docs/source/_themes/wyrm_theme/sass/*.sass', 'sass/**/*.sass'],
         tasks: ['compass:dev']
       },
       /* watch and see if our javascript files change, or new packages are installed */
