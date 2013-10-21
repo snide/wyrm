@@ -4277,6 +4277,7 @@ body .redactor_toolbar li a.redactor_btn_pre {
   font-size: 90%;
   cursor: pointer;
   color: #27ae60;
+  z-index: 400;
   *zoom: 1;
 }
 .rst-versions .rst-current-version:before, .rst-versions .rst-current-version:after {
