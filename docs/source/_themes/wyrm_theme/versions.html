@@ -8,10 +8,9 @@
   <div class="rst-other-versions">
     <dl>
       <dt>Version</dt>
-      <dd><a href="{{ url }}">Latest</a></dd>
-      <dd><a href="{{ url }}">0.3</a></dd>
-      <dd><a href="{{ url }}">0.2</a></dd>
-      <dd><a href="{{ url }}">0.1</a></dd>
+      {% for slug, url in versions %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+      {% endfor %}
     </dl>
     <dl>
       <dt>Downloads</dt>
