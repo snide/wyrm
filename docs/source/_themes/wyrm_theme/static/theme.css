@@ -5018,6 +5018,8 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
 .wy-nav-content {
   padding: 1.618em 3.236em;
   height: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 
 .wy-body-mask, #redactor_modal_overlay {
