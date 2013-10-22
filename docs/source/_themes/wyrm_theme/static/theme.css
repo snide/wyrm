@@ -3254,7 +3254,7 @@ a:hover {
 
 h1, .redactor_format_h1, h2, .redactor_format_h2, h3, .redactor_format_h3, h4, .redactor_format_h4, h5, .redactor_format_h5, h6, legend {
   margin-top: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
@@ -3300,7 +3300,7 @@ code, tt {
   font-size: 80%;
   padding: 0 5px;
   font-family: "source-code-pro-1", "source-code-pro-2", Incosolata, Consolata, Monaco, monospace;
-  color: #e74c3c;
+  color: gray;
 }
 code.code-large, tt.code-large {
   font-size: 90%;

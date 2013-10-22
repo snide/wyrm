@@ -24,6 +24,19 @@ module.exports = function(grunt) {
       }
     },
     
+    copy: {
+      sphinx_rtd_theme : {
+        files: [
+          {
+            expand: true,
+            cwd: 'docs/source/_themes/wyrm_theme', 
+            src: ['**', '!**/theme.sass', '!**/*.css', '!**/config.rb'],
+            dest: '../sphinx_rtd_theme/sphinx_rtd_theme'
+          }
+        ]
+      }
+    },
+
     exec: {
       build_sphinx: {
         cmd: 'cd docs && rm -rf build && make html'
@@ -51,11 +64,13 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('build', ['copy']);
 
 }
