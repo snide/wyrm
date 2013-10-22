@@ -2347,7 +2347,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   display: inline-block;
   border: 1px solid #cccccc;
   font-size: 80%;
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: inset 0 1px 3px #dddddd;
   border-radius: 0;
   -webkit-transition: border 0.3s linear;
@@ -2554,7 +2554,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   display: inline-block;
   border: 1px solid #cccccc;
   font-size: 80%;
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: inset 0 1px 3px #dddddd;
   -webkit-transition: border 0.3s linear;
   -moz-transition: border 0.3s linear;
@@ -3217,7 +3217,7 @@ html {
 }
 
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: #404040;
   min-height: 100%;
@@ -3255,7 +3255,7 @@ a:hover {
 h1, .redactor_format_h1, h2, .redactor_format_h2, h3, .redactor_format_h3, h4, .redactor_format_h4, h5, .redactor_format_h5, h6, legend {
   margin-top: 0;
   font-weight: 700;
-  font-family: "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 p {
@@ -3669,7 +3669,7 @@ figure[data-type=image].wy-figure-small {
 }
 
 figure[data-type=quote] {
-  font-family: "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
   margin-bottom: 24px;
   margin-left: 24px;
   font-style: italic;
@@ -3735,7 +3735,7 @@ figure:hover .wy-figure-controls {
   left: 0;
   top: -37px;
   margin: auto;
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   border-bottom: solid 3px #1e8449;
   line-height: 24px;
   font-style: normal;
@@ -3883,7 +3883,7 @@ body .redactor_box_fullscreen {
 }
 
 .redactor_editor {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   position: relative;
   padding: 1.618em;
   padding-bottom: 5px;
@@ -4077,7 +4077,7 @@ body .redactor_toolbar li a.redactor_btn_pre {
   background: #fcfcfc;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   font-size: 13px;
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   line-height: 21px;
 }
 
