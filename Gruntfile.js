@@ -24,6 +24,7 @@ module.exports = function(grunt) {
       }
     },
     
+    // I use this to build the sphinx_rtd_theme available at https://github.com/snide/sphinx_rtd_theme
     copy: {
       sphinx_rtd_theme : {
         files: [

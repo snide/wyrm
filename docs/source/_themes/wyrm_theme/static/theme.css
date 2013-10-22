@@ -5066,3 +5066,8 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1400px) {
+  .wy-nav-content {
+    margin: 0;
+  }
+}
