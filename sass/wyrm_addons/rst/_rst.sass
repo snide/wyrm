@@ -101,15 +101,17 @@
       padding-left: 0
   dl 
     dt
+      @extend code
+      display: inline-block
+      margin-bottom: $base-line-height / 4
+      font-size: 80%
+      line-height: normal
       .descname, .descclassname, big, em
-        display: inline-block
-        font-size: 100%
-        font-weight: bold
-        font-family: $code-font-family
-        margin-bottom: $base-line-height / 4
-        color: $text-medium
-        .headerlink
-          color: $text-color
+        font-size: 100% !important
+        line-height: normal
+      .headerlink
+        color: $text-color
+        font-size: 100% !important
     dd
       margin-left: $base-line-height
   tt
