@@ -58,6 +58,8 @@
     @extend .wy-alert.wy-alert-warning
   ul.simple, ul.stimple ul, .toctree-wrapper ul
     @extend .wy-plain-list-disc
+  ol.simple, ol.arabic
+    @extend .wy-plain-list-decimal
   .topic-title
     font-weight: bold
     margin-bottom: $base-line-height / 2
@@ -97,7 +99,7 @@
     .field-body
       text-align: left
       padding-left: 0
-  .method, dl.class
+  .method, .class, .confval
     dt
       @extend code
       display: inline-block
@@ -107,8 +109,8 @@
         color: $text-color
     dd
       margin-left: $base-line-height
-  .class blockquote, .method blockquote
-    margin-left: $base-line-height
+    blockquote
+      margin-left: $base-line-height
   tt
     font-family: $code-font-family
     &.literal
