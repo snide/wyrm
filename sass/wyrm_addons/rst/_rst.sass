@@ -69,7 +69,7 @@
   .align-left
     float: left
     margin: 0px $base-line-height $base-line-height 0px
-  h1, h2, h3, h4, h5, h6
+  h1, h2, h3, h4, h5, h6, .method dt, dl.class dt
     .headerlink
       display: none
       visibility: hidden
@@ -86,6 +86,33 @@
   table.docutils
     @extend .wy-table
     @extend .wy-table-bordered-all
+  table.docutils.field-list
+    @extend .wy-table
+    border: none
+    td
+      border: none
+    .field-name
+      padding-left: $base-line-height
+      padding-right: 5px
+      text-align: left
+    .field-body
+      text-align: left
+      padding-left: 0
+  .method, dl.class
+    dt
+      @extend code
+      display: inline-block
+      font-size: 90% !important
+      margin-bottom: $base-line-height / 2
+      .headerlink
+        color: $text-color
+  .class blockquote, .method blockquote
+    margin-left: $base-line-height * 2
+  tt
+    font-family: $code-font-family
+    &.literal
+      @extend code
+    
   #search-results
     .search li
       margin-bottom: $base-line-height
