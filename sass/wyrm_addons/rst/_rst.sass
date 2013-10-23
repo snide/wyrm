@@ -6,6 +6,8 @@
   color: $section-background-color
   background: darken($menu-background-color, 8%)
   border-top: solid 10px $menu-background-color
+  .rst-badge-small
+    display: none
   .rst-current-version
     padding: $base-line-height / 2
     background-color: darken($menu-background-color, 5%)
@@ -36,6 +38,25 @@
         display: inline-block
         padding: $base-line-height / 4
         color: $section-background-color
+  &.rst-badge
+    width: auto
+    bottom: 20px
+    right: 20px
+    left: auto
+    border: none
+    max-width: $nav-desktop-width
+    .rst-badge-small
+      background-color: darken($menu-background-color, 5%)
+      width: auto
+      height: 30px
+      line-height: 30px
+      padding: 0 $base-line-height / 4
+      display: block
+      text-align: center
+      font-size: 12px
+      cursor: pointer
+    .rst-current-version
+      display: none
     
 .rst-content
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
