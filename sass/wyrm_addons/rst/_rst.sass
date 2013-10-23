@@ -71,7 +71,7 @@
   .align-left
     float: left
     margin: 0px $base-line-height $base-line-height 0px
-  h1, h2, h3, h4, h5, h6, .method dt, dl.class dt
+  h1, h2, h3, h4, h5, h6, dl dt
     .headerlink
       display: none
       visibility: hidden
@@ -99,22 +99,28 @@
     .field-body
       text-align: left
       padding-left: 0
-  .method, .class, .confval, .cmdoption
+  dl 
     dt
-      @extend code
-      display: inline-block
-      font-size: 90% !important
-      margin-bottom: $base-line-height / 2
-      .headerlink
-        color: $text-color
+      .descname, .descclassname, big, em
+        display: inline-block
+        font-size: 100%
+        font-weight: bold
+        font-family: $code-font-family
+        margin-bottom: $base-line-height / 4
+        color: $text-medium
+        .headerlink
+          color: $text-color
     dd
-      margin-left: $base-line-height
-    blockquote
       margin-left: $base-line-height
   tt
     font-family: $code-font-family
     &.literal
       @extend code
+  blockquote
+    margin-left: $base-line-height
+    line-height: $base-line-height
+    margin-bottom: $base-line-height
+
     
   #search-results
     .search li
@@ -138,4 +144,7 @@
     display: none
     &.shift
       display: block
+  img
+    width: 100%
+    height: auto
   
