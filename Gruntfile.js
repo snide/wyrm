@@ -78,6 +78,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('build', ['copy']);
+  grunt.registerTask('build', ['release', 'copy']);
 
 }
