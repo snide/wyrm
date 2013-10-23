@@ -44,6 +44,12 @@ module.exports = function(grunt) {
       }
     },
 
+    release: {
+      options: {
+        npm: false, //default: true
+      }
+    },
+
     watch: {
       sass: {
         files: ['docs/source/_themes/wyrm_theme/sass/*.sass', 'sass/**/*.sass'],
