@@ -315,7 +315,6 @@ big, small {
   }
 
   pre, .redactor_format_pre, blockquote, .redactor_format_blockquote {
-    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
@@ -4496,6 +4495,11 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
   padding: 6px 0;
 }
 
+@media print {
+  .codeblock, div[class^='highlight'], div[class^='highlight'] pre, div[class^='highlight'] .redactor_format_pre {
+    white-space: pre-wrap;
+  }
+}
 .hll {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
@@ -5104,5 +5108,14 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
 @media screen and (min-width: 1400px) {
   .wy-nav-content {
     margin: 0;
+  }
+}
+@media print {
+  .wy-nav-side {
+    display: none;
+  }
+
+  .wy-nav-content-wrap {
+    margin-left: 0;
   }
 }
