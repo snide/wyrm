@@ -45,6 +45,8 @@
     left: auto
     border: none
     max-width: $nav-desktop-width
+    &.shift-up .rst-current-version
+      text-align: left
     .rst-current-version
       width: auto
       height: 30px
@@ -52,8 +54,6 @@
       padding: 0 $base-line-height / 4
       display: block
       text-align: center
-      .icon
-        float: none
     
 .rst-content
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
