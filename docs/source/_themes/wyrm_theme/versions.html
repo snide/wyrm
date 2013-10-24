@@ -1,6 +1,6 @@
-{#% if READTHEDOCS %#}
+{% if READTHEDOCS %}
 {# Add rst-badge after rst-versions for small badge style. #}
-  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+  <div class="rst-versions" data-toggle="rst-versions">
     <span class="rst-current-version {% if current_version != "latest" %}rst-out-of-date{% endif %}" data-toggle="rst-current-version">
       <span class="icon icon-book"> Read the Docs</span>
       v: {{ current_version }} 
@@ -34,5 +34,5 @@
 
     </div>
   </div>
-{#% endif %#}
+{% endif %}
 
