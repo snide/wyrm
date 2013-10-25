@@ -4354,20 +4354,6 @@ body .redactor_toolbar li a.redactor_btn_pre {
   font-size: 90%;
 }
 
-@media screen and (max-width: 768px) {
-  .rst-versions {
-    width: 85%;
-    display: none;
-  }
-  .rst-versions.shift {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
 .codeblock-example {
   border: 1px solid #e1e4e5;
   border-bottom: none;
@@ -5171,4 +5157,19 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
   padding: 0 6px;
   display: block;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .rst-versions {
+    width: 85%;
+    display: none;
+  }
+  .rst-versions.shift {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

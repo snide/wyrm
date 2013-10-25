@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .font-smooth, .icon:before {
   -webkit-font-smoothing: antialiased;
 }
@@ -173,4 +179,19 @@ ul.icons li .icon-large:before {
   padding: 0 6px;
   display: block;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .rst-versions {
+    width: 85%;
+    display: none;
+  }
+  .rst-versions.shift {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
