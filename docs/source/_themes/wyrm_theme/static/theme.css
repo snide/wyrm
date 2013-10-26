@@ -80,7 +80,7 @@ mark {
   font-weight: bold;
 }
 
-pre, .redactor_format_pre, code, .rst-content dl dt, .rst-content tt.literal, kbd, samp {
+pre, .redactor_format_pre, code, .rst-content dl dt, .rst-content dl dl dt, .rst-content tt.literal, kbd, samp {
   font-family: monospace, serif;
   _font-family: "courier new", monospace;
   font-size: 1em;
@@ -3290,7 +3290,7 @@ small {
   font-size: 80%;
 }
 
-code, .rst-content dl dt, .rst-content tt.literal {
+code, .rst-content dl dt, .rst-content dl dl dt, .rst-content tt.literal {
   white-space: nowrap;
   background: white;
   border: solid 1px #e1e4e5;
@@ -4315,17 +4315,32 @@ body .redactor_toolbar li a.redactor_btn_pre {
   margin-bottom: 6px;
   font-size: 80%;
   line-height: normal;
-}
-.rst-content dl dt .descname, .rst-content dl dt .descclassname, .rst-content dl dt big, .rst-content dl dt em {
-  font-size: 100% !important;
-  line-height: normal;
+  background: #cccccc;
+  color: #333333;
+  border: none;
+  border-left: solid 3px #999999;
+  padding: 6px;
 }
 .rst-content dl dt .headerlink {
   color: #404040;
   font-size: 100% !important;
 }
+.rst-content dl dt .descname, .rst-content dl dt .descclassname, .rst-content dl dt big, .rst-content dl dt em {
+  font-size: 100% !important;
+  line-height: normal;
+}
 .rst-content dl dd {
   margin-left: 24px;
+}
+.rst-content dl dl dt {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 80%;
+  line-height: normal;
+}
+.rst-content dl dl dt .headerlink {
+  color: #404040;
+  font-size: 100% !important;
 }
 .rst-content tt {
   font-family: "Incosolata", "Consolata", "Monaco", monospace;

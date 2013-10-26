@@ -60,21 +60,37 @@
     .field-body
       text-align: left
       padding-left: 0
-  dl 
+  dl
     dt
       @extend code
       display: inline-block
       margin-bottom: $base-line-height / 4
       font-size: 80%
       line-height: normal
-      .descname, .descclassname, big, em
-        font-size: 100% !important
-        line-height: normal
+      background: $gray-lighter
+      color: $gray-dark
+      border: none
+      border-left: solid 3px $gray-light
+      padding: $base-line-height / 4
       .headerlink
         color: $text-color
         font-size: 100% !important
+      .descname, .descclassname, big, em
+        font-size: 100% !important
+        line-height: normal
     dd
       margin-left: $base-line-height
+
+  dl dl
+    dt
+      @extend code
+      display: inline-block
+      margin-bottom: $base-line-height / 4
+      font-size: 80%
+      line-height: normal
+      .headerlink
+        color: $text-color
+        font-size: 100% !important
   tt
     font-family: $code-font-family
     &.literal
