@@ -5031,6 +5031,10 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
   display: block;
 }
 
+footer {
+  color: #999999;
+}
+
 @media screen and (max-width: 768px) {
   .wy-body-for-nav {
     background: #fcfcfc;
