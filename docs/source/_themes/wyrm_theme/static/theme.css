@@ -3307,33 +3307,33 @@ code.code-large, .rst-content dl dt.code-large, .rst-content tt.code-large.liter
   width: 100%;
 }
 
-.wy-plain-list-disc, .rst-content ul, .rst-content ul.simple, .rst-content ul.stimple ul, .rst-content .toctree-wrapper ul {
+.wy-plain-list-disc, .rst-content .section ul, .rst-content ul.simple, .rst-content ul.stimple ul, .rst-content .toctree-wrapper ul {
   list-style: disc;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
-.wy-plain-list-disc li, .rst-content ul li, .rst-content ul.simple li, .rst-content ul.stimple ul li, .rst-content .toctree-wrapper ul li {
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content ul.simple li, .rst-content ul.stimple ul li, .rst-content .toctree-wrapper ul li {
   list-style: disc;
   margin-left: 24px;
 }
-.wy-plain-list-disc li ul, .rst-content ul li ul, .rst-content ul.simple li ul, .rst-content ul.stimple ul li ul, .rst-content .toctree-wrapper ul li ul {
+.wy-plain-list-disc li ul, .rst-content .section ul li ul, .rst-content ul.simple li ul, .rst-content ul.stimple ul li ul, .rst-content .toctree-wrapper ul li ul {
   margin-bottom: 0;
 }
-.wy-plain-list-disc li li, .rst-content ul li li, .rst-content ul.simple li li, .rst-content ul.stimple ul li li, .rst-content .toctree-wrapper ul li li {
+.wy-plain-list-disc li li, .rst-content .section ul li li, .rst-content ul.simple li li, .rst-content ul.stimple ul li li, .rst-content .toctree-wrapper ul li li {
   list-style: circle;
 }
-.wy-plain-list-disc li li li, .rst-content ul li li li, .rst-content ul.simple li li li, .rst-content ul.stimple ul li li li, .rst-content .toctree-wrapper ul li li li {
+.wy-plain-list-disc li li li, .rst-content .section ul li li li, .rst-content ul.simple li li li, .rst-content ul.stimple ul li li li, .rst-content .toctree-wrapper ul li li li {
   list-style: square;
 }
 
-.wy-plain-list-decimal, .rst-content ol, .rst-content ol.simple, .rst-content ol.arabic {
+.wy-plain-list-decimal, .rst-content .section ol, .rst-content ol.simple, .rst-content ol.arabic {
   list-style: decimal;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
-.wy-plain-list-decimal li, .rst-content ol li, .rst-content ol.simple li, .rst-content ol.arabic li {
+.wy-plain-list-decimal li, .rst-content .section ol li, .rst-content ol.simple li, .rst-content ol.arabic li {
   list-style: decimal;
   margin-left: 24px;
 }
