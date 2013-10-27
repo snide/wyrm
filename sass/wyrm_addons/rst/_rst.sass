@@ -1,4 +1,10 @@
 .rst-content
+  // sometimes people provide sizing in their rst, while will break the responsive layout
+  img
+    max-width: 800px
+    height: auto !important
+  .section > img
+    margin-bottom: $base-line-height
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning
     @extend .wy-alert
     p.last, p.first
