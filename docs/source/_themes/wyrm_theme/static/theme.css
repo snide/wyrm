@@ -3292,12 +3292,14 @@ small {
 
 code, .rst-content dl dt, .rst-content dl dl dt, .rst-content tt.literal {
   white-space: nowrap;
+  max-width: 100%;
   background: white;
   border: solid 1px #e1e4e5;
   font-size: 80%;
   padding: 0 5px;
   font-family: "Incosolata", "Consolata", "Monaco", monospace;
   color: #e74c3c;
+  overflow-x: auto;
 }
 code.code-large, .rst-content dl dt.code-large, .rst-content tt.code-large.literal {
   font-size: 90%;
