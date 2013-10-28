@@ -4465,8 +4465,7 @@ pre.literal-block:after, .literal-block.redactor_format_pre:after {
 .hll {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
-  padding: 6px 10px;
-  border-radius: 3px;
+  padding: 1.5px 5px;
 }
 
 .c {
