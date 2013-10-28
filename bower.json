@@ -27,6 +27,7 @@
   "dependencies": {
     "neat": "~1.4.0",
     "bourbon": "~3.1.8",
-    "font-awesome": "~3.2.1"
+    "font-awesome": "~3.2.1",
+    "responsive-tables": "git://github.com/zurb/responsive-tables.git#0d34bc64dfc82b83fcc0f5a8a4c4938b5b0a8210"
   }
 }
