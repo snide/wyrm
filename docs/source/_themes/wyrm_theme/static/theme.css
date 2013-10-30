@@ -3124,14 +3124,14 @@ li.wy-form-gallery-edit .arrow {
   border-left-width: 0;
 }
 .wy-table thead, .rst-content table.docutils thead, .rst-content table.docutils.field-list thead {
-  background: #e1e4e5;
   color: black;
   text-align: left;
   vertical-align: bottom;
   white-space: nowrap;
 }
 .wy-table thead th, .rst-content table.docutils thead th, .rst-content table.docutils.field-list thead th {
-  font-weight: 500;
+  font-weight: bold;
+  border-bottom: solid 2px #e1e4e5;
 }
 .wy-table td, .rst-content table.docutils td, .rst-content table.docutils.field-list td {
   background-color: transparent;
@@ -3164,7 +3164,7 @@ li.wy-form-gallery-edit .arrow {
 /*striping:
  *   even - #fff (white)
  *   odd  - #f2f2f2 (light gray) */
-.wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+.wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
   background-color: #f3f6f6;
 }
 
@@ -3207,7 +3207,19 @@ li.wy-form-gallery-edit .arrow {
   border-bottom-width: 0;
 }
 
-/* HORIZONTAL BORDERED TABLES */
+/* RESPONSIVE TABLES */
+.wy-table-responsive {
+  margin-bottom: 24px;
+  max-width: 100%;
+  overflow: auto;
+}
+.wy-table-responsive table {
+  margin-bottom: 0 !important;
+}
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: nowrap;
+}
+
 html {
   height: 100%;
   overflow-x: hidden;

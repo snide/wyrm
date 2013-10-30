@@ -19,13 +19,13 @@
   td:first-child, th:first-child
     border-left-width: 0
   thead
-    background: $table-head-background-color
     color: #000
     text-align: left
     vertical-align: bottom
     white-space: nowrap
     th
-      font-weight: 500
+      font-weight: $base-font-family-bold
+      border-bottom: solid 2px $table-border-color
   td
     background-color: transparent
     vertical-align: middle
@@ -87,5 +87,13 @@
     border-bottom: 1px solid $table-border-color
   tbody > tr:last-child td
     border-bottom-width: 0
+/* RESPONSIVE TABLES
 
-/* HORIZONTAL BORDERED TABLES
+.wy-table-responsive
+  margin-bottom: $base-line-height
+  max-width: 100%
+  overflow: auto
+  table
+    margin-bottom: 0 !important
+    td, th
+      white-space: nowrap

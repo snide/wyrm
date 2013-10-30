@@ -55,6 +55,8 @@
   table.docutils
     @extend .wy-table
     @extend .wy-table-bordered-all
+    &:not(.field-list)
+      @extend .wy-table-striped
   table.docutils.field-list
     @extend .wy-table
     border: none
@@ -106,7 +108,7 @@
     line-height: $base-line-height
     margin-bottom: $base-line-height
 
-    
+
   #search-results
     .search li
       margin-bottom: $base-line-height
@@ -124,4 +126,4 @@
       font-size: 90%
 
 
-  
+
