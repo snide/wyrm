@@ -9,7 +9,7 @@ Wyrm frontend
    :align: right
 
 The wyrm frontend is a collection of responsive, static assets that I use in my projects.
-Inspired by Bootsrap and its ilk, Wyrm is most useful in documention and form heavy 
+Inspired by Bootsrap and its ilk, Wyrm is most useful in documention and form heavy
 designs due to its clean, semi-flat sytle and its assortment of form based widgets.
 
 What Wyrm is not
