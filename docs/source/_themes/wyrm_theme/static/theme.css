@@ -5117,6 +5117,7 @@ footer {
   background: #1f1d1d;
   border-top: solid 10px #343131;
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  z-index: 400;
 }
 .rst-versions a {
   color: #2980b9;
@@ -5133,7 +5134,6 @@ footer {
   font-size: 90%;
   cursor: pointer;
   color: #27ae60;
-  z-index: 400;
   *zoom: 1;
 }
 .rst-versions .rst-current-version:before, .rst-versions .rst-current-version:after {
