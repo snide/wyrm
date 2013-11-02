@@ -72,7 +72,7 @@
     dt
       @extend code
       display: inline-block
-      margin-bottom: $base-line-height / 4
+      margin: $base-line-height / 4 0
       font-size: 80%
       line-height: normal
       background: $gray-lighter
@@ -86,6 +86,8 @@
       .descname, .descclassname, big, em
         font-size: 100% !important
         line-height: normal
+    dt:first-child
+      margin-top: 0
     dd
       margin-left: $base-line-height
 

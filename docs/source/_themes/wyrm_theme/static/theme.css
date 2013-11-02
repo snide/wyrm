@@ -4333,7 +4333,7 @@ body .redactor_toolbar li a.redactor_btn_pre {
 }
 .rst-content dl dt {
   display: inline-block;
-  margin-bottom: 6px;
+  margin: 6px 0;
   font-size: 80%;
   line-height: normal;
   background: #cccccc;
@@ -4349,6 +4349,9 @@ body .redactor_toolbar li a.redactor_btn_pre {
 .rst-content dl dt .descname, .rst-content dl dt .descclassname, .rst-content dl dt big, .rst-content dl dt em {
   font-size: 100% !important;
   line-height: normal;
+}
+.rst-content dl dt:first-child {
+  margin-top: 0;
 }
 .rst-content dl dd {
   margin-left: 24px;
