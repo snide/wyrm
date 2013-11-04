@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     compass: {
       dev: {
         options: {
@@ -23,14 +23,14 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     // I use this to build the sphinx_rtd_theme available at https://github.com/snide/sphinx_rtd_theme
     copy: {
       sphinx_rtd_theme : {
         files: [
           {
             expand: true,
-            cwd: 'docs/source/_themes/wyrm_theme', 
+            cwd: 'docs/source/_themes/wyrm_theme',
             src: ['**', '!**/theme.sass', '!**/*.css', '!**/config.rb'],
             dest: '../sphinx_rtd_theme/sphinx_rtd_theme'
           }
@@ -78,6 +78,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('build', ['release', 'copy']);
+  grunt.registerTask('build', ['release']);
 
 }
