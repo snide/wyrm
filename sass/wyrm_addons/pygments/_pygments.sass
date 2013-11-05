@@ -51,22 +51,6 @@ div[class^='highlight'] pre
   color: $text-color
 pre.literal-block
   @extends .codeblock
-  background: $menu-background-color
-  color: $text-invert
-  padding: $base-line-height * 1.75 $base-line-height / 2 $base-line-height / 2 $base-line-height / 2
-  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, "source-code-pro-1","source-code-pro-2", monospace
-  font-size: 12px
-  line-height: 1.5
-  position: relative
-  &:after
-    position: absolute
-    content: "  Terminal"
-    background: $table-stripe-color
-    color: $text-color
-    top: 0
-    left: 0
-    width: 100%
-    padding: $base-line-height / 4 0
 
 @media print
   .codeblock, div[class^='highlight'], div[class^='highlight'] pre
