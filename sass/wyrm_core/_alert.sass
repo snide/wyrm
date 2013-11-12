@@ -1,34 +1,38 @@
 .wy-alert
-  padding: $base-line-height
+  padding: $base-line-height / 2
   line-height: $base-line-height
   margin-bottom: $base-line-height
-  border-left: solid 3px transparent
   +font-smooth
-  strong, a
-    color: $white
+.wy-alert-title
+  color: $white
+  font-weight: bold
+  color: $white
+  background: transparent
+  margin: -$base-line-height / 2
+  padding: $base-line-height / 4 $base-line-height / 2
+  margin-bottom: $base-line-height / 2
 
 .wy-alert.wy-alert-danger
-  background: $red
-  color: lighten($red, 80%)
-  border-color: darken($red, 10%)
+  background: lighten($red, 40%)
+  .wy-alert-title
+    background: lighten($red,20%)
 .wy-alert.wy-alert-warning
-  background: $orange
-  color: lighten($orange, 80%)
-  border-color: darken($orange, 10%)
+  background: lighten(orange,40%)
+  .wy-alert-title
+    background: lighten($orange,20%)
 
 .wy-alert.wy-alert-info
-  background: $blue
-  color: lighten($blue, 80%)
-  border-color: darken($blue, 10%)
+  background: lighten($blue, 50%)
+  .wy-alert-title
+    background: lighten($blue,20%)
 
 .wy-alert.wy-alert-success
-  background: $green
-  color: lighten($green, 80%)
-  border-color: darken($green, 10%)
+  background: lighten($offgreen, 50%)
+  .wy-alert-title
+    background: lighten($offgreen,0%)
 
 .wy-alert.wy-alert-neutral
   background: $table-stripe-color
-  border-color: $table-border-color
   strong
     color: $text-color
   a
@@ -71,3 +75,5 @@
 //    padding: $base-line-height / 2 $base-line-height
 //    color: $white
 //    margin-top: $base-line-height / 4
+
+
