@@ -29,7 +29,9 @@
     border: none
     background: none
     margin: 0
-
+// Needs 100% width for line highlighting to work properly
+div[class^='highlight'] td.code
+  width: 100%
 .linenodiv pre
   border-right: solid 1px lighten($table-border-color, 2%)
   margin: 0
