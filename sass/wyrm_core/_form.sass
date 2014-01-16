@@ -104,7 +104,7 @@ input
   &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus
     outline: 0
     outline: thin dotted \9
-    border-color: $link-color
+    border-color: $input-focus-color
   &.no-focus:focus
     border-color: $input-border-color !important
   &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus
@@ -119,10 +119,10 @@ input:focus:invalid, textarea:focus:invalid, select:focus:invalid
   color: $red
   border: 1px solid $red
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus
-  border-color: $input-focus-color
+  border-color: $red
 input
   &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus
-    outline-color: $input-focus-color
+    outline-color: $red
 
 input.wy-input-large
   padding: $base-line-height / 2
