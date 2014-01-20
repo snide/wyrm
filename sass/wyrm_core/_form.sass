@@ -211,6 +211,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 .wy-control-group
   margin-bottom: $base-line-height
+  +outer-container
   +clearfix
 
 .wy-control-group.wy-control-group-error
@@ -225,6 +226,18 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 .wy-control-group.wy-control-group-required > label:after
   content: " *"
   color: $red
+
+.wy-control-group .wy-form-full
+  +span-columns(12)
+  +omega
+
+.wy-control-group .wy-form-halves
+  +span-columns(6)
+  +omega(2n)
+
+.wy-control-group .wy-form-thirds
+  +span-columns(4)
+  +omega(3n)
 
 // Fluid inputs when needed
 
