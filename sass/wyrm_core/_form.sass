@@ -227,6 +227,15 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   content: " *"
   color: $red
 
+// For doing multi part, aligned form blocks within a single label
+
+.wy-control-group
+  .wy-form-full, .wy-form-halves, .wy-form-thirds
+    select
+      width: 100%
+    input
+      &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+        width: 100%
 .wy-control-group .wy-form-full
   +span-columns(12)
   +omega
