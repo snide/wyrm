@@ -222,6 +222,10 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   textarea
     border: solid 2px $red
 
+.wy-control-group.wy-control-group-required > label:after
+  content: " *"
+  color: $red
+
 // Fluid inputs when needed
 
 .wy-control-group.fluid-input
