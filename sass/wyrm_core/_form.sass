@@ -160,7 +160,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 .wy-checkbox, .wy-radio
   margin: 0.5em 0
   // Important because we don't want it overwritten in the case of errors
-  color: $text-color !important
+  color: $text-color
   display: block
 
 // Messages and input context
@@ -215,7 +215,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   +clearfix
 
 .wy-control-group.wy-control-group-error
-  .wy-form-message, label
+  .wy-form-message, > label
     color: $red
   input
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
