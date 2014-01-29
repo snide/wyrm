@@ -1,0 +1,38 @@
+// SOME ADDITIONAL CLASSES AND CHANGES TO FA 4.0
+
+.icon:before
+  display: inline-block
+  font-family: fontawesome-webfont
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  text-decoration: inherit
+  +font-smooth
+
+a .icon
+  display: inline-block
+  text-decoration: inherit
+
+/* makes the font 33% larger relative to the icon container
+.icon-large:before
+  vertical-align: -10%
+  font-size: 1.3333333333333333em
+
+.btn, .nav
+  .icon
+    display: inline
+    &.icon-large
+      line-height: .9em
+    &.icon-spin
+      display: inline-block
+
+.btn.icon:before
+  opacity: .5
+  +transition(opacity .05s ease-in)
+.btn.icon:hover:before
+  opacity: 1
+
+.btn-mini
+  .icon:before
+    font-size: 14px
+    vertical-align: -15%
