@@ -2,11 +2,8 @@
   position: relative
   display: inline-block
   .caret
-    &:after
-      font-family: fontawesome-webfont
-      content: "\f0d7"
-      font-size: 70%
-
+    @extend .fa
+    @extend .fa-caret-down
 .wy-dropdown-menu
   position: absolute
   top: 100%
