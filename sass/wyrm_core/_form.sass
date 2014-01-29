@@ -199,15 +199,15 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 .wy-inline-validate.wy-inline-validate-danger .wy-input-context
   color: $red
   @extend .fa
-  @extend .fa-remove-circle
+  @extend .fa-times-circle-o
 .wy-inline-validate.wy-inline-validate-warning .wy-input-context
   color: $orange
   @extend .fa
-  @extend .fa-exclamation-sign
+  @extend .fa-exclamation-circle
 .wy-inline-validate.wy-inline-validate-info .wy-input-context
   color: $blue
   @extend .fa
-  @extend .fa-exclamation-sign
+  @extend .fa-exclamation-circle
 
 .wy-control-group
   margin-bottom: $base-line-height
@@ -293,7 +293,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     margin-bottom: 4px
     .wy-tag-remove
       @extend .fa
-      @extend .fa-remove
+      @extend .fa-times
       color: $gray-lighter
       margin-left: 5px
       &:hover
