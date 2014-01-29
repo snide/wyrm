@@ -1,19 +1,19 @@
 // SOME ADDITIONAL CLASSES AND CHANGES TO FA 4.0
 .btn, .nav
-  .icon
+  .fa
     display: inline
-    &.icon-large
+    &.fa-large
       line-height: .9em
-    &.icon-spin
+    &.fa-spin
       display: inline-block
 
-.btn.icon:before
+.btn.fa:before
   opacity: .5
   +transition(opacity .05s ease-in)
-.btn.icon:hover:before
+.btn.fa:hover:before
   opacity: 1
 
 .btn-mini
-  .icon:before
+  .fa:before
     font-size: 14px
     vertical-align: -15%
