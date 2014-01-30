@@ -95,7 +95,7 @@ figure:hover .wy-figure-controls
   display: block
 
 .wy-figure-controls
-  background: $green
+  background: $gray
   padding: $base-line-height / 4
   position: absolute
   display: none
@@ -105,7 +105,7 @@ figure:hover .wy-figure-controls
   top: -37px
   margin: auto
   font-family: $base-font-family
-  border-bottom: solid 3px darken($green, 10%)
+  border-bottom: solid 3px darken($gray, 10%)
   line-height: $base-line-height
   font-style: normal
   z-index: 5
@@ -127,12 +127,12 @@ figure:hover .wy-figure-controls
     color: $white
   &.on
     background: $white
-    color: $green
+    color: $gray
 
 .wy-figure-controls span
   &.wy-figure-controls-divider
     width: 1px
-    background: lighten($green, 10%)
+    background: lighten($gray, 10%)
     padding: 0
     margin: 0 2px
     cursor: normal
@@ -181,7 +181,6 @@ figure:hover .wy-figure-controls
   float: left
   margin-right: $base-line-height
 
-
 // On mobile, images should be full width
 +media($mobile)
   figure[data-type=image]
@@ -192,3 +191,4 @@ figure:hover .wy-figure-controls
   figure[data-type=video] iframe
     width: 100% !important
     height: auto !important
+
