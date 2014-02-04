@@ -6,6 +6,8 @@ dist/
 .coverage
 *.DS_Store
 *.sass-cache
+css/
+make.bat
 bower_components/
 node_modules/
 
