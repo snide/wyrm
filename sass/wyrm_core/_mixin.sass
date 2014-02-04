@@ -3,18 +3,6 @@ $legacy-support-for-ie: false
 $hide-text-direction: right
 $default-border-radius: 4px
 
-=wy-logo($logo-size: 45px, $logo-color: $link-color)
-  background-image: $wy-logo
-  width: $logo-size
-  height: $logo-size
-  background-color: $logo-color
-  background-size: $logo-size * .6 $logo-size * .48
-  background-position: center center
-  background-repeat: no-repeat
-  border-radius: 100%
-  display: inline-block
-  vertical-align: middle
-
 =retina
   @media only screen and (#{-webkit-min-device-pixel-ratio}: #{1.5}), only screen and (#{min-device-pixel-ratio}: #{1.5})
     @content
