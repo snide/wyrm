@@ -5,12 +5,19 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    compass: {
+    sass: {
       test: {
         options: {
-          config: 'compass.rb',
-          force: true
-        }
+          style: 'expanded',
+          loadPath: ['bower_components/bourbon/app/assets/stylesheets', 'bower_components/neat/app/assets/stylesheets', 'bower_components/font-awesome/scss']
+        },
+        files: [{
+          expand: true,
+          cwd: 'sass',
+          src: ['*.sass'],
+          dest: 'css',
+          ext: '.css'
+        }]
       }
     },
 
@@ -26,9 +33,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('test', ['compass:test']);
+  grunt.registerTask('test', ['sass:test']);
   grunt.registerTask('build', ['release']);
 
 }
