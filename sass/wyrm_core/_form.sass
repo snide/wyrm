@@ -194,20 +194,20 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     font-size: 80%
 .wy-inline-validate.wy-inline-validate-success .wy-input-context
   color: $green
-  @extend .fa
-  @extend .fa-check-circle
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-ok}
 .wy-inline-validate.wy-inline-validate-danger .wy-input-context
   color: $red
-  @extend .fa
-  @extend .fa-times-circle-o
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-remove}
 .wy-inline-validate.wy-inline-validate-warning .wy-input-context
   color: $orange
-  @extend .fa
-  @extend .fa-exclamation-circle
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-alert}
 .wy-inline-validate.wy-inline-validate-info .wy-input-context
   color: $blue
-  @extend .fa
-  @extend .fa-exclamation-circle
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-alert}
 
 .wy-control-group
   margin-bottom: $base-line-height
@@ -297,8 +297,8 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     position: relative
     margin-bottom: 4px
     .wy-tag-remove
-      @extend .fa
-      @extend .fa-times
+      @extend .#{$icon-prefix}
+      @extend .#{$icon-prefix}-#{$icon-close}
       color: $gray-lighter
       margin-left: 5px
       &:hover

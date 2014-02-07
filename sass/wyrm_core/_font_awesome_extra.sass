@@ -2,18 +2,18 @@
 .btn, .nav
   .fa
     display: inline
-    &.fa-large
+    &.#{$icon-prefix}-large
       line-height: .9em
-    &.fa-spin
+    &.#{$icon-prefix}-spin
       display: inline-block
 
-.btn.fa:before
+.btn.#{$icon-prefix}:before
   opacity: .5
   +transition(opacity .05s ease-in)
-.btn.fa:hover:before
+.btn.#{$icon-prefix}:hover:before
   opacity: 1
 
 .btn-mini
-  .fa:before
+  .#{$icon-prefix}:before
     font-size: 14px
     vertical-align: -15%
