@@ -1,14 +1,32 @@
+// Alerts
+//
+// Alerts can exist as in page notices and as fixed drops.
+//
+// Markup:
+// <div class="wy-alert {$modifiers}">
+//  <div class="wy-alert-title">Title goes here</div>
+//  <p>Alert instructions go here.</p>
+// </div>
+//
+// .wy-alert-neutral        - Generic alert, extra instruction.
+// .wy-alert-success        - Hooray, something good happened.
+// .wy-alert-warning        - Watch out, you might make a mistake.
+// .wy-alert-danger         - Yep, you made a mistake.
+//
+// Styleguide 2
+
 .wy-alert
   padding: $base-line-height / 2
   line-height: $base-line-height
   margin-bottom: $base-line-height
+  background: lighten($blue, 50%)
   +font-smooth
 .wy-alert-title
   color: $white
   font-weight: bold
   display: block
   color: $white
-  background: transparent
+  background: lighten($blue,20%)
   margin: -$base-line-height / 2
   padding: $base-line-height / 4 $base-line-height / 2
   margin-bottom: $base-line-height / 2
@@ -34,8 +52,9 @@
 
 .wy-alert.wy-alert-neutral
   background: $table-stripe-color
-  strong
+  .wy-alert-title
     color: $text-color
+    background: $table-border-color
   a
     color: $link-color
 
@@ -67,17 +86,4 @@
       background: $orange
     &.wy-tray-item-danger
       background: $red
-//.wy-tray-container
-//  position: fixed
-//  top: $gutter
-//  left: 50%
-//  z-index: $z-index-alert
-//  .wy-tray-item
-//    position: relative
-//    left: -50%
-//    background: rgba(0,0,0,.9)
-//    padding: $base-line-height / 2 $base-line-height
-//    color: $white
-//    margin-top: $base-line-height / 4
-
 
