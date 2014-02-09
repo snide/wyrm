@@ -1,16 +1,18 @@
 // Buttons
 //
-// Buttons can
+// Buttons need the .btn class applied, even in the case of button tags. You can also add
+// font icons to any button as shown in the third example. The $font-prefix is a variable,
+// by default set to "fa" for font-awesome.
 //
 // Markup:
-// <a href="#" class="btn {$modifiers}">Button</a>
-// <button class="btn {$modifiers}">Button</button>
+// <a href="#" class="btn {$modifiers}"> Button</a>
+// <button class="btn {$modifiers}"> Button</button>
 // <button class="btn fa fa-check-circle {$modifiers}"> Button</button>
 //
 // :hover               - Highlight the button when hovered.
-// :disabled            - Make the button change appearance to reflect it being disabled.
-// .btn-disabled        - Class based form of the same.
-// :active              - Flip button style on press.
+// :disabled            - For disabled buttons.
+// .btn-disabled        - Class version of disabled.
+// :active              - Press the button down.
 // .btn-neutral         - Neutral looking button.
 // .btn-info            - For imformative, or alternate actions.
 // .btn-success         - For positive actions.
@@ -25,30 +27,29 @@
 .btn
   /* Structure
   display: inline-block
-  *display: inline
-  /*IE 6/7
-  zoom: 1
   border-radius: 2px
   line-height: normal
   white-space: nowrap
   vertical-align: baseline
   text-align: center
   cursor: pointer
-  -webkit-user-drag: none
-  +user-select(none)
   font-size: 100%
   padding: $base-line-height / 4 $base-line-height / 2 ($base-line-height / 4 + 2) $base-line-height / 2
   color: $white
   border: 1px solid rgba(0,0,0,0.1)
-  border-bottom: 0
   background-color: $button-background-color
   text-decoration: none
-  font-weight: bold
+  font-weight: normal
   font-family: $base-font-family
   box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, .5) inset, 0px -2px 0px 0px rgba(0,0,0,.1) inset
+  outline-none: false
+  vertical-align: middle
+  *display: inline
+  zoom: 1
+  -webkit-user-drag: none
+  +user-select(none)
   +font-smooth
   +transition(all 0.1s linear)
-  outline-none: false
 
 .btn-hover
   background: lighten($link-color, 5%)
@@ -63,7 +64,8 @@
     color: $white
     outline: 0
   &:active
-    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.1) inset
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, .05) inset, 0px 2px 0px 0px rgba(0,0,0,.1) inset
+    padding: ($base-line-height / 4 + 2) $base-line-height / 2 $base-line-height / 4 $base-line-height / 2
     color: $white
   &:disabled
     background-image: none
@@ -90,8 +92,7 @@
     cursor: not-allowed
     box-shadow: none
 
-/* Firefox: Get rid of the inner focus border
-
+// Firefox: Get rid of the inner focus border
 .btn::-moz-focus-inner
   padding: 0
   border: 0
