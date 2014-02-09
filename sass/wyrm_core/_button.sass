@@ -1,13 +1,14 @@
 // Buttons
 //
 // Buttons need the .btn class applied, even in the case of button tags. You can also add
-// font icons to any button as shown in the third example. The $font-prefix is a variable,
-// by default set to "fa" for font-awesome.
+// font icons to any button as shown in the third example. The `$font-prefix` is a variable,
+// by default set to `fa` for font-awesome.
 //
 // Markup:
-// <a href="#" class="btn {$modifiers}"> Button</a>
+// <a href="#" class="btn {$modifiers}"> Link</a>
 // <button class="btn {$modifiers}"> Button</button>
-// <button class="btn fa fa-check-circle {$modifiers}"> Button</button>
+// <input type="submit" class="btn {$modifiers}">
+// <button class="btn fa fa-check-circle {$modifiers}"> With icon</button>
 //
 // :hover               - Highlight the button when hovered.
 // :disabled            - For disabled buttons.
@@ -30,7 +31,6 @@
   border-radius: 2px
   line-height: normal
   white-space: nowrap
-  vertical-align: baseline
   text-align: center
   cursor: pointer
   font-size: 100%
@@ -136,18 +136,15 @@
 .btn-link
   background-color: transparent !important
   color: $link-color
-  border-color: transparent
   box-shadow: none
+  border-color: transparent !important
   &:hover
     background-color: transparent !important
     color: lighten($link-color, 10%)
-    border-color: transparent
     box-shadow: none
   &:active
     background-color: transparent !important
-    border-color: transparent
-    border-top: solid 1px transparent
-    border-bottom: solid 3px transparent
+    color: lighten($link-color, 10%)
     box-shadow: none
   &:visited
     color: $link-color-visited
