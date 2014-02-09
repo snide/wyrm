@@ -5,8 +5,24 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
+    open : {
+      dev: {
+        path: 'http://localhost:9898'
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 9898,
+          base: 'docs',
+          livereload: true
+        }
+      }
+    },
+
     sass: {
-      test: {
+      dev: {
         options: {
           style: 'expanded',
           loadPath: ['bower_components/bourbon/app/assets/stylesheets', 'bower_components/neat/app/assets/stylesheets', 'bower_components/font-awesome/scss']
@@ -21,6 +37,26 @@ module.exports = function(grunt) {
       }
     },
 
+    exec: {
+      bower_update: {
+        cmd: 'bower update'
+      },
+      kss: {
+        cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css'
+      }
+    },
+
+    watch: {
+      build: {
+        files: ['sass/**/*.sass', 'bower_components/**/*.sass'],
+        tasks: ['sass:dev','exec:kss']
+      },
+      livereload: {
+        files: ['docs/**/*'],
+        options: { livereload: true }
+      }
+    },
+
     release: {
       options: {
         npm: false, //default: true
@@ -29,13 +65,14 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-open');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('test', ['sass:test']);
+  grunt.registerTask('default', ['connect','open','watch']);
+  grunt.registerTask('test', ['sass:dev']);
   grunt.registerTask('build', ['release']);
 
 }
