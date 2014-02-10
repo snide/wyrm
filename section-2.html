@@ -37,7 +37,7 @@
         </ul>
       </div>
     </nav>
-    <section>
+    <section class="content">
       
 
         
@@ -124,6 +124,88 @@
             
             </ul>
            
+        
+          
+           <section class="kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.1</span> - System alerts</h1>
+          
+            <p>These alerts should trigger when a form error or something happens.
+Note that they will not output in the documentation because they
+are display: none by default.</p>
+
+            <pre class="prettyprint lang-html">&lt;ul class=&quot;wy-tray-container&quot;&gt;
+ &lt;li class=&quot;{$modifiers}&quot;&gt;Alert instructions go here.&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <ul class="examples">
+            
+              <li>
+                <span class="desc">
+                  Default styling
+                </span>
+                <span class="markup">
+                  <ul class="wy-tray-container">
+ <li class="{$modifiers}">Alert instructions go here.</li>
+</ul>
+                </span>
+              </li>
+              
+                <li>
+                  <span class="name">.wy-tray-item-info</span>
+                  <span class="desc">
+                    <p>Generic alert, extra instruction.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-tray-container">
+ <li class="wy-tray-item-info">Alert instructions go here.</li>
+</ul>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-tray-item-success</span>
+                  <span class="desc">
+                    <p>Hooray, something good happened.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-tray-container">
+ <li class="wy-tray-item-success">Alert instructions go here.</li>
+</ul>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-tray-item-warning</span>
+                  <span class="desc">
+                    <p>Watch out, you might make a mistake.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-tray-container">
+ <li class="wy-tray-item-warning">Alert instructions go here.</li>
+</ul>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-tray-item-danger</span>
+                  <span class="desc">
+                    <p>Yep, you made a mistake.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-tray-container">
+ <li class="wy-tray-item-danger">Alert instructions go here.</li>
+</ul>
+                  </span>
+                </li>
+              
+            
+            </ul>
+          
+            </section>
+          
         
       
     </section>
