@@ -37,6 +37,15 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      fonts: {
+        files: [
+          // includes files within path
+          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'docs/fonts/', filter: 'isFile'}
+        ]
+      }
+    },
+
     exec: {
       bower_update: {
         cmd: 'bower update'
@@ -74,11 +83,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-open');
+  grunt.loadNpmTasks('grunt-open');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['connect','open','watch']);
+  grunt.registerTask('default', ['sass:dev','exec:kss','copy:fonts','connect','open','watch']);
   grunt.registerTask('test', ['sass:dev']);
   grunt.registerTask('build', ['release']);
 
