@@ -1,7 +1,63 @@
-// Modification of purecss.io tables
+// Tables
+//
+// Table classes are additive so you can mix and match as you need.
+//
+// Markup:
+// <table class="wy-table {$modifiers}">
+//  <thead>
+//    <tr>
+//      <th>Game</th>
+//      <th>Developer</th>
+//      <th>Description</th>
+//    </tr>
+//  </thead>
+//  <tbody>
+//    <tr>
+//      <td>
+//        Baldur's Gate II
+//      </td>
+//      <td>
+//        Bioware
+//      </td>
+//      <td>
+//        Boo has a space hamster. Imoen whines a bunch.
+//      </td>
+//    </tr>
+//    <tr>
+//      <td>
+//        Icewind Dale II
+//      </td>
+//      <td>
+//        Black Isle
+//      </td>
+//      <td>
+//        Fly around on an airship, then kill tons of ice monsters.
+//      </td>
+//    </tr>
+//    <tr>
+//      <td>
+//        Temple of Elemental Evil
+//      </td>
+//      <td>
+//        Trokia
+//      </td>
+//      <td>
+//        Turn based! Do everything 10 times slower.
+//      </td>
+//    </tr>
+//  </tbody>
+// </table>
+//
+// .full-width                - 100% width
+// .wy-table-bordered         - Border the table itself.
+// .wy-table-bordered-rows    - Border just the rows.
+// .wy-table-bordered-all     - Border the vertical
+// .wy-table-striped          - Usually used for delete actions.
+//
+// Styleguide 3
+
 
 .wy-table
-  /* Remove spacing between table cells (from Normalize.css)
   border-collapse: collapse
   border-spacing: 0
   empty-cells: show
@@ -33,7 +89,7 @@
 .wy-table td p
   line-height: $base-line-height * .75
   margin-bottom: 0
-
+i
 .wy-table .wy-table-cell-min
   width: 1%
   padding-right: 0
@@ -47,10 +103,7 @@
   color: $text-medium
   font-size: 80%
 
-/*
- *striping:
- *   even - #fff (white)
- *   odd  - #f2f2f2 (light gray)
+// Striped
 
 .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td
   background-color: $table-stripe-color
@@ -58,7 +111,6 @@
 .wy-table-backed
   background-color: $table-stripe-color
 
-/* nth-child selector for modern browsers
 
 /* BORDERED TABLES
 
