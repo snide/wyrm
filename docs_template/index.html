@@ -52,8 +52,9 @@
           {{#whenDepth 1}}
             <h1 class="kss-title"><span class="kss-ref">{{ reference }}.0</span> - {{ header }}</h1>
           {{else}}
+            <hr/>
            <section class="kss-depth-{{ refDepth }}">
-            <h1 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
+            <h2 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
           {{/whenDepth}}
             {{html description}}
             <pre class="prettyprint lang-html">{{markup}}</pre>
