@@ -1,0 +1,145 @@
+body
+  background: $section-background-color
+  max-width: 100%
+  padding: 0
+  margin: 0
+#wrap
+  +outer-container
+nav
+  padding: $gutter * 2 0
+  background: none
+  box-shadow: none
+  +span-columns(3)
+  .logo-area
+    +clearfix
+    padding-bottom: $base-line-height
+    border-bottom: solid 1px rgba(0,0,0,.1)
+    margin-bottom: $base-line-height / 2
+    font-size: 80%
+    line-height: 1.2
+  img
+    width: 50%
+    float: left
+  h4
+    font-family: $base-font-family
+    margin-top: $base-line-height * 2
+    margin-bottom: $base-font-size / 2
+    color: $red
+section
+  padding: $gutter * 2 0
+  +span-columns(9)
+
+.wy-menu
+  a:hover
+    text-decoration: none
+
+.wy-menu-horiz
+  +clearfix
+  ul, li
+    display: inline-block
+  li:hover
+    background: rgba(255,255,255,.1)
+  li
+    &.divide-left
+      border-left: solid 1px hsl(0, 0%, 25%)
+    &.divide-right
+      border-right: solid 1px hsl(0, 0%, 25%)
+  a
+    height: $base-font-size * 2
+    display: inline-block
+    line-height: $base-font-size * 2
+    padding: 0 $base-font-size
+
+.wy-menu-vertical
+  header
+    height: $base-font-size * 2
+    display: inline-block
+    line-height: $base-font-size * 2
+    padding: 0 $gutter
+    display: block
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 80%
+    color: $text-light
+    white-space: nowrap
+
+  ul
+    margin-bottom: $base-line-height
+  li
+    &.divide-top
+      border-top: solid 1px hsl(0, 0%, 25%)
+    &.divide-bottom
+      border-bottom: solid 1px hsl(0, 0%, 25%)
+    &.current
+      background: darken($section-background-color, 10%)
+      a
+        color: $text-medium
+        border-right: solid 1px darken($section-background-color, 20%)
+        padding: $gutter / 4 $gutter * 1.5
+        &:hover
+          background: darken($section-background-color, 15%)
+  // On state for the first level
+  a.active
+    color: $section-background-color
+    padding: $gutter / 4 $gutter
+    font-weight: bold
+    position: relative
+    background: $gray-dark
+    border-right: solid 10px $gray-darker
+    +font-smooth
+    &:hover
+      background: $gray-dark
+  // This is the on state for pages beyond second level
+  li.toctree-l2.current > a
+    background: darken($section-background-color, 20%)
+    padding: $gutter / 4 $gutter * 1.5
+  li.current ul
+    display: block
+  li ul
+    margin-bottom: 0
+    display: none
+  .local-toc
+    li ul
+      display: block
+  li ul li a
+    margin-bottom: 0
+    color: $text-light
+    font-weight: normal
+  a
+    display: inline-block
+    line-height: $base-line-height
+    padding: $gutter / 4 $gutter
+    display: block
+    position: relative
+    font-size: 90%
+    text-transform: capitalize
+    color: $text-color
+    &:hover
+      background-color: rgba(0,0,0,.05)
+      cursor: pointer
+    &:active
+      background-color: darken($menu-background-color, 10%)
+      cursor: pointer
+
+.examples
+  li
+    border-top: solid 1px rgba(0,0,0,.1)
+    padding: $base-line-height / 2 0
+    +clearfix
+    &:first-child
+      border: none
+  .desc
+    display: inline-block
+    margin-bottom: $base-line-height / 2
+  .name
+    float: right
+  .markup
+    display: block
+
+.prettyprint
+  font-size: 12px
+  padding: $base-line-height
+  background: $white
+  line-height: 1.5
+  border: solid 1px rgba(0,0,0,.1)
+

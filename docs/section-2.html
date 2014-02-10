@@ -18,24 +18,26 @@
   <link rel="stylesheet" href="public/style.css">
 
 </head>
-<body><div id="kss-wrapper">
-  <div id="kss-nav">
-    <header id="kss-header">
-      <hgroup><h1>kss-node Styleguide</h1></hgroup>
-    </header>
-    <aside>
-      <nav><ul>
-        <li><a href="index.html">0.0: Overview</a></li>
-        
-          <li><a href="section-1.html">1.0: Buttons</a></li>
-        
-          <li><a href="section-2.html">2.0: Alerts</a></li>
-        
-      </ul></nav>
-    </aside>
-  </div>
-  <div role="main" id="kss-main">
-    <article id="kss-content">
+<body>
+  <div id="wrap">
+    <nav>
+      <div class="logo-area">
+        <img src="public/dragon.png">
+        <h4>Wyrm</h4>
+        SASS for forms and docs. <a href="https://github.com/snide/wyrm">On github</a>.
+      </div>
+      <div class="wy-menu wy-menu-vertical">
+        <ul>
+          <li><a href="index.html">0.0: Overview</a></li>
+          
+            <li><a href="section-1.html">1.0: Buttons</a></li>
+          
+            <li><a href="section-2.html">2.0: Alerts</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <section>
       
 
         
@@ -43,85 +45,89 @@
           
             <h1 class="kss-title"><span class="kss-ref">2.0</span> - Alerts</h1>
           
-            
-                <div class="kss-box"><p>Alerts can exist as in page notices and as fixed drops.</p>
-</div>
-                <table class="kss-mod-list">
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Default styling</p></td>
-                    <td class="kss-mod-name"></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><div class="wy-alert {$modifiers}">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Generic alert, extra instruction.</p>
-</td>
-                    <td class="kss-mod-name"><p>.wy-alert-neutral</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><div class="wy-alert wy-alert-neutral">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Hooray, something good happened.</p>
-</td>
-                    <td class="kss-mod-name"><p>.wy-alert-success</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><div class="wy-alert wy-alert-success">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Watch out, you might make a mistake.</p>
-</td>
-                    <td class="kss-mod-name"><p>.wy-alert-warning</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><div class="wy-alert wy-alert-warning">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Yep, you made a mistake.</p>
-</td>
-                    <td class="kss-mod-name"><p>.wy-alert-danger</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><div class="wy-alert wy-alert-danger">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div></td>
-                  </tr>
-                
-                </table>
-                <div class="kss-markup">
-                  <pre class="prettyprint lang-html">&lt;div class=&quot;wy-alert {$modifiers}&quot;&gt;
+            <p>Alerts can exist as in page notices and as fixed drops.</p>
+
+            <pre class="prettyprint lang-html">&lt;div class=&quot;wy-alert {$modifiers}&quot;&gt;
  &lt;div class=&quot;wy-alert-title&quot;&gt;Title goes here&lt;/div&gt;
  &lt;p&gt;Alert instructions go here.&lt;/p&gt;
 &lt;/div&gt;</pre>
-                </div>
+            <ul class="examples">
             
+              <li>
+                <span class="desc">
+                  Default styling
+                </span>
+                <span class="markup">
+                  <div class="wy-alert {$modifiers}">
+ <div class="wy-alert-title">Title goes here</div>
+ <p>Alert instructions go here.</p>
+</div>
+                </span>
+              </li>
+              
+                <li>
+                  <span class="name">.wy-alert-neutral</span>
+                  <span class="desc">
+                    <p>Generic alert, extra instruction.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-alert wy-alert-neutral">
+ <div class="wy-alert-title">Title goes here</div>
+ <p>Alert instructions go here.</p>
+</div>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-alert-success</span>
+                  <span class="desc">
+                    <p>Hooray, something good happened.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-alert wy-alert-success">
+ <div class="wy-alert-title">Title goes here</div>
+ <p>Alert instructions go here.</p>
+</div>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-alert-warning</span>
+                  <span class="desc">
+                    <p>Watch out, you might make a mistake.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-alert wy-alert-warning">
+ <div class="wy-alert-title">Title goes here</div>
+ <p>Alert instructions go here.</p>
+</div>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-alert-danger</span>
+                  <span class="desc">
+                    <p>Yep, you made a mistake.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-alert wy-alert-danger">
+ <div class="wy-alert-title">Title goes here</div>
+ <p>Alert instructions go here.</p>
+</div>
+                  </span>
+                </li>
+              
+            
+            </ul>
            
         
       
-    </article>
+    </section>
   </div>
-  <footer>
-    
-  </footer>
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
@@ -152,5 +158,5 @@
 
   
   
-</div></body>
+</body>
 </html>

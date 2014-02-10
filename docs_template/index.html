@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>KSS: Living Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+      <div class="logo-area">
+        <img src="public/dragon.png">
+        <h4>Wyrm</h4>
+        SASS for forms and docs. <a href="https://github.com/snide/wyrm">On github</a>.
+      </div>
+      <div class="wy-menu wy-menu-vertical">
+        <ul>
+          <li><a href="index.html">0.0: Overview</a></li>
+          {{#eachRoot}}
+            <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></li>
+          {{/eachRoot}}
+        </ul>
+      </div>
+    </nav>
+    <section>
+      {{#if overview}}
+        {{html overview}}
+      {{else}}
+
+        {{!
+          Find each section, in order.
+          If there's no markup or modifiers supplied, use a Markdown-only
+          layout instead.
+
+          The "root" element comes first in this loop, and can be detected using
+          the "#whenDepth 1" block as seen below.
+        }}
+        {{#eachSection rootNumber}}
+          {{#whenDepth 1}}
+            <h1 class="kss-title"><span class="kss-ref">{{ reference }}.0</span> - {{ header }}</h1>
+          {{else}}
+           <section class="kss-depth-{{ refDepth }}">
+            <h1 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
+          {{/whenDepth}}
+            {{html description}}
+            <pre class="prettyprint lang-html">{{markup}}</pre>
+            <ul class="examples">
+            {{#ifAny markup modifiers}}
+              <li>
+                <span class="desc">
+                  Default styling
+                </span>
+                <span class="markup">
+                  {{modifierMarkup}}
+                </span>
+              </li>
+              {{#eachModifier}}
+                <li>
+                  <span class="name">{{name}}</span>
+                  <span class="desc">
+                    {{html description}}
+                  </span>
+                  <span class="markup">
+                    {{modifierMarkup}}
+                  </span>
+                </li>
+              {{/eachModifier}}
+            {{else}}
+              {{#if description}}
+                {{html description}}
+              {{/if}}
+            {{/ifAny}}
+            </ul>
+          {{#whenDepth 1}} {{else}}
+            </section>
+          {{/whenDepth}}
+        {{/eachSection}}
+      {{/if}}
+    </section>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  {{! This won't be included in the demo page }}
+  {{#if argv.xdemo}}
+    <script type="text/javascript">
+    var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12249588-4']); _gaq.push(['_trackPageview']);
+    (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+    </script>
+  {{/if}}
+</body>
+</html>

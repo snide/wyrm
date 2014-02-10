@@ -42,13 +42,13 @@ module.exports = function(grunt) {
         cmd: 'bower update'
       },
       kss: {
-        cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css'
+        cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
       }
     },
 
     watch: {
       build: {
-        files: ['sass/**/*.sass', 'bower_components/**/*.sass'],
+        files: ['sass/**/*.sass', 'bower_components/**/*.sass', 'docs_template/*.html'],
         tasks: ['sass:dev','exec:kss']
       },
       livereload: {
