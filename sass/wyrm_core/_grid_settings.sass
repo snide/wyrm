@@ -10,8 +10,8 @@
 // * `+media($mobile)` is 4 columns, max-width: 480px.
 //
 // Because Wyrm is used in a couple different Ember setups, we added the `+omega-type` mixin to `wyrm_core/neat_extra.sass`.
-// It's essentially the same as Neat's `+omega` mixin, but removes the margin only on elements of that type. Ember by
-// default throws in a bunch of extra dom elements, which messed with the default Neat mixin.
+// It's essentially the same as Neat's `+omega` mixin, but uses nth-of-type to make play nice with Ember's love of adding
+// additional DOM objects in between your constructed markup.
 //
 // Markup:
 // <div class="grid-example">
