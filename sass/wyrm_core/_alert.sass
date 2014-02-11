@@ -83,9 +83,9 @@
 
 .wy-tray-container
   position: fixed
-  top: 0px
+  bottom: 0px
   left: 0
-  width: 100%
+  width: $nav-desktop-width
   z-index: $z-index-alert
   li
     display: none
@@ -94,9 +94,11 @@
     color: $white
     text-align: center
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.1)
+    padding: 0 $base-line-height
+    min-width: 20%
     opacity: 0
     height: 0
-    line-height: $base-line-height * 2
+    line-height: 60px
     overflow: hidden
     +transition(all .3s ease-in)
     &.wy-tray-item-success
@@ -109,6 +111,7 @@
       background: $red
     &.on
       opacity: 1
-      height: $base-line-height * 2
+      height: 60px
+
 
 
