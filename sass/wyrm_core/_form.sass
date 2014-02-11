@@ -3,21 +3,25 @@
 // Files located in `wyrm_core/_form.sass`.
 //
 // Forms follow the following basic struture. `.wy-control-group`
-// wraps a label and `.wy-control`, which itself warps your actual
+// wraps the label and a `.wy-control`, which itself warps your actual
 // form elements. You can decide either to stack or align your forms.
+// A help message can be provided in a couple different styles, but
+// the most common is `.wy-form-message` as shown below.
 //
 // Markup:
 // <form class="{$modifiers}">
-//   <div class="wy-control-group">
-//     <label>Name</label>
-//     <div class="wy-control">
-//       <input type="text" placeholder="placeholder"/>
+//   <legend>A simple form</legend>
+//   <fieldset>
+//     <div class="wy-control-group">
+//       <label>Field name</label>
+//       <div class="wy-control">
+//         <input type="text" placeholder="placeholder"/>
+//       </div>
+//       <span class="wy-form-message">Help text goes here!</span>
 //     </div>
-//   </div>
+//     <input type="submit" class="btn" />
+//   </fieldset>
 // </form>
-//
-// .wy-form-stacked           - Stacked forms
-// .wy-form-aligned           - Label aligned forms.
 //
 // Styleguide 6
 
@@ -47,8 +51,6 @@
     select
       margin-top: .5em
 
-// Basic elements
-
 fieldset
   border: 0
   margin: 0
@@ -68,26 +70,67 @@ label
   color: $gray-light
   font-size: 90%
 
-// Buttons
-
-button, input, select, textarea
+input, select, textarea
   font-size: 100%
   margin: 0
   vertical-align: baseline
   *vertical-align: middle
-button, input
-  line-height: normal
-button
-  -webkit-appearance: button
-  cursor: pointer
-  *overflow: visible
-button::-moz-focus-inner, input::-moz-focus-inner
-  border: 0
-  padding: 0
-button[disabled]
-  cursor: default
 
-// Regular inputs
+// Generic form elements
+//
+// Here's the output of common form inputs. The sass itself covers.
+//
+// Markup:
+// <form class="{$modifiers}">
+//   <legend>A simple form</legend>
+//   <fieldset>
+//     <div class="wy-control-group">
+//       <label>Text field</label>
+//       <div class="wy-control">
+//         <input type="text" placeholder="placeholder"/>
+//       </div>
+//     </div>
+//     <div class="wy-control-group">
+//       <label>Textarea</label>
+//       <div class="wy-control">
+//         <textarea></textarea>
+//       </div>
+//     </div>
+//     <div class="wy-control-group">
+//       <label>Radio</label>
+//       <div class="wy-control">
+//         <label class="wy-radio">
+//           <input type="radio">
+//           Option 1
+//         </label>
+//         <label class="wy-radio">
+//           <input type="radio">
+//           Option 2
+//         </label>
+//       </div>
+//     </div>
+//     <div class="wy-control-group">
+//       <label>Checkbox</label>
+//       <div class="wy-control">
+//         <label class="wy-checkbox">
+//           <input type="checkbox">
+//           Option 1
+//         </label>
+//         <label class="wy-checkbox">
+//           <input type="checkbox">
+//           Option 2
+//         </label>
+//       </div>
+//     </div>
+//     <input type="submit" class="btn" />
+//   </fieldset>
+// </form>
+//
+// Styleguide 6.1
+
+
+input
+  line-height: normal
 
 input
   &[type="button"], &[type="reset"], &[type="submit"]
@@ -177,10 +220,12 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 // Checkboxes and radios
 
 .wy-checkbox, .wy-radio
-  margin: 0.5em 0
+  margin: $base-line-height / 4 0
   // Important because we don't want it overwritten in the case of errors
   color: $text-color
   display: block
+  input
+    vertical-align: baseline
 
 // Messages and input context
 
