@@ -4,10 +4,10 @@
 
 // Links
 //
-// Text handling and other base styles. Can be safely used on any element, not just paragraph tags.
+// Classes from this page can be found in `wyrm_core/_type.sass`.
 //
 // Markup:
-// I wonder where <a href="" class="{$modifiers}">this link goes</a>!
+// I wonder where <a href="#url" class="{$modifiers}">this link goes</a>!
 //
 // :hover          - On hover.
 // :visited        - Visited links.
@@ -30,7 +30,7 @@ a
 // Markup:
 // <p class="{$modifiers}">The best movie of all time is either Network or Rollerball.</p>
 //
-// .wy-text-small           - Smaller, 80% text.
+// .wy-text-small           - Smaller, 80% text. Can also use the `<small>` tag for this.
 // .wy-text-large           - Larger, 120% text.
 // .wy-text-left            - To the left.
 // .wy-text-right           - To the right.
@@ -73,7 +73,7 @@ body
 .wy-text-normal
   font-size: 100%
 
-.wy-text-small
+.wy-text-small, small
   font-size: 80%
 
 .wy-text-strike
@@ -105,14 +105,14 @@ a.wy-text-neutral:hover
 // Headings have a `margin-bottom: $base-line-height` on them like most objects in wyrm.
 //
 // Markup:
-// <p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
-// <p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
 // <h1>Heading 1</h1>
 // <h2>Heading 2</h2>
 // <h3>Heading 3</h3>
 // <h4>Heading 4</h4>
 // <h5>Heading 5</h5>
 // <h6>Heading 6</h6>
+// <p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
+// <p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
 //
 // Styleguide 4.2
 
@@ -145,9 +145,6 @@ h5
 h6
   font-size: 100%
 
-small
-  font-size: 80%
-
 code
   white-space: nowrap
   max-width: 100%
@@ -161,14 +158,12 @@ code
   &.code-large
     font-size: 90%
 
-.full-width
-  width: 100%
-
 // Lists
 //
 // Lists in wyrm default to `list-style: none` mostly because I've found I use lists
 // more often as nav or block elements than as text lists. To get traditional
-// text lists you either add, or extend these classes through sass.
+// text lists you either add, or extend these classes through sass. For convenience
+// default lists in the `<article>` tag also extend these values.
 //
 // Markup:
 // <ul class="{$modifiers}">
@@ -192,25 +187,25 @@ code
 // Styleguide 4.3
 
 
-.wy-plain-list-disc
+.wy-plain-list-disc, article ul
   list-style: disc
   line-height: $base-line-height
   margin-bottom: $base-line-height
-.wy-plain-list-disc li
-  list-style: disc
-  margin-left: $base-line-height
-  ul
-    margin-bottom: 0
   li
-    list-style: circle
+    list-style: disc
+    margin-left: $base-line-height
+    ul
+      margin-bottom: 0
     li
-      list-style: square
+      list-style: circle
+      li
+        list-style: square
 
-.wy-plain-list-decimal
+.wy-plain-list-decimal, article ol
   list-style: decimal
   line-height: $base-line-height
   margin-bottom: $base-line-height
-.wy-plain-list-decimal li
-  list-style: decimal
-  margin-left: $base-line-height
+  li
+    list-style: decimal
+    margin-left: $base-line-height
 
