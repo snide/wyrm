@@ -1,6 +1,6 @@
 // Grids
 //
-// Wyrm uses Bourbon's Neat grid system with `$border-box-sizing: true`. Please visit their site
+// Wyrm uses Bourbon's [Neat grid system](http://neat.bourbon.io) with `$border-box-sizing: true`. Please visit their site
 // for full documenation. Wyrm's `+media()` breakpoint settings are set as follows in
 // `wyrm_core/_grid_settings.sass`.
 //
@@ -9,11 +9,15 @@
 // * `+media($tablet)` is 8 columns, max-width: 768px.
 // * `+media($mobile)` is 4 columns, max-width: 480px.
 //
+// Because Wyrm is used in a couple different Ember setups, we added the `+omega-type` mixin to `wyrm_core/neat_extra.sass`.
+// It's essentially the same as Neat's `+omega` mixin, but removes the margin only on elements of that type. Ember by
+// default throws in a bunch of extra dom elements, which messed with the default Neat mixin.
+//
 // Markup:
 // <div class="grid-example">
 //    <!-- +outer-container applied to .grid-example -->
-//    <section>+span-columns(8)</section>
-//    <aside>+span-columns(4) +omega-type</aside>
+//    <aside>+span-columns(4)</aside>
+//    <section>+span-columns(8) +omega-type</section>
 // </div>
 //
 // Styleguide 5.0
