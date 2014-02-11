@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>KSS: Living Styleguide</title>
+  <title>Wyrm - Handy starter SASS for Bourbon projects.</title>
   <meta name="description" content="">
   <meta name="generator" content="kss-node" />
 
@@ -106,11 +106,12 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
            <section class="kss-depth-2">
             <h2 class="kss-title"><span class="kss-ref">6.1</span> - Generic form elements</h1>
           
-            <div class="markdown"><p>Here&apos;s the output of common form inputs. The sass itself covers.</p>
+            <div class="markdown"><p>Here&apos;s the output of common form inputs. The sass itself covers more types
+like email, password, url, date...etc, but I&apos;ve left them out for brevity.</p>
 </div>
             
               <pre class="prettyprint lang-html">&lt;form class=&quot;{$modifiers}&quot;&gt;
-  &lt;legend&gt;A simple form&lt;/legend&gt;
+  &lt;legend&gt;Generic elements&lt;/legend&gt;
   &lt;fieldset&gt;
     &lt;div class=&quot;wy-control-group&quot;&gt;
       &lt;label&gt;Text field&lt;/label&gt;
@@ -122,6 +123,16 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
       &lt;label&gt;Textarea&lt;/label&gt;
       &lt;div class=&quot;wy-control&quot;&gt;
         &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Dropdown&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;select&gt;
+          &lt;option&gt;&lt;/option&gt;
+          &lt;option&gt;Option 1&lt;/option&gt;
+          &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;/select&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;wy-control-group&quot;&gt;
@@ -160,7 +171,7 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
                   <form class="{$modifiers}">
-  <legend>A simple form</legend>
+  <legend>Generic elements</legend>
   <fieldset>
     <div class="wy-control-group">
       <label>Text field</label>
@@ -172,6 +183,16 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
       <label>Textarea</label>
       <div class="wy-control">
         <textarea></textarea>
+      </div>
+    </div>
+    <div class="wy-control-group">
+      <label>Dropdown</label>
+      <div class="wy-control">
+        <select>
+          <option></option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
       </div>
     </div>
     <div class="wy-control-group">
@@ -203,6 +224,147 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
     <input type="submit" class="btn" />
   </fieldset>
 </form>
+                </span>
+              </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">6.2</span> - Prefix and suffix for inputs</h1>
+          
+            <div class="markdown"><p>Wyrm allows some basic prefix and suffic styling for text inputs.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Prefix&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-input-prefix&quot;&gt;
+    &lt;span class=&quot;wy-input-context&quot;&gt;@&lt;/span&gt;&lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Suffix&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-input-suffix&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;&lt;span class=&quot;wy-input-context&quot;&gt;@gmail.com&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="wy-control-group">
+  <label>Prefix</label>
+  <div class="wy-control wy-input-prefix">
+    <span class="wy-input-context">@</span><input type="text" placeholder="placeholder"/>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Suffix</label>
+  <div class="wy-control wy-input-suffix">
+    <input type="text" placeholder="placeholder"/><span class="wy-input-context">@gmail.com</span>
+  </div>
+</div>
+                </span>
+              </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">6.3</span> - Error handling and inline validation</h1>
+          
+            <div class="markdown"><p>Wyrm has both block and inline level validation depending upon your needs. You can also
+pair these with the global alerts mentioned in the alerts section of this styleguide.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;div class=&quot;wy-control-group wy-control-group-error&quot;&gt;
+  &lt;label&gt;After the fact error&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+    &lt;span class=&quot;wy-form-message&quot;&gt;Error text goes here.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Inline success&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-inline-validate wy-inline-validate-info&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+    &lt;span class=&quot;wy-input-context&quot;&gt; You may want to do this.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Inline success&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-inline-validate wy-inline-validate-success&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+    &lt;span class=&quot;wy-input-context&quot;&gt; Woot, way to go.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Inline error&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-inline-validate wy-inline-validate-warning&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+    &lt;span class=&quot;wy-input-context&quot;&gt; Hold on cowboy.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Inline error&lt;/label&gt;
+  &lt;div class=&quot;wy-control wy-inline-validate wy-inline-validate-danger&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+    &lt;span class=&quot;wy-input-context&quot;&gt; Damnit, you messed up.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="wy-control-group wy-control-group-error">
+  <label>After the fact error</label>
+  <div class="wy-control">
+    <input type="text" placeholder="placeholder"/>
+    <span class="wy-form-message">Error text goes here.</span>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Inline success</label>
+  <div class="wy-control wy-inline-validate wy-inline-validate-info">
+    <input type="text" placeholder="placeholder"/>
+    <span class="wy-input-context"> You may want to do this.</span>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Inline success</label>
+  <div class="wy-control wy-inline-validate wy-inline-validate-success">
+    <input type="text" placeholder="placeholder"/>
+    <span class="wy-input-context"> Woot, way to go.</span>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Inline error</label>
+  <div class="wy-control wy-inline-validate wy-inline-validate-warning">
+    <input type="text" placeholder="placeholder"/>
+    <span class="wy-input-context"> Hold on cowboy.</span>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Inline error</label>
+  <div class="wy-control wy-inline-validate wy-inline-validate-danger">
+    <input type="text" placeholder="placeholder"/>
+    <span class="wy-input-context"> Damnit, you messed up.</span>
+  </div>
+</div>
                 </span>
               </li>
               
