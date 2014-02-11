@@ -62,12 +62,12 @@ for full documenation. Wyrm&apos;s <code>+media()</code> breakpoint settings are
 <li><code>+media($mobile)</code> is 4 columns, max-width: 480px.</li>
 </ul>
 <p>Because Wyrm is used in a couple different Ember setups, we added the <code>+omega-type</code> mixin to <code>wyrm_core/neat_extra.sass</code>.
-It&apos;s essentially the same as Neat&apos;s <code>+omega</code> mixin, but removes the margin only on elements of that type. Ember by
-default throws in a bunch of extra dom elements, which messed with the default Neat mixin.</p>
+It&apos;s essentially the same as Neat&apos;s <code>+omega</code> mixin, but uses nth-of-type to make play nice with Ember&apos;s love of adding
+additional DOM objects in between your constructed markup.</p>
 </div>
             
               <pre class="prettyprint lang-html">&lt;div class=&quot;grid-example&quot;&gt;
-   &lt;!-- +outer-container applied to .grid-example --&gt;
+   &lt;p&gt;+outer-container applied to this wrapping grid.&lt;/p&gt;
    &lt;aside&gt;+span-columns(4)&lt;/aside&gt;
    &lt;section&gt;+span-columns(8) +omega-type&lt;/section&gt;
 &lt;/div&gt;</pre>
@@ -78,7 +78,7 @@ default throws in a bunch of extra dom elements, which messed with the default N
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
                   <div class="grid-example">
-   <!-- +outer-container applied to .grid-example -->
+   <p>+outer-container applied to this wrapping grid.</p>
    <aside>+span-columns(4)</aside>
    <section>+span-columns(8) +omega-type</section>
 </div>
