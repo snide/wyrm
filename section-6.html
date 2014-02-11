@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>KSS: Living Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+      <div class="logo-area">
+        <img src="public/dragon.png">
+        <h3>Wyrm</h3>
+        <p>Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.</p>
+      </div>
+      <div class="wy-menu wy-menu-vertical">
+        <ul>
+          <li><a href="index.html">0.0: Overview</a></li>
+          
+            <li><a href="section-1.html">1.0: Buttons</a></li>
+          
+            <li><a href="section-2.html">2.0: Alerts</a></li>
+          
+            <li><a href="section-3.html">3.0: Tables</a></li>
+          
+            <li><a href="section-4.html">4.0: Typography</a></li>
+          
+            <li><a href="section-5.html">5.0: Grids</a></li>
+          
+            <li><a href="section-6.html">6.0: Forms</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <section class="content">
+      
+
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">6.0</span> - Forms</h1>
+          
+            <div class="markdown"><p>Files located in <code>wyrm_core/_form.sass</code>.
+
+</p>
+<p>Forms follow the following basic struture. <code>.wy-control-group</code>
+wraps the label and a <code>.wy-control</code>, which itself warps your actual
+form elements. You can decide either to stack or align your forms.
+A help message can be provided in a couple different styles, but
+the most common is <code>.wy-form-message</code> as shown below.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;form class=&quot;{$modifiers}&quot;&gt;
+  &lt;legend&gt;A simple form&lt;/legend&gt;
+  &lt;fieldset&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Field name&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;wy-form-message&quot;&gt;Help text goes here!&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;btn&quot; /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <form class="{$modifiers}">
+  <legend>A simple form</legend>
+  <fieldset>
+    <div class="wy-control-group">
+      <label>Field name</label>
+      <div class="wy-control">
+        <input type="text" placeholder="placeholder"/>
+      </div>
+      <span class="wy-form-message">Help text goes here!</span>
+    </div>
+    <input type="submit" class="btn" />
+  </fieldset>
+</form>
+                </span>
+              </li>
+              
+            
+            </ul>
+           
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">6.1</span> - Generic form elements</h1>
+          
+            <div class="markdown"><p>Here&apos;s the output of common form inputs. The sass itself covers.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;form class=&quot;{$modifiers}&quot;&gt;
+  &lt;legend&gt;A simple form&lt;/legend&gt;
+  &lt;fieldset&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Text field&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Textarea&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Radio&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;label class=&quot;wy-radio&quot;&gt;
+          &lt;input type=&quot;radio&quot;&gt;
+          Option 1
+        &lt;/label&gt;
+        &lt;label class=&quot;wy-radio&quot;&gt;
+          &lt;input type=&quot;radio&quot;&gt;
+          Option 2
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wy-control-group&quot;&gt;
+      &lt;label&gt;Checkbox&lt;/label&gt;
+      &lt;div class=&quot;wy-control&quot;&gt;
+        &lt;label class=&quot;wy-checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot;&gt;
+          Option 1
+        &lt;/label&gt;
+        &lt;label class=&quot;wy-checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot;&gt;
+          Option 2
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;btn&quot; /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <form class="{$modifiers}">
+  <legend>A simple form</legend>
+  <fieldset>
+    <div class="wy-control-group">
+      <label>Text field</label>
+      <div class="wy-control">
+        <input type="text" placeholder="placeholder"/>
+      </div>
+    </div>
+    <div class="wy-control-group">
+      <label>Textarea</label>
+      <div class="wy-control">
+        <textarea></textarea>
+      </div>
+    </div>
+    <div class="wy-control-group">
+      <label>Radio</label>
+      <div class="wy-control">
+        <label class="wy-radio">
+          <input type="radio">
+          Option 1
+        </label>
+        <label class="wy-radio">
+          <input type="radio">
+          Option 2
+        </label>
+      </div>
+    </div>
+    <div class="wy-control-group">
+      <label>Checkbox</label>
+      <div class="wy-control">
+        <label class="wy-checkbox">
+          <input type="checkbox">
+          Option 1
+        </label>
+        <label class="wy-checkbox">
+          <input type="checkbox">
+          Option 2
+        </label>
+      </div>
+    </div>
+    <input type="submit" class="btn" />
+  </fieldset>
+</form>
+                </span>
+              </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+      
+    </section>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  
+  
+</body>
+</html>
