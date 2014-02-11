@@ -22,8 +22,8 @@
     <nav>
       <div class="logo-area">
         <img src="public/dragon.png">
-        <h4>Wyrm</h4>
-        Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.
+        <h3>Wyrm</h3>
+        <p>Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.</p>
       </div>
       <div class="wy-menu wy-menu-vertical">
         <ul>
@@ -62,17 +62,17 @@
            <section class="kss-depth-2">
             <h2 class="kss-title"><span class="kss-ref">4.1</span> - Links</h1>
           
-            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+            <p>Classes from this page can be found in <code>wyrm_core/_type.sass</code>.</p>
 
             
-              <pre class="prettyprint lang-html">I wonder where &lt;a href=&quot;&quot; class=&quot;{$modifiers}&quot;&gt;this link goes&lt;/a&gt;!</pre>
+              <pre class="prettyprint lang-html">I wonder where &lt;a href=&quot;#url&quot; class=&quot;{$modifiers}&quot;&gt;this link goes&lt;/a&gt;!</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  I wonder where <a href="" class="{$modifiers}">this link goes</a>!
+                  I wonder where <a href="#url" class="{$modifiers}">this link goes</a>!
                 </span>
               </li>
               
@@ -83,7 +83,7 @@
 
                   </span>
                   <span class="markup">
-                    I wonder where <a href="" class="pseudo-class-hover">this link goes</a>!
+                    I wonder where <a href="#url" class="pseudo-class-hover">this link goes</a>!
                   </span>
                 </li>
               
@@ -94,7 +94,7 @@
 
                   </span>
                   <span class="markup">
-                    I wonder where <a href="" class="pseudo-class-visited">this link goes</a>!
+                    I wonder where <a href="#url" class="pseudo-class-visited">this link goes</a>!
                   </span>
                 </li>
               
@@ -126,7 +126,7 @@
                 <li>
                 <span class="name">.wy-text-small</span>
                   <span class="desc">
-                    <p>Smaller, 80% text.</p>
+                    <p>Smaller, 80% text. Can also use the <code>&lt;small&gt;</code> tag for this.</p>
 
                   </span>
                   <span class="markup">
@@ -269,28 +269,28 @@
             <p>Headings have a <code>margin-bottom: $base-line-height</code> on them like most objects in wyrm.</p>
 
             
-              <pre class="prettyprint lang-html">&lt;p&gt;Hey everybody, it&#x27;s Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it&#x27;s a good hat or bad hat. Seattle is actually Spanish for &quot;taco.&quot; I try not to affiliate myself with Canadians. I&#x27;ve got a salty mustache. I&#x27;ve been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I&#x27;m an old man. I like turns.&lt;/p&gt;
-&lt;p&gt;Jeff, I have a question. Why do we keep doing this? There&#x27;s nothing I&#x27;d rather talk about right now than Peter Molyneux&#x27;s balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I&#x27;m gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.&lt;/p&gt;
-&lt;h1&gt;Heading 1&lt;/h1&gt;
+              <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+&lt;p&gt;Hey everybody, it&#x27;s Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it&#x27;s a good hat or bad hat. Seattle is actually Spanish for &quot;taco.&quot; I try not to affiliate myself with Canadians. I&#x27;ve got a salty mustache. I&#x27;ve been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I&#x27;m an old man. I like turns.&lt;/p&gt;
+&lt;p&gt;Jeff, I have a question. Why do we keep doing this? There&#x27;s nothing I&#x27;d rather talk about right now than Peter Molyneux&#x27;s balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I&#x27;m gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.&lt;/p&gt;</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
-<p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
-<h1>Heading 1</h1>
+                  <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
+<p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
+<p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
                 </span>
               </li>
               
@@ -307,7 +307,8 @@
           
             <p>Lists in wyrm default to <code>list-style: none</code> mostly because I&apos;ve found I use lists
 more often as nav or block elements than as text lists. To get traditional
-text lists you either add, or extend these classes through sass.</p>
+text lists you either add, or extend these classes through sass. For convenience
+default lists in the <code>&lt;article&gt;</code> tag also extend these values.</p>
 
             
               <pre class="prettyprint lang-html">&lt;ul class=&quot;{$modifiers}&quot;&gt;
