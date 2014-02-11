@@ -76,6 +76,66 @@ input, select, textarea
   vertical-align: baseline
   *vertical-align: middle
 
+
+.wy-control-group
+  margin-bottom: $base-line-height
+  +outer-container
+  +clearfix
+
+.wy-control-group.wy-control-group-required > label:after
+  content: " *"
+  color: $red
+
+// For doing multi part, aligned form blocks within a single label
+
+.wy-control-group
+  .wy-form-full, .wy-form-halves, .wy-form-thirds
+    padding-bottom: $base-line-height / 2
+    select
+      width: 100%
+    input
+      &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+        width: 100%
+.wy-control-group .wy-form-full
+  +span-columns(12)
+  +omega-type
+
+.wy-control-group .wy-form-halves
+  +span-columns(6)
+  +omega-type(2n)
+
+.wy-control-group .wy-form-thirds
+  +span-columns(4)
+  +omega-type(3n)
+
+// Sometimes you just output text in a form, not an actual input
+.wy-control-group.wy-control-group-no-input .wy-control
+  margin: .5em 0 0 0
+  font-size: 90%
+
+// Fluid inputs when needed
+
+.wy-control-group.fluid-input
+  input
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+      width: 100%
+
+// Inline help for forms
+
+.wy-form-message-inline
+  display: inline-block
+  padding-left: 0.3em
+  color: #666
+  vertical-align: middle
+  font-size: 90%
+
+.wy-form-message
+  display: block
+  color: $gray-lighter
+  font-size: 70%
+  margin-top: em(5px)
+  font-style: italic
+
 // Generic form elements
 //
 // Here's the output of common form inputs. The sass itself covers more types
@@ -282,6 +342,59 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 .wy-input-prefix .wy-input-context
   border-right: 0
 
+// Error handling and inline validation
+//
+// Wyrm has both block and inline level validation depending upon your needs. You can also
+// pair these with the global alerts mentioned in the alerts section of this styleguide.
+//
+// Markup:
+// <div class="wy-control-group wy-control-group-error">
+//   <label>After the fact error</label>
+//   <div class="wy-control">
+//     <input type="text" placeholder="placeholder"/>
+//     <span class="wy-form-message">Error text goes here.</span>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Inline success</label>
+//   <div class="wy-control wy-inline-validate wy-inline-validate-info">
+//     <input type="text" placeholder="placeholder"/>
+//     <span class="wy-input-context"> You may want to do this.</span>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Inline success</label>
+//   <div class="wy-control wy-inline-validate wy-inline-validate-success">
+//     <input type="text" placeholder="placeholder"/>
+//     <span class="wy-input-context"> Woot, way to go.</span>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Inline error</label>
+//   <div class="wy-control wy-inline-validate wy-inline-validate-warning">
+//     <input type="text" placeholder="placeholder"/>
+//     <span class="wy-input-context"> Hold on cowboy.</span>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Inline error</label>
+//   <div class="wy-control wy-inline-validate wy-inline-validate-danger">
+//     <input type="text" placeholder="placeholder"/>
+//     <span class="wy-input-context"> Damnit, you messed up.</span>
+//   </div>
+// </div>
+//
+// Styleguide 6.3
+
+.wy-control-group.wy-control-group-error
+  .wy-form-message, > label
+    color: $red
+  input
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
+      border: solid 1px $red
+  textarea
+    border: solid 1px $red
+
 .wy-inline-validate
   white-space: nowrap
   .wy-input-context
@@ -304,74 +417,6 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   color: $blue
   @extend .#{$icon-prefix}
   @extend .#{$icon-prefix}-#{$icon-alert}
-
-.wy-control-group
-  margin-bottom: $base-line-height
-  +outer-container
-  +clearfix
-
-.wy-control-group.wy-control-group-error
-  .wy-form-message, > label
-    color: $red
-  input
-    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
-      border: solid 1px $red
-  textarea
-    border: solid 1px $red
-
-.wy-control-group.wy-control-group-required > label:after
-  content: " *"
-  color: $red
-
-// For doing multi part, aligned form blocks within a single label
-
-.wy-control-group
-  .wy-form-full, .wy-form-halves, .wy-form-thirds
-    padding-bottom: $base-line-height / 2
-    select
-      width: 100%
-    input
-      &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
-        width: 100%
-.wy-control-group .wy-form-full
-  +span-columns(12)
-  +omega-type
-
-.wy-control-group .wy-form-halves
-  +span-columns(6)
-  +omega-type(2n)
-
-.wy-control-group .wy-form-thirds
-  +span-columns(4)
-  +omega-type(3n)
-
-// Sometimes you just output text in a form, not an actual input
-.wy-control-group.wy-control-group-no-input .wy-control
-  margin: .5em 0 0 0
-  font-size: 90%
-
-// Fluid inputs when needed
-
-.wy-control-group.fluid-input
-  input
-    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"]
-      width: 100%
-
-// Inline help for forms
-
-.wy-form-message-inline
-  display: inline-block
-  padding-left: 0.3em
-  color: #666
-  vertical-align: middle
-  font-size: 90%
-
-.wy-form-message
-  display: block
-  color: $gray-lighter
-  font-size: 70%
-  margin-top: em(5px)
-  font-style: italic
 
 // Tags
 
@@ -585,7 +630,7 @@ li.wy-form-gallery-edit
       text-align: left
       display: block
       width: 100%
-    .wy-controls
+    .wy-control
       margin: 1.5em 0 0 0
   /* NOTE: wy-help-inline is deprecated. Use .wy-form-message-inline instead.
   .wy-form .wy-help-inline, .wy-form-message-inline, .wy-form-message
