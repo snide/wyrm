@@ -37,6 +37,8 @@
           
             <li><a href="section-4.html">4.0: Typography</a></li>
           
+            <li><a href="section-5.html">5.0: Grids</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -48,22 +50,9 @@
           
             <h1 class="kss-title"><span class="kss-ref">4.0</span> - Typography</h1>
           
-            
-            
-            <ul class="examples">
-            
-              
-            
-            </ul>
-           
-        
-          
-            <hr/>
-           <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">4.1</span> - Links</h1>
-          
-            <p>Classes from this page can be found in <code>wyrm_core/_type.sass</code>.</p>
-
+            <div class="markdown"><p>Styles from this page can be found in <code>wyrm_core/_type.sass</code>.
+Let&apos;s start with some basic links.</p>
+</div>
             
               <pre class="prettyprint lang-html">I wonder where &lt;a href=&quot;#url&quot; class=&quot;{$modifiers}&quot;&gt;this link goes&lt;/a&gt;!</pre>
             
@@ -78,7 +67,7 @@
               
                 <li>
                 <span class="name">:hover</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>On hover.</p>
 
                   </span>
@@ -89,7 +78,7 @@
               
                 <li>
                 <span class="name">:visited</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Visited links.</p>
 
                   </span>
@@ -100,17 +89,15 @@
               
             
             </ul>
-          
-            </section>
-          
+           
         
           
             <hr/>
            <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">4.2</span> - Text</h1>
+            <h2 class="kss-title"><span class="kss-ref">4.1</span> - Text</h1>
           
-            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
-
+            <div class="markdown"><p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+</div>
             
               <pre class="prettyprint lang-html">&lt;p class=&quot;{$modifiers}&quot;&gt;The best movie of all time is either Network or Rollerball.&lt;/p&gt;</pre>
             
@@ -125,7 +112,7 @@
               
                 <li>
                 <span class="name">.wy-text-small</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Smaller, 80% text. Can also use the <code>&lt;small&gt;</code> tag for this.</p>
 
                   </span>
@@ -136,7 +123,7 @@
               
                 <li>
                 <span class="name">.wy-text-large</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Larger, 120% text.</p>
 
                   </span>
@@ -147,7 +134,7 @@
               
                 <li>
                 <span class="name">.wy-text-left</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>To the left.</p>
 
                   </span>
@@ -158,7 +145,7 @@
               
                 <li>
                 <span class="name">.wy-text-right</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>To the right.</p>
 
                   </span>
@@ -169,7 +156,7 @@
               
                 <li>
                 <span class="name">.wy-text-center</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>To the center.</p>
 
                   </span>
@@ -180,7 +167,7 @@
               
                 <li>
                 <span class="name">.wy-text-center</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>To the center.</p>
 
                   </span>
@@ -191,7 +178,7 @@
               
                 <li>
                 <span class="name">.wy-text-strike</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Strikethrough.</p>
 
                   </span>
@@ -202,7 +189,7 @@
               
                 <li>
                 <span class="name">.wy-text-neutral</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Simply applies the normal text color.</p>
 
                   </span>
@@ -213,7 +200,7 @@
               
                 <li>
                 <span class="name">.wy-text-info</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Info text.</p>
 
                   </span>
@@ -224,7 +211,7 @@
               
                 <li>
                 <span class="name">.wy-text-success</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Success text.</p>
 
                   </span>
@@ -235,7 +222,7 @@
               
                 <li>
                 <span class="name">.wy-text-warning</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Warning text.</p>
 
                   </span>
@@ -246,7 +233,7 @@
               
                 <li>
                 <span class="name">.wy-text-danger</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Danger text.</p>
 
                   </span>
@@ -264,10 +251,10 @@
           
             <hr/>
            <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">4.2</span> - Headings</h1>
+            <h2 class="kss-title"><span class="kss-ref">4.2</span> - Headings and paragraphs.</h1>
           
-            <p>Headings have a <code>margin-bottom: $base-line-height</code> on them like most objects in wyrm.</p>
-
+            <div class="markdown"><p>Headings and paragraphs have a <code>margin-bottom: $base-line-height</code> on them like most objects in wyrm.</p>
+</div>
             
               <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
@@ -305,11 +292,11 @@
            <section class="kss-depth-2">
             <h2 class="kss-title"><span class="kss-ref">4.3</span> - Lists</h1>
           
-            <p>Lists in wyrm default to <code>list-style: none</code> mostly because I&apos;ve found I use lists
+            <div class="markdown"><p>Lists in wyrm default to <code>list-style: none</code> mostly because I&apos;ve found I use lists
 more often as nav or block elements than as text lists. To get traditional
 text lists you either add, or extend these classes through sass. For convenience
 default lists in the <code>&lt;article&gt;</code> tag also extend these values.</p>
-
+</div>
             
               <pre class="prettyprint lang-html">&lt;ul class=&quot;{$modifiers}&quot;&gt;
  &lt;li&gt;Freespace 2&lt;/li&gt;
@@ -350,7 +337,7 @@ default lists in the <code>&lt;article&gt;</code> tag also extend these values.<
               
                 <li>
                 <span class="name">.wy-plain-list-disc</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>The usual disc list.</p>
 
                   </span>
@@ -374,7 +361,7 @@ default lists in the <code>&lt;article&gt;</code> tag also extend these values.<
               
                 <li>
                 <span class="name">.wy-plain-list-decimal</span>
-                  <span class="desc">
+                  <span class="desc markdown">
                     <p>Decimal lists.</p>
 
                   </span>

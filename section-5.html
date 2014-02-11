@@ -44,10 +44,51 @@
     </nav>
     <section class="content">
       
-        <h4>Wyrm</h4>
-<p>This is the styleguide.
-</p>
 
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">5.0</span> - Grids</h1>
+          
+            <div class="markdown"><p>Wyrm uses Bourbon&apos;s <a href="http://neat.bourbon.io">Neat grid system</a> with <code>$border-box-sizing: true</code>. Please visit their site
+for full documenation. Wyrm&apos;s <code>+media()</code> breakpoint settings are set as follows in
+<code>wyrm_core/_grid_settings.sass</code>.
+
+</p>
+<ul>
+<li><code>+media($desktop-wide)</code> is 12 columns, min-width: 1400px wide.</li>
+<li><code>+media($desktop)</code> is 12 columns, min-width: 769px wide.</li>
+<li><code>+media($tablet)</code> is 8 columns, max-width: 768px.</li>
+<li><code>+media($mobile)</code> is 4 columns, max-width: 480px.</li>
+</ul>
+<p>Because Wyrm is used in a couple different Ember setups, we added the <code>+omega-type</code> mixin to <code>wyrm_core/neat_extra.sass</code>.
+It&apos;s essentially the same as Neat&apos;s <code>+omega</code> mixin, but removes the margin only on elements of that type. Ember by
+default throws in a bunch of extra dom elements, which messed with the default Neat mixin.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;div class=&quot;grid-example&quot;&gt;
+   &lt;!-- +outer-container applied to .grid-example --&gt;
+   &lt;aside&gt;+span-columns(4)&lt;/aside&gt;
+   &lt;section&gt;+span-columns(8) +omega-type&lt;/section&gt;
+&lt;/div&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="grid-example">
+   <!-- +outer-container applied to .grid-example -->
+   <aside>+span-columns(4)</aside>
+   <section>+span-columns(8) +omega-type</section>
+</div>
+                </span>
+              </li>
+              
+            
+            </ul>
+           
+        
       
     </section>
   </div>
