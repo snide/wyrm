@@ -78,11 +78,12 @@ input, select, textarea
 
 // Generic form elements
 //
-// Here's the output of common form inputs. The sass itself covers.
+// Here's the output of common form inputs. The sass itself covers more types
+// like email, password, url, date...etc, but I've left them out for brevity.
 //
 // Markup:
 // <form class="{$modifiers}">
-//   <legend>A simple form</legend>
+//   <legend>Generic elements</legend>
 //   <fieldset>
 //     <div class="wy-control-group">
 //       <label>Text field</label>
@@ -94,6 +95,16 @@ input, select, textarea
 //       <label>Textarea</label>
 //       <div class="wy-control">
 //         <textarea></textarea>
+//       </div>
+//     </div>
+//     <div class="wy-control-group">
+//       <label>Dropdown</label>
+//       <div class="wy-control">
+//         <select>
+//           <option></option>
+//           <option>Option 1</option>
+//           <option>Option 2</option>
+//         </select>
 //       </div>
 //     </div>
 //     <div class="wy-control-group">
@@ -234,6 +245,27 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   *display: inline
   *zoom: 1
   vertical-align: middle
+
+// Prefix and suffix for inputs
+//
+// Wyrm allows some basic prefix and suffic styling for text inputs.
+//
+// Markup:
+// <div class="wy-control-group">
+//   <label>Prefix</label>
+//   <div class="wy-control wy-input-prefix">
+//     <span class="wy-input-context">@</span><input type="text" placeholder="placeholder"/>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Suffix</label>
+//   <div class="wy-control wy-input-suffix">
+//     <input type="text" placeholder="placeholder"/><span class="wy-input-context">@gmail.com</span>
+//   </div>
+// </div>
+//
+// Styleguide 6.2
+
 
 .wy-input-prefix, .wy-input-suffix
   white-space: nowrap
