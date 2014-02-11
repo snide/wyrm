@@ -1,12 +1,11 @@
+.wy-form-upload-container
+  vertical-align: middle
+
 .wy-form-upload
-  border: solid 1px $input-border-color
-  border-bottom: solid 3px $input-border-color
-  background-color: $button-neutral-background-color
-  padding: $base-line-height / 2
   display: inline-block
-  text-align: center
   cursor: pointer
   color: $text-color
+  vertical-align: middle
   +transition(border-color .1s ease-in)
   +clearfix
   +media($mobile)
@@ -23,34 +22,26 @@
     font-size: 90%
     margin-bottom: $base-line-height / 4
   .wy-form-upload-image
-    float: left
-    margin-right: $base-line-height
-    +media($mobile)
-      width: 100%
-      margin-bottom: $base-line-height
+    display: inline-block
+    height: 75px
+    width: 75px
+    line-height: 75px
+    text-align: center
+    margin-right: $base-line-height / 2
+    vertical-align: middle
+    .icon
+      font-size: 50px
+      line-height: 75px
   img
     max-width: 125px
     max-height: 125px
     opacity: .9
     +transition(opacity .1s ease-in)
   .wy-form-upload-content
-    float: left
+    vertical-align: middle
+    display: inline-block
     +media($mobile)
       width: 100%
-
-.wy-form-upload:hover
-  border-color: darken($input-border-color, 10%)
-  color: $text-color
-  .image-desktop
-    display: block
-  .image-drag
-    display: none
-  img
-    opacity: 1
-
-.wy-form-upload:active
-  border-top: solid 3px $input-border-color
-  border-bottom: solid 1px $input-border-color
 
 .wy-form-upload.wy-form-upload-big
   width: 100%
@@ -58,6 +49,9 @@
   padding: $base-line-height * 3
   .wy-form-upload-content
     float: none
+
+.wy-form-upload-url
+  vertical-align: middle
 
 .wy-form-upload.wy-form-upload-file
   p
