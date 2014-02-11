@@ -35,7 +35,7 @@
           
             <li><a href="section-3.html">3.0: Tables</a></li>
           
-            <li><a href="section-4.html">4.0: Text, Headings and links</a></li>
+            <li><a href="section-4.html">4.0: Typography</a></li>
           
         </ul>
       </div>
@@ -46,7 +46,7 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">4.0</span> - Text, Headings and links</h1>
+            <h1 class="kss-title"><span class="kss-ref">4.0</span> - Typography</h1>
           
             
             
@@ -60,7 +60,54 @@
           
             <hr/>
            <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">4.1</span> - Text</h1>
+            <h2 class="kss-title"><span class="kss-ref">4.1</span> - Links</h1>
+          
+            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+
+            
+              <pre class="prettyprint lang-html">I wonder where &lt;a href=&quot;&quot; class=&quot;{$modifiers}&quot;&gt;this link goes&lt;/a&gt;!</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  I wonder where <a href="" class="{$modifiers}">this link goes</a>!
+                </span>
+              </li>
+              
+                <li>
+                <span class="name">:hover</span>
+                  <span class="desc">
+                    <p>On hover.</p>
+
+                  </span>
+                  <span class="markup">
+                    I wonder where <a href="" class="pseudo-class-hover">this link goes</a>!
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">:visited</span>
+                  <span class="desc">
+                    <p>Visited links.</p>
+
+                  </span>
+                  <span class="markup">
+                    I wonder where <a href="" class="pseudo-class-visited">this link goes</a>!
+                  </span>
+                </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">4.2</span> - Text</h1>
           
             <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
 
@@ -70,7 +117,7 @@
             <ul class="examples">
             
               <li>
-              <div class="desc">Default styling without modifier classes.</div>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
                   <p class="{$modifiers}">The best movie of all time is either Network or Rollerball.</p>
                 </span>
@@ -219,10 +266,12 @@
            <section class="kss-depth-2">
             <h2 class="kss-title"><span class="kss-ref">4.2</span> - Headings</h1>
           
-            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+            <p>Headings have a <code>margin-bottom: $base-line-height</code> on them like most objects in wyrm.</p>
 
             
-              <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+              <pre class="prettyprint lang-html">&lt;p&gt;Hey everybody, it&#x27;s Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it&#x27;s a good hat or bad hat. Seattle is actually Spanish for &quot;taco.&quot; I try not to affiliate myself with Canadians. I&#x27;ve got a salty mustache. I&#x27;ve been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I&#x27;m an old man. I like turns.&lt;/p&gt;
+&lt;p&gt;Jeff, I have a question. Why do we keep doing this? There&#x27;s nothing I&#x27;d rather talk about right now than Peter Molyneux&#x27;s balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I&#x27;m gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.&lt;/p&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
@@ -232,9 +281,11 @@
             <ul class="examples">
             
               <li>
-              <div class="desc">Default styling without modifier classes.</div>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <h1>Heading 1</h1>
+                  <p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
+<p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
+<h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
@@ -242,6 +293,107 @@
 <h6>Heading 6</h6>
                 </span>
               </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">4.3</span> - Lists</h1>
+          
+            <p>Lists in wyrm default to <code>list-style: none</code> mostly because I&apos;ve found I use lists
+more often as nav or block elements than as text lists. To get traditional
+text lists you either add, or extend these classes through sass.</p>
+
+            
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;{$modifiers}&quot;&gt;
+ &lt;li&gt;Freespace 2&lt;/li&gt;
+ &lt;li&gt;The Elder Scrolls: Skyrim&lt;/li&gt;
+ &lt;li&gt;Grim Fandango&lt;/li&gt;
+ &lt;li&gt;
+   Saints forever:
+   &lt;ul&gt;
+     &lt;li&gt;Saint&#x27;s Row&lt;/li&gt;
+     &lt;li&gt;Saint&#x27;s Row 2&lt;/li&gt;
+     &lt;li&gt;Saint&#x27;s Row: The Third&lt;/li&gt;
+     &lt;li&gt;Saint&#x27;s Row IV&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <ul class="{$modifiers}">
+ <li>Freespace 2</li>
+ <li>The Elder Scrolls: Skyrim</li>
+ <li>Grim Fandango</li>
+ <li>
+   Saints forever:
+   <ul>
+     <li>Saint's Row</li>
+     <li>Saint's Row 2</li>
+     <li>Saint's Row: The Third</li>
+     <li>Saint's Row IV</li>
+   </ul>
+ </li>
+</ul>
+                </span>
+              </li>
+              
+                <li>
+                <span class="name">.wy-plain-list-disc</span>
+                  <span class="desc">
+                    <p>The usual disc list.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-plain-list-disc">
+ <li>Freespace 2</li>
+ <li>The Elder Scrolls: Skyrim</li>
+ <li>Grim Fandango</li>
+ <li>
+   Saints forever:
+   <ul>
+     <li>Saint's Row</li>
+     <li>Saint's Row 2</li>
+     <li>Saint's Row: The Third</li>
+     <li>Saint's Row IV</li>
+   </ul>
+ </li>
+</ul>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-plain-list-decimal</span>
+                  <span class="desc">
+                    <p>Decimal lists.</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-plain-list-decimal">
+ <li>Freespace 2</li>
+ <li>The Elder Scrolls: Skyrim</li>
+ <li>Grim Fandango</li>
+ <li>
+   Saints forever:
+   <ul>
+     <li>Saint's Row</li>
+     <li>Saint's Row 2</li>
+     <li>Saint's Row: The Third</li>
+     <li>Saint's Row IV</li>
+   </ul>
+ </li>
+</ul>
+                  </span>
+                </li>
               
             
             </ul>
