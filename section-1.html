@@ -14,7 +14,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 
 </head>
@@ -36,6 +35,8 @@
           
             <li><a href="section-3.html">3.0: Tables</a></li>
           
+            <li><a href="section-4.html">4.0: Text, Headings and links</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -51,6 +52,12 @@
 font icons to any button as shown in the third example. The <code>$font-prefix</code> is a variable,
 by default set to <code>fa</code> for font-awesome.</p>
 
+            
+              <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers}&quot;&gt; Link&lt;/a&gt;
+&lt;button class=&quot;btn {$modifiers}&quot;&gt; Button&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn {$modifiers}&quot;&gt;
+&lt;button class=&quot;btn fa fa-check-circle {$modifiers}&quot;&gt; With icon&lt;/button&gt;</pre>
+            
             <ul class="examples">
             
               <li>
@@ -64,7 +71,7 @@ by default set to <code>fa</code> for font-awesome.</p>
               </li>
               
                 <li>
-                  <span class="name">:hover</span>
+                <span class="name">:hover</span>
                   <span class="desc">
                     <p>Highlight the button when hovered.</p>
 
@@ -78,7 +85,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">:disabled</span>
+                <span class="name">:disabled</span>
                   <span class="desc">
                     <p>For disabled buttons.</p>
 
@@ -92,7 +99,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-disabled</span>
+                <span class="name">.btn-disabled</span>
                   <span class="desc">
                     <p>Class version of disabled.</p>
 
@@ -106,7 +113,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">:active</span>
+                <span class="name">:active</span>
                   <span class="desc">
                     <p>Press the button down.</p>
 
@@ -120,7 +127,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-neutral</span>
+                <span class="name">.btn-neutral</span>
                   <span class="desc">
                     <p>Neutral looking button.</p>
 
@@ -134,7 +141,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-info</span>
+                <span class="name">.btn-info</span>
                   <span class="desc">
                     <p>For imformative, or alternate actions.</p>
 
@@ -148,7 +155,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-success</span>
+                <span class="name">.btn-success</span>
                   <span class="desc">
                     <p>For positive actions.</p>
 
@@ -162,7 +169,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-danger</span>
+                <span class="name">.btn-danger</span>
                   <span class="desc">
                     <p>Usually used for delete actions.</p>
 
@@ -176,7 +183,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-warning</span>
+                <span class="name">.btn-warning</span>
                   <span class="desc">
                     <p>Beware, you might not want to click me.</p>
 
@@ -190,7 +197,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-invert</span>
+                <span class="name">.btn-invert</span>
                   <span class="desc">
                     <p>Dark button to contrast the background.</p>
 
@@ -204,7 +211,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-link</span>
+                <span class="name">.btn-link</span>
                   <span class="desc">
                     <p>Unstyled, link looking button. Useful for secondary actions next to another button.</p>
 
@@ -218,7 +225,7 @@ by default set to <code>fa</code> for font-awesome.</p>
                 </li>
               
                 <li>
-                  <span class="name">.btn-small</span>
+                <span class="name">.btn-small</span>
                   <span class="desc">
                     <p>Smaller button.</p>
 
@@ -233,12 +240,6 @@ by default set to <code>fa</code> for font-awesome.</p>
               
             
             </ul>
-            <div class="codeblock-example">
-              <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers}&quot;&gt; Link&lt;/a&gt;
-&lt;button class=&quot;btn {$modifiers}&quot;&gt; Button&lt;/button&gt;
-&lt;input type=&quot;submit&quot; class=&quot;btn {$modifiers}&quot;&gt;
-&lt;button class=&quot;btn fa fa-check-circle {$modifiers}&quot;&gt; With icon&lt;/button&gt;</pre>
-            </div>
            
         
       

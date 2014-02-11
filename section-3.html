@@ -14,7 +14,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 
 </head>
@@ -36,6 +35,8 @@
           
             <li><a href="section-3.html">3.0: Tables</a></li>
           
+            <li><a href="section-4.html">4.0: Text, Headings and links</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -49,6 +50,52 @@
           
             <p>Table classes are additive so you can mix and match as you need.</p>
 
+            
+              <pre class="prettyprint lang-html">&lt;table class=&quot;wy-table {$modifiers}&quot;&gt;
+ &lt;thead&gt;
+   &lt;tr&gt;
+     &lt;th&gt;Game&lt;/th&gt;
+     &lt;th&gt;Developer&lt;/th&gt;
+     &lt;th&gt;Description&lt;/th&gt;
+   &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Baldur&#x27;s Gate II
+     &lt;/td&gt;
+     &lt;td&gt;
+       Bioware
+     &lt;/td&gt;
+     &lt;td&gt;
+       Boo has a space hamster. Imoen whines a bunch.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Icewind Dale II
+     &lt;/td&gt;
+     &lt;td&gt;
+       Black Isle
+     &lt;/td&gt;
+     &lt;td&gt;
+       Fly around on an airship, then kill tons of ice monsters.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Temple of Elemental Evil
+     &lt;/td&gt;
+     &lt;td&gt;
+       Trokia
+     &lt;/td&gt;
+     &lt;td&gt;
+       Turn based! Do everything 10 times slower.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+            
             <ul class="examples">
             
               <li>
@@ -102,7 +149,7 @@
               </li>
               
                 <li>
-                  <span class="name">.full-width</span>
+                <span class="name">.full-width</span>
                   <span class="desc">
                     <p>100% width</p>
 
@@ -156,7 +203,7 @@
                 </li>
               
                 <li>
-                  <span class="name">.wy-table-bordered</span>
+                <span class="name">.wy-table-bordered</span>
                   <span class="desc">
                     <p>Border the table itself.</p>
 
@@ -210,7 +257,7 @@
                 </li>
               
                 <li>
-                  <span class="name">.wy-table-bordered-rows</span>
+                <span class="name">.wy-table-bordered-rows</span>
                   <span class="desc">
                     <p>Border just the rows.</p>
 
@@ -264,7 +311,7 @@
                 </li>
               
                 <li>
-                  <span class="name">.wy-table-bordered-all</span>
+                <span class="name">.wy-table-bordered-all</span>
                   <span class="desc">
                     <p>Border the columns, rows, and the table.</p>
 
@@ -318,7 +365,7 @@
                 </li>
               
                 <li>
-                  <span class="name">.wy-table-striped</span>
+                <span class="name">.wy-table-striped</span>
                   <span class="desc">
                     <p>Alternating row colors.</p>
 
@@ -373,52 +420,6 @@
               
             
             </ul>
-            <div class="codeblock-example">
-              <pre class="prettyprint lang-html">&lt;table class=&quot;wy-table {$modifiers}&quot;&gt;
- &lt;thead&gt;
-   &lt;tr&gt;
-     &lt;th&gt;Game&lt;/th&gt;
-     &lt;th&gt;Developer&lt;/th&gt;
-     &lt;th&gt;Description&lt;/th&gt;
-   &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
-   &lt;tr&gt;
-     &lt;td&gt;
-       Baldur&#x27;s Gate II
-     &lt;/td&gt;
-     &lt;td&gt;
-       Bioware
-     &lt;/td&gt;
-     &lt;td&gt;
-       Boo has a space hamster. Imoen whines a bunch.
-     &lt;/td&gt;
-   &lt;/tr&gt;
-   &lt;tr&gt;
-     &lt;td&gt;
-       Icewind Dale II
-     &lt;/td&gt;
-     &lt;td&gt;
-       Black Isle
-     &lt;/td&gt;
-     &lt;td&gt;
-       Fly around on an airship, then kill tons of ice monsters.
-     &lt;/td&gt;
-   &lt;/tr&gt;
-   &lt;tr&gt;
-     &lt;td&gt;
-       Temple of Elemental Evil
-     &lt;/td&gt;
-     &lt;td&gt;
-       Trokia
-     &lt;/td&gt;
-     &lt;td&gt;
-       Turn based! Do everything 10 times slower.
-     &lt;/td&gt;
-   &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;</pre>
-            </div>
            
         
       

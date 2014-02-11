@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>KSS: Living Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+      <div class="logo-area">
+        <img src="public/dragon.png">
+        <h4>Wyrm</h4>
+        Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.
+      </div>
+      <div class="wy-menu wy-menu-vertical">
+        <ul>
+          <li><a href="index.html">0.0: Overview</a></li>
+          
+            <li><a href="section-1.html">1.0: Buttons</a></li>
+          
+            <li><a href="section-2.html">2.0: Alerts</a></li>
+          
+            <li><a href="section-3.html">3.0: Tables</a></li>
+          
+            <li><a href="section-4.html">4.0: Text, Headings and links</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <section class="content">
+      
+
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">4.0</span> - Text, Headings and links</h1>
+          
+            
+            
+            <ul class="examples">
+            
+              
+            
+            </ul>
+           
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">4.1</span> - Text</h1>
+          
+            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+
+            
+              <pre class="prettyprint lang-html">&lt;p class=&quot;{$modifiers}&quot;&gt;The best movie of all time is either Network or Rollerball.&lt;/p&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc">Default styling without modifier classes.</div>
+                <span class="markup">
+                  <p class="{$modifiers}">The best movie of all time is either Network or Rollerball.</p>
+                </span>
+              </li>
+              
+                <li>
+                <span class="name">.wy-text-small</span>
+                  <span class="desc">
+                    <p>Smaller, 80% text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-small">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-large</span>
+                  <span class="desc">
+                    <p>Larger, 120% text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-large">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-left</span>
+                  <span class="desc">
+                    <p>To the left.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-left">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-right</span>
+                  <span class="desc">
+                    <p>To the right.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-right">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-center</span>
+                  <span class="desc">
+                    <p>To the center.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-center">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-center</span>
+                  <span class="desc">
+                    <p>To the center.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-center">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-strike</span>
+                  <span class="desc">
+                    <p>Strikethrough.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-strike">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-neutral</span>
+                  <span class="desc">
+                    <p>Simply applies the normal text color.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-neutral">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-info</span>
+                  <span class="desc">
+                    <p>Info text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-info">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-success</span>
+                  <span class="desc">
+                    <p>Success text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-success">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-warning</span>
+                  <span class="desc">
+                    <p>Warning text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-warning">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-text-danger</span>
+                  <span class="desc">
+                    <p>Danger text.</p>
+
+                  </span>
+                  <span class="markup">
+                    <p class="wy-text-danger">The best movie of all time is either Network or Rollerball.</p>
+                  </span>
+                </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">4.2</span> - Headings</h1>
+          
+            <p>Text handling and other base styles. Can be safely used on any element, not just paragraph tags.</p>
+
+            
+              <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc">Default styling without modifier classes.</div>
+                <span class="markup">
+                  <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+                </span>
+              </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+      
+    </section>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  
+  
+</body>
+</html>
