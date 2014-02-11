@@ -1,4 +1,4 @@
-// Forms
+// Form structure
 //
 // Files located in `wyrm_core/_form.sass`.
 //
@@ -142,60 +142,54 @@ input, select, textarea
 // like email, password, url, date...etc, but I've left them out for brevity.
 //
 // Markup:
-// <form class="{$modifiers}">
-//   <legend>Generic elements</legend>
-//   <fieldset>
-//     <div class="wy-control-group">
-//       <label>Text field</label>
-//       <div class="wy-control">
-//         <input type="text" placeholder="placeholder"/>
-//       </div>
-//     </div>
-//     <div class="wy-control-group">
-//       <label>Textarea</label>
-//       <div class="wy-control">
-//         <textarea></textarea>
-//       </div>
-//     </div>
-//     <div class="wy-control-group">
-//       <label>Dropdown</label>
-//       <div class="wy-control">
-//         <select>
-//           <option></option>
-//           <option>Option 1</option>
-//           <option>Option 2</option>
-//         </select>
-//       </div>
-//     </div>
-//     <div class="wy-control-group">
-//       <label>Radio</label>
-//       <div class="wy-control">
-//         <label class="wy-radio">
-//           <input type="radio">
-//           Option 1
-//         </label>
-//         <label class="wy-radio">
-//           <input type="radio">
-//           Option 2
-//         </label>
-//       </div>
-//     </div>
-//     <div class="wy-control-group">
-//       <label>Checkbox</label>
-//       <div class="wy-control">
-//         <label class="wy-checkbox">
-//           <input type="checkbox">
-//           Option 1
-//         </label>
-//         <label class="wy-checkbox">
-//           <input type="checkbox">
-//           Option 2
-//         </label>
-//       </div>
-//     </div>
-//     <input type="submit" class="btn" />
-//   </fieldset>
-// </form>
+// <div class="wy-control-group">
+//   <label>Text field</label>
+//   <div class="wy-control">
+//     <input type="text" placeholder="placeholder"/>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Textarea</label>
+//   <div class="wy-control">
+//     <textarea></textarea>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Dropdown</label>
+//   <div class="wy-control">
+//     <select>
+//       <option></option>
+//       <option>Option 1</option>
+//       <option>Option 2</option>
+//     </select>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Radio</label>
+//   <div class="wy-control">
+//     <label class="wy-radio">
+//       <input type="radio">
+//       Option 1
+//     </label>
+//     <label class="wy-radio">
+//       <input type="radio">
+//       Option 2
+//     </label>
+//   </div>
+// </div>
+// <div class="wy-control-group">
+//   <label>Checkbox</label>
+//   <div class="wy-control">
+//     <label class="wy-checkbox">
+//       <input type="checkbox">
+//       Option 1
+//     </label>
+//     <label class="wy-checkbox">
+//       <input type="checkbox">
+//       Option 2
+//     </label>
+//   </div>
+// </div>
 //
 // Styleguide 6.1
 
@@ -455,96 +449,6 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     margin-bottom: 4px
     box-shadow: none
 
-// Uploads
-
-.wy-form-upload
-  border: solid 1px $input-border-color
-  border-bottom: solid 3px $input-border-color
-  background-color: $button-neutral-background-color
-  padding: $base-line-height / 2
-  display: inline-block
-  text-align: center
-  cursor: pointer
-  color: $text-color
-  +transition(border-color .1s ease-in)
-  +clearfix
-  +media($mobile)
-    width: 100%
-  .image-drop
-    display: none
-  .image-desktop
-    display: none
-  .image-loading
-    display: none
-  .image-drop .wy-form-upload-icon
-    color: $green
-  p
-    font-size: 90%
-    margin-bottom: $base-line-height / 4
-  .wy-form-upload-image
-    float: left
-    margin-right: $base-line-height
-    +media($mobile)
-      width: 100%
-      margin-bottom: $base-line-height
-  img
-    max-width: 125px
-    max-height: 125px
-    opacity: .9
-    +transition(opacity .1s ease-in)
-  .wy-form-upload-content
-    float: left
-    +media($mobile)
-      width: 100%
-
-.wy-form-upload:hover
-  border-color: darken($input-border-color, 10%)
-  color: $text-color
-  .image-desktop
-    display: block
-  .image-drag
-    display: none
-  img
-    opacity: 1
-
-.wy-form-upload:active
-  border-top: solid 3px $input-border-color
-  border-bottom: solid 1px $input-border-color
-
-.wy-form-upload.wy-form-upload-big
-  width: 100%
-  text-align: center
-  padding: $base-line-height * 3
-  .wy-form-upload-content
-    float: none
-
-.wy-form-upload.wy-form-upload-file
-  p
-    margin-bottom: 0
-  .wy-form-upload-icon
-    display: inline-block
-    font-size: inherit
-
-.wy-form-upload.wy-form-upload-drop
-  background-color: lighten($green, 50%)
-  .image-drop
-    display: block
-  .image-desktop
-    display: none
-  .image-drag
-    display: none
-
-.wy-form-upload.wy-form-upload-loading
-  .image-drag
-    display: none
-  .image-desktop
-    display: none
-  .image-loading
-    display: block
-  .wy-input-prefix
-    display: none
-  p
-    margin-bottom: 0
 
 // Some generic rotation classes for reading user images
 
