@@ -1,8 +1,26 @@
-// Dirty file, need to strip colors and remove vendor prefixs.
-// Modification of purecss.io forms, will need to spend some time cleaning up.
+// Forms
+//
+// Files located in `wyrm_core/_form.sass`.
+//
+// Forms follow the following basic struture. `.wy-control-group`
+// wraps a label and `.wy-control`, which itself warps your actual
+// form elements. You can decide either to stack or align your forms.
+//
+// Markup:
+// <form class="{$modifiers}">
+//   <div class="wy-control-group">
+//     <label>Name</label>
+//     <div class="wy-control">
+//       <input type="text" placeholder="placeholder"/>
+//     </div>
+//   </div>
+// </form>
+//
+// .wy-form-stacked           - Stacked forms
+// .wy-form-aligned           - Label aligned forms.
+//
+// Styleguide 6
 
-
-// Overall form styles
 
 .wy-form-stacked
   select
