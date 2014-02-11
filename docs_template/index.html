@@ -57,11 +57,10 @@
             <h2 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
           {{/whenDepth}}
             {{html description}}
-            <pre class="prettyprint lang-html">{{markup}}</pre>
             <ul class="examples">
             {{#ifAny markup modifiers}}
               <li>
-                <span class="desc">
+                <span class="name">
                   Default styling
                 </span>
                 <span class="markup">
@@ -85,6 +84,7 @@
               {{/if}}
             {{/ifAny}}
             </ul>
+            <pre class="prettyprint lang-html">{{markup}}</pre>
           {{#whenDepth 1}} {{else}}
             </section>
           {{/whenDepth}}
