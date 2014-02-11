@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 
     watch: {
       build: {
-        files: ['sass/**/*.sass', 'bower_components/**/*.sass', 'docs_template/*.html'],
+        files: ['sass/**/*', 'bower_components/**/*.sass', 'docs_template/*.html'],
         tasks: ['sass:dev','exec:kss']
       },
       livereload: {
