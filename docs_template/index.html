@@ -14,7 +14,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 
 </head>
@@ -57,6 +56,9 @@
             <h2 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
           {{/whenDepth}}
             {{html description}}
+            {{#if markup}}
+              <pre class="prettyprint lang-html">{{markup}}</pre>
+            {{/if}}
             <ul class="examples">
             {{#ifAny markup modifiers}}
               <li>
@@ -67,7 +69,7 @@
               </li>
               {{#eachModifier}}
                 <li>
-                  <span class="name">{{name}}</span>
+                <span class="name">{{name}}</span>
                   <span class="desc">
                     {{html description}}
                   </span>
@@ -82,9 +84,6 @@
               {{/if}}
             {{/ifAny}}
             </ul>
-            <div class="codeblock-example">
-              <pre class="prettyprint lang-html">{{markup}}</pre>
-            </div>
           {{#whenDepth 1}} {{else}}
             </section>
           {{/whenDepth}}

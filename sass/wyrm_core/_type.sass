@@ -1,3 +1,30 @@
+// Text, Headings and links
+//
+// Styleguide 4.0
+
+// Text
+//
+// Text handling and other base styles. Can be safely used on any element, not just paragraph tags.
+//
+// Markup:
+// <p class="{$modifiers}">The best movie of all time is either Network or Rollerball.</p>
+//
+// .wy-text-small           - Smaller, 80% text.
+// .wy-text-large           - Larger, 120% text.
+// .wy-text-left            - To the left.
+// .wy-text-right           - To the right.
+// .wy-text-center          - To the center.
+// .wy-text-center          - To the center.
+// .wy-text-strike          - Strikethrough.
+// .wy-text-neutral         - Simply applies the normal text color.
+// .wy-text-info            - Info text.
+// .wy-text-success         - Success text.
+// .wy-text-warning         - Warning text.
+// .wy-text-danger          - Danger text.
+//
+// Styleguide 4.1
+
+
 html
   height: 100%
   overflow-x: hidden
@@ -18,18 +45,13 @@ a
   &:visited
     color: $link-color-visited
 
-.link-danger
-  color: $red
-  &:hover
-    color: darken($red, 10%)
-
-.text-left
+.wy-text-left
   text-align: left
 
-.text-center
+.wy-text-center
   text-align: center
 
-.text-right
+.wy-text-right
   text-align: right
 
 h1,h2,h3,h4,h5,h6, legend
@@ -42,6 +64,21 @@ p
   margin: 0
   font-size: $base-font-size
   margin-bottom: $base-line-height
+
+// Headings
+//
+// Text handling and other base styles. Can be safely used on any element, not just paragraph tags.
+//
+// Markup:
+// <h1>Heading 1</h1>
+// <h2>Heading 2</h2>
+// <h3>Heading 3</h3>
+// <h4>Heading 4</h4>
+// <h5>Heading 5</h5>
+// <h6>Heading 6</h6>
+//
+// Styleguide 4.2
+
 
 h1
   font-size: 175%
@@ -102,16 +139,16 @@ code
   list-style: decimal
   margin-left: $base-line-height
 
-.wy-type-large
+.wy-text-large
   font-size: 120%
 
-.wy-type-normal
+.wy-text-normal
   font-size: 100%
 
-.wy-type-small
-  font-size: 100%
+.wy-text-small
+  font-size: 80%
 
-.wy-type-strike
+.wy-text-strike
   text-decoration: line-through
 
 .wy-text-warning

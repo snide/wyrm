@@ -128,14 +128,17 @@ section.content
   li
     border-top: solid 1px rgba(0,0,0,.1)
     padding: $base-line-height / 2 0
+    position: relative
     +clearfix
-    &:first-child
-      border: none
   .desc
     display: inline-block
     margin-bottom: $base-line-height / 2
   .name
+    color: $white
+    background: $gray
+    padding: 0 $base-line-height / 4
     float: right
+    font-size: 80%
   .markup
     display: block
 
@@ -143,3 +146,5 @@ section.content
   font-size: 12px
   line-height: 1.5
 
+pre
+  margin: 0
