@@ -1,6 +1,27 @@
-// Text, Headings and links
+// Typography
 //
 // Styleguide 4.0
+
+// Links
+//
+// Text handling and other base styles. Can be safely used on any element, not just paragraph tags.
+//
+// Markup:
+// I wonder where <a href="" class="{$modifiers}">this link goes</a>!
+//
+// :hover          - On hover.
+// :visited        - Visited links.
+//
+// Styleguide 4.1
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover
+    color: $link-color-hover
+  &:visited
+    color: $link-color-visited
+
 
 // Text
 //
@@ -22,7 +43,7 @@
 // .wy-text-warning         - Warning text.
 // .wy-text-danger          - Danger text.
 //
-// Styleguide 4.1
+// Styleguide 4.2
 
 
 html
@@ -37,14 +58,6 @@ body
   overflow-x: hidden
   background: $background_color
 
-a
-  color: $link-color
-  text-decoration: none
-  &:hover
-    color: $link-color-hover
-  &:visited
-    color: $link-color-visited
-
 .wy-text-left
   text-align: left
 
@@ -53,6 +66,55 @@ a
 
 .wy-text-right
   text-align: right
+
+.wy-text-large
+  font-size: 120%
+
+.wy-text-normal
+  font-size: 100%
+
+.wy-text-small
+  font-size: 80%
+
+.wy-text-strike
+  text-decoration: line-through
+
+.wy-text-warning
+  color: $orange !important
+a.wy-text-warning:hover
+  color: lighten($orange, 10%) !important
+.wy-text-info
+  color: $blue !important
+a.wy-text-info:hover
+  color: lighten($blue, 10%) !important
+.wy-text-success
+  color: $green !important
+a.wy-text-success:hover
+  color: lighten($green, 10%) !important
+.wy-text-danger
+  color: $red !important
+a.wy-text-danger:hover
+  color: lighten($red, 10%) !important
+.wy-text-neutral
+  color: $text-color !important
+a.wy-text-neutral:hover
+  color: lighten($text-color, 10%) !important
+
+// Headings
+//
+// Headings have a `margin-bottom: $base-line-height` on them like most objects in wyrm.
+//
+// Markup:
+// <p>Hey everybody, it's Tuuuuuuuesday! I am the hat judge. Show me a hat and I will tell you if it's a good hat or bad hat. Seattle is actually Spanish for "taco." I try not to affiliate myself with Canadians. I've got a salty mustache. I've been a party to many, many stupid things in my life. This is by far the stupidest. This Quick Look is over! I'm an old man. I like turns.</p>
+// <p>Jeff, I have a question. Why do we keep doing this? There's nothing I'd rather talk about right now than Peter Molyneux's balls! I WILL CONTINUE TO CALL PAX AUSTRALIA PAXA UNTIL IT FUCKING CATCHES ON. I feel like I'm gonna throw up, but in a good way. No one should ever put clothes on a shark. You are looking for far too much logical consistency.</p>
+// <h1>Heading 1</h1>
+// <h2>Heading 2</h2>
+// <h3>Heading 3</h3>
+// <h4>Heading 4</h4>
+// <h5>Heading 5</h5>
+// <h6>Heading 6</h6>
+//
+// Styleguide 4.2
 
 h1,h2,h3,h4,h5,h6, legend
   margin-top: 0
@@ -64,21 +126,6 @@ p
   margin: 0
   font-size: $base-font-size
   margin-bottom: $base-line-height
-
-// Headings
-//
-// Text handling and other base styles. Can be safely used on any element, not just paragraph tags.
-//
-// Markup:
-// <h1>Heading 1</h1>
-// <h2>Heading 2</h2>
-// <h3>Heading 3</h3>
-// <h4>Heading 4</h4>
-// <h5>Heading 5</h5>
-// <h6>Heading 6</h6>
-//
-// Styleguide 4.2
-
 
 h1
   font-size: 175%
@@ -117,6 +164,34 @@ code
 .full-width
   width: 100%
 
+// Lists
+//
+// Lists in wyrm default to `list-style: none` mostly because I've found I use lists
+// more often as nav or block elements than as text lists. To get traditional
+// text lists you either add, or extend these classes through sass.
+//
+// Markup:
+// <ul class="{$modifiers}">
+//  <li>Freespace 2</li>
+//  <li>The Elder Scrolls: Skyrim</li>
+//  <li>Grim Fandango</li>
+//  <li>
+//    Saints forever:
+//    <ul>
+//      <li>Saint's Row</li>
+//      <li>Saint's Row 2</li>
+//      <li>Saint's Row: The Third</li>
+//      <li>Saint's Row IV</li>
+//    </ul>
+//  </li>
+// </ul>
+//
+// .wy-plain-list-disc          - The usual disc list.
+// .wy-plain-list-decimal       - Decimal lists.
+//
+// Styleguide 4.3
+
+
 .wy-plain-list-disc
   list-style: disc
   line-height: $base-line-height
@@ -139,35 +214,3 @@ code
   list-style: decimal
   margin-left: $base-line-height
 
-.wy-text-large
-  font-size: 120%
-
-.wy-text-normal
-  font-size: 100%
-
-.wy-text-small
-  font-size: 80%
-
-.wy-text-strike
-  text-decoration: line-through
-
-.wy-text-warning
-  color: $orange !important
-a.wy-text-warning:hover
-  color: lighten($orange, 10%) !important
-.wy-text-info
-  color: $blue !important
-a.wy-text-info:hover
-  color: lighten($blue, 10%) !important
-.wy-text-success
-  color: $green !important
-a.wy-text-success:hover
-  color: lighten($green, 10%) !important
-.wy-text-danger
-  color: $red !important
-a.wy-text-danger:hover
-  color: lighten($red, 10%) !important
-.wy-text-neutral
-  color: $text-color !important
-a.wy-text-neutral:hover
-  color: lighten($text-color, 10%) !important

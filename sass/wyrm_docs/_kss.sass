@@ -125,7 +125,7 @@ section.content
       cursor: pointer
 
 .examples
-  li
+  > li
     border-top: solid 1px rgba(0,0,0,.1)
     padding: $base-line-height / 2 0
     position: relative
@@ -133,6 +133,7 @@ section.content
   .desc
     display: inline-block
     margin-bottom: $base-line-height / 2
+    font-weight: bold
   .name
     color: $text-lighter
     font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace
@@ -149,4 +150,4 @@ section.content
   line-height: 1.5
 
 pre
-  margin: 0
+  margin: 0 0 $base-line-height 0
