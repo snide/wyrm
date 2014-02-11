@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>KSS: Living Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+      <div class="logo-area">
+        <img src="public/dragon.png">
+        <h4>Wyrm</h4>
+        Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.
+      </div>
+      <div class="wy-menu wy-menu-vertical">
+        <ul>
+          <li><a href="index.html">0.0: Overview</a></li>
+          
+            <li><a href="section-1.html">1.0: Buttons</a></li>
+          
+            <li><a href="section-2.html">2.0: Alerts</a></li>
+          
+            <li><a href="section-3.html">3.0: Tables</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <section class="content">
+      
+
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">3.0</span> - Tables</h1>
+          
+            <p>Table classes are additive so you can mix and match as you need.</p>
+
+            <ul class="examples">
+            
+              <li>
+                <span class="name">
+                  Default styling
+                </span>
+                <span class="markup">
+                  <table class="wy-table {$modifiers}">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                </span>
+              </li>
+              
+                <li>
+                  <span class="name">.full-width</span>
+                  <span class="desc">
+                    <p>100% width</p>
+
+                  </span>
+                  <span class="markup">
+                    <table class="wy-table full-width">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-table-bordered</span>
+                  <span class="desc">
+                    <p>Border the table itself.</p>
+
+                  </span>
+                  <span class="markup">
+                    <table class="wy-table wy-table-bordered">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-table-bordered-rows</span>
+                  <span class="desc">
+                    <p>Border just the rows.</p>
+
+                  </span>
+                  <span class="markup">
+                    <table class="wy-table wy-table-bordered-rows">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-table-bordered-all</span>
+                  <span class="desc">
+                    <p>Border the columns, rows, and the table.</p>
+
+                  </span>
+                  <span class="markup">
+                    <table class="wy-table wy-table-bordered-all">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                  </span>
+                </li>
+              
+                <li>
+                  <span class="name">.wy-table-striped</span>
+                  <span class="desc">
+                    <p>Alternating row colors.</p>
+
+                  </span>
+                  <span class="markup">
+                    <table class="wy-table wy-table-striped">
+ <thead>
+   <tr>
+     <th>Game</th>
+     <th>Developer</th>
+     <th>Description</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>
+       Baldur's Gate II
+     </td>
+     <td>
+       Bioware
+     </td>
+     <td>
+       Boo has a space hamster. Imoen whines a bunch.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Icewind Dale II
+     </td>
+     <td>
+       Black Isle
+     </td>
+     <td>
+       Fly around on an airship, then kill tons of ice monsters.
+     </td>
+   </tr>
+   <tr>
+     <td>
+       Temple of Elemental Evil
+     </td>
+     <td>
+       Trokia
+     </td>
+     <td>
+       Turn based! Do everything 10 times slower.
+     </td>
+   </tr>
+ </tbody>
+</table>
+                  </span>
+                </li>
+              
+            
+            </ul>
+            <div class="codeblock-example">
+              <pre class="prettyprint lang-html">&lt;table class=&quot;wy-table {$modifiers}&quot;&gt;
+ &lt;thead&gt;
+   &lt;tr&gt;
+     &lt;th&gt;Game&lt;/th&gt;
+     &lt;th&gt;Developer&lt;/th&gt;
+     &lt;th&gt;Description&lt;/th&gt;
+   &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Baldur&#x27;s Gate II
+     &lt;/td&gt;
+     &lt;td&gt;
+       Bioware
+     &lt;/td&gt;
+     &lt;td&gt;
+       Boo has a space hamster. Imoen whines a bunch.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Icewind Dale II
+     &lt;/td&gt;
+     &lt;td&gt;
+       Black Isle
+     &lt;/td&gt;
+     &lt;td&gt;
+       Fly around on an airship, then kill tons of ice monsters.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;
+       Temple of Elemental Evil
+     &lt;/td&gt;
+     &lt;td&gt;
+       Trokia
+     &lt;/td&gt;
+     &lt;td&gt;
+       Turn based! Do everything 10 times slower.
+     &lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+            </div>
+           
+        
+      
+    </section>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  
+  
+</body>
+</html>

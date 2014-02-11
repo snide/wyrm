@@ -34,6 +34,8 @@
           
             <li><a href="section-2.html">2.0: Alerts</a></li>
           
+            <li><a href="section-3.html">3.0: Tables</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -47,14 +49,10 @@
           
             <p>Alerts can exist as in page notices and as fixed drops.</p>
 
-            <pre class="prettyprint lang-html">&lt;div class=&quot;wy-alert {$modifiers}&quot;&gt;
- &lt;div class=&quot;wy-alert-title&quot;&gt;Title goes here&lt;/div&gt;
- &lt;p&gt;Alert instructions go here.&lt;/p&gt;
-&lt;/div&gt;</pre>
             <ul class="examples">
             
               <li>
-                <span class="desc">
+                <span class="name">
                   Default styling
                 </span>
                 <span class="markup">
@@ -123,23 +121,28 @@
               
             
             </ul>
+            <div class="codeblock-example">
+              <pre class="prettyprint lang-html">&lt;div class=&quot;wy-alert {$modifiers}&quot;&gt;
+ &lt;div class=&quot;wy-alert-title&quot;&gt;Title goes here&lt;/div&gt;
+ &lt;p&gt;Alert instructions go here.&lt;/p&gt;
+&lt;/div&gt;</pre>
+            </div>
            
         
           
+            <hr/>
            <section class="kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">2.1</span> - System alerts</h1>
+            <h2 class="kss-title"><span class="kss-ref">2.1</span> - System alerts</h1>
           
             <p>These alerts should trigger when a form error or something happens.
-Note that they will not output in the documentation because they
-are display: none by default.</p>
+Because these docs are auto-generated know that these alerts
+<strong>will not output</strong> below because they are set to
+display: none by default.</p>
 
-            <pre class="prettyprint lang-html">&lt;ul class=&quot;wy-tray-container&quot;&gt;
- &lt;li class=&quot;{$modifiers}&quot;&gt;Alert instructions go here.&lt;/li&gt;
-&lt;/ul&gt;</pre>
             <ul class="examples">
             
               <li>
-                <span class="desc">
+                <span class="name">
                   Default styling
                 </span>
                 <span class="markup">
@@ -203,6 +206,11 @@ are display: none by default.</p>
               
             
             </ul>
+            <div class="codeblock-example">
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;wy-tray-container&quot;&gt;
+ &lt;li class=&quot;{$modifiers}&quot;&gt;Alert instructions go here.&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
           
             </section>
           
