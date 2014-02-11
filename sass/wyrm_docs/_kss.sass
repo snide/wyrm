@@ -152,3 +152,21 @@ section.content
 
 pre
   margin: 0 0 $base-line-height 0
+
+.markdown ul
+  @extend .wy-plain-list-disc
+.markdown ol
+  @extend .wy-plain-list-decimal
+
+.grid-example
+  background: $gray-lighter
+  padding: $gutter
+  +outer-container
+  section,aside
+    background: $gray-light
+    padding: $gutter
+  section
+    +span-columns(4)
+  aside
+    +span-columns(8)
+    +omega-type

@@ -1,3 +1,24 @@
+// Grids
+//
+// Wyrm uses Bourbon's Neat grid system with `$border-box-sizing: true`. Please visit their site
+// for full documenation. Wyrm's `+media()` breakpoint settings are set as follows in
+// `wyrm_core/_grid_settings.sass`.
+//
+// * `+media($desktop-wide)` is 12 columns, min-width: 1400px wide.
+// * `+media($desktop)` is 12 columns, min-width: 769px wide.
+// * `+media($tablet)` is 8 columns, max-width: 768px.
+// * `+media($mobile)` is 4 columns, max-width: 480px.
+//
+// Markup:
+// <div class="grid-example">
+//    <!-- +outer-container applied to .grid-example -->
+//    <section>+span-columns(8)</section>
+//    <aside>+span-columns(4) +omega-type</aside>
+// </div>
+//
+// Styleguide 5.0
+
+
 @import "neat-helpers"
 
 $column: golden-ratio(1em, 3) !default
