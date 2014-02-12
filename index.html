@@ -52,17 +52,50 @@
     </nav>
     <section class="content">
       
-        <h1>Wyrm</h1>
+      <div class="markdown"><h1>Wyrm</h1>
+<p>Built primarily by Dave Snider for use on his web sites. Here be documentation
+for the poor souls that have to work with him and wonder why he doesn&apos;t just
+use bootstrap.
+
+</p>
 <p>Wyrm is a small library of <a href="http://bourbon.io">Bourbon</a> powered SASS files meant
 for use in minimalistic Document and Form heavy sites. It was primarily built
 for <a href="http://www.webhook.com">Webhook</a> but can also be found in use on
-<a href="http://snide.github.com/sphinx_rtd_theme">Read the Docs sphinx theme</a>. Wyrm
-is most similar to <a href="http://www.purecss.io">Pure CSS</a> in that it is meant to
-be a starting point for larger sass/bourbon projects.
-
+<a href="http://snide.github.com/sphinx_rtd_theme">Read the Docs sphinx theme</a> among
+other places.
 
 </p>
+<h2>Installation</h2>
+<p>Wyrm is best installed through <a href="http://bower.io">bower</a> and is updated regularly.
 
+</p>
+<pre><code>bower install wyrm</code></pre>
+<p>By default, Wyrm installs <a href="http://fontawesome.io">Font Awesome</a> setting the
+<code>$icon-prefix</code> to FA&apos;s default of <code>fa</code>. You&apos;ll want to use <a href="http://gruntjs.org">Grunt</a>
+or some other method to copy the font files to your font folder in your project. Wyrm
+by default assumes that it is <code>../fonts/</code> relative to your css, but this variable can
+be changed with <code>$fa-font-path</code>. You can use any font icons though, and all icons
+actually used in Wyrm itself are set as variables in the <code>_wy_variables.sass</code> files.
+
+</p>
+<h2>Things to know</h2>
+<ol>
+<li>Uses indented Sass style because it&apos;s awesome.</li>
+<li><code>$base-line-height</code> is the magic number used for calculations across wyrm. <code>$gutter</code> is
+it&apos;s em based cousin usefual for grids.</li>
+<li>Because <code>$gutter</code> is an em value, I&apos;ve included an <code>em()</code> mixin for converting pixels
+to ems should you need to make calculations with the two.</li>
+<li>Vertical margin is only applied to the <strong>bottom</strong> of elements, not spread
+top/bottom like other frameworks. It is always some multiple of <code>$base-line-height</code></li>
+</ol>
+<h2>Wyrm core / add-on structure</h2>
+<p>Files that you&apos;ll likely want to install are in <code>/wyrm_core/</code> and you can handly call
+all of them using the <code>_wyrm_core.sass</code> file. Alternatively, I&apos;ve built a whole lot
+of addons, which you can plug and play into wyrm as you need. Most of them are
+documented here. To install core + plus all the addons, there&apos;s a handy <code>_wyrm_all</code>
+file, though honestly you&apos;ll prolly just make your own document at that point.
+</p>
+</div>
       
     </section>
   </div>
