@@ -39,6 +39,6 @@ top/bottom like other frameworks. It is always some multiple of `$base-line-heig
 
 Files that you'll likely want to install are in `/wyrm_core/` and you can handly call
 all of them using the `_wyrm_core.sass` file. Alternatively, I've built a whole lot
-of addons, which you can plug and play into wyrm as you need. Most of them are
-documented here. To install core + plus all the addons, there's a handy `_wyrm_all`
+of addons, located in `/wym_addons/`, which you can plug and play into wyrm as you need. Most of them are
+documented here. To install core + plus all the addons, there's a handy `_wyrm_all.sass`
 file, though honestly you'll prolly just make your own document at that point.
