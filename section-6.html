@@ -39,7 +39,9 @@
           
             <li><a href="section-5.html">5.0: Grids</a></li>
           
-            <li><a href="section-6.html">6.0: Forms</a></li>
+            <li><a href="section-6.html">6.0: Form structure</a></li>
+          
+            <li><a href="section-7.html">7.0: Spinners</a></li>
           
         </ul>
       </div>
@@ -50,7 +52,7 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">6.0</span> - Forms</h1>
+            <h1 class="kss-title"><span class="kss-ref">6.0</span> - Form structure</h1>
           
             <div class="markdown"><p>Files located in <code>wyrm_core/_form.sass</code>.
 
@@ -110,120 +112,108 @@ the most common is <code>.wy-form-message</code> as shown below.</p>
 like email, password, url, date...etc, but I&apos;ve left them out for brevity.</p>
 </div>
             
-              <pre class="prettyprint lang-html">&lt;form class=&quot;{$modifiers}&quot;&gt;
-  &lt;legend&gt;Generic elements&lt;/legend&gt;
-  &lt;fieldset&gt;
-    &lt;div class=&quot;wy-control-group&quot;&gt;
-      &lt;label&gt;Text field&lt;/label&gt;
-      &lt;div class=&quot;wy-control&quot;&gt;
-        &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;wy-control-group&quot;&gt;
-      &lt;label&gt;Textarea&lt;/label&gt;
-      &lt;div class=&quot;wy-control&quot;&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;wy-control-group&quot;&gt;
-      &lt;label&gt;Dropdown&lt;/label&gt;
-      &lt;div class=&quot;wy-control&quot;&gt;
-        &lt;select&gt;
-          &lt;option&gt;&lt;/option&gt;
-          &lt;option&gt;Option 1&lt;/option&gt;
-          &lt;option&gt;Option 2&lt;/option&gt;
-        &lt;/select&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;wy-control-group&quot;&gt;
-      &lt;label&gt;Radio&lt;/label&gt;
-      &lt;div class=&quot;wy-control&quot;&gt;
-        &lt;label class=&quot;wy-radio&quot;&gt;
-          &lt;input type=&quot;radio&quot;&gt;
-          Option 1
-        &lt;/label&gt;
-        &lt;label class=&quot;wy-radio&quot;&gt;
-          &lt;input type=&quot;radio&quot;&gt;
-          Option 2
-        &lt;/label&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;wy-control-group&quot;&gt;
-      &lt;label&gt;Checkbox&lt;/label&gt;
-      &lt;div class=&quot;wy-control&quot;&gt;
-        &lt;label class=&quot;wy-checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot;&gt;
-          Option 1
-        &lt;/label&gt;
-        &lt;label class=&quot;wy-checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot;&gt;
-          Option 2
-        &lt;/label&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type=&quot;submit&quot; class=&quot;btn&quot; /&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;</pre>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Text field&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder&quot;/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Dropdown&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;&lt;/option&gt;
+      &lt;option&gt;Option 1&lt;/option&gt;
+      &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Radio&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;label class=&quot;wy-radio&quot;&gt;
+      &lt;input type=&quot;radio&quot;&gt;
+      Option 1
+    &lt;/label&gt;
+    &lt;label class=&quot;wy-radio&quot;&gt;
+      &lt;input type=&quot;radio&quot;&gt;
+      Option 2
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wy-control-group&quot;&gt;
+  &lt;label&gt;Checkbox&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;label class=&quot;wy-checkbox&quot;&gt;
+      &lt;input type=&quot;checkbox&quot;&gt;
+      Option 1
+    &lt;/label&gt;
+    &lt;label class=&quot;wy-checkbox&quot;&gt;
+      &lt;input type=&quot;checkbox&quot;&gt;
+      Option 2
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <form class="{$modifiers}">
-  <legend>Generic elements</legend>
-  <fieldset>
-    <div class="wy-control-group">
-      <label>Text field</label>
-      <div class="wy-control">
-        <input type="text" placeholder="placeholder"/>
-      </div>
-    </div>
-    <div class="wy-control-group">
-      <label>Textarea</label>
-      <div class="wy-control">
-        <textarea></textarea>
-      </div>
-    </div>
-    <div class="wy-control-group">
-      <label>Dropdown</label>
-      <div class="wy-control">
-        <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-        </select>
-      </div>
-    </div>
-    <div class="wy-control-group">
-      <label>Radio</label>
-      <div class="wy-control">
-        <label class="wy-radio">
-          <input type="radio">
-          Option 1
-        </label>
-        <label class="wy-radio">
-          <input type="radio">
-          Option 2
-        </label>
-      </div>
-    </div>
-    <div class="wy-control-group">
-      <label>Checkbox</label>
-      <div class="wy-control">
-        <label class="wy-checkbox">
-          <input type="checkbox">
-          Option 1
-        </label>
-        <label class="wy-checkbox">
-          <input type="checkbox">
-          Option 2
-        </label>
-      </div>
-    </div>
-    <input type="submit" class="btn" />
-  </fieldset>
-</form>
+                  <div class="wy-control-group">
+  <label>Text field</label>
+  <div class="wy-control">
+    <input type="text" placeholder="placeholder"/>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Textarea</label>
+  <div class="wy-control">
+    <textarea></textarea>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Dropdown</label>
+  <div class="wy-control">
+    <select>
+      <option></option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Radio</label>
+  <div class="wy-control">
+    <label class="wy-radio">
+      <input type="radio">
+      Option 1
+    </label>
+    <label class="wy-radio">
+      <input type="radio">
+      Option 2
+    </label>
+  </div>
+</div>
+<div class="wy-control-group">
+  <label>Checkbox</label>
+  <div class="wy-control">
+    <label class="wy-checkbox">
+      <input type="checkbox">
+      Option 1
+    </label>
+    <label class="wy-checkbox">
+      <input type="checkbox">
+      Option 2
+    </label>
+  </div>
+</div>
                 </span>
               </li>
               

@@ -48,18 +48,58 @@
     </nav>
     <section class="content">
       
-        <h1>Wyrm</h1>
-<p>Wyrm is a small library of <a href="http://bourbon.io">Bourbon</a> powered SASS files meant
-for use in minimalistic Document and Form heavy sites. It was primarily built
-for <a href="http://www.webhook.com">Webhook</a> but can also be found in use on
-<a href="http://snide.github.com/sphinx_rtd_theme">Read the Docs sphinx theme</a>. Wyrm
-is most similar to <a href="http://www.purecss.io">purecss</a> in that it is not meant
-to exist as a all-inclusive framework like <a href="http://www.bootstrap.io">bootstrap</a>
-but simply be a starting point for larger sass/bourbon projects.
 
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">7.0</span> - Spinners</h1>
+          
+            <div class="markdown"><p>Spinners are pretty simple. You can change the color by changing <code>$spinner-color</code>.
+Also, any of the modifiers below can also carry <code>.wy-spinner-absolute</code> to position
+the spinner in the absolute center of your wrapping area.</p>
+</div>
+            
+              <pre class="prettyprint lang-html">&lt;div class=&quot;wy-spinner {$modifiers}&quot;&gt;&lt;/div&gt;
+&lt;a href=&quot;#random&quot; class=&quot;btn&quot;&gt;&lt;span class=&quot;wy-spinner {$modifiers}&quot;&gt;&lt;/span&gt; Loading&lt;/a&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="wy-spinner {$modifiers}"></div>
+<a href="#random" class="btn"><span class="wy-spinner {$modifiers}"></span> Loading</a>
+                </span>
+              </li>
+              
+                <li>
+                <span class="name">.wy-spinner-large</span>
+                  <span class="desc markdown">
+                    <p>Large spinner.</p>
 
-</p>
+                  </span>
+                  <span class="markup">
+                    <div class="wy-spinner wy-spinner-large"></div>
+<a href="#random" class="btn"><span class="wy-spinner wy-spinner-large"></span> Loading</a>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-spinner-small</span>
+                  <span class="desc markdown">
+                    <p>Small spinner.</p>
 
+                  </span>
+                  <span class="markup">
+                    <div class="wy-spinner wy-spinner-small"></div>
+<a href="#random" class="btn"><span class="wy-spinner wy-spinner-small"></span> Loading</a>
+                  </span>
+                </li>
+              
+            
+            </ul>
+           
+        
       
     </section>
   </div>
