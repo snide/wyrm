@@ -409,7 +409,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
   @extend .#{$icon-prefix}-#{$icon-alert}
 .wy-inline-validate.wy-inline-validate-info .wy-input-context
   color: $blue
-  @extend %form
+  @extend %icon
   @extend .#{$icon-prefix}-#{$icon-alert}
 
 // Some generic rotation classes for reading user images
@@ -451,9 +451,7 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
       width: 100%
     .wy-control
       margin: 1.5em 0 0 0
-  /* NOTE: wy-help-inline is deprecated. Use .wy-form-message-inline instead.
   .wy-form .wy-help-inline, .wy-form-message-inline, .wy-form-message
     display: block
     font-size: 80%
-    /* Increased bottom padding to make it group with its related input element.
-    padding: 0.2em 0 0.8em
+    padding: $base-line-height / 4 0
