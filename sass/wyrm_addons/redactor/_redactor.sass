@@ -74,9 +74,9 @@ body
 // GENERIC STYLING
 .redactor_editor
   ul
-    @extend .wy-plain-list-disc
+    @extend %wy-plain-list-disc
   ol
-    @extend .wy-plain-list-decimal
+    @extend %wy-plain-list-decimal
 /*
  *	TOOLBAR
 
@@ -118,7 +118,7 @@ body
     float: right !important
     margin-right: 2px !important
   a
-    @extend .#{$icon-prefix}
+    @extend %icon
     zoom: 1
     font-size: 14px
     color: $text-color

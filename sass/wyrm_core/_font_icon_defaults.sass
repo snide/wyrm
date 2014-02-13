@@ -1,15 +1,16 @@
 // Default Icon styles that can be used with Font Awesome or similar font libs.
 
-.#{$icon-prefix}
+%icon
   display: inline-block
   font-style: normal
   font-weight: normal
   line-height: 1
   font-family: inherit
   +font-smooth
-
-.#{$icon-prefix}:before
-  font-family: $icon-font-family
+  &:before
+    font-family: $icon-font-family
+.#{$icon-prefix}
+  @extend %icon
 
 .btn, .nav
   .fa

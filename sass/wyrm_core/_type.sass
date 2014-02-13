@@ -184,7 +184,7 @@ code
 // Styleguide 4.3
 
 
-.wy-plain-list-disc, article ul
+%wy-plain-list-disc
   list-style: disc
   line-height: $base-line-height
   margin-bottom: $base-line-height
@@ -198,11 +198,16 @@ code
       li
         list-style: square
 
-.wy-plain-list-decimal, article ol
+%wy-plain-list-decimal
   list-style: decimal
   line-height: $base-line-height
   margin-bottom: $base-line-height
   li
     list-style: decimal
     margin-left: $base-line-height
+
+.wy-plain-list-disc, article ul
+  @extend %wy-plain-list-disc
+.wy-plain-list-decimal, article ol
+  @extend %wy-plain-list-decimal
 

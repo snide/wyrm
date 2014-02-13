@@ -397,19 +397,19 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     font-size: 80%
 .wy-inline-validate.wy-inline-validate-success .wy-input-context
   color: $green
-  @extend .#{$icon-prefix}
+  @extend %icon
   @extend .#{$icon-prefix}-#{$icon-ok}
 .wy-inline-validate.wy-inline-validate-danger .wy-input-context
   color: $red
-  @extend .#{$icon-prefix}
+  @extend %icon
   @extend .#{$icon-prefix}-#{$icon-remove}
 .wy-inline-validate.wy-inline-validate-warning .wy-input-context
   color: $orange
-  @extend .#{$icon-prefix}
+  @extend %icon
   @extend .#{$icon-prefix}-#{$icon-alert}
 .wy-inline-validate.wy-inline-validate-info .wy-input-context
   color: $blue
-  @extend .#{$icon-prefix}
+  @extend %form
   @extend .#{$icon-prefix}-#{$icon-alert}
 
 // Some generic rotation classes for reading user images
