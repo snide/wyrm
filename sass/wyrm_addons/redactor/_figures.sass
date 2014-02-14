@@ -115,13 +115,15 @@ figure:hover .wy-figure-controls
   border: none
   background: none
   color: $text-invert
-  vertical-align: bottom
+  vertical-align: top
   font-size: 14px
   width: 24px
   height: 24px
   line-height: 24px
   text-align: center
   cursor: pointer
+  &.#{$icon-prefix}, &:before
+    line-height: 24px
   &:hover
     background: rgba(255,255,255,.3)
     color: $white
@@ -191,4 +193,5 @@ figure:hover .wy-figure-controls
   figure[data-type=video] iframe
     width: 100% !important
     height: auto !important
+
 
