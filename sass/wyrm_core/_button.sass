@@ -14,6 +14,7 @@
 // :disabled            - For disabled buttons.
 // .btn-disabled        - Class version of disabled.
 // :active              - Press the button down.
+// :focus               - Press the button down.
 // .btn-neutral         - Neutral looking button.
 // .btn-info            - For imformative, or alternate actions.
 // .btn-success         - For positive actions.
@@ -76,12 +77,10 @@ button[disabled]
     color: $white
   &:focus
     background: lighten($button-background-color, 5%)
-    color: $white
     outline: 0
   &:active
     box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, .05) inset, 0px 2px 0px 0px rgba(0,0,0,.1) inset
     padding: ($base-line-height / 4 + 2) $base-line-height / 2 $base-line-height / 4 $base-line-height / 2
-    color: $white
   &:disabled
     background-image: none
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
@@ -89,8 +88,6 @@ button[disabled]
     opacity: 0.4
     cursor: not-allowed
     box-shadow: none
-  &:visited
-    color: $white
 
 .btn-disabled
   background-image: none
