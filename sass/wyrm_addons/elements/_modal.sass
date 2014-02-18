@@ -13,8 +13,8 @@
   color: $text-color
   cursor: pointer
   position: absolute
-  right: $base-line-height / 2
-  top: $base-line-height / 2
+  right: $base-line-height
+  top: $base-line-height
   font-size: 0
   &:before
     font-size: 20px
@@ -34,11 +34,11 @@
     padding: 0 $gutter $gutter $gutter
   header
     font-weight: 500
-    padding: $gutter
-    h3
-      font-weight: 500
-      font-size: 150%
-      margin: 0
+    padding: $base-line-height
+    padding-top: $base-line-height / 2
+    font-weight: bold
+    font-family: $custom-font-family
+    font-size: 150%
   footer
     background: $background-color
     padding: $gutter
@@ -55,3 +55,4 @@
   z-index: $z-index-modal - 1
   &.on
     display: block
+
