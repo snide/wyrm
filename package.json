@@ -1,6 +1,6 @@
 {
   "name": "wyrm",
-  "version": "0.0.143",
+  "version": "0.0.144",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.7.2",
