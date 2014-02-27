@@ -22,10 +22,10 @@
     @extend .#{$icon-prefix}-#{$icon-caret-down}
 .wy-dropdown-menu
   position: absolute
-  top: 100%
   left: 0
   display: none
   float: left
+  top: 100%
   min-width: 100%
   background: $dropdown-color
   z-index: $z-index-dropdown
@@ -60,6 +60,11 @@
     .btn
       color: $white
 
+.wy-dropdown.wy-dropdown-up .wy-dropdown-menu
+  bottom: 100%
+  top: auto
+  left: auto
+  right: 0
 
 .wy-dropdown.wy-dropdown-bubble
   .wy-dropdown-menu
@@ -88,3 +93,4 @@
     margin-left: -3px
   &.wy-dropdown-arrow-left:before
     left: 11px
+
