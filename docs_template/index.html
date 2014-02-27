@@ -57,7 +57,7 @@
           {{/whenDepth}}
             <div class="markdown">{{html description}}</div>
             {{#if markup}}
-              <pre class="prettyprint lang-html">{{markup}}</pre>
+              <pre class="highlight language-html">{{markup}}</pre>
             {{/if}}
             <ul class="examples">
             {{#ifAny markup modifiers}}
@@ -92,9 +92,10 @@
     </section>
   </div>
   <!-- SCRIPTS -->
-  <script src="public/kss.js"></script>
-  <script src="public/prettify.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="public/highlight.pack.js"></script>
+  <script src="public/kss.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <script>
     $(document).ready(function(){
       var sidebarAdjust = function() {
@@ -113,8 +114,8 @@
       sidebarAdjust();
 
       // Ensure code blocks are highlighted properly...
-      $('pre>code').addClass('prettyprint');
-      prettyPrint();
+      $('pre').addClass('highlight');
+      $('pre.highlight').each(function(i, e) {hljs.highlightBlock(e)});
 
     });
   </script>
