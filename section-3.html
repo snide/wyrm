@@ -26,28 +26,28 @@
         <p>Handy starter SASS for <a href="http://bourbon.io">bourbon / neat</a> projects. Available <a href="https://github.com/snide/wyrm">on github</a>.</p>
       </div>
       <div class="wy-menu wy-menu-vertical">
-        <ul>
-          <li><a href="index.html">0.0: Overview</a></li>
+        <dl>
+          <dd><a href="index.html">0.0: Overview</a></dd>
           
-            <li><a href="section-1.html">1.0: Buttons</a></li>
+            <dd><a href="section-1.html">1.0: Buttons</a></dd>
           
-            <li><a href="section-2.html">2.0: Alerts</a></li>
+            <dd><a href="section-2.html">2.0: Alerts</a></dd>
           
-            <li><a href="section-3.html">3.0: Tables</a></li>
+            <dd><a href="section-3.html">3.0: Tables</a></dd>
           
-            <li><a href="section-4.html">4.0: Typography</a></li>
+            <dd><a href="section-4.html">4.0: Typography</a></dd>
           
-            <li><a href="section-5.html">5.0: Grids</a></li>
+            <dd><a href="section-5.html">5.0: Grids</a></dd>
           
-            <li><a href="section-6.html">6.0: Form structure</a></li>
+            <dd><a href="section-6.html">6.0: Form structure</a></dd>
           
-            <li><a href="section-7.html">7.0: Spinners</a></li>
+            <dd><a href="section-7.html">7.0: Spinners</a></dd>
           
-            <li><a href="section-8.html">8.0: Dropdowns</a></li>
+            <dd><a href="section-8.html">8.0: Dropdowns</a></dd>
           
-            <li><a href="section-9.html">9.0: Form - autompleter</a></li>
+            <dd><a href="section-9.html">9.0: Form - autompleter</a></dd>
           
-        </ul>
+        </dl>
       </div>
     </nav>
     <section class="content">
@@ -61,7 +61,7 @@
             <div class="markdown"><p>Located in <code>wyrm_core/_tables.sass</code>. Table classes are additive so you can mix and match as you need.</p>
 </div>
             
-              <pre class="prettyprint lang-html">&lt;table class=&quot;wy-table {$modifiers}&quot;&gt;
+              <pre class="highlight language-html">&lt;table class=&quot;wy-table {$modifiers}&quot;&gt;
  &lt;thead&gt;
    &lt;tr&gt;
      &lt;th&gt;Game&lt;/th&gt;
@@ -436,9 +436,10 @@
     </section>
   </div>
   <!-- SCRIPTS -->
-  <script src="public/kss.js"></script>
-  <script src="public/prettify.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="public/highlight.pack.js"></script>
+  <script src="public/kss.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <script>
     $(document).ready(function(){
       var sidebarAdjust = function() {
@@ -457,8 +458,8 @@
       sidebarAdjust();
 
       // Ensure code blocks are highlighted properly...
-      $('pre>code').addClass('prettyprint');
-      prettyPrint();
+      $('pre').addClass('highlight');
+      $('pre.highlight').each(function(i, e) {hljs.highlightBlock(e)});
 
     });
   </script>
