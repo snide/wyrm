@@ -58,171 +58,146 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">2.0</span> - Alerts</h1>
+            <h1 class="kss-title"><span class="kss-ref">10.0</span> - Ratings</h1>
           
-            <div class="markdown"><p>Located in <code>wyrm_core/_alert.sass</code>. Alerts can exist as in page notices and as fixed drops.</p>
+            <div class="markdown"><p>Ratings using font icons. Located in <code>/wyrm_addons/elements/_stars.sass</code>.</p>
 </div>
             
-              <pre class="highlight language-html">&lt;div class=&quot;wy-alert {$modifiers}&quot;&gt;
- &lt;div class=&quot;wy-alert-title&quot;&gt;Title goes here&lt;/div&gt;
- &lt;p&gt;Alert instructions go here.&lt;/p&gt;
-&lt;/div&gt;</pre>
+              <pre class="highlight language-html">&lt;span class=&quot;wy-star {$modifiers}&quot;&gt;&lt;/&gt;</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <div class="wy-alert {$modifiers}">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div>
+                  <span class="wy-star {$modifiers}"></>
                 </span>
               </li>
               
                 <li>
-                <span class="name">.wy-alert-neutral</span>
+                <span class="name">.wy-star-0</span>
                   <span class="desc markdown">
-                    <p>Generic alert, extra instruction.</p>
+                    <p>0 stars</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-alert wy-alert-neutral">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div>
+                    <span class="wy-star wy-star-0"></>
                   </span>
                 </li>
               
                 <li>
-                <span class="name">.wy-alert-success</span>
+                <span class="name">.wy-star-0dot5</span>
                   <span class="desc markdown">
-                    <p>Hooray, something good happened.</p>
+                    <p>0.5 stars</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-alert wy-alert-success">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div>
+                    <span class="wy-star wy-star-0dot5"></>
                   </span>
                 </li>
               
                 <li>
-                <span class="name">.wy-alert-warning</span>
+                <span class="name">.wy-star-1</span>
                   <span class="desc markdown">
-                    <p>Watch out, you might make a mistake.</p>
+                    <p>1 stars</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-alert wy-alert-warning">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div>
+                    <span class="wy-star wy-star-1"></>
                   </span>
                 </li>
               
                 <li>
-                <span class="name">.wy-alert-danger</span>
+                <span class="name">.wy-star-1dot5</span>
                   <span class="desc markdown">
-                    <p>Yep, you made a mistake.</p>
+                    <p>1.5 stars</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-alert wy-alert-danger">
- <div class="wy-alert-title">Title goes here</div>
- <p>Alert instructions go here.</p>
-</div>
+                    <span class="wy-star wy-star-1dot5"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-2</span>
+                  <span class="desc markdown">
+                    <p>2 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-2"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-2dot5</span>
+                  <span class="desc markdown">
+                    <p>2.5 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-2dot5"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-3</span>
+                  <span class="desc markdown">
+                    <p>3 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-3"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-3dot5</span>
+                  <span class="desc markdown">
+                    <p>3.5 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-3dot5"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-4</span>
+                  <span class="desc markdown">
+                    <p>4 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-4"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-4dot5</span>
+                  <span class="desc markdown">
+                    <p>4.5 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-4dot5"></>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.wy-star-5</span>
+                  <span class="desc markdown">
+                    <p>5 stars</p>
+
+                  </span>
+                  <span class="markup">
+                    <span class="wy-star wy-star-5"></>
                   </span>
                 </li>
               
             
             </ul>
            
-        
-          
-            <hr/>
-           <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">2.1</span> - System alerts</h1>
-          
-            <div class="markdown"><p>These alerts should trigger when a form error or something happens.
-Because these docs are auto-generated know that these alerts
-<strong>will not output</strong> below because they are set to
-display: none by default.</p>
-</div>
-            
-              <pre class="highlight language-html">&lt;ul class=&quot;wy-tray-container&quot;&gt;
- &lt;li class=&quot;{$modifiers}&quot;&gt;Alert instructions go here.&lt;/li&gt;
-&lt;/ul&gt;</pre>
-            
-            <ul class="examples">
-            
-              <li>
-              <div class="desc"><p>Default styling without modifier classes.</p></div>
-                <span class="markup">
-                  <ul class="wy-tray-container">
- <li class="{$modifiers}">Alert instructions go here.</li>
-</ul>
-                </span>
-              </li>
-              
-                <li>
-                <span class="name">.wy-tray-item-info</span>
-                  <span class="desc markdown">
-                    <p>Generic alert, extra instruction.</p>
-
-                  </span>
-                  <span class="markup">
-                    <ul class="wy-tray-container">
- <li class="wy-tray-item-info">Alert instructions go here.</li>
-</ul>
-                  </span>
-                </li>
-              
-                <li>
-                <span class="name">.wy-tray-item-success</span>
-                  <span class="desc markdown">
-                    <p>Hooray, something good happened.</p>
-
-                  </span>
-                  <span class="markup">
-                    <ul class="wy-tray-container">
- <li class="wy-tray-item-success">Alert instructions go here.</li>
-</ul>
-                  </span>
-                </li>
-              
-                <li>
-                <span class="name">.wy-tray-item-warning</span>
-                  <span class="desc markdown">
-                    <p>Watch out, you might make a mistake.</p>
-
-                  </span>
-                  <span class="markup">
-                    <ul class="wy-tray-container">
- <li class="wy-tray-item-warning">Alert instructions go here.</li>
-</ul>
-                  </span>
-                </li>
-              
-                <li>
-                <span class="name">.wy-tray-item-danger</span>
-                  <span class="desc markdown">
-                    <p>Yep, you made a mistake.</p>
-
-                  </span>
-                  <span class="markup">
-                    <ul class="wy-tray-container">
- <li class="wy-tray-item-danger">Alert instructions go here.</li>
-</ul>
-                  </span>
-                </li>
-              
-            
-            </ul>
-          
-            </section>
-          
         
       
     </section>
