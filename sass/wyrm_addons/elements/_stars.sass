@@ -1,60 +1,56 @@
+// Ratings
+//
+// Ratings using font icons. Located in `/wyrm_addons/elements/_stars.sass`.
+//
+// Markup:
+// <span class="wy-star {$modifiers}"></>
+//
+// .wy-star-0          - 0 stars
+// .wy-star-0dot5      - 0.5 stars
+// .wy-star-1          - 1 stars
+// .wy-star-1dot5      - 1.5 stars
+// .wy-star-2          - 2 stars
+// .wy-star-2dot5      - 2.5 stars
+// .wy-star-3          - 3 stars
+// .wy-star-3dot5      - 3.5 stars
+// .wy-star-4          - 4 stars
+// .wy-star-4dot5      - 4.5 stars
+// .wy-star-5          - 5 stars
+//
+// Styleguide 10.0
+
 .wy-star
   display: inline-block
   max-width: 100%
   letter-spacing: 3px
+  color: $text-light
+  font-family: $icon-font-family
+  vertical-align: top
+  position: relative
   &:before
-    color: $text-color
+    content: "\f005\f005\f005\f005\f005"
   &:after
-    color: $text_light
-  &:before, &:after
-    font-family: fontawesome-webfont
-    vertical-align: top
-  &.wy-star-0
-    &:after
-      content: "\f005\f005\f005\f005\f005"
-  &.wy-star-0dot5
-    &:before
-      content: "\f089"
-    &:after
-      content: "\f005\f005\f005\f005"
-  &.wy-star-1
-    &:before
-      content: "\f005"
-    &:after
-      content: "\f005\f005\f005\f005"
-  &.wy-star-1dot5
-    &:before
-      content: "\f005\f089"
-    &:after
-      content: "\f005\f005\f005"
-  &.wy-star-2
-    &:before
-      content: "\f005\f005"
-    &:after
-      content: "\f005\f005\f005"
-  &.wy-star-2dot5
-    &:before
-      content: "\f005\f005\f089"
-    &:after
-      content: "\f005\f005"
-  &.wy-star-3
-    &:before
-      content: "\f005\f005\f005"
-    &:after
-      content: "\f005\f005"
-  &.wy-star-3dot5
-    &:before
-      content: "\f005\f005\f005\f089"
-    &:after
-      content: "\f005"
-  &.wy-star-4
-    &:before
-      content: "\f005\f005\f005\f005"
-    &:after
-      content: "\f005"
-  &.wy-star-4dot5
-    &:before
-      content: "\f005\f005\f005\f005\f089"
-  &.wy-star-5
-    &:before
-      content: "\f005\f005\f005\f005\f005"
+    position: absolute
+    top: 0
+    left: 0
+    color: $text-color
+  &.wy-star-0dot5:after
+    content: "\f089"
+  &.wy-star-1:after
+    content: "\f005"
+  &.wy-star-1dot5:after
+    content: "\f005\f089"
+  &.wy-star-2:after
+    content: "\f005\f005"
+  &.wy-star-2dot5:after
+    content: "\f005\f005\f089"
+  &.wy-star-3:after
+    content: "\f005\f005\f005"
+  &.wy-star-3dot5:after
+    content: "\f005\f005\f005\f089"
+  &.wy-star-4:after
+    content: "\f005\f005\f005\f005"
+  &.wy-star-4dot5:after
+    content: "\f005\f005\f005\f005\f089"
+  &.wy-star-5:after
+    content: "\f005\f005\f005\f005\f005"
