@@ -21,7 +21,12 @@
     "Gruntfile.js",
     "node_modules",
     "bower_components",
+    "docs_template",
+    "docs",
+    "css",
     "test",
+    ".grunt",
+    ".git",
     "tests"
   ],
   "dependencies": {
