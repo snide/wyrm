@@ -42,14 +42,14 @@
       display: inline-block
       vertical-align: middle
       width: 10em
-      margin: .5em 1em 0 0
+      margin: $base-line-height / 4 $base-line-height / 2 0 0
       float: left
   .wy-control
     float: left
     label
       display: block
     select
-      margin-top: .5em
+      margin-top: $base-line-height / 4
 
 fieldset
   border: 0
@@ -110,8 +110,14 @@ input, select, textarea
 
 // Sometimes you just output text in a form, not an actual input
 .wy-control-group.wy-control-group-no-input .wy-control
-  margin: .5em 0 0 0
+  margin: $base-line-height / 4 0 0 0
   font-size: 90%
+
+.wy-control-no-input
+  display: inline-block
+  margin: $base-line-height / 4 0 0 0
+  font-size: 90%
+
 
 // Fluid inputs when needed
 
@@ -455,3 +461,4 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
     display: block
     font-size: 80%
     padding: $base-line-height / 4 0
+
