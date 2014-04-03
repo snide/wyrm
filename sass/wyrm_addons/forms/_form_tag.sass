@@ -17,6 +17,10 @@
     border-radius: 2px
     position: relative
     margin-bottom: 4px
+    &.on
+      background-color: rgba(0,0,0,.2)
+      .wy-tag-remove
+        color: $red
     .wy-tag-remove
       @extend %icon
       @extend .#{$icon-prefix}-#{$icon-close}
