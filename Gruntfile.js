@@ -73,9 +73,13 @@ module.exports = function(grunt) {
       src: ['**']
     },
 
-    release: {
+    bump: {
       options: {
-        npm: false, //default: true
+        files: ['package.json', 'bower.json'],
+        commitFiles: ['package.json', 'bower.json'],
+        tagName: '%VERSION%',
+        commitMessage: 'version %VERSION%',
+        pushTo: 'origin'
       }
     }
 
