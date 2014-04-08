@@ -54,6 +54,11 @@ body
     display: block
     border: none
     color: $white
+  figcaption
+    &:empty:before
+      opacity: 0.4
+      content: "Type to add caption (optional)"
+
 
 .redactor_box_fullscreen
   background: $background-color
