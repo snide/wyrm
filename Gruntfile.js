@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         cmd: 'bower update'
       },
       kss: {
-        cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
+        cmd: 'node_modules/.bin/kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
       }
     },
 
@@ -73,9 +73,13 @@ module.exports = function(grunt) {
       src: ['**']
     },
 
-    release: {
+    bump: {
       options: {
-        npm: false, //default: true
+        files: ['package.json', 'bower.json'],
+        commitFiles: ['package.json', 'bower.json'],
+        tagName: '%VERSION%',
+        commitMessage: 'version %VERSION%',
+        pushTo: 'origin'
       }
     }
 
