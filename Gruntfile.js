@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         cmd: 'bower update'
       },
       kss: {
-        cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
+        cmd: 'node_modules/.bin/kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
       }
     },
 
