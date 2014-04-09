@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 
     exec: {
       bower_update: {
-        cmd: 'bower update'
+        cmd: 'node_modules/.bin/bower update'
       },
       kss: {
         cmd: 'kss-node sass/ docs/ -sass css/wyrm_test.css --template docs_template'
