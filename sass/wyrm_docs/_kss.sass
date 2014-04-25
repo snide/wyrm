@@ -100,6 +100,27 @@ section.content, article.content
     +font-smooth
     &:hover
       background: $gray-dark
+  dd.active
+    a.sub-one, a.sub-two
+      padding: 0
+      padding-left: $gutter
+      color: $link-color
+      background: none
+      font-size: 80%
+      border: solid 1px $table-border-color
+      border-top: none
+      border-bottom: none
+      &.active
+        color: $text-color
+      &:nth-child(2)
+        padding-top: $gutter / 4
+      &:last-child
+        border-bottom: solid 1px $table-border-color
+        padding-bottom: $gutter / 4
+    a.sub-two
+      padding-left: $gutter * 1.5
+      color: lighten($link-color, 10%)
+
   a
     display: inline-block
     line-height: $base-line-height
@@ -170,3 +191,4 @@ pre
     +span-columns(8)
   nav
     +span-columns(8)
+
