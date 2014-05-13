@@ -175,6 +175,10 @@ code
 //      <li>Saint's Row: The Third</li>
 //      <li>Saint's Row IV</li>
 //    </ul>
+//    <ol>
+//      <li>number 1</li>
+//      <li>number 2</li>
+//    </ol>
 //  </li>
 // </ul>
 //
@@ -197,6 +201,8 @@ code
       list-style: circle
       li
         list-style: square
+    ol li
+      list-style: decimal
 
 %wy-plain-list-decimal
   list-style: decimal
@@ -205,6 +211,11 @@ code
   li
     list-style: decimal
     margin-left: $base-line-height
+    ul
+      margin-bottom: 0
+      li
+        list-style: disc
+
 
 .wy-plain-list-disc, article ul
   @extend %wy-plain-list-disc
