@@ -60,35 +60,59 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">8.0</span> - Dropdowns</h1>
+            <h1 class="kss-title"><span class="kss-ref">11.0</span> - Pagination</h1>
           
-            <div class="markdown"><p>Located in <code>wyrm_core/_dropdown.sass</code>.</p>
+            <div class="markdown"><p>Pagination <code>/wyrm_addons/elements/_paginate.sass</code>.</p>
 </div>
             
-              <pre class="highlight language-html">&lt;div class=&quot;wy-dropdown wy-dropdown-bubble&quot;&gt;
-  &lt;span class=&quot;btn btn-info fa fa-check-circle&quot;&gt; Save... &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;dl class=&quot;wy-dropdown-menu&quot;&gt;
-    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;Save it as a draft&lt;/a&gt;&lt;/dd&gt;
-    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;Publish now &lt;/a&gt;&lt;/dd&gt;
-    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;Publish at a specific time&lt;/a&gt;&lt;/dd&gt;
-  &lt;/dl&gt;
-&lt;/div&gt;</pre>
+              <pre class="highlight language-html">&lt;ul class=&quot;wy-paginate {$modifiers}&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;dots&quot;&gt;&lt;a href=&quot;&quot;&gt;..&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;92&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <div class="wy-dropdown wy-dropdown-bubble">
-  <span class="btn btn-info fa fa-check-circle"> Save... <span class="caret"></span></span>
-  <dl class="wy-dropdown-menu">
-    <dd><a href="">Save it as a draft</a></dd>
-    <dd><a href="">Publish now </a></dd>
-    <dd><a href="">Publish at a specific time</a></dd>
-  </dl>
-</div>
+                  <ul class="wy-paginate {$modifiers}">
+  <li><a href="">&laquo;</a></li>
+  <li class="active"><a href="">3</a></li>
+  <li><a href="">4</a></li>
+  <li><a href="">5</a></li>
+  <li><a href="">6</a></li>
+  <li class="dots"><a href="">..</a></li>
+  <li><a href="">92</a></li>
+  <li><a href="">&raquo;</a></li>
+</ul>
                 </span>
               </li>
+              
+                <li>
+                <span class="name">.wy-paginate-center</span>
+                  <span class="desc markdown">
+                    <p>Centered</p>
+
+                  </span>
+                  <span class="markup">
+                    <ul class="wy-paginate wy-paginate-center">
+  <li><a href="">&laquo;</a></li>
+  <li class="active"><a href="">3</a></li>
+  <li><a href="">4</a></li>
+  <li><a href="">5</a></li>
+  <li><a href="">6</a></li>
+  <li class="dots"><a href="">..</a></li>
+  <li><a href="">92</a></li>
+  <li><a href="">&raquo;</a></li>
+</ul>
+                  </span>
+                </li>
               
             
             </ul>
