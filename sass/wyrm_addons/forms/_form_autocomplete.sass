@@ -73,13 +73,17 @@
     list-style: none !important
     margin: 0 !important
   li
-    line-height: $base-font-size * 2
-    padding: 0px $base-font-size / 2
+    line-height: 1.5
+    padding: $base-font-size / 2
     cursor: pointer
     list-style: none !important
     margin: 0 !important
+    border-bottom: solid 1px $table-border-color
+    &:last-child
+      border-bottom: none
     &.on, &:hover
       background: $link-color
+      border-color: transparent
       color: $white
   img
     width: 16px
