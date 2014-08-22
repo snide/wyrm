@@ -30,8 +30,8 @@
     "tests"
   ],
   "dependencies": {
-    "neat": "~1.4.0",
-    "bourbon": "~3.1.8",
+    "neat": "~1.6.0",
+    "bourbon": "~4.0.2",
     "font-awesome": "~4.1.0"
   }
 }
