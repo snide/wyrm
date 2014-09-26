@@ -330,8 +330,10 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 .wy-input-prefix, .wy-input-suffix
   white-space: nowrap
+  padding: $base-line-height / 4
   .wy-input-context
-    padding: $base-line-height / 4
+    line-height: 27px // Hack for the moment.
+    padding: 0 8px
     display: inline-block
     font-size: 80%
     background-color: $table-stripe-color
