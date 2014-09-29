@@ -65,7 +65,7 @@
             <div class="markdown"><p>Located in <code>wyrm_core/_dropdown.sass</code>.</p>
 </div>
             
-              <pre class="highlight language-html">&lt;div class=&quot;wy-dropdown wy-dropdown-bubble&quot;&gt;
+              <pre class="highlight language-html">&lt;div class=&quot;wy-dropdown wy-dropdown-bubble {$modifiers}&quot;&gt;
   &lt;span class=&quot;btn btn-info fa fa-check-circle&quot;&gt; Save... &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;dl class=&quot;wy-dropdown-menu&quot;&gt;
     &lt;dd&gt;&lt;a href=&quot;&quot;&gt;Save it as a draft&lt;/a&gt;&lt;/dd&gt;
@@ -79,7 +79,7 @@
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <div class="wy-dropdown wy-dropdown-bubble">
+                  <div class="wy-dropdown wy-dropdown-bubble {$modifiers}">
   <span class="btn btn-info fa fa-check-circle"> Save... <span class="caret"></span></span>
   <dl class="wy-dropdown-menu">
     <dd><a href="">Save it as a draft</a></dd>
@@ -89,6 +89,24 @@
 </div>
                 </span>
               </li>
+              
+                <li>
+                <span class="name">.wy-dropdown-active</span>
+                  <span class="desc markdown">
+                    <p>Active class. You&apos;d want to turn on/off through JS.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-dropdown wy-dropdown-bubble wy-dropdown-active">
+  <span class="btn btn-info fa fa-check-circle"> Save... <span class="caret"></span></span>
+  <dl class="wy-dropdown-menu">
+    <dd><a href="">Save it as a draft</a></dd>
+    <dd><a href="">Publish now </a></dd>
+    <dd><a href="">Publish at a specific time</a></dd>
+  </dl>
+</div>
+                  </span>
+                </li>
               
             
             </ul>
