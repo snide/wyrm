@@ -3,7 +3,7 @@
 // Located in `wyrm_core/_dropdown.sass`.
 //
 // Markup:
-// <div class="wy-dropdown wy-dropdown-bubble">
+// <div class="wy-dropdown wy-dropdown-bubble {$modifiers}">
 //   <span class="btn btn-info fa fa-check-circle"> Save... <span class="caret"></span></span>
 //   <dl class="wy-dropdown-menu">
 //     <dd><a href="">Save it as a draft</a></dd>
@@ -11,6 +11,8 @@
 //     <dd><a href="">Publish at a specific time</a></dd>
 //   </dl>
 // </div>
+//
+// .wy-dropdown-active        - Active class. You'd want to turn on/off through JS.
 //
 // Styleguide 8
 
@@ -20,6 +22,8 @@
   .caret
     @extend %icon
     @extend .#{$icon-prefix}-#{$icon-caret-down}
+.wy-dropdown-active .wy-dropdown-menu
+  display: block
 .wy-dropdown-menu
   position: absolute
   left: 0
