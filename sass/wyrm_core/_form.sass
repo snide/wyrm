@@ -245,7 +245,7 @@ input
     outline: 1px auto #129FEA
   &[type="text"][disabled], &[type="password"][disabled], &[type="email"][disabled], &[type="url"][disabled], &[type="date"][disabled], &[type="month"][disabled], &[type="time"][disabled], &[type="datetime"][disabled], &[type="datetime-local"][disabled], &[type="week"][disabled], &[type="number"][disabled], &[type="search"][disabled], &[type="tel"][disabled], &[type="color"][disabled]
     cursor: not-allowed
-    background-color: $table-stripe-color
+    background-color: darken($input-background-color, 2%)
     color: $input-text-color
 
 input:focus:invalid, textarea:focus:invalid, select:focus:invalid
@@ -285,9 +285,8 @@ select:focus, textarea:focus
   outline: 0
 select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]
   cursor: not-allowed
-  background-color: $input-background-color
+  background-color: darken($input-background-color, 2%)
   color: $input-text-color
-  border-color: transparent
 
 // Checkboxes and radios
 
