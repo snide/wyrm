@@ -390,8 +390,11 @@ body .redactor_toolbar li a
     border-color: #e0e5d6
     background: #f4f4ee
 
-/* =Progress
- *-----------------------------------------------------------------------------
+.wy-control-group-disabled
+  .redactor_box
+    background: darken($input-background-color, 2%)
+  .redactor_toolbar li a
+    cursor: not-allowed
 
 #redactor-progress-drag
   position: fixed
