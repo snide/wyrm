@@ -290,6 +290,9 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 
 // Checkboxes and radios
 
+input
+  &[type="radio"][disabled], &[type="checkbox"][disabled]
+    cursor: not-allowed
 .wy-checkbox, .wy-radio
   margin: $base-line-height / 4 0
   // Important because we don't want it overwritten in the case of errors
