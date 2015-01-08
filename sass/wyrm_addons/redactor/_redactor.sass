@@ -1,8 +1,8 @@
 body
-  .redactor_air
+  .redactor-air
     position: absolute
     z-index: $z-index-modal
-  .redactor_box_fullscreen
+  .redactor-box-fullscreen
     position: fixed
     top: 0
     left: 0
@@ -18,7 +18,7 @@ body
   border: solid 1px $input-border-color
   padding: $gutter
 
-.redactor_box
+.redactor-box
   position: relative
   overflow: visible
   border: 1px solid $input-border-color
@@ -65,12 +65,12 @@ body
 .redactor_box_fullscreen
   background: $background-color
   overflow-y: scroll !important
-  .redactor_editor
+  .redactor-editor
     max-width: 960px
     padding: $gutter
     margin: $gutter * 2 auto $gutter !important
 
-.redactor_editor
+.redactor-editor
   font-family: $base-font-family
   position: relative
   padding: $gutter
@@ -90,7 +90,7 @@ body
     background: #f6f6f6 !important
 
 // GENERIC STYLING
-.redactor_editor
+.redactor-editor
   ul
     @extend %wy-plain-list-disc
   ol
@@ -98,7 +98,7 @@ body
 /*
  *	TOOLBAR
 
-.redactor_toolbar
+.redactor-toolbar
   position: relative
   top: 0
   left: 0
@@ -115,11 +115,11 @@ body
     height: 0
     content: "."
 
-.redactor_toolbar.toolbar_fixed_box
+.redactor-toolbar.toolbar_fixed_box
   border: 1px solid $input-border-color
   border-bottom-color: #b8b8b8
 
-.redactor_toolbar li
+.redactor-toolbar li
   float: left !important
   margin: 0 !important
   padding: 2px 0 2px 1px
@@ -161,7 +161,7 @@ body
  *	BUTTONS
  *	step 25px
 
-body .redactor_toolbar li a
+body .redactor-toolbar li a
   display: inline-block
   &.redactor_btn_html
     @extend .#{$icon-prefix}-#{$icon-code}
@@ -260,7 +260,7 @@ body .redactor_toolbar li a
 /*
  *	DROPDOWN
 
-.redactor_dropdown
+.redactor-dropdown
   position: absolute
   top: 28px
   left: 0
@@ -274,13 +274,13 @@ body .redactor_toolbar li a
   font-family: $base-font-family
   line-height: 21px
 
-.redactor_separator_drop
+.redactor-separator-drop
   padding: 0 !important
   border-top: 1px solid $input-border-color
   font-size: 0
   line-height: 0
 
-.redactor_dropdown a
+.redactor-dropdown a
   display: block
   padding: 3px 5px
   color: #000
@@ -292,23 +292,27 @@ body .redactor_toolbar li a
 
 /* MODAL
 
-#redactor_modal_overlay
+#redactor-modal-overlay
   @extend .wy-body-mask
 
-#redactor_modal
+#redactor-modal
   @extend .wy-modal
+  top: -20%
+  width: auto
+  margin-left: -250px
 
-#redactor_modal footer
+#redactor-modal footer
   @extend .wy-btn-group
   margin-bottom: 0
 
-#redactor_modal_close
+
+#redactor-modal-close
   @extend .wy-modal-close
 .redactor_input
   width: 99%
   font-size: 14px
 
-.redactor_modal_box
+.redactor-modal-box
   overflow: auto
   margin-bottom: 10px
   height: 350px
@@ -391,9 +395,9 @@ body .redactor_toolbar li a
     background: #f4f4ee
 
 .wy-control-group-disabled
-  .redactor_box, .redactor_editor
+  .redactor-box, .redactor-editor
     background: darken($input-background-color, 2%)
-  .redactor_toolbar li a
+  .redactor-toolbar li a
     cursor: not-allowed
 
 #redactor-progress-drag
