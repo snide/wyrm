@@ -286,6 +286,35 @@ body .redactor-toolbar li a
   font-size: 13px
   font-family: $base-font-family
   line-height: 21px
+  .redactor-dropdown-pre
+    background: $gray-dark
+    color: $white
+    font-family: $code-font-family
+  .redactor-dropdown-code
+    background: $text-code-background-color
+    border: solid 1px $text-code-border-color
+    padding: 0 5px
+    font-family: $code-font-family
+    color: $text-code-color
+    display: inline-block
+  .redactor-dropdown-h1
+    font-size: 175%
+    font-weight: bold
+  .redactor-dropdown-h2
+    font-size: 150%
+    font-weight: bold
+  .redactor-dropdown-h3
+    font-size: 125%
+    font-weight: bold
+  .redactor-dropdown-h4
+    font-size: 115%
+    font-weight: bold
+  .redactor-dropdown-h5
+    font-size: 110%
+    font-weight: bold
+  .redactor-dropdown-h6
+    font-weight: bold
+
 
 .redactor-separator-drop
   padding: 0 !important
@@ -318,9 +347,6 @@ body .redactor-toolbar li a
 #redactor-modal footer
   @extend .wy-btn-group
   margin-bottom: 0
-
-#redactor-modal > footer
-  display: none
 
 #redactor-modal-close
   @extend .wy-modal-close
@@ -371,10 +397,21 @@ body .redactor-toolbar li a
       text-decoration: none !important
       text-shadow: 0 1px 0 #eee
 
-.redactor_modal_btn
+.redactor-modal-btn
   @extend .btn
-.redactor_btn_modal_close
+  width: auto !important
+.redactor-modal-action-btn
+  @extend .btn-success
+  @extend .icon
+  @extend .icon-ok-sign
+  &:before
+    margin-right: 5px
+.redactor-modal-close-btn
   @extend .btn-neutral
+  @extend .icon
+  @extend .icon-remove-sign
+  &:before
+    margin-right: 5px
 
 /* Drag and Drop Area
 
