@@ -60,7 +60,18 @@ body
     &:empty:before
       opacity: 0.4
       content: "Type to add caption (optional)"
-
+  figure[data-type=embed]
+    background: $table-stripe-color
+    padding: $base-line-height / 2
+    border-radius: 4px
+    margin-bottom: $base-line-height
+    &:before
+      display: block
+      content: "Embeded code. May not render correctly in this preview mode."
+      margin-bottom: $base-line-height / 2
+      font-size: 80%
+      color: $red
+      font-weight: bold
 
 .redactor_box_fullscreen
   background: $background-color
