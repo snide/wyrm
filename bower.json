@@ -32,6 +32,6 @@
   "dependencies": {
     "neat": "~1.6.0",
     "bourbon": "~4.0.2",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.2.0"
   }
 }
