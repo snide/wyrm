@@ -1,5 +1,5 @@
 body
-  .redactor_air
+  .redactor-air
     position: absolute
     z-index: $z-index-modal
   .redactor_box_fullscreen
@@ -18,7 +18,7 @@ body
   border: solid 1px $input-border-color
   padding: $gutter
 
-.redactor_box
+.redactor-box
   position: relative
   overflow: visible
   border: 1px solid $input-border-color
@@ -54,23 +54,35 @@ body
     display: block
     border: none
     color: $white
+    white-space: pre-wrap
   code
     max-width: 100%
   figcaption
     &:empty:before
       opacity: 0.4
       content: "Type to add caption (optional)"
-
+  figure[data-type=embed]
+    background: $table-stripe-color
+    padding: $base-line-height / 2
+    border-radius: 4px
+    margin-bottom: $base-line-height
+    &:before
+      display: block
+      content: "EMBED: May not render correctly in this preview."
+      margin-bottom: $base-line-height / 2
+      font-size: 80%
+      color: $red
+      font-weight: bold
 
 .redactor_box_fullscreen
   background: $background-color
   overflow-y: scroll !important
-  .redactor_editor
+  .redactor-editor
     max-width: 960px
     padding: $gutter
     margin: $gutter * 2 auto $gutter !important
 
-.redactor_editor
+.redactor-editor
   font-family: $base-font-family
   position: relative
   padding: $gutter
@@ -90,7 +102,7 @@ body
     background: #f6f6f6 !important
 
 // GENERIC STYLING
-.redactor_editor
+.redactor-editor
   ul
     @extend %wy-plain-list-disc
   ol
@@ -98,7 +110,7 @@ body
 /*
  *	TOOLBAR
 
-.redactor_toolbar
+.redactor-toolbar
   position: relative
   top: 0
   left: 0
@@ -108,6 +120,7 @@ body
   border-bottom: 2px solid $input-border-color
   background: hsl(0,0%,95%)
   list-style: none !important
+  z-index: $z-index-tooltip - 1
   &:after
     display: block
     visibility: hidden
@@ -115,17 +128,17 @@ body
     height: 0
     content: "."
 
-.redactor_toolbar.toolbar_fixed_box
+.redactor-toolbar.toolbar_fixed_box
   border: 1px solid $input-border-color
   border-bottom-color: #b8b8b8
 
-.redactor_toolbar li
+.redactor-toolbar li
   float: left !important
   margin: 0 !important
   padding: 2px 0 2px 1px
   outline: none
   list-style: none !important
-  &.redactor_separator
+  &.redactor-separator
     float: left
     margin: 0 0 0 2px !important
     padding: 0
@@ -147,7 +160,7 @@ body
       outline: none
       background-color: $gray-light
       color: $white
-    &:active, &.redactor_act
+    &:active, &.redactor-act
       outline: none
       background-color: $text-color
       color: $white
@@ -161,7 +174,7 @@ body
  *	BUTTONS
  *	step 25px
 
-body .redactor_toolbar li a
+body .redactor-toolbar li a
   display: inline-block
   &.redactor_btn_html
     @extend .#{$icon-prefix}-#{$icon-code}
@@ -260,7 +273,7 @@ body .redactor_toolbar li a
 /*
  *	DROPDOWN
 
-.redactor_dropdown
+.redactor-dropdown
   position: absolute
   top: 28px
   left: 0
@@ -273,14 +286,43 @@ body .redactor_toolbar li a
   font-size: 13px
   font-family: $base-font-family
   line-height: 21px
+  .redactor-dropdown-pre
+    background: $gray-dark
+    color: $white
+    font-family: $code-font-family
+  .redactor-dropdown-code
+    background: $text-code-background-color
+    border: solid 1px $text-code-border-color
+    padding: 0 5px
+    font-family: $code-font-family
+    color: $text-code-color
+    display: inline-block
+  .redactor-dropdown-h1
+    font-size: 175%
+    font-weight: bold
+  .redactor-dropdown-h2
+    font-size: 150%
+    font-weight: bold
+  .redactor-dropdown-h3
+    font-size: 125%
+    font-weight: bold
+  .redactor-dropdown-h4
+    font-size: 115%
+    font-weight: bold
+  .redactor-dropdown-h5
+    font-size: 110%
+    font-weight: bold
+  .redactor-dropdown-h6
+    font-weight: bold
 
-.redactor_separator_drop
+
+.redactor-separator-drop
   padding: 0 !important
   border-top: 1px solid $input-border-color
   font-size: 0
   line-height: 0
 
-.redactor_dropdown a
+.redactor-dropdown a
   display: block
   padding: 3px 5px
   color: #000
@@ -292,23 +334,27 @@ body .redactor_toolbar li a
 
 /* MODAL
 
-#redactor_modal_overlay
+#redactor-modal-overlay
   @extend .wy-body-mask
 
-#redactor_modal
+#redactor-modal
   @extend .wy-modal
+  width: 50% !important
+  margin-left: -25% !important
+  margin-top: -25% !important
+  top: 50% !important
 
-#redactor_modal footer
+#redactor-modal footer
   @extend .wy-btn-group
   margin-bottom: 0
 
-#redactor_modal_close
+#redactor-modal-close
   @extend .wy-modal-close
 .redactor_input
   width: 99%
   font-size: 14px
 
-.redactor_modal_box
+.redactor-modal-box
   overflow: auto
   margin-bottom: 10px
   height: 350px
@@ -351,10 +397,21 @@ body .redactor_toolbar li a
       text-decoration: none !important
       text-shadow: 0 1px 0 #eee
 
-.redactor_modal_btn
+.redactor-modal-btn
   @extend .btn
-.redactor_btn_modal_close
+  width: auto !important
+.redactor-modal-action-btn
+  @extend .btn-success
+  @extend .icon
+  @extend .icon-ok-sign
+  &:before
+    margin-right: 5px
+.redactor-modal-close-btn
   @extend .btn-neutral
+  @extend .icon
+  @extend .icon-ok-sign
+  &:before
+    margin-right: 5px
 
 /* Drag and Drop Area
 
@@ -391,9 +448,9 @@ body .redactor_toolbar li a
     background: #f4f4ee
 
 .wy-control-group-disabled
-  .redactor_box, .redactor_editor
+  .redactor-box, .redactor-editor
     background: darken($input-background-color, 2%)
-  .redactor_toolbar li a
+  .redactor-toolbar li a
     cursor: not-allowed
 
 #redactor-progress-drag
@@ -438,6 +495,20 @@ body .redactor_toolbar li a
     left: 0
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFRTE5QjlCQTlDMkQxMUUwOUFFQ0M4MEYwM0YzNUE2RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNkRFQUIzNjlDMkUxMUUwOUFFQ0M4MEYwM0YzNUE2RCI+IDxkYzp0aXRsZT4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Z3JhZGllbnQ8L3JkZjpsaT4gPC9yZGY6QWx0PiA8L2RjOnRpdGxlPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRTE5QjlCODlDMkQxMUUwOUFFQ0M4MEYwM0YzNUE2RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRTE5QjlCOTlDMkQxMUUwOUFFQ0M4MEYwM0YzNUE2RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq477Q0AAAD2SURBVHjaxFIxDsIwDLRF/1AmRp7AM9iYWHkD76AP6h9Qi1SGfqAMqGJg6XA4jts0RUwZiKLEsZ3L+Rwmoi0lDC6Ky4rAMuGO5DY5iuWH93oDegMuK8QA7JIYCMDpvwDDMBzNHCGtONYq2enjHKYLMObCp7dtu/+FDppDgyJpTemsrm/9l7L2ku4aUy4BTEmKR1hmVXV9OjfsqlqC7irAhBKxDnmOQdPc+ynKMXdenEELAFmzrnu8RoK6jpRhHkGJmFgdXmsByNf5Wx+fJPbigEI3OKrB77Bfy2VZzppqC0IfAtlIAusC9CNtUn/iIRXgnALwEWAA/+5+ZNOapmcAAAAASUVORK5CYII=')
 
+
+.redactor-toolbar-tooltip
+  position: absolute
+  z-index: $z-index-tooltip
+  text-align: center
+  top: 0
+  left: 0
+  background: rgba(0,0,0,.8)
+  color: $text-invert
+  padding: 5px 8px
+  line-height: 1
+  font-size: 12px
+  border-radius: 2px
+
 +media($mobile)
   body .redactor_toolbar li a
     &.redactor_btn_table
@@ -446,4 +517,10 @@ body .redactor_toolbar li a
       display: none
     &.redactor_btn_fullscreen
       display: none
+  #redactor-modal
+    width: 100% !important
+    margin: 0 !important
+    left: 0 !important
+    right: 0 !important
+    top: 20% !important
 
