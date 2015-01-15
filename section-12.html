@@ -62,47 +62,42 @@
         
         
           
-            <h1 class="kss-title"><span class="kss-ref">7.0</span> - Spinners</h1>
+            <h1 class="kss-title"><span class="kss-ref">12.0</span> - Video</h1>
           
-            <div class="markdown"><p>Spinners are pretty simple. You can change the color by changing <code>$spinner-color</code>.
-Also, any of the modifiers below can also carry <code>.wy-spinner-absolute</code> to position
-the spinner in the absolute center of your wrapping area.</p>
+            <div class="markdown"><p>Styles from this page can be found in <code>wyrm_core/_video.sass</code>.
+It is basically a simple way to handle simple 16:9 responsive embeds.</p>
 </div>
             
-              <pre class="highlight language-html">&lt;div class=&quot;wy-spinner {$modifiers}&quot;&gt;&lt;/div&gt;
-&lt;a href=&quot;#random&quot; class=&quot;btn&quot;&gt;&lt;span class=&quot;wy-spinner {$modifiers}&quot;&gt;&lt;/span&gt; Loading&lt;/a&gt;</pre>
+              <pre class="highlight language-html">&lt;div class=&quot;wy-video {$modifiers}&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/dJ0Neq2up9E&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</pre>
             
             <ul class="examples">
             
               <li>
               <div class="desc"><p>Default styling without modifier classes.</p></div>
                 <span class="markup">
-                  <div class="wy-spinner {$modifiers}"></div>
-<a href="#random" class="btn"><span class="wy-spinner {$modifiers}"></span> Loading</a>
+                  <div class="wy-video {$modifiers}"><iframe src="//www.youtube.com/embed/dJ0Neq2up9E" frameborder="0" allowfullscreen></iframe></div>
                 </span>
               </li>
               
                 <li>
-                <span class="name">.wy-spinner-large</span>
+                <span class="name">.wy-video-sd</span>
                   <span class="desc markdown">
-                    <p>Large spinner.</p>
+                    <p>4:3 TV style</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-spinner wy-spinner-large"></div>
-<a href="#random" class="btn"><span class="wy-spinner wy-spinner-large"></span> Loading</a>
+                    <div class="wy-video wy-video-sd"><iframe src="//www.youtube.com/embed/dJ0Neq2up9E" frameborder="0" allowfullscreen></iframe></div>
                   </span>
                 </li>
               
                 <li>
-                <span class="name">.wy-spinner-small</span>
+                <span class="name">.wy-video-cinema</span>
                   <span class="desc markdown">
-                    <p>Small spinner.</p>
+                    <p>Anamorphic</p>
 
                   </span>
                   <span class="markup">
-                    <div class="wy-spinner wy-spinner-small"></div>
-<a href="#random" class="btn"><span class="wy-spinner wy-spinner-small"></span> Loading</a>
+                    <div class="wy-video wy-video-cinema"><iframe src="//www.youtube.com/embed/dJ0Neq2up9E" frameborder="0" allowfullscreen></iframe></div>
                   </span>
                 </li>
               
