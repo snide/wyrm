@@ -1,6 +1,6 @@
 {
   "name": "wyrm",
-  "version": "0.0.218",
+  "version": "0.0.219",
   "repository": "https://github.com/snide/wyrm",
   "devDependencies": {
     "grunt": "~0.4.1",
