@@ -266,6 +266,7 @@ input.wy-input-large
   padding: $base-line-height / 2
   font-size: 100%
 
+
 // Textareas and selects
 
 textarea
@@ -351,6 +352,52 @@ input
 .wy-input-prefix .wy-input-context
   border-right: 0
 
+// Switches
+//
+// True / false, boolean style switches.
+//
+// Markup:
+// <div class="wy-switch {$modifiers}"></div>
+//
+// .active          - active state.
+// .disabled          - disabled.
+//
+// Styleguide 6.3
+
+.wy-switch
+  width: $base-line-height * 2
+  height: $base-line-height
+  position: relative
+  border-radius: 50px
+  background: $table-border-color
+  border: solid 1px $input-border-color
+  cursor: pointer
+  +transition(all .2s ease-in-out)
+  &:before
+    position: absolute
+    content: ""
+    display: block
+    width: $base-line-height - 6px
+    height: $base-line-height - 6px
+    border-radius: 50px
+    background: $white
+    border: solid 1px $input-border-color
+    left: 1px
+    top: 1px
+    +transition(all .2s ease-in-out)
+.wy-switch.active
+  background: lighten($green, 40%)
+  border-color: lighten($green, 10%)
+  &:before
+    left: auto
+    right: 1px
+    border-color: $green
+
+.wy-switch.disabled
+  cursor: not-allowed
+
+
+
 // Error handling and inline validation
 //
 // Wyrm has both block and inline level validation depending upon your needs. You can also
@@ -393,7 +440,7 @@ input
 //   </div>
 // </div>
 //
-// Styleguide 6.3
+// Styleguide 6.4
 
 .wy-control-group.wy-control-group-error
   .wy-form-message, > label
