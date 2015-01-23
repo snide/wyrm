@@ -283,7 +283,54 @@ like email, password, url, date...etc, but I&apos;ve left them out for brevity.<
           
             <hr/>
            <section class="kss-depth-2">
-            <h2 class="kss-title"><span class="kss-ref">6.3</span> - Error handling and inline validation</h1>
+            <h2 class="kss-title"><span class="kss-ref">6.3</span> - Switches</h1>
+          
+            <div class="markdown"><p>True / false, boolean style switches.</p>
+</div>
+            
+              <pre class="highlight language-html">&lt;div class=&quot;wy-switch {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="wy-switch {$modifiers}"></div>
+                </span>
+              </li>
+              
+                <li>
+                <span class="name">.active</span>
+                  <span class="desc markdown">
+                    <p>active state.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-switch active"></div>
+                  </span>
+                </li>
+              
+                <li>
+                <span class="name">.disabled</span>
+                  <span class="desc markdown">
+                    <p>disabled.</p>
+
+                  </span>
+                  <span class="markup">
+                    <div class="wy-switch disabled"></div>
+                  </span>
+                </li>
+              
+            
+            </ul>
+          
+            </section>
+          
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">6.4</span> - Error handling and inline validation</h1>
           
             <div class="markdown"><p>Wyrm has both block and inline level validation depending upon your needs. You can also
 pair these with the global alerts mentioned in the alerts section of this styleguide.</p>
