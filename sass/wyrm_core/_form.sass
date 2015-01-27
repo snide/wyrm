@@ -365,33 +365,31 @@ input
 // Styleguide 6.3
 
 .wy-switch
-  width: $base-line-height * 2
-  height: $base-line-height
+  width: $base-line-height * 1.5
+  height: $base-line-height / 2
+  margin: $base-line-height / 4 0
   position: relative
   border-radius: 50px
-  background: $table-border-color
-  border: solid 1px $input-border-color
+  background: $gray
   cursor: pointer
   +transition(all .2s ease-in-out)
   &:before
     position: absolute
     content: ""
     display: block
-    width: $base-line-height - 6px
-    height: $base-line-height - 6px
+    width: $base-line-height
+    height: $base-line-height
     border-radius: 50px
-    background: $white
-    border: solid 1px $input-border-color
-    left: 1px
-    top: 1px
+    background: $gray-light
+    box-shadow: 0 0 2px rgba(0,0,0,.2)
+    left: -$base-line-height / 4
+    top: -$base-line-height / 4
     +transition(all .2s ease-in-out)
 .wy-switch.active
-  background: lighten($green, 40%)
-  border-color: lighten($green, 10%)
+  background: $green
   &:before
-    left: auto
-    right: 1px
-    border-color: $green
+    left: $base-line-height
+    background: lighten($green, 10%)
 
 .wy-switch.disabled, .wy-switch.active.disabled
   cursor: not-allowed
