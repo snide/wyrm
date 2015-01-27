@@ -367,29 +367,28 @@ input
 .wy-switch
   width: $base-line-height * 1.5
   height: $base-line-height / 2
-  margin: $base-line-height / 4 0
+  margin: $base-line-height  / 2 0
   position: relative
-  border-radius: 50px
-  background: $gray
+  border-radius: 4px
+  background: $gray-lighter
   cursor: pointer
   +transition(all .2s ease-in-out)
   &:before
     position: absolute
     content: ""
     display: block
-    width: $base-line-height
-    height: $base-line-height
-    border-radius: 50px
+    width: 18px
+    height: 18px
+    border-radius: 4px
     background: $gray-light
-    box-shadow: 0 0 2px rgba(0,0,0,.2)
-    left: -$base-line-height / 4
-    top: -$base-line-height / 4
+    left: -3px
+    top: -3px
     +transition(all .2s ease-in-out)
 .wy-switch.active
-  background: $green
+  background: darken($green, 10%)
   &:before
     left: $base-line-height
-    background: lighten($green, 10%)
+    background: $green
 
 .wy-switch.disabled, .wy-switch.active.disabled
   cursor: not-allowed
@@ -515,4 +514,5 @@ input
     display: block
     font-size: 80%
     padding: $base-line-height / 4 0
+
 
