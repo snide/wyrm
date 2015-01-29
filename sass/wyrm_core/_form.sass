@@ -357,7 +357,7 @@ input
 // True / false, boolean style switches.
 //
 // Markup:
-// <div class="wy-switch {$modifiers}"></div>
+// <div class="wy-switch {$modifiers}"><span>Text</span></div>
 //
 // .active          - active state.
 // .disabled          - disabled.
@@ -384,24 +384,22 @@ input
     left: -3px
     top: -3px
     +transition(all .2s ease-in-out)
-  &:after
-    content: "false"
+  span
     position: absolute
     left: $base-line-height * 2
     display: block
     font-size: 12px
     color: $gray-lighter
+    line-height: 1
 .wy-switch.active
   background: darken($green, 10%)
   &:before
     left: $base-line-height
     background: $green
-  &:after
-    content: "true"
 
 .wy-switch.disabled, .wy-switch.active.disabled
   cursor: not-allowed
-
+  opacity: .8
 
 
 // Error handling and inline validation

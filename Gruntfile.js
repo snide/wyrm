@@ -25,12 +25,12 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style: 'expanded',
-          loadPath: ['bower_components']
+          loadPath: ['bower_components/bourbon/dist', 'bower_components/neat/app/assets/stylesheets', 'bower_components/font-awesome/scss']
         },
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['wrym_test.sass'],
+          src: ['*.sass'],
           dest: 'css',
           ext: '.css'
         }]
