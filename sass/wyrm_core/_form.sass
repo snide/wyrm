@@ -357,7 +357,7 @@ input
 // True / false, boolean style switches.
 //
 // Markup:
-// <div class="wy-switch {$modifiers}"><span>Text</span></div>
+// <div class="wy-switch {$modifiers}"><span>Here is some really long text.</span></div>
 //
 // .active          - active state.
 // .disabled          - disabled.
@@ -365,15 +365,22 @@ input
 // Styleguide 6.3
 
 .wy-switch
-  width: $base-line-height * 1.5
-  height: $base-line-height / 2
-  margin: $base-line-height  / 2 0
   position: relative
-  border-radius: 4px
-  background: $gray-lighter
-  cursor: pointer
-  +transition(all .2s ease-in-out)
+  display: block
+  height: $base-line-height
   &:before
+    position: absolute
+    content: ""
+    display: block
+    left: 0
+    top: 0
+    width: $base-line-height * 1.5
+    height: $base-line-height / 2
+    border-radius: 4px
+    background: $gray-lighter
+    cursor: pointer
+    +transition(all .2s ease-in-out)
+  &:after
     position: absolute
     content: ""
     display: block
@@ -392,8 +399,9 @@ input
     color: $gray-lighter
     line-height: 1
 .wy-switch.active
-  background: darken($green, 10%)
   &:before
+    background: darken($green, 10%)
+  &:after
     left: $base-line-height
     background: $green
 
