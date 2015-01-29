@@ -369,6 +369,7 @@ input
   display: block
   height: $base-line-height
   margin-top: $base-line-height / 2
+  cursor: pointer
   &:before
     position: absolute
     content: ""
@@ -379,7 +380,6 @@ input
     height: $base-line-height / 2
     border-radius: 4px
     background: $gray-lighter
-    cursor: pointer
     +transition(all .2s ease-in-out)
   &:after
     position: absolute
@@ -406,7 +406,7 @@ input
     left: $base-line-height
     background: $green
 
-.wy-switch.disabled, .wy-switch.active.disabled
+.wy-switch.disabled
   cursor: not-allowed
   opacity: .8
 
