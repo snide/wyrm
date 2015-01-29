@@ -104,7 +104,7 @@
 
 // For when there are lots of items in a tag group
 
-.wy-tag-input-group-many
+.wy-tag-input-group.wy-tag-input-group-many
   border: none
   box-shadow: none
   padding: 0
@@ -124,7 +124,7 @@
       margin-top: $base-line-height / 4
       margin-bottom: $base-line-height / 4
 
-.wy-tag-input-group-many ol li
+.wy-tag-input-group.wy-tag-input-group-many ol li
   cursor: move
   span
     display: inline-block
@@ -151,10 +151,10 @@
     color: $red
     opacity: 0
 
-.wy-tag-input-group-many li
+.wy-tag-input-group.wy-tag-input-group-many li
   cursor: auto
 
 +media($mobile)
-  .wy-tag-input-group-many ol li span
+  .wy-tag-input-group.wy-tag-input-group-many ol li span
     width: 100%
 
