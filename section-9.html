@@ -109,7 +109,7 @@ single item and multi-item addition. Examples for all three are shown below.</p>
               Being There
             &lt;/li&gt;
             &lt;li class=&quot;add&quot;&gt;
-              Being There
+              &lt;span class=&quot;fa fa-plus-circle&quot;&gt;&lt;/span&gt; Add new entry
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
@@ -165,7 +165,7 @@ single item and multi-item addition. Examples for all three are shown below.</p>
               Being There
             </li>
             <li class="add">
-              Being There
+              <span class="fa fa-plus-circle"></span> Add new entry
             </li>
           </ul>
         </div>
@@ -180,6 +180,67 @@ single item and multi-item addition. Examples for all three are shown below.</p>
             
             </ul>
            
+        
+          
+            <hr/>
+           <section class="kss-depth-2">
+            <h2 class="kss-title"><span class="kss-ref">9.2</span> - Form - Autocompleter, many items.</h1>
+          
+            <div class="markdown"><p>For when there are lots of items in a tag group.</p>
+</div>
+            
+              <pre class="highlight language-html">&lt;div class=&quot;wy-control-group wy-control-group-relation&quot;&gt;
+  &lt;label&gt;Lots of items&lt;/label&gt;
+  &lt;div class=&quot;wy-control&quot;&gt;
+    &lt;div class=&quot;wy-tag-input-group wy-tag-input-group-many&quot;&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;Network &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;Rollerball &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;The Godfather &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;The Godfather Part II&lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;The Big Lebowski &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;Fargo &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;fa fa-ellipsis-v&quot;&gt;Bad Santa &lt;a class=&quot;fa fa-times-circle&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;div class=&quot;wy-autocomplete-group&quot;&gt;
+      &lt;label class=&quot;fa fa-search&quot;&gt;&lt;/label&gt;
+      &lt;input placeholder=&quot;Add item&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            
+            <ul class="examples">
+            
+              <li>
+              <div class="desc"><p>Default styling without modifier classes.</p></div>
+                <span class="markup">
+                  <div class="wy-control-group wy-control-group-relation">
+  <label>Lots of items</label>
+  <div class="wy-control">
+    <div class="wy-tag-input-group wy-tag-input-group-many">
+    <ol>
+      <li><span class="fa fa-ellipsis-v">Network <a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">Rollerball <a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">The Godfather <a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">The Godfather Part II<a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">The Big Lebowski <a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">Fargo <a class="fa fa-times-circle"></a></span></li>
+      <li><span class="fa fa-ellipsis-v">Bad Santa <a class="fa fa-times-circle"></a></span></li>
+    </ol>
+    <div class="wy-autocomplete-group">
+      <label class="fa fa-search"></label>
+      <input placeholder="Add item" type="text">
+    </div>
+  </div>
+</div>
+                </span>
+              </li>
+              
+            
+            </ul>
+          
+            </section>
+          
         
       
     </section>
