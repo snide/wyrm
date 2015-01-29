@@ -101,14 +101,39 @@
   .wy-autocomplete-dropdown
     margin-top: -4px
 
-
-// For when there are lots of items in a tag group
+// Form - Autocompleter, many items.
+//
+// For when there are lots of items in a tag group.
+//
+// Markup:
+// <div class="wy-control-group wy-control-group-relation">
+//   <label>Lots of items</label>
+//   <div class="wy-control">
+//     <div class="wy-tag-input-group wy-tag-input-group-many">
+//     <ol>
+//       <li><span class="fa fa-ellipsis-v">Network <a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">Rollerball <a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">The Godfather <a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">The Godfather Part II<a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">The Big Lebowski <a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">Fargo <a class="fa fa-times-circle"></a></span></li>
+//       <li><span class="fa fa-ellipsis-v">Bad Santa <a class="fa fa-times-circle"></a></span></li>
+//     </ol>
+//     <div class="wy-autocomplete-group">
+//       <label class="fa fa-search"></label>
+//       <input placeholder="Add item" type="text">
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide 9.2
 
 .wy-tag-input-group.wy-tag-input-group-many
   border: none
   box-shadow: none
   padding: 0
   display: block
+  background: transparent
   .wy-autocomplete-group
     display: inline-block
     border: solid 1px $table-border-color
@@ -124,10 +149,13 @@
       margin-top: $base-line-height / 4
       margin-bottom: $base-line-height / 4
 
+.wy-tag-input-group.wy-tag-input-group-many ol
+  margin-bottom: 0
+
 .wy-tag-input-group.wy-tag-input-group-many ol li
   cursor: move
+  margin-left: 0
   span
-    display: inline-block
     padding: $base-line-height / 4 $base-line-height / 2
     margin-bottom: $base-line-height / 4
     background: rgba(0,0,0,.1)
@@ -139,12 +167,13 @@
 
   span:hover
     .icon-remove-sign
+    .#{$icon-prefix}-#{$icon-remove}
       opacity: 1
   span:before
     color: $gray-light
     margin-right: $base-line-height / 4
 
-  .icon-remove-sign
+  .#{$icon-prefix}-#{$icon-remove}
     position: absolute
     right: $base-line-height / 4
     top: $base-line-height / 4
