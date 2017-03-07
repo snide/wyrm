@@ -1,18 +1,18 @@
 {
   "name": "wyrm",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "repository": "https://github.com/snide/wyrm",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-sass": "~0.7.2",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-exec": "~0.4.2",
-    "grunt-contrib-connect": "0.5.0",
-    "grunt-contrib-copy": "0.4.1",
-    "matchdep": "~0.1.2",
-    "grunt-release": "~0.10.0",
-    "grunt-gh-pages": "~0.9.0",
+    "grunt": "~1.0.1",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-uglify": "~2.2.0",
+    "grunt-exec": "~2.0.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "matchdep": "~1.0.1",
+    "grunt-release": "~0.14.0",
+    "grunt-gh-pages": "~2.0.0",
     "grunt-open": "~0.2.3"
   }
 }
