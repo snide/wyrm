@@ -17,10 +17,13 @@
     border-radius: 2px
     position: relative
     margin-bottom: 4px
+    +transition(background-color .5s ease-in-out)
     &.on
       background-color: rgba(0,0,0,.2)
       .wy-tag-remove
         color: $red
+    &.active
+      background-color: rgba(0,0,0,.2)
     .wy-tag-remove
       @extend %icon
       @extend .#{$icon-prefix}-#{$icon-close}

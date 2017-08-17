@@ -402,14 +402,14 @@ body .redactor-toolbar li a
   width: auto !important
 .redactor-modal-action-btn
   @extend .btn-success
-  @extend .icon
-  @extend .icon-ok-sign
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-ok}
   &:before
     margin-right: 5px
 .redactor-modal-close-btn
   @extend .btn-neutral
-  @extend .icon
-  @extend .icon-ok-sign
+  @extend .#{$icon-prefix}
+  @extend .#{$icon-prefix}-#{$icon-ok}
   &:before
     margin-right: 5px
 

@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 
     release: {
       options: {
-        npm: false, //default: true
+        additionalFiles: ['bower.json']
       }
     }
 
@@ -90,6 +90,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['sass:dev','exec:kss','copy:fonts','connect','open','watch']);
   grunt.registerTask('test', ['sass:dev']);
-  grunt.registerTask('build', ['release']);
+  grunt.loadNpmTasks('grunt-release');
 
 }

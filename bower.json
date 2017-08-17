@@ -1,6 +1,6 @@
 {
   "name": "wyrm",
-  "version": "0.0.2",
+  "version": "1.0.9",
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
     "Dave Snider <dave.snider@gmail.com>"
@@ -32,6 +32,6 @@
   "dependencies": {
     "neat": "~1.6.0",
     "bourbon": "~4.0.2",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.2.0"
   }
 }
