@@ -201,32 +201,32 @@ code
   list-style: disc
   line-height: $base-line-height
   margin-bottom: $base-line-height
-  li
+  > li
     list-style: disc
     margin-left: $base-line-height
     p:last-child
       margin-bottom: 0
     ul
       margin-bottom: 0
-    li
-      list-style: circle
-      li
-        list-style: square
-    ol li
+      > li
+        list-style: circle
+        ul > li
+          list-style: square
+    ol > li
       list-style: decimal
 
 %wy-plain-list-decimal
   list-style: decimal
   line-height: $base-line-height
   margin-bottom: $base-line-height
-  li
+  > li
     list-style: decimal
     margin-left: $base-line-height
     p:last-child
       margin-bottom: 0
     ul
       margin-bottom: 0
-      li
+      > li
         list-style: disc
 
 
