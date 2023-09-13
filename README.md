@@ -9,3 +9,8 @@ With bower.
 ```
 bower install wyrm
 ```
+
+#### docs
+
+There's an active mirror of wyrmsass.org here: https://zsigio.hu/wyrmsass.org/ \
+Or on the Internet Archive: http://web.archive.org/web/wyrmsass.org
